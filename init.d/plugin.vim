@@ -25,6 +25,14 @@ Plug 'junegunn/fzf.vim'
 " Better whitespace highlighting for Vim.
 Plug 'ntpeters/vim-better-whitespace'
 
+" emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to emmet.
+Plug 'mattn/emmet-vim'
+
+" Vastly improved Javascript indentation and syntax support in Vim.
+Plug 'pangloss/vim-javascript'
+Plug 'elzr/vim-json'
+Plug 'jparise/vim-graphql'
+
 " rsi.vim: Readline style insertion (saya pakai untuk alt+delete: menghapus 1 kata).
 Plug 'tpope/vim-rsi'
 
@@ -34,11 +42,26 @@ Plug 'tpope/vim-ragtag'
 " Vim plugin that displays tags in a window, ordered by scope. with F8
 Plug 'majutsushi/tagbar'
 
+" A commentary.vim: comment stuff out
+Plug 'tpope/vim-commentary'
+
 " Vim plugin which provides sgml (xml, html, etc.) end tag completion. autoclose tag </
 Plug 'ervandew/sgmlendtag'
 
+" Make terminal vim and tmux work better together.
+Plug 'tmux-plugins/vim-tmux-focus-events'
+
+" Syntax highlighting, matching rules and mappings for the original Markdown and extensions.
+Plug 'plasticboy/vim-markdown'
+
+" A markdown preview plugin for (neo)vim
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more.
 Plug 'ryanoasis/vim-devicons'
+
+" Vim Liquid runtime files with Jekyll enhancements.
+Plug 'tpope/vim-liquid'
 
 " A Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
 Plug 'neoclide/coc.nvim', {'do': './install.sh'}
@@ -54,6 +77,12 @@ Plug 'vim-scripts/eruby.vim'
 
 " A vim plugin to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
+
+" A Typescript syntax files for Vim
+"Plug 'leafgarland/typescript-vim'
+
+" A JSX syntax pretty highlighting for vim.
+"Plug 'maxmellon/vim-jsx-pretty'
 
 " A Vim runtime files for Haml, Sass, and SCSS
 Plug 'tpope/vim-haml'

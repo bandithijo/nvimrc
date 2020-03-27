@@ -16,9 +16,16 @@ set gdefault " global substitutions are default s/a/b/g
 set ttimeoutlen=0  " make Esc work faster
 set autoread " make vim monitor realtime changes to a file
 set modifiable
-"set cryptmethod=blowfish2  " only for Vim, not Neovim
+
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
 au FocusGained,BufEnter * :checktime  " auto update trigger on buffer change or terminal focus
+
 " for italic on tmux
 set t_ZH=[3m
 set t_ZR=[23m
+
+" restore cursor position when opening file
+autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   execute "normal! g`\"" |
+    \ endif

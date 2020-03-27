@@ -12,7 +12,7 @@ set tabstop=4 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 set conceallevel=0
-" match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
 
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 set splitbelow splitright

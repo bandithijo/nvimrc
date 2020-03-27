@@ -27,7 +27,7 @@ set scrolloff=5 " keep 10 lines (top/bottom) for scope
 set sidescrolloff=10 " keep 5 lines at the size
 set cursorline " visually mark current line
 "set showbreak=↪ " indicate wrapped line
-"hi clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
+hi clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 highlight clear SignColumn
 hi HighlightedyankRegion term=bold ctermfg=0 ctermbg=3
 if &diff " change colorscheme when using vimdiff

@@ -1,7 +1,4 @@
 " FileType
-syntax enable
-filetype plugin indent on
-
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 ft=jinja
 autocmd FileType html.django setlocal shiftwidth=2 tabstop=2 ft=jinja
