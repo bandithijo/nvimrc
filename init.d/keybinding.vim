@@ -5,7 +5,7 @@ let mapleader = ","
 let maplocalleader = ','
 
 " for edit my .vimrc
-nmap <leader>ev :e ~/.vimrc<cr>
+nmap <leader>ev :NERDTree ~/.config/nvim/<cr>
 
 " for edit load my ssg blog writing guide (petunjuk penulisan)
 nmap <leader>ed :e ~/dex/bandithijo.com/_drafts/2018-01-01-format-penulisan-post.md<cr>

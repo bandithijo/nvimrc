@@ -90,6 +90,21 @@ Plug 'tpope/vim-haml'
 " Text outlining and task management for Vim based on Emacs' Org-Mode
 Plug 'jceb/vim-orgmode'
 
+" (vim-orgmode need this) {{{
+" Speeddating.vim: use CTRL-A/CTRL-X to increment dates, times, and more
+Plug 'vim-scripts/Vimball'
+
+Plug 'tpope/vim-speeddating'
+
+Plug 'chrisbra/NrrwRgn'
+
+" Univeral Text Linking - Execute URLs, footnotes, open emails, organize ideas
+Plug 'vim-scripts/utl.vim'
+
+" Vim Table Mode for instant table creation.
+Plug 'dhruvasagar/vim-table-mode'
+" (vim-orgmode need this) }}}
+
 " A open source plugins for automatic programming metrics
 Plug 'wakatime/vim-wakatime'
 

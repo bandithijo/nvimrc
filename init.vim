@@ -16,9 +16,7 @@
 " ░██ ███  ░██░██  ░░██ ░██  ░░██   ░██ ███ ░██ ░██
 " ░░ ░░░   ░░ ░░    ░░  ░░    ░░    ░░ ░░░  ░░  ░░
 
-source $HOME/.config/nvim/init.d/basic.vim
-source $HOME/.config/nvim/init.d/general.vim
-source $HOME/.config/nvim/init.d/interface.vim
+source $HOME/.config/nvim/init.d/settings.vim
 source $HOME/.config/nvim/init.d/formating.vim
 source $HOME/.config/nvim/init.d/plugin.vim
 source $HOME/.config/nvim/init.d/filetype.vim

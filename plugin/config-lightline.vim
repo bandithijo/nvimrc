@@ -22,13 +22,13 @@ let g:lightline = {
 \     'filetype': 'LightlineFiletype',
 \   }
 \}
-"  'left': '', 'right': ''
+"   'left': '', 'right': ''
 let g:lightline.separator = {
-\   'left': '', 'right': ''
+\  'left': '', 'right': ''
 \}
-"   'left': '', 'right': ''
+"   'left': '│', 'right': '│'
 let g:lightline.subseparator = {
-\   'left': '│', 'right': '│'
+\   'left': '', 'right': ''
 \}
 let g:lightline.tabline = {
 \   'left': [['buffers']],
