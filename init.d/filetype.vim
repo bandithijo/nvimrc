@@ -16,3 +16,6 @@ autocmd FileType vim setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType tex setlocal shiftwidth=2 tabstop=2 conceallevel=0
 au BufRead,BufNewFile *.tex setlocal ft=tex
+
+" For compatibilty bash to sh, because there is no bash filetype
+let g:is_bash = 1
