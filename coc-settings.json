@@ -5,5 +5,9 @@
   },
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "python.linting.pylamaEnabled": false
+  "python.linting.pylamaEnabled": false,
+  "solargraph.completion": true,
+  "solargraph.hover": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true
 }
