@@ -111,4 +111,7 @@ Plug 'wakatime/vim-wakatime'
 " A modern vim plugin for editing LaTeX files
 Plug 'lervag/vimtex'
 
+" A dark color scheme for Vim and vim-airline, inspired by Dark+ in Visual Studio Code
+Plug 'tomasiser/vim-code-dark'
+
 call plug#end()

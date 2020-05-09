@@ -6,7 +6,7 @@ syntax enable
 filetype plugin indent on
 
 " Interface
-colorscheme Tomorrow-Night-Bandit
+colorscheme codedark
 set background=dark
 set incsearch " incremental search aka search as you type
 set hlsearch " highlight search matches
@@ -24,6 +24,7 @@ set nu " turn on line number on selected line
 set relativenumber " turn on line numbers
 set report=0 " tell us when anything is changed
 set ruler " always show current positions along the bottom
+set fillchars+=vert:\| "split character between window"
 set foldmethod=manual
 set foldlevel=0 " default unfold when open a file
 set shortmess=aAtToO " shortens messages to avoid 'press a key' prompt
@@ -38,7 +39,7 @@ hi clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 highlight clear SignColumn
 hi HighlightedyankRegion term=bold ctermfg=0 ctermbg=3
 if &diff " change colorscheme when using vimdiff
-  colorscheme Tomorrow-Night-Bandit
+  colorscheme codedark
 endif
 
 " General
