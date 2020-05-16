@@ -114,4 +114,13 @@ Plug 'lervag/vimtex'
 " A dark color scheme for Vim and vim-airline, inspired by Dark+ in Visual Studio Code
 Plug 'tomasiser/vim-code-dark'
 
+" A preview colours in source code while editing
+Plug 'ap/vim-css-color'
+
+" A Syntax Highlight for Vue.js components
+Plug 'posva/vim-vue'
+
+" A Indent guides on blank lines for Neovim
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 call plug#end()
