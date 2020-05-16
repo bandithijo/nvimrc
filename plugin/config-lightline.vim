@@ -1,7 +1,7 @@
 " LightLine
 
 let g:lightline = {
-\   'colorscheme': 'freebsd',
+\   'colorscheme': 'dwm',
 \   'active': {
 \    'left' :[[ 'mode', 'paste' ],
 \             [ 'gitbranch', 'readonly' ],

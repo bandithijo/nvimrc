@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/bandithijo/.config/dunst'
+let g:netrw_dirhist_0='/home/bandithijo/dex'
+let g:netrw_dirhist_9='/home/bandithijo/doc/notetaking'
 let g:netrw_dirhist_8='/home/bandithijo/.tmux/scripts'
 let g:netrw_dirhist_7='/usr/share/themes/Adwaita/gtk-3.0'
 let g:netrw_dirhist_6='/home/bandithijo/.local/share/applications'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_5='/home/bandithijo/.config/flameshot'
 let g:netrw_dirhist_4='/usr/home/bandithijo/.config/dwm'
 let g:netrw_dirhist_3='/usr/home/bandithijo/.config/neofetch'
 let g:netrw_dirhist_2='/usr/home/bandithijo/.Xresources.d/color'
-let g:netrw_dirhist_1='/usr/home/bandithijo/.config/nvim/.git'
-let g:netrw_dirhist_0='/usr/home/bandithijo/.config/nvim'
-let g:netrw_dirhist_9='/usr/home/bandithijo/.config/bspwm'
