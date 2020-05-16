@@ -14,6 +14,7 @@ autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 conceallevel=0 nofolde
 autocmd FileType liquid setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType vim setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 conceallevel=0
+autocmd FileType vue setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType tex setlocal shiftwidth=2 tabstop=2 conceallevel=0
 au BufRead,BufNewFile *.tex setlocal ft=tex
 
