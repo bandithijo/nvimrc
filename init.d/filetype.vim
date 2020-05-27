@@ -1,11 +1,7 @@
 " FileType
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
-autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 ft=jinja
-autocmd FileType html.django setlocal shiftwidth=2 tabstop=2 ft=jinja
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 conceallevel=0
-autocmd FileType jinja.html setlocal shiftwidth=2 tabstop=2 ft=jinja
-autocmd FileType jinja setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
 autocmd FileType org setlocal shiftwidth=2 tabstop=2 foldmethod=expr nowrap

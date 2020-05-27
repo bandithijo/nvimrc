@@ -64,7 +64,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-liquid'
 
 " A Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
-Plug 'neoclide/coc.nvim', {'do': './install.sh'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" A code-completion engine for Vim
+"Plug 'ycm-core/YouCompleteMe'
 
 " rails.vim: Ruby on Rails power tools
 Plug 'tpope/vim-rails'
@@ -122,5 +125,8 @@ Plug 'posva/vim-vue'
 
 " A Indent guides on blank lines for Neovim
 Plug 'lukas-reineke/indent-blankline.nvim'
+
+" A vim-snipmate default snippets (Previously snipmate-snippets)
+"Plug 'honza/vim-snippets'
 
 call plug#end()

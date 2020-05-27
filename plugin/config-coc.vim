@@ -6,7 +6,7 @@
 "             \ 'coc-lists', 'coc-highlight', 'coc-git', 'coc-emmet',
 "             \ 'coc-yaml', 'coc-tsserver', 'coc-svg', 'coc-solargraph',
 "             \ 'coc-rls', 'coc-python', 'coc-phpls', 'coc-json', 'coc-java',
-"             \ 'coc-html', 'coc-css', 'coc-angular']
+"             \ 'coc-html', 'coc-css', 'coc-angular', 'coc-tsserver']
 
 let g:coc_force_debug = 1
 " Use tab for trigger completion with characters ahead and navigate.

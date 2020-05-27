@@ -12,10 +12,8 @@
 " - rounded [boolean default v:true]: Use rounded border
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8, 'highlight': 'Normal', 'rounded': v:false } }
 
-" In Neovim, you can set up fzf window using a Vim command
-"let g:fzf_layout = { 'window': 'enew' }
-"let g:fzf_layout = { 'window': '-tabnew' }
-"let g:fzf_layout = { 'window': '10new' }
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--info=inline']}), <bang>0)
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -33,23 +31,6 @@ let g:fzf_colors =
 \   'spinner': ['fg', 'Label'],
 \   'header':  ['fg', 'Comment'] }
 
-" let g:fzf_colors =
-" \ { 'fg':         ['fg', 'Normal'],
-" \   'bg':         ['bg', 'Normal'],
-" \   'preview-fg': ['bg', 'Normal'],
-" \   'preview-bg': ['bg', 'Normal'],
-" \   'hl':         ['fg', 'Search'],
-" \   'fg+':        ['bg', 'Search'],
-" \   'bg+':        ['fg', 'Search'],
-" \   'hl+':        ['bg', 'CursorLine'],
-" \   'info':       ['fg', 'Search'],
-" \   'border':     ['fg', 'Normal'],
-" \   'prompt':     ['fg', 'Search'],
-" \   'pointer':    ['fg', 'Search'],
-" \   'marker':     ['fg', 'Search'],
-" \   'spinner':    ['fg', 'Search'],
-" \   'header':     ['fg', 'Search'] }
-
 " Enable per-command history.
 " CTRL-N and CTRL-P will be automatically bound to next-history and
 " previous-history instead of down and up. If you don't like the change,
@@ -66,7 +47,3 @@ function! s:fzf_statusline()
 endfunction
 
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
-
-" preview
-"let  $FZF_DEFAULT_OPTS='--reverse --margin=1,1 --preview-window=right:50% --preview="bat --style=plain --color=never {}"'
-"let  $FZF_DEFAULT_OPTS='--margin=1,1 --preview-window=right:50% --preview="less {}"'

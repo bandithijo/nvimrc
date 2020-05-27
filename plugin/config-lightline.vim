@@ -22,11 +22,9 @@ let g:lightline = {
 \     'filetype': 'LightlineFiletype',
 \   }
 \}
-"  'left': '', 'right': ''
 let g:lightline.separator = {
 \   'left': '', 'right': ''
 \}
-"   'left': '', 'right': ''
 let g:lightline.subseparator = {
 \   'left': '│', 'right': '│'
 \}
@@ -58,7 +56,7 @@ function! LightlineFugitive()
 endfunction
 
 function! LightlineFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) . ' ' : ''
 endfunction
 
 function! LightlineFiletype()
@@ -69,9 +67,9 @@ endfunction
 command! LightlineReload call LightlineReload()
 
 function! LightlineReload()
- call lightline#init()
- call lightline#colorscheme()
- call lightline#update()
+  call lightline#init()
+  call lightline#colorscheme()
+  call lightline#update()
 endfunction
 
 set showtabline=2  " Show tabline

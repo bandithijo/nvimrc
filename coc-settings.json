@@ -9,5 +9,11 @@
   "solargraph.completion": true,
   "solargraph.hover": true,
   "solargraph.autoformat": true,
-  "solargraph.formatting": true
+  "solargraph.formatting": true,
+  "snippets.extends": {
+    "cpp": ["c"],
+    "javascriptreact": ["javascript"],
+    "typescript": ["javascript"],
+    "liquid": ["liquid", "html"]
+  }
 }

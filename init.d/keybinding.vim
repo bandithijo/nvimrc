@@ -14,7 +14,7 @@ nmap <leader>ed :e ~/dex/bandithijo.com/_drafts/2018-01-01-format-penulisan-post
 nmap <leader>eu :e ~/.vim/plugged/utl.vim/plugin/utl_rc.vim<cr>
 
 " for edit utl.vim
-nmap <leader>eo :e ~/.vim/plugged/vim-orgmode/doc/orgguide.txt<cr>
+nmap <leader>eo :e ~/.local/share/nvim/plugged/vim-orgmode/doc/orgguide.txt<cr>
 
 " source vimrc
 nmap <leader>es :so $MYVIMRC
@@ -106,8 +106,8 @@ nmap <F9> :PymodeLintToggle<cr>
 
 " fzf.vim
 nmap <C-p> :Buffers<cr>
-nmap <C-f> :FZF<cr>
-"nmap <C-f> :Files<cr>
+"nmap <C-f> :FZF<cr>
+nmap <C-f> :Files<cr>
 
 " disable arrow keys on insert mode and make up & down arrow as line bubbling
 "no <down> ddp
