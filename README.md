@@ -5,6 +5,5 @@ Modular NeoVim configuration inspired by [@mnambila](https://github.com/mnabila/
 ## Install
 
 ```
-$ cd $HOME/.config
-$ git clone https://github.com/bandithijo/nvimrc nvim
+$ git clone https://github.com/bandithijo/nvimrc $HOME/.config/nvim
 ```
