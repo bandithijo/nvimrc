@@ -126,7 +126,4 @@ Plug 'posva/vim-vue'
 " A Indent guides on blank lines for Neovim
 Plug 'lukas-reineke/indent-blankline.nvim'
 
-" A vim-snipmate default snippets (Previously snipmate-snippets)
-"Plug 'honza/vim-snippets'
-
 call plug#end()
