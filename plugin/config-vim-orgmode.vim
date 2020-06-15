@@ -18,3 +18,7 @@ let g:org_todo_keyword_faces = [
             \ ['KNOWNCAUSE', [':foreground 3']],
             \ ['FIXED', [':foreground 2']],
             \ ['CANCELED', [':foreground red']]]
+
+" Custom conceal
+syntax match org_list_checkbox "\[\ \]" conceal cchar=
+syntax match org_list_checkbox "\[X\]" conceal cchar=

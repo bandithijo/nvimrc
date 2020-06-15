@@ -126,4 +126,7 @@ Plug 'posva/vim-vue'
 " A Indent guides on blank lines for Neovim
 Plug 'lukas-reineke/indent-blankline.nvim'
 
+" A solid language pack for Vim.
+Plug 'sheerun/vim-polyglot'
+
 call plug#end()
