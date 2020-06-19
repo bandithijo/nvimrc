@@ -80,3 +80,15 @@ autocmd BufReadPost *
 " Make views automatic
 autocmd BufWinLeave *.* mkview!
 "autocmd BufWinEnter *.* silent loadview
+
+" terminal
+:tnoremap <Esc> <C-\><C-n>
+augroup custom_term
+    autocmd!
+"    autocmd TermOpen * setlocal bufhidden=hide
+    autocmd TermOpen term://* startinsert
+augroup END
+function! Term()
+  bot 15split | terminal
+endfunction
+command! Terminal :call Term()
