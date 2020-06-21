@@ -24,6 +24,11 @@ nmap <leader>n :bn<cr>
 nmap <leader>p :bp<cr>
 nnoremap <leader>d :bp<cr>:bd! #<cr>
 
+" for move & close tabs
+nmap <leader><S-n> :tabnext<cr>
+nmap <leader><S-p> :tabprev<cr>
+nnoremap <leader><S-d> :tabclose<cr>
+
 " this key combination gets rid of the search highlights
 nmap <leader><space> :noh<cr>
 

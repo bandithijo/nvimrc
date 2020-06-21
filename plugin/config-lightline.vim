@@ -10,6 +10,10 @@ let g:lightline = {
 \             [ 'percent' ],
 \             [ 'filetype', 'fileencoding', 'fileformat' ] ]
 \   },
+\   'tab': {
+\     'active': ['tabnum'],
+\     'inactive': ['tabnum']
+\   },
 \   'component': {
 \     'lineinfo': ' %3l:%-2v',
 \     'filename': '%<%f'
@@ -30,10 +34,10 @@ let g:lightline.subseparator = {
 \}
 let g:lightline.tabline = {
 \   'left': [['buffers']],
-\   'right': [['string1'], ['string2']]
+\   'right': [['string1'], ['string2'], ['tabs']]
 \}
 let g:lightline.component_expand = {
-\   'buffers': 'lightline#bufferline#buffers'
+\   'buffers': 'lightline#bufferline#buffers',
 \}
 let g:lightline.component_type = {
 \   'buffers': 'tabsel'
