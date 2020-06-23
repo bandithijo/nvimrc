@@ -34,10 +34,13 @@ let g:lightline.subseparator = {
 \}
 let g:lightline.tabline = {
 \   'left': [['buffers']],
-\   'right': [['string1'], ['string2'], ['tabs']]
+\   'right': [['string1'], ['string2'], ['tabs'], ['string3']]
 \}
 let g:lightline.component_expand = {
 \   'buffers': 'lightline#bufferline#buffers',
+\   'string1': 'String1',
+\   'string2': 'String2',
+\   'string3': 'String3'
 \}
 let g:lightline.component_type = {
 \   'buffers': 'tabsel'
@@ -65,6 +68,18 @@ endfunction
 
 function! LightlineFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! String1()
+  return 'BANDITHIJO'
+endfunction
+
+function! String2()
+  return 'TABS'
+endfunction
+
+function! String3()
+  return 'BUFFERS'
 endfunction
 
 " autoreload
