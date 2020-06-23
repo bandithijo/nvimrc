@@ -34,13 +34,13 @@ let g:lightline.subseparator = {
 \}
 let g:lightline.tabline = {
 \   'left': [['buffers']],
-\   'right': [['string1'], ['string2'], ['tabs'], ['string3']]
+\   'right': [['string1'], ['string2', 'smarttabs']]
 \}
 let g:lightline.component_expand = {
 \   'buffers': 'lightline#bufferline#buffers',
 \   'string1': 'String1',
 \   'string2': 'String2',
-\   'string3': 'String3'
+\   'smarttabs': 'SmartTabsIndicator'
 \}
 let g:lightline.component_type = {
 \   'buffers': 'tabsel'
@@ -75,11 +75,13 @@ function! String1()
 endfunction
 
 function! String2()
-  return 'TABS'
+  return 'BUFFERS'
 endfunction
 
-function! String3()
-  return 'BUFFERS'
+function! SmartTabsIndicator()
+  let tabs = lightline#tab#tabnum(tabpagenr())
+  let tab_total = tabpagenr('$')
+  return tabpagenr('$') > 1 ? ('TABS ' . tabs . '/' . tab_total) : ''
 endfunction
 
 " autoreload
