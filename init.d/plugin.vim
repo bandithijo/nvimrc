@@ -129,4 +129,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 " A solid language pack for Vim.
 Plug 'sheerun/vim-polyglot'
 
+" A trailing whitespace component for the lightline vim plugin
+Plug 'maximbaz/lightline-trailing-whitespace'
+
 call plug#end()

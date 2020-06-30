@@ -45,9 +45,9 @@ endif
 " General
 set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
-set backupdir=~/.local/share/nvim/tmp/backup " where to put backup files
-set directory=~/.local/share/nvim/tmp/swap " directory to place swap files in
-set undodir=~/.local/share/nvim/tmp/undo " directory to place undo files in
+set backupdir=~/.vim/backup " where to put backup files
+set directory=~/.vim/swap " directory to place swap files in
+set undodir=~/.vim/undo " directory to place undo files in
 set undofile " make undo possible after the file is closed and reopened
 set clipboard=unnamedplus " share clipboard (unnamedplus)
 set hidden " you can change buffers without saving

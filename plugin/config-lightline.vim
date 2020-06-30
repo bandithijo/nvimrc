@@ -6,7 +6,8 @@ let g:lightline = {
 \    'left' :[[ 'mode', 'paste' ],
 \             [ 'gitbranch', 'readonly' ],
 \             [ 'filename', 'modified' ]],
-\    'right':[[ 'lineinfo' ],
+\    'right':[[ 'trailing' ],
+\             [ 'lineinfo' ],
 \             [ 'percent' ],
 \             [ 'filetype', 'fileencoding', 'fileformat' ] ]
 \   },
@@ -40,10 +41,12 @@ let g:lightline.component_expand = {
 \   'buffers': 'lightline#bufferline#buffers',
 \   'string1': 'String1',
 \   'string2': 'String2',
-\   'smarttabs': 'SmartTabsIndicator'
+\   'smarttabs': 'SmartTabsIndicator',
+\   'trailing': 'lightline#trailing_whitespace#component'
 \}
 let g:lightline.component_type = {
-\   'buffers': 'tabsel'
+\   'buffers': 'tabsel',
+\   'trailing': 'warning'
 \}
 
 function! LightlineModified()
@@ -92,6 +95,8 @@ function! LightlineReload()
   call lightline#colorscheme()
   call lightline#update()
 endfunction
+
+let g:lightline#trailing_whitespace#indicator = "•"
 
 set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline

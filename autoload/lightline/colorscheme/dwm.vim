@@ -7,7 +7,7 @@
 
 let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ ['white', 'darkestblue', 'bold'], ['white', 'gray4'] ]
-let s:p.normal.right    = [ ['gray3', 'gray10', 'bold'], ['gray9', 'gray4'], ['gray8', 'gray2'] ]
+let s:p.normal.right    = [ ['gray3', 'gray10', 'bold'], ['gray2', 'gray10', 'bold'], ['gray9', 'gray4'] ]
 let s:p.inactive.right  = [ ['gray1', 'gray4'] ]
 let s:p.inactive.left   = [ ['gray1', 'gray4', 'bold'] ]
 let s:p.inactive.middle = [ ['gray1', 'gray4'] ]
@@ -23,7 +23,7 @@ let s:p.tabline.left    = [ ['gray9', 'gray4'] ]
 let s:p.tabline.tabsel  = [ ['gray3', 'gray10', 'bold'] ]
 let s:p.tabline.middle  = [ ['gray4', 'gray2'] ]
 let s:p.tabline.right   = [ ['gray9', 'gray3', 'bold'] ]
-let s:p.normal.error    = [ ['gray9', 'brightestred'] ]
-let s:p.normal.warning  = [ ['gray1', 'yellow'] ]
+let s:p.normal.error    = [ ['gray1', 'brightestred'] ]
+let s:p.normal.warning  = [ ['white', 'orange'] ]
 
 let g:lightline#colorscheme#dwm#palette = lightline#colorscheme#fill(s:p)

@@ -7,7 +7,7 @@
 
 let s:term_red = 204
 let s:term_green = 114
-let s:term_yellow = 180
+let s:term_yellow = 3
 let s:term_blue = 39
 let s:term_purple = 170
 let s:term_white = 145
