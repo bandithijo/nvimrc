@@ -50,7 +50,7 @@ let g:lightline.component_type = {
 \}
 
 function! LightlineModified()
-  return &modified ? '●' : ''
+  return &modified ? '' : ''
 endfunction
 
 function! LightlineReadonly()
@@ -74,17 +74,17 @@ function! LightlineFiletype()
 endfunction
 
 function! String1()
-  return 'BANDITHIJO'
+  return ' BANDITHIJO'
 endfunction
 
 function! String2()
-  return 'BUFFERS'
+  return 'BUFFERS'
 endfunction
 
 function! SmartTabsIndicator()
   let tabs = lightline#tab#tabnum(tabpagenr())
   let tab_total = tabpagenr('$')
-  return tabpagenr('$') > 1 ? ('TABS ' . tabs . '/' . tab_total) : ''
+  return tabpagenr('$') > 1 ? ('TABS ' . tabs . '/' . tab_total) : ''
 endfunction
 
 " autoreload
@@ -96,7 +96,7 @@ function! LightlineReload()
   call lightline#update()
 endfunction
 
-let g:lightline#trailing_whitespace#indicator = "•"
+let g:lightline#trailing_whitespace#indicator = ""
 
 set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline
