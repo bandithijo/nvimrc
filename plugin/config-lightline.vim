@@ -15,6 +15,16 @@ let g:lightline = {
 \     'active': ['tabnum'],
 \     'inactive': ['tabnum']
 \   },
+\   'tabline': {
+\   'left': [['buffers']],
+\   'right': [['string1'], ['string2', 'smarttabs']]
+\   },
+\   'separator': {
+\     'left': '', 'right': ''
+\   },
+\   'subseparator': {
+\   'left': '│', 'right': '│'
+\   },
 \   'component': {
 \     'lineinfo': ' %3l:%-2v',
 \     'filename': '%<%f'
@@ -25,28 +35,18 @@ let g:lightline = {
 \     'modified': 'LightlineModified',
 \     'fileformat': 'LightlineFileformat',
 \     'filetype': 'LightlineFiletype',
-\   }
-\}
-let g:lightline.separator = {
-\   'left': '', 'right': ''
-\}
-let g:lightline.subseparator = {
-\   'left': '│', 'right': '│'
-\}
-let g:lightline.tabline = {
-\   'left': [['buffers']],
-\   'right': [['string1'], ['string2', 'smarttabs']]
-\}
-let g:lightline.component_expand = {
-\   'buffers': 'lightline#bufferline#buffers',
-\   'string1': 'String1',
-\   'string2': 'String2',
-\   'smarttabs': 'SmartTabsIndicator',
-\   'trailing': 'lightline#trailing_whitespace#component'
-\}
-let g:lightline.component_type = {
+\   },
+\   'component_expand': {
+\     'buffers': 'lightline#bufferline#buffers',
+\     'string1': 'String1',
+\     'string2': 'String2',
+\     'smarttabs': 'SmartTabsIndicator',
+\     'trailing': 'lightline#trailing_whitespace#component'
+\   },
+\   'component_type': {
 \   'buffers': 'tabsel',
 \   'trailing': 'warning'
+\   }
 \}
 
 function! LightlineModified()
@@ -74,7 +74,7 @@ function! LightlineFiletype()
 endfunction
 
 function! String1()
-  return ' BANDITHIJO'
+  return ' BANDITHIJO.GITHUB.IO'
 endfunction
 
 function! String2()
