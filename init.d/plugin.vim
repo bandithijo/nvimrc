@@ -132,4 +132,7 @@ Plug 'sheerun/vim-polyglot'
 " A trailing whitespace component for the lightline vim plugin
 Plug 'maximbaz/lightline-trailing-whitespace'
 
+" A surround.vim: quoting/parenthesizing made simple
+Plug 'tpope/vim-surround'
+
 call plug#end()
