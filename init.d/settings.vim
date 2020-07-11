@@ -1,4 +1,5 @@
 " Basic
+
 set encoding=UTF-8
 set t_Co=256                   " set terminal 256 color
 set nocompatible               " be iMproved, required
@@ -38,6 +39,7 @@ set cursorline " visually mark current line
 hi clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 highlight clear SignColumn
 hi HighlightedyankRegion term=bold ctermfg=0 ctermbg=3
+
 if &diff " change colorscheme when using vimdiff
   colorscheme codedark
 endif
@@ -45,9 +47,10 @@ endif
 " General
 set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
-set backupdir=~/.vim/backup " where to put backup files
-set directory=~/.vim/swap " directory to place swap files in
-set undodir=~/.vim/undo " directory to place undo files in
+set backupdir=~/.local/share/nvim/tmp/backup " where to put backup files
+set directory=~/.local/share/nvim/tmp/swap " directory to place swap files in
+set viewdir=~/.local/share/nvim/tmp/view " directory to place view files in
+set undodir=~/.local/share/nvim/tmp/undo " directory to place undo files in
 set undofile " make undo possible after the file is closed and reopened
 set clipboard=unnamedplus " share clipboard (unnamedplus)
 set hidden " you can change buffers without saving
@@ -67,10 +70,6 @@ set splitbelow splitright
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
 au FocusGained,BufEnter * :checktime  " auto update trigger on buffer change or terminal focus
 
-" for italic on tmux
-set t_ZH=[3m
-set t_ZR=[23m
-
 " restore cursor position when opening file
 autocmd BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
@@ -81,14 +80,20 @@ autocmd BufReadPost *
 autocmd BufWinLeave *.* mkview!
 "autocmd BufWinEnter *.* silent loadview
 
-" terminal
-:tnoremap <Esc> <C-\><C-n>
-augroup custom_term
-    autocmd!
-"    autocmd TermOpen * setlocal bufhidden=hide
-    autocmd TermOpen term://* startinsert
-augroup END
-function! Term()
-  bot 15split | terminal
-endfunction
-command! Terminal :call Term()
+" for italic on tmux
+set t_ZH=[3m
+set t_ZR=[23m
+
+" Share configuration between vim and neovim
+let g:is_nvim = has('nvim')
+let g:is_vim8 = v:version >= 800 ? 1 : 0
+
+" Reuse nvim's runtimepath and packpath in vim
+if !g:is_nvim && g:is_vim8
+  set runtimepath-=~/.vim
+    \ runtimepath^=~/.local/share/nvim/site runtimepath^=~/.vim
+    \ runtimepath-=~/.vim/after
+    \ runtimepath+=~/.local/share/nvim/site/after runtimepath+=~/.vim/after
+    \ runtimepath^=~/.vim/view
+  let &packpath = &runtimepath
+endif
