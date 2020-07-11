@@ -3,23 +3,25 @@
 if [ ! -f "$HOME/.config/nvim/vimrc" ]; then
     cd $HOME/.config/nvim
 
+    # neovim config with vim compatibilty runtime
+    ln -sf ./init.vim ~/.config/nvim/vimrc
+    ln -sf ./.config/nvim ~/.vim
+    echo "DONE: Add symlink for Vimrc & ~/.Vim"
+
     # Create the temp dir
     mkdir -p $HOME/.local/share/nvim/tmp/backup \
     $HOME/.local/share/nvim/tmp/undo \
     $HOME/.local/share/nvim/tmp/swap \
     $HOME/.local/share/nvim/tmp/view
+    echo "DONE: Create tmp directory on ~/.local/share/nvim"
 
-    # neovim config with vim compatibilty runtime
-    ln -sf ./init.vim ~/.config/nvim/vimrc
-    ln -sf ./.config/nvim ~/.vim
-
-    #if command -v nvim &> /dev/null; then
-    #        nvim -c ':PlugInstall'
-    #else
-    #        vim -c ':PlugInstall'
-    #fi
-
-    echo "DONE! Now, you can open nvim and vim with same file config."
+    if command -v nvim &> /dev/null; then
+            nvim -c ':PlugInstall' -cqa
+    else
+            vim -c ':PlugInstall' -cqa
+    fi
+    echo "DONE: All plugin installed"
+    echo "Now, you can open nvim and vim with same file config."
 else
     echo "You have run this script!"
 fi

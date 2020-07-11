@@ -24,25 +24,7 @@ Run `pre_install` script.
 $ ./pre_install
 ```
 
-Open NeoVim or Vim.
-
-```
-$ nvim
-```
-
-or,
-
-```
-$ vim
-```
-
-Run vim-plug install (This repo included `plug.vim`).
-
-```
-:PlugInstall
-```
-
-Wait until all plugin download and installtion done.
+Wait until all plugin download and installation done.
 
 Enjoy!
 
