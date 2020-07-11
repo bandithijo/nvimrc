@@ -115,22 +115,20 @@ nmap <C-p> :Buffers<cr>
 nmap <C-f> :Files<cr>
 
 " disable arrow keys on insert mode and make up & down arrow as line bubbling
-"no <down> ddp
-"nmap <down> ]e " handled by vim-unimpaired
-" no <down> <Nop>
-" no <left> <Nop>
-" no <right> <Nop>
-" no <up> <Nop>
-"no <up> ddkP
-"nmap <up> [e " handled by vim-unimpaired
-" ino <down> <Nop>
-" ino <left> <Nop>
-" ino <right> <Nop>
-" ino <up> <Nop>
-" vno <down> <Nop>
-" vno <left> <Nop>
-" vno <right> <Nop>
-" vno <up> <Nop>
+"no <down> <Nop>
+"no <left> <Nop>
+"no <right> <Nop>
+"no <up> <Nop>
+"ino <down> <Nop>
+"ino <left> <Nop>
+"ino <right> <Nop>
+"ino <up> <Nop>
+"vno <down> <Nop>
+"vno <left> <Nop>
+"vno <right> <Nop>
+"vno <up> <Nop>
 
 " prevent Vim scrolling when splitting a window
 nnoremap <C-W>s Hmx`` \|:split<CR>`xzt``
+
+nmap <leader>cd :cd %:p:h<cr>
