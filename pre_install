@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [ ! -f "$HOME/.config/nvim/vimrc" ]; then
+    cd $HOME/.config/nvim
+
+    # Create the temp dir
+    mkdir -p $HOME/.local/share/nvim/tmp/backup \
+    $HOME/.local/share/nvim/tmp/undo \
+    $HOME/.local/share/nvim/tmp/swap \
+    $HOME/.local/share/nvim/tmp/view
+
+    # neovim config with vim compatibilty runtime
+    ln -sf ./init.vim ~/.config/nvim/vimrc
+    ln -sf ./.config/nvim ~/.vim
+
+    #if command -v nvim &> /dev/null; then
+    #        nvim -c ':PlugInstall'
+    #else
+    #        vim -c ':PlugInstall'
+    #fi
+
+    echo "DONE! Now, you can open nvim and vim with same file config."
+else
+    echo "You have run this script!"
+fi
