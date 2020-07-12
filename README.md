@@ -24,9 +24,13 @@ Run `pre_install` script.
 $ ./pre_install
 ```
 
-Wait until all plugin download and installation done.
+Please wait until all plugin downloaded and all installation process completed.
 
 Enjoy!
+
+## Note
+
+I'm using WakaTime Vim Metrics. After all process installation completed, when you open vim/nvim, it will ask about your WakaTime **Secret API Key**. Ignore it, or enter your secret API key if you have.
 
 
 ## Documentation
