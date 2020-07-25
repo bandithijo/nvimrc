@@ -10,10 +10,10 @@
 " Optional:
 " - highlight [string default 'Comment']: Highlight group for border
 " - rounded [boolean default v:true]: Use rounded border
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8, 'highlight': 'Normal', 'rounded': v:false } }
+" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8, 'highlight': 'Normal', 'rounded': v:false } }
 
-command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--info=inline']}), <bang>0)
+" command! -bang -nargs=? -complete=dir Files
+"     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--info=inline']}), <bang>0)
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -38,12 +38,12 @@ let g:fzf_colors =
 "let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 " Custom statusline
-function! s:fzf_statusline()
+" function! s:fzf_statusline()
   " Override statusline as you like
-  highlight fzf1 ctermfg=0 ctermbg=15
-  highlight fzf2 ctermfg=0 ctermbg=15
-  highlight fzf3 ctermfg=0 ctermbg=15
-  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
-endfunction
+  " highlight fzf1 ctermfg=0 ctermbg=15
+  " highlight fzf2 ctermfg=0 ctermbg=15
+  " highlight fzf3 ctermfg=0 ctermbg=15
+  " setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
+" endfunction
 
-autocmd! User FzfStatusLine call <SID>fzf_statusline()
+" autocmd! User FzfStatusLine call <SID>fzf_statusline()
