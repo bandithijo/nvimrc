@@ -55,7 +55,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'plasticboy/vim-markdown'
 
 " A markdown preview plugin for (neo)vim
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more.
 Plug 'ryanoasis/vim-devicons'
