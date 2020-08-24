@@ -135,4 +135,13 @@ Plug 'maximbaz/lightline-trailing-whitespace'
 " A surround.vim: quoting/parenthesizing made simple
 Plug 'tpope/vim-surround'
 
+" A Vim alignment plugin
+Plug 'junegunn/vim-easy-align'
+
+" A The Vim RuboCop plugin runs RuboCop and displays the results in Vim
+Plug 'ngmy/vim-rubocop'
+
+" A Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
+Plug 'dense-analysis/ale'
+
 call plug#end()

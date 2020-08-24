@@ -3,8 +3,9 @@
     "eruby": "html",
     "js": "javascript"
   },
-  "python.linting.pylintEnabled": true,
+  "python.jediEnabled": false,
   "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
   "python.linting.pylamaEnabled": false,
   "solargraph.completion": true,
   "solargraph.hover": true,

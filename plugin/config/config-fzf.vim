@@ -1,5 +1,8 @@
 " FZF
 
+" Always enable preview window on the right with 60% width
+"let g:fzf_preview_window = ''
+
 " Default fzf layout
 " - down / up / left / right
 "let g:fzf_layout = { 'down': '~50%' }
@@ -10,10 +13,10 @@
 " Optional:
 " - highlight [string default 'Comment']: Highlight group for border
 " - rounded [boolean default v:true]: Use rounded border
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8, 'highlight': 'Normal', 'rounded': v:false } }
+let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.8, 'highlight': 'Normal', 'rounded': v:false } }
 
-command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--info=inline']}), <bang>0)
+"command! -bang -nargs=? -complete=dir Files
+"    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--info=inline']}), <bang>0)
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =

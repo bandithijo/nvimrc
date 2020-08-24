@@ -39,3 +39,5 @@ let g:vimtex_quickfix_latexlog = {
       \   'titlesec'    : 1,
       \ },
       \}
+
+let g:tex_flavor = "latex"
