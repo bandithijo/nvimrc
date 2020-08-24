@@ -144,4 +144,7 @@ Plug 'ngmy/vim-rubocop'
 " A Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
 Plug 'dense-analysis/ale'
 
+" A Displays the results of every line of code in your file
+Plug 'hwartig/vim-seeing-is-believing'
+
 call plug#end()
