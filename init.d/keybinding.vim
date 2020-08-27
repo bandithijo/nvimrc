@@ -131,4 +131,17 @@ nmap <C-f> :Files<cr>
 " prevent Vim scrolling when splitting a window
 nnoremap <C-W>s Hmx`` \|:split<CR>`xzt``
 
+" change current directory with open buffer as refference
 nmap <leader>cd :cd %:p:h<cr>
+
+" increment visual select with: Visual block then g C-a
+" demo: https://t.me/VimID/21773
+function! Incr()
+  let a = line('.') - line("'<")
+  let c = virtcol("'<")
+  if a > 0
+    execute 'normal! '.c.'|'.a."\<C-a>"
+  endif
+  normal `<
+endfunction
+vnoremap <C-a> :call Incr()<CR>
