@@ -13,4 +13,8 @@ augroup seeingIsBelievingSettings
 
   autocmd FileType ruby nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
   autocmd FileType ruby imap <buffer> <F5> <Plug>(seeing-is-believing-run)
+
+  autocmd FileType ruby nmap <buffer> <F6> :%s/\s\+# =>.*$\\|^#\s[>!\~]>\(\s.*\)\?$//g \| :%s#\($\n\s*\)\+\%$##<CR>
+  autocmd FileType ruby xmap <buffer> <F6> :s/\s\+# =>.*$\\|^#\s[>!\~]>\(\s.*\)\?$//g \| :'<,'>s#\($\n\s*\)\+\%$##<CR>
 augroup END
+
