@@ -63,8 +63,8 @@ map <leader>C :w! \| !compiler <c-r>%<CR>
 tnoremap <Esc> <C-\><C-n>
 
 " for search
-nnoremap / /\v
-vnoremap / /\v
+"nnoremap / /\v
+"vnoremap / /\v
 
 " keep search matches in the middle of the window.
 nnoremap n nzzzv
@@ -145,3 +145,15 @@ function! Incr()
   normal `<
 endfunction
 vnoremap <C-a> :call Incr()<CR>
+
+" toggle for markdown checkbox with <leader>cc
+"au FileType markdown nmap <leader>cc <S-v>/\%V[<cr><esc><right>:call CheckStr()<cr>:nohlsearch<cr>:<backspace>
+"function! CheckStr()
+"  if matchstr(getline('.'), '\%' . col('.') . 'c.') == 'x'
+"    normal! r \ltesc>
+"  else
+"    normal! rx
+"  endif
+"endfunction
+" toggle for markdown checkbox with <leader>tt remap to <leader>cc
+au FileType markdown map <silent> <leader>cc :call checkbox#ToggleCB()<cr>
