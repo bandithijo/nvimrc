@@ -33,6 +33,13 @@ let g:mkdp_open_ip = ''
 
 " specify browser to open preview page
 " default: ''
+"if executable('qutebrowser')
+"  let g:mkdp_browser = 'qutebrowser'
+"elseif executable('firefox')
+"  let g:mkdp_browser = 'firefox'
+"else
+"  let g:mkdp_browser = ''
+"endif
 let g:mkdp_browser = ''
 
 " set to 1, echo preview page url in command line when open preview page

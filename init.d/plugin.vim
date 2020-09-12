@@ -144,7 +144,13 @@ Plug 'ngmy/vim-rubocop'
 " A Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
 Plug 'dense-analysis/ale'
 
+" A Vim plugin for quick opening plugin's page on Github
+Plug 'xvadim/open_plugin_page'
+
 " A Displays the results of every line of code in your file
 Plug 'hwartig/vim-seeing-is-believing'
+
+" A The interactive scratchpad for hackers.
+"Plug 'metakirby5/codi.vim'
 
 call plug#end()

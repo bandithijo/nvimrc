@@ -20,10 +20,10 @@ let g:lightline = {
 \   'right': [['string1'], ['string2', 'smarttabs']]
 \   },
 \   'separator': {
-\     'left': '', 'right': ''
+\     'left': '', 'right': ''
 \   },
 \   'subseparator': {
-\   'left': '', 'right': ''
+\   'left': '', 'right': ''
 \   },
 \   'component': {
 \     'lineinfo': ' %3l:%-2v',

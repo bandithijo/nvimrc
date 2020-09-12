@@ -36,6 +36,19 @@
   font-weight: 600;
 }
 
+hr.footer {
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+}
+
+#footer-box .alignl {
+	float: left;
+}
+#footer-box .alignr {
+	float: right;
+}
+
 header#page-header {
   display: none;
 }
@@ -135,11 +148,13 @@ header#page-header {
 }
 .markdown-body ol ul,
 .markdown-body ul ul {
-  list-style-type: circle;
+  /* list-style-type: circle; */
+  list-style-type: disc;
 }
 .markdown-body ol ul ul,
 .markdown-body ul ul ul {
-  list-style-type: square;
+  /* list-style-type: square; */
+  list-style-type: disc;
 }
 .markdown-body ol {
   list-style-type: decimal;
@@ -248,7 +263,7 @@ header#page-header {
 .task-list-item input {
   font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   /* margin: 0 0.35em 0.25em -1.6em; */
-  margin: 0 0 0.25em -1.6em;
+  margin: 0 0.4em 0.25em -1.6em;
   vertical-align: middle;
 }
 .task-list-item input[disabled] {
