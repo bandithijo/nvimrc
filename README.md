@@ -36,3 +36,7 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 ## Documentation
 
 [BanditHijo.GitHub.io: Konfigurasi Vimrc yang Modular](https://bandithijo.github.io/blog/konfigurasi-vimrc-yang-modular)
+
+## Keybinds
+
+*Under contruction...*
