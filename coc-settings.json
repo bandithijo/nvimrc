@@ -1,6 +1,7 @@
 {
   "emmet.includeLanguages": {
     "eruby": "html",
+    "liquid": "html",
     "js": "javascript"
   },
   "python.jediEnabled": false,
@@ -15,7 +16,7 @@
     "cpp": ["c"],
     "javascriptreact": ["javascript"],
     "typescript": ["javascript"],
-    "liquid": ["liquid", "html"]
+    "liquid": ["markdown"]
   },
   "languageserver": {
     "ccls": {
