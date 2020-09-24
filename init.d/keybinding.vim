@@ -30,10 +30,10 @@ nmap <leader><S-p> :tabprev<cr>
 nnoremap <leader><S-d> :tabclose<cr>
 
 " this key combination gets rid of the search highlights
-nmap <leader><space> :noh<cr>
+nmap <leader>nh :noh<cr>
 
 " for clear highlight search
-nmap <leader><space> :nohlsearch<cr>
+nmap <leader>nh :nohlsearch<cr>
 
 " Ctags
 nmap <leader>g <C-]>
