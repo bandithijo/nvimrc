@@ -59,3 +59,9 @@ if !g:is_nvim && g:is_vim8
     \ runtimepath^=~/.vim/view
   let &packpath = &runtimepath
 endif
+
+" Redrawtime for LSP (default 2000)
+" Time in milliseconds for redrawing the display.
+" Applies to 'hlsearch', 'inccommand', :match highlighting and
+" syntax highlighting.
+set redrawtime=5000
