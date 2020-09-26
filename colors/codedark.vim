@@ -234,7 +234,8 @@ call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
 
 call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
 
-call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
+" call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
+call <sid>hi('Todo', s:cdRed, s:cdNone, 'bold', {})
 
 " Markdown:
 call <sid>hi('markdownBold', s:cdBlue, {}, 'bold', {})
