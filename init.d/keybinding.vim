@@ -7,17 +7,8 @@ let maplocalleader = ','
 " for edit my .vimrc
 nmap <leader>ev :NERDTree ~/.config/nvim/<cr>
 
-" for edit load my ssg blog writing guide (petunjuk penulisan)
-nmap <leader>ed :e ~/dex/bandithijo.com/_drafts/2018-01-01-format-penulisan-post.md<cr>
-
-" for edit utl.vim
-nmap <leader>eu :e ~/.vim/plugged/utl.vim/plugin/utl_rc.vim<cr>
-
-" for edit utl.vim
-nmap <leader>eo :e ~/.local/share/nvim/plugged/vim-orgmode/doc/orgguide.txt<cr>
-
 " source vimrc
-nmap <leader>es :so $MYVIMRC
+nmap <leader>so :so $MYVIMRC<cr>
 
 " for move & delete buffer
 nmap <leader>n :bn<cr>
@@ -34,9 +25,6 @@ nmap <leader>nh :noh<cr>
 
 " for clear highlight search
 nmap <leader>nh :nohlsearch<cr>
-
-" Ctags
-nmap <leader>g <C-]>
 
 " strip all trailing whitespace in the current file
 nmap <leader>W :StripWhitespace<cr>
@@ -81,9 +69,6 @@ vnoremap <F1> <ESC>
 " toggle NerdTree plugin
 nmap <F12> :NERDTreeToggle<cr>
 
-" toggle vim-minimap
-"let g:minimap_toggle='<F10>'
-
 " for move focus to each split
 nmap <C-h> <C-w><C-h>
 nmap <C-j> <C-w><C-j>
@@ -100,6 +85,9 @@ cmap Q qa
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
 
+" taglist for org-mode
+autocmd FileType org nmap <buffer> <F11> :TlistToggle<cr>
+
 " toggle Tagbar plugin
 nmap <F11> :TagbarToggle<cr>
 
@@ -107,7 +95,7 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " toggle PymodeLintToggle
-nmap <F9> :PymodeLintToggle<cr>
+"autocmd FileType python nmap <buffer> <F9> :PymodeLintToggle<cr>
 
 " fzf.vim
 nmap <C-p> :Buffers<cr>
