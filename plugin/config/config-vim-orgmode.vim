@@ -26,8 +26,15 @@ let g:org_todo_keyword_faces = [
       \ ]
 
 " Custom conceal for vim-orgmode
-"au FileType org syntax match org_list_checkbox '\[\ \]' conceal cchar=
-"au FileType org syntax match org_list_checkbox '\[X\]'  conceal cchar=
-"au FileType org syntax match org_heading_shade_leading_stars '\*' conceal cchar=
-"au FileType org syntax match org_heading_shade_leading_stars '*\*' conceal cchar=
-"au FileType org syntax match org_heading_shade_leading_stars '*\*\*' conceal cchar=
+"function CustomVimOrgModeConcealChar()
+"  syntax match org_list_checkbox '\[\ \]' conceal cchar=
+"  syntax match org_list_checkbox '\[X\]'  conceal cchar=
+"  syntax match org_heading_shade_leading_stars '\*' conceal cchar=
+"  syntax match org_heading_shade_leading_stars '*\*' conceal cchar=
+"  syntax match org_heading_shade_leading_stars '*\*\*' conceal cchar=
+"endfunction
+
+"augroup CustomVimOrgModeConcealChar
+"  au!
+"  au FileType org call CustomVimOrgModeConcealChar()
+"augroup END
