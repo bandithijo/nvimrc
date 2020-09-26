@@ -15,7 +15,7 @@ let g:org_todo_keywords = [
       \ ['CANCELED(c)']
       \ ]
 let g:org_todo_keyword_faces = [
-      \ ['TODO', [':foreground 4']],
+      \ ['TODO', [':foreground 1']],
       \ ['WAITING', [':foreground 3']],
       \ ['DONE', [':foreground 2']],
       \ ['REPORT', [':foreground 3']],
