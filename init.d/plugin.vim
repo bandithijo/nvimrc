@@ -101,6 +101,12 @@ Plug 'tpope/vim-speeddating'
 
 Plug 'chrisbra/NrrwRgn'
 
+" A calendar vimscript
+Plug 'mattn/calendar-vim'
+
+" Source code browser plugin for Vim
+Plug 'yegappan/taglist'
+
 " Univeral Text Linking - Execute URLs, footnotes, open emails, organize ideas
 Plug 'vim-scripts/utl.vim'
 
