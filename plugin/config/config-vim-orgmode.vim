@@ -1,7 +1,7 @@
 " vim-orgmode
 
 let g:org_indent = 1
-let g:org_aggressive_conceal = 0
+let g:org_aggressive_conceal = 1
 let g:org_heading_highlight_colors = [
       \'Title', 'Constant', 'Identifier',
       \   'Statement', 'PreProc', 'Type', 'Special']
@@ -15,6 +15,7 @@ let g:org_todo_keywords = [
       \ ['CANCELED(c)']
       \ ]
 let g:org_todo_keyword_faces = [
+      \ ['TODO', [':foreground 4']],
       \ ['WAITING', [':foreground 3']],
       \ ['DONE', [':foreground 2']],
       \ ['REPORT', [':foreground 3']],
@@ -25,8 +26,8 @@ let g:org_todo_keyword_faces = [
       \ ]
 
 " Custom conceal for vim-orgmode
-" au FileType org syntax match org_list_checkbox '\[\ \]' conceal cchar=
-" au FileType org syntax match org_list_checkbox '\[X\]'  conceal cchar=
-" au FileType org syntax match org_heading_shade_leading_stars '\*' conceal cchar=
-" au FileType org syntax match org_heading_shade_leading_stars '*\*' conceal cchar=
-" au FileType org syntax match org_heading_shade_leading_stars '*\*\*' conceal cchar=
+"au FileType org syntax match org_list_checkbox '\[\ \]' conceal cchar=
+"au FileType org syntax match org_list_checkbox '\[X\]'  conceal cchar=
+"au FileType org syntax match org_heading_shade_leading_stars '\*' conceal cchar=
+"au FileType org syntax match org_heading_shade_leading_stars '*\*' conceal cchar=
+"au FileType org syntax match org_heading_shade_leading_stars '*\*\*' conceal cchar=
