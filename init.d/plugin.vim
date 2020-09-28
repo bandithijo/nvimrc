@@ -66,14 +66,11 @@ Plug 'tpope/vim-liquid'
 " A Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" A code-completion engine for Vim
-"Plug 'ycm-core/YouCompleteMe'
-
 " rails.vim: Ruby on Rails power tools
 Plug 'tpope/vim-rails'
 
 " Vim/Ruby Configuration Files
-Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 
 " Highlight eruby code blocks within html.
 Plug 'vim-scripts/eruby.vim'
@@ -154,7 +151,7 @@ Plug 'dense-analysis/ale'
 Plug 'xvadim/open_plugin_page'
 
 " A Displays the results of every line of code in your file
-Plug 'hwartig/vim-seeing-is-believing'
+"Plug 'hwartig/vim-seeing-is-believing'
 
 " A The interactive scratchpad for hackers.
 "Plug 'metakirby5/codi.vim'
