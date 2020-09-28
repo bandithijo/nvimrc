@@ -19,8 +19,8 @@ let g:ale_fix_on_save = 0
 let g:ale_lint_on_enter = 0
 
 " navigate between errors quickly
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <A-k> <Plug>(ale_previous_wrap)
+nmap <silent> <A-j> <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
 \   'ruby': ['rubocop'],
