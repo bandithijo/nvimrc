@@ -4,7 +4,7 @@
 " subseparator :  
 
 let g:lightline = {
-\   'colorscheme': 'codedark',
+\   'colorscheme': 'codedark_bandit',
 \   'active': {
 \    'left' :[[ 'mode', 'paste' ],
 \             [ 'gitbranch', 'readonly' ],

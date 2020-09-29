@@ -1,5 +1,5 @@
 " Interface
-colorscheme codedark-bandit
+colorscheme codedark_bandit
 set background=dark
 set incsearch " incremental search aka search as you type
 set hlsearch " highlight search matches
@@ -33,7 +33,7 @@ highlight clear SignColumn
 "hi HighlightedyankRegion term=bold ctermfg=0 ctermbg=3
 
 if &diff " change colorscheme when using vimdiff
-  colorscheme codedark-bandit
+  colorscheme codedark_bandit
 endif
 
 " Text Formating
