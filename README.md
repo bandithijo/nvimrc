@@ -24,7 +24,8 @@ Run `pre_install` script.
 $ ./pre_install
 ```
 
-Please wait until all plugin downloaded and all installation process completed.
+Please wait until all plugin downloaded and all installation process completed.<br>
+Plugin installed on `$HOME/.local/share/nvim/plugged/` directory.
 
 Enjoy!
 
