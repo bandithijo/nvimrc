@@ -39,4 +39,21 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 
 ## Keybinds
 
+> NOTE!<br>
+> <kbd>a</kbd> <kbd>b</kbd> it means "press a leave then press b"<br>
+> <kbd>a</kbd>+<kbd>b</kbd> it means "press a hold then  press b"
+
+  | Function              | Key Name                                   |
+  |-----------------------|--------------------------------------------|
+  | Leader                | <kbd>,</kbd>                               |
+  | Local Leader          | <kbd>,</kbd>                               |
+  | Open this nvim config | <kbd>,</kbd> <kbd>e</kbd> <kbd>v</kbd>     |
+  | Source vimrc          | <kbd>,</kbd> <kbd>s</kbd> <kbd>o</kbd>     |
+  | Buffer next           | <kbd>,</kbd> <kbd>n</kbd>                  |
+  | Buffer previous       | <kbd>,</kbd> <kbd>p</kbd>                  |
+  | Buffer close          | <kbd>,</kbd> <kbd>d</kbd>                  |
+  | Tab next              | <kbd>,</kbd> <kbd>Shift</kbd>+<kbd>n</kbd> |
+  | Tab previous          | <kbd>,</kbd> <kbd>Shift</kbd>+<kbd>p</kbd> |
+  | Tab close             | <kbd>,</kbd> <kbd>Shift</kbd>+<kbd>d</kbd> |
+
 *Under contruction...*
