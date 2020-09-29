@@ -40,7 +40,7 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 ## Keybinds
 
 > NOTE!<br>
-> <kbd>a</kbd> <kbd>b</kbd> it means "press a leave then press b"<br>
+> <kbd>a</kbd>&nbsp;&nbsp;<kbd>b</kbd> it means "press a leave then press b"<br>
 > <kbd>a</kbd>+<kbd>b</kbd> it means "press a hold then  press b"
 
   | Function              | Key Name                                   |
