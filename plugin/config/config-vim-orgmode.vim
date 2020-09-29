@@ -25,6 +25,20 @@ let g:org_todo_keyword_faces = [
       \ ['CANCELED', [':foreground red']]
       \ ]
 
+" Custom color for vim-orgmode
+function OrgmodeCustomColor()
+  hi org_heading1 ctermfg=255 cterm=bold
+  hi org_heading2 ctermfg=255 cterm=bold
+  hi org_heading3 ctermfg=255 cterm=bold
+  hi org_heading4 ctermfg=255 cterm=bold
+  hi org_heading5 ctermfg=255 cterm=bold
+endfunction
+
+augroup OrgmodeCustomColor
+  au!
+  au FileType org call OrgmodeCustomColor()
+augroup END
+
 " Custom conceal for vim-orgmode
 "function CustomVimOrgModeConcealChar()
 "  syntax match org_list_checkbox '\[\ \]' conceal cchar=
