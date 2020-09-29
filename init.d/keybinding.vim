@@ -10,12 +10,12 @@ nmap <leader>ev :NERDTree ~/.config/nvim/<cr>
 " source vimrc
 nmap <leader>so :so $MYVIMRC<cr>
 
-" for move & delete buffer
+" for switch & delete buffer
 nmap <leader>n :bn<cr>
 nmap <leader>p :bp<cr>
 nnoremap <leader>d :bp<cr>:bd! #<cr>
 
-" for move & close tabs
+" for switch & close tabs
 nmap <leader><S-n> :tabnext<cr>
 nmap <leader><S-p> :tabprev<cr>
 nnoremap <leader><S-d> :tabclose<cr>
@@ -29,20 +29,11 @@ nmap <leader>nh :nohlsearch<cr>
 " strip all trailing whitespace in the current file
 nmap <leader>W :StripWhitespace<cr>
 
-" Automatically deletes all trailing whitespace on save.
-autocmd BufWritePre * %s/\s\+$//e
-
 " open vertical split and switch to it
 "nnoremap <leader>v <C-w>v<C-w>l
 
 " open horizontal split and switch to it
 "nnoremap <leader>s <C-w>s<C-w>l
-
-" Map Ctrl-Backspace to delete the previous word in insert mode.
-imap <C-BS> <C-W>
-
-" Run xrdb whenever Xdefaults or Xresources are updated.
-autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>C :w! \| !compiler <c-r>%<CR>
@@ -91,7 +82,9 @@ autocmd FileType org nmap <buffer> <F11> :TlistToggle<cr>
 " toggle Tagbar plugin
 nmap <F11> :TagbarToggle<cr>
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
 " toggle PymodeLintToggle

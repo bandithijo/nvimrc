@@ -65,3 +65,11 @@ endif
 " Applies to 'hlsearch', 'inccommand', :match highlighting and
 " syntax highlighting.
 set redrawtime=5000
+
+" Automatically deletes all trailing whitespace on save.
+" I need to disable this because of colaborative work, need to manual execute.
+" Just fine to enable it, if you need.
+"autocmd BufWritePre * %s/\s\+$//e
+
+" Run xrdb whenever Xdefaults or Xresources are updated.
+autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
