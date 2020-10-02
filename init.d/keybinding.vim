@@ -13,12 +13,12 @@ nmap <leader>so :source $MYVIMRC<cr>
 " for switch & delete buffer
 nmap <leader>n :bn<cr>
 nmap <leader>p :bp<cr>
-nnoremap <leader>d :bp<cr>:bd! #<cr>
+nnoremap <leader>bd :bp<cr>:bd! #<cr>
 
 " for switch & close tabs
 nmap <leader><S-n> :tabnext<cr>
 nmap <leader><S-p> :tabprev<cr>
-nnoremap <leader><S-d> :tabclose<cr>
+nnoremap <leader><S-t><S-d> :tabclose<cr>
 
 " this key combination gets rid of the search highlights
 nmap <leader>nh :noh<cr>

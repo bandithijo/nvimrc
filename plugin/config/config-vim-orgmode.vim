@@ -39,13 +39,12 @@ endfunction
 
 " Custom key for vim-orgmode
 function OrgmodeCustomKey()
-  nmap <leader>t <Plug>OrgTodoToggleInteractive
+  nmap <leader>d <Plug>OrgTodoToggleInteractive
 endfunction
 
 augroup OrgmodeCustomColor
   au!
   au FileType org call OrgmodeCustomColor()
-  au FileType org call OrgmodeCustomKey()
 augroup END
 
 " Custom conceal for vim-orgmode
