@@ -8,7 +8,7 @@ let maplocalleader = ','
 nmap <leader>ev :NERDTree ~/.config/nvim/<cr>
 
 " source vimrc
-nmap <leader>so :so $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
 
 " for switch & delete buffer
 nmap <leader>n :bn<cr>

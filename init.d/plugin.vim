@@ -70,7 +70,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-rails'
 
 " Vim/Ruby Configuration Files
-" Plug 'vim-ruby/vim-ruby'
+Plug 'vim-ruby/vim-ruby'
 
 " Highlight eruby code blocks within html.
 Plug 'vim-scripts/eruby.vim'
@@ -86,6 +86,9 @@ Plug 'Yggdroot/indentLine'
 
 " A Vim runtime files for Haml, Sass, and SCSS
 Plug 'tpope/vim-haml'
+
+" A Personal Wiki for Vim
+Plug 'vimwiki/vimwiki'
 
 " Text outlining and task management for Vim based on Emacs' Org-Mode
 Plug 'jceb/vim-orgmode'
@@ -105,7 +108,7 @@ Plug 'mattn/calendar-vim'
 Plug 'yegappan/taglist'
 
 " Univeral Text Linking - Execute URLs, footnotes, open emails, organize ideas
-Plug 'vim-scripts/utl.vim'
+Plug 'bandithijo/utl.vim'
 
 " Vim Table Mode for instant table creation.
 Plug 'dhruvasagar/vim-table-mode'

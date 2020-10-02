@@ -1,7 +1,7 @@
 " vim-orgmode
 
 let g:org_indent = 1
-let g:org_aggressive_conceal = 1
+let g:org_aggressive_conceal = 0
 let g:org_heading_highlight_colors = [
       \'Title', 'Constant', 'Identifier',
       \   'Statement', 'PreProc', 'Type', 'Special']
@@ -32,6 +32,9 @@ function OrgmodeCustomColor()
   hi org_heading3 ctermfg=255 cterm=bold
   hi org_heading4 ctermfg=255 cterm=bold
   hi org_heading5 ctermfg=255 cterm=bold
+  hi org_heading6 ctermfg=255 cterm=bold
+  hi org_underline cterm=none
+  hi hyperlink ctermfg=117
 endfunction
 
 augroup OrgmodeCustomColor
