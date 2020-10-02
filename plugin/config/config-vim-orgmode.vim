@@ -22,7 +22,7 @@ let g:org_todo_keyword_faces = [
       \ ['BUG', [':foreground 3']],
       \ ['KNOWNCAUSE', [':foreground 3']],
       \ ['FIXED', [':foreground 2']],
-      \ ['CANCELED', [':foreground red']]
+      \ ['CANCELED', [':foreground 1']]
       \ ]
 
 " Custom color for vim-orgmode
@@ -37,9 +37,15 @@ function OrgmodeCustomColor()
   hi hyperlink ctermfg=117
 endfunction
 
+" Custom key for vim-orgmode
+function OrgmodeCustomKey()
+  nmap <leader>t <Plug>OrgTodoToggleInteractive
+endfunction
+
 augroup OrgmodeCustomColor
   au!
   au FileType org call OrgmodeCustomColor()
+  au FileType org call OrgmodeCustomKey()
 augroup END
 
 " Custom conceal for vim-orgmode
