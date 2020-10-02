@@ -114,6 +114,9 @@ Plug 'bandithijo/utl.vim'
 Plug 'dhruvasagar/vim-table-mode'
 " (vim-orgmode need this) }}}
 
+" A Automatically create any non-existent directories before writing the buffer.
+Plug 'pbrisbin/vim-mkdir'
+
 " A open source plugins for automatic programming metrics
 Plug 'wakatime/vim-wakatime'
 
