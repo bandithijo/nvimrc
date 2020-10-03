@@ -15,9 +15,9 @@ let g:utl_cfg_hdl_mt_video_mpeg =	"silent !mpv '%p'"
 let g:utl_cfg_hdl_mt_audio_mpeg =	"silent !mpv '%p'"
 
 " JPG
-let g:utl_cfg_hdl_mt_image_jpeg = "silent !sxiv '%p' &"
-let g:utl_cfg_hdl_mt_image_png = "silent !sxiv '%p' &"
-let g:utl_cfg_hdl_mt_image_gif = "silent !sxiv '%p' &"
+let g:utl_cfg_hdl_mt_image_jpeg = "silent !sxiv '%p'"
+let g:utl_cfg_hdl_mt_image_png = "silent !sxiv '%p'"
+let g:utl_cfg_hdl_mt_image_gif = "silent !sxiv '%p'"
 
 " GENERIC
-let g:utl_cfg_hdl_mt_generic = "silent !st -e ranger '%p' &"
+let g:utl_cfg_hdl_mt_generic = "silent !st -e ranger '%p'"
