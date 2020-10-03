@@ -87,9 +87,6 @@ Plug 'Yggdroot/indentLine'
 " A Vim runtime files for Haml, Sass, and SCSS
 Plug 'tpope/vim-haml'
 
-" A Personal Wiki for Vim
-Plug 'vimwiki/vimwiki'
-
 " Text outlining and task management for Vim based on Emacs' Org-Mode
 Plug 'jceb/vim-orgmode'
 
