@@ -5,7 +5,7 @@ let mapleader = ","
 let maplocalleader = ','
 
 " for edit my .vimrc
-nmap <leader>ev :NERDTree ~/.config/nvim/<cr>
+nmap <leader>ev :e ~/.config/nvim/README.md<cr>:cd %:p:h<cr>:NERDTreeToggle<cr>:wincmd l<cr>:cal cursor(1,1)<cr>
 
 " source vimrc
 nmap <leader>so :source $MYVIMRC<cr>

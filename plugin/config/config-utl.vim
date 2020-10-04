@@ -9,10 +9,10 @@ let g:utl_cfg_hdl_mt_application_pdf = ':silent !xdg-open "%p"'
 let g:utl_cfg_hdl_mt_text_directory = ':silent !st -e ranger "%p"'
 
 " VIDEO
-let g:utl_cfg_hdl_mt_video_mpeg =	':silent !mpv "%p"'
+let g:utl_cfg_hdl_mt_video_mpeg =	':silent !mpv "%p" --no-terminal &'
 
 " AUDIO
-let g:utl_cfg_hdl_mt_audio_mpeg =	':silent !mpv "%p"'
+let g:utl_cfg_hdl_mt_audio_mpeg =	':silent !mpv "%p" --no-terminal &'
 let g:utl_cfg_hdl_mt_audio_ogg =	':silent !audacious "%p"'
 
 " JPG
