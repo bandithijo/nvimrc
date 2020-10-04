@@ -57,6 +57,7 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 | Change to CWD with open buffer as refference | N    | <kbd>,</kbd> <kbd>c</kbd> <kbd>d</kbd>                  |
 | Clean coc.nvim yank pum                      | N    | <kbd>,</kbd> <kbd>c</kbd> <kbd>l</kbd>                  |
 | Check/Uncheck checkbox (.md)                 | N    | <kbd>,</kbd> <kbd>c</kbd> <kbd>c</kbd>                  |
+| Load View (Folding)                          | N    | <kbd>,</kbd> <kbd>l</kbd> <kbd>v</kbd>                  |
 | Easy align                                   | N    | <kbd>g</kbd> <kbd>a</kbd>                               |
 | Search keyword forward                       | N    | <kbd>n</kbd>                                            |
 | Search keyword backward                      | N    | <kbd>Shift</kbd>+<kbd>n</kbd>                           |

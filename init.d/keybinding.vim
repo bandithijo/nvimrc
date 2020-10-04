@@ -118,6 +118,9 @@ nmap <leader>cd :cd %:p:h<cr>
 " clean yank history
 nmap <leader>cl :CocCommand yank.clean<cr>
 
+" load view
+nmap <leader>lv :loadview<cr>
+
 " increment visual select with: Visual block then g C-a
 " demo: https://t.me/VimID/21773
 function! Incr()
