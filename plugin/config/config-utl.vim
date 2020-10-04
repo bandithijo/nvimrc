@@ -13,6 +13,7 @@ let g:utl_cfg_hdl_mt_video_mpeg =	"silent !mpv '%p'"
 
 " AUDIO
 let g:utl_cfg_hdl_mt_audio_mpeg =	"silent !mpv '%p'"
+let g:utl_cfg_hdl_mt_audio_ogg =	'silent !audacious "%p"'
 
 " JPG
 let g:utl_cfg_hdl_mt_image_jpeg = "silent !sxiv '%p'"

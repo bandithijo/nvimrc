@@ -11,7 +11,7 @@ autocmd FileType json setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType liquid setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 conceallevel=0 nofoldenable
 autocmd FileType org setlocal shiftwidth=2 tabstop=2 foldmethod=expr nowrap
-autocmd FileType python setlocal shiftwidth=4 tabstop=4 wrap textwidth=79 formatoptions+=t
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 wrap formatoptions+=t
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
 autocmd FileType tex setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType vim setlocal shiftwidth=4 tabstop=4 conceallevel=0
@@ -24,4 +24,4 @@ autocmd BufRead,BufNewFile *.tex setlocal ft=tex
 let g:is_bash = 1
 
 " Declare this variable before polyglot is loaded. Please don't move this
-let g:polyglot_disabled = ['autoindent']
+let g:polyglot_disabled = ['autoindent', 'csv']
