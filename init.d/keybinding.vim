@@ -9,8 +9,7 @@ nmap <leader>ev :e ~/.config/nvim/README.md<cr>
                 \ :cd %:p:h<cr>
                 \ :NERDTreeToggle<cr>
                 \ :wincmd l<cr>
-                \ :cal cursor(14,1)<cr>
-                \ :<backspace>
+                \ :cal cursor(1,1)<cr>
 
 " source vimrc
 nmap <leader>so :source $MYVIMRC<cr>
