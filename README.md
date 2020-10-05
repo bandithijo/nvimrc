@@ -88,7 +88,6 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 | Exit from insert mode to normal              | I    | <kbd>j</kbd> <kbd>j</kbd>                               |
 | Exit from terminal mode                      | T    | <kbd>Esc</kbd>                                          |
 | Sudo save                                    | C    | <kbd>w</kbd> <kbd>!</kbd> <kbd>!</kbd>                  |
-| Quit all                                     | C    | <kbd>Shift</kbd>+<kbd>q</kbd>                           |
 
 > MODE<br>
 > N: Normal, I: Insert, T: Terminal, C: Command

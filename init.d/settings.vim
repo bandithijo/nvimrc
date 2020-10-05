@@ -26,7 +26,7 @@ set ttimeoutlen=0  " make Esc work faster
 set autoread " make vim monitor realtime changes to a file
 set modifiable
 
-" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+" Splits open at the bottom and right
 set splitbelow splitright
 
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving

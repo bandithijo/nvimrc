@@ -73,9 +73,6 @@ nmap <C-l> <C-w><C-l>
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
 
-" quit all
-cmap Q qa
-
 " for page up & page down
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
