@@ -20,11 +20,9 @@
 " Please, consider if you want to reorder.
 " It will raise an error on issue.
 
-source $HOME/.config/nvim/init.d/settings.vim
-source $HOME/.config/nvim/init.d/formating.vim
-source $HOME/.config/nvim/init.d/filetype.vim
-source $HOME/.config/nvim/init.d/keybinding.vim
-source $HOME/.config/nvim/init.d/plugin.vim
-for f in split(glob('$HOME/.config/nvim/plugin-config/*.vim'), '\n')
-    exe 'source' f
-endfor
+runtime init.d/setting.vim
+runtime init.d/formating.vim
+runtime init.d/filetype.vim
+runtime init.d/mapping.vim
+runtime init.d/plugin.vim
+runtime! plugin-option/*.vim

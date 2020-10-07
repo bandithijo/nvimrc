@@ -22,6 +22,3 @@ autocmd BufRead,BufNewFile *.tex setlocal ft=tex
 
 " For compatibilty bash to sh, because there is no bash filetype
 let g:is_bash = 1
-
-" Declare this variable before polyglot is loaded. Please don't move this
-let g:polyglot_disabled = ['autoindent', 'csv']

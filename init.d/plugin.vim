@@ -159,4 +159,7 @@ Plug 'xvadim/open_plugin_page'
 " A The interactive scratchpad for hackers.
 "Plug 'metakirby5/codi.vim'
 
+" A Switch between single-line and multiline forms of code
+Plug 'AndrewRadev/splitjoin.vim'
+
 call plug#end()
