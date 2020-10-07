@@ -47,6 +47,8 @@ augroup OrgmodeCustomColor
   au FileType org call OrgmodeCustomColor()
 augroup END
 
+nmap <silent> gp :OrgHyperlinkPreviousLink<cr>
+
 " Custom conceal for vim-orgmode
 "function CustomVimOrgModeConcealChar()
 "  syntax match org_list_checkbox '\[\ \]' conceal cchar=
