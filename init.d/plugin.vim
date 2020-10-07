@@ -162,4 +162,7 @@ Plug 'xvadim/open_plugin_page'
 " A Switch between single-line and multiline forms of code
 Plug 'AndrewRadev/splitjoin.vim'
 
+" A git blame plugin for neovim inspired by VS Code's GitLens plugin
+Plug 'APZelos/blamer.nvim'
+
 call plug#end()
