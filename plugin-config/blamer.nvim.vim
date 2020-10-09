@@ -4,7 +4,7 @@
 " If the current directory is not a git repository the blamer will be
 " automatically disabled.
 " Default: 0
-let g:blamer_enabled = 1
+let g:blamer_enabled = 0
 
 " Delay
 " The delay in milliseconds for the blame message to show. Setting this too
