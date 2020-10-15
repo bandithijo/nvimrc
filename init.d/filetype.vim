@@ -5,7 +5,6 @@ autocmd FileType c setlocal shiftwidth=4 tabstop=4 conceallevel=0
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 conceallevel=0
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType csv setlocal shiftwidth=2 tabstop=2 conceallevel=0
-autocmd FileType diff setlocal commentstring=#\ %s
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType json setlocal shiftwidth=2 tabstop=2 conceallevel=0
@@ -17,7 +16,6 @@ autocmd FileType scss setlocal shiftwidth=2 tabstop=2
 autocmd FileType tex setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType vim setlocal shiftwidth=4 tabstop=4 conceallevel=0
 autocmd FileType vue setlocal shiftwidth=2 tabstop=2 conceallevel=0
-autocmd FileType xdefaults setlocal commentstring=!\ %s
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd BufRead,BufNewFile *.tex setlocal ft=tex
 
