@@ -168,4 +168,7 @@ Plug 'APZelos/blamer.nvim'
 " A Use Vim as a Python shell--like Jupyter but it's in Vim.
 Plug 'mrever/Vython'
 
+" A tiny translate-shell wrapper for Vim
+Plug 'VincentCordobes/vim-translate'
+
 call plug#end()
