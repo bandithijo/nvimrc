@@ -35,3 +35,8 @@ let g:ale_fixers = {
 \   'python': ['pylint', 'flake8'],
 \   'javascript': ['eslint'],
 \}
+
+" source: https://github.com/dense-analysis/ale/issues/371
+let g:ale_pattern_options = {
+\   'pythonbuff.py': {'ale_enabled': 0},
+\}

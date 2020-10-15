@@ -165,4 +165,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 " A git blame plugin for neovim inspired by VS Code's GitLens plugin
 Plug 'APZelos/blamer.nvim'
 
+" A Use Vim as a Python shell--like Jupyter but it's in Vim.
+Plug 'mrever/Vython'
+
 call plug#end()
