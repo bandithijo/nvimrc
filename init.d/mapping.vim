@@ -25,13 +25,13 @@ nmap <leader><S-p> :tabprev<cr>
 nnoremap <leader><S-t><S-d> :tabclose<cr>
 
 " this key combination gets rid of the search highlights
-nmap <leader>nh :noh<cr>
+nmap <silent> <leader>nh :noh<cr>
 
 " for clear highlight search
-nmap <leader>nh :nohlsearch<cr>
+nmap <silent> <leader>nh :nohlsearch<cr>
 
 " strip all trailing whitespace in the current file
-nmap <leader>W :StripWhitespace<cr>
+nmap <silent> <leader>W :StripWhitespace<cr>
 
 " open vertical split and switch to it
 "nnoremap <leader>v <C-w>v<C-w>l
@@ -72,6 +72,10 @@ nmap <C-l> <C-w><C-l>
 
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
+
+" quit all without save
+nmap :Q :qa!
+
 
 " for page up & page down
 noremap <C-u> <C-u>zz
@@ -114,13 +118,13 @@ nmap <C-f> :Files<cr>
 nnoremap <C-W>s Hmx`` \|:split<CR>`xzt``
 
 " change current directory with open buffer as refference
-nmap <leader>cd :cd %:p:h<cr>
+nmap <silent> <leader>cd :cd %:p:h<cr>
 
 " clean yank history
-nmap <leader>cl :CocCommand yank.clean<cr>
+nmap <silent> <leader>cl :CocCommand yank.clean<cr>
 
 " load view
-nmap <leader>lv :loadview<cr>
+nmap <silent> <leader>lv :loadview<cr>
 
 " increment visual select with: Visual block then g C-a
 " demo: https://t.me/VimID/21773
