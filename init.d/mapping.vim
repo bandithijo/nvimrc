@@ -62,7 +62,9 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " toggle NerdTree plugin
-nmap <F12> :NERDTreeToggle<cr>
+"nmap <F12> :NERDTreeToggle<cr>
+nmap <F12> :Defx<cr>
+autocmd FileType defx nnoremap <silent><buffer><expr> <F12> defx#do_action('quit')
 
 " for move focus to each split
 nmap <C-h> <C-w><C-h>

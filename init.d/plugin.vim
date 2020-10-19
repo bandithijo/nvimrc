@@ -6,6 +6,17 @@ call plug#begin('~/.local/share/nvim/plugged')
 " A tree explorer plugin for vim.
 Plug 'scrooloose/nerdtree'
 
+" A The dark powered file explorer implementation
+if has('nvim')
+  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/defx.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'kristijanhusak/defx-icons'
+
 " A light and configurable statusline/tabline plugin for Vim
 Plug 'itchyny/lightline.vim'
 
@@ -166,7 +177,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'APZelos/blamer.nvim'
 
 " A Use Vim as a Python shell--like Jupyter but it's in Vim.
-Plug 'mrever/Vython'
+"Plug 'mrever/Vython'
 
 " A tiny translate-shell wrapper for Vim
 Plug 'VincentCordobes/vim-translate'
