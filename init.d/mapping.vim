@@ -50,8 +50,12 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-" Defx
-nmap <F12> :Defx<cr>
+" Defx Sidebar
+nmap <F12> :Defx -winwidth=40 -split='vertical' -direction='topleft'<cr>
+
+" Defx fullwindow
+nmap <C-n> :Defx<cr>
+autocmd FileType defx nnoremap <silent><buffer><expr> <C-n> defx#do_action('quit')
 
 " for move focus to each split
 nmap <C-h> <C-w><C-h>
