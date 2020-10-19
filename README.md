@@ -74,7 +74,7 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 | Easy align                                   | N    | <kbd>g</kbd> <kbd>a</kbd>                               |
 | Search keyword forward                       | N    | <kbd>n</kbd>                                            |
 | Search keyword backward                      | N    | <kbd>Shift</kbd>+<kbd>n</kbd>                           |
-| NERDTree sidebar toggle on/off               | N    | <kbd>F12</kbd>                                          |
+| Defx sidebar toggle on/off                   | N    | <kbd>F12</kbd>                                          |
 | Tlist toggle on/off (.org)                   | N    | <kbd>F11</kbd>                                          |
 | Tagbar toggle on/off                         | N    | <kbd>F11</kbd>                                          |
 | FZF `:Buffers`                               | N    | <kbd>Control</kbd>+<kbd>p</kbd>                         |

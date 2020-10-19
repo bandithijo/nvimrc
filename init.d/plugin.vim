@@ -3,9 +3,6 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" A tree explorer plugin for vim.
-Plug 'scrooloose/nerdtree'
-
 " A The dark powered file explorer implementation
 if has('nvim')
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
