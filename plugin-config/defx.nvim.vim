@@ -3,6 +3,9 @@ if exists('g:plugs["defx.nvim"]')
     autocmd BufWritePost * call defx#redraw()
 
     call defx#custom#option('_', {
+          \ 'winwidth': 40,
+          \ 'split': 'vertical',
+          \ 'direction': 'topleft',
           \ 'show_ignored_files': 0,
           \ 'buffer_name': 'defxplorer',
           \ 'toggle': 1,
