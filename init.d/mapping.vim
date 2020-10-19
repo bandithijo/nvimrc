@@ -32,21 +32,11 @@ nmap <silent> <leader>nh :nohlsearch<cr>
 " strip all trailing whitespace in the current file
 nmap <silent> <leader>W :StripWhitespace<cr>
 
-" open vertical split and switch to it
-"nnoremap <leader>v <C-w>v<C-w>l
-
-" open horizontal split and switch to it
-"nnoremap <leader>s <C-w>s<C-w>l
-
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>C :w! \| !compiler <c-r>%<CR>
 
 " Remap exit from terminal mode
 tnoremap <Esc> <C-\><C-n>
-
-" for search
-"nnoremap / /\v
-"vnoremap / /\v
 
 " keep search matches in the middle of the window.
 nnoremap n nzzzv
@@ -62,7 +52,6 @@ vnoremap <F1> <ESC>
 
 " Defx
 nmap <F12> :Defx<cr>
-autocmd FileType defx nnoremap <silent><buffer><expr> <F12> defx#do_action('quit')
 
 " for move focus to each split
 nmap <C-h> <C-w><C-h>
@@ -91,27 +80,10 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" toggle PymodeLintToggle
-"autocmd FileType python nmap <buffer> <F9> :PymodeLintToggle<cr>
-
 " fzf.vim
 nmap <C-p> :Buffers<cr>
 "nmap <C-f> :FZF<cr>
 nmap <C-f> :Files<cr>
-
-" disable arrow keys on insert mode and make up & down arrow as line bubbling
-"no <down> <Nop>
-"no <left> <Nop>
-"no <right> <Nop>
-"no <up> <Nop>
-"ino <down> <Nop>
-"ino <left> <Nop>
-"ino <right> <Nop>
-"ino <up> <Nop>
-"vno <down> <Nop>
-"vno <left> <Nop>
-"vno <right> <Nop>
-"vno <up> <Nop>
 
 " prevent Vim scrolling when splitting a window
 nnoremap <C-W>s Hmx`` \|:split<CR>`xzt``
@@ -137,14 +109,5 @@ function! Incr()
 endfunction
 vnoremap <C-a> :call Incr()<CR>
 
-" toggle for markdown checkbox with <leader>cc
-"au FileType markdown nmap <leader>cc <S-v>/\%V[<cr><esc><right>:call CheckStr()<cr>:nohlsearch<cr>:<backspace>
-"function! CheckStr()
-"  if matchstr(getline('.'), '\%' . col('.') . 'c.') == 'x'
-"    normal! r \ltesc>
-"  else
-"    normal! rx
-"  endif
-"endfunction
 " toggle for markdown checkbox with <leader>tt remap to <leader>cc
 au FileType markdown map <silent> <leader>cc :call checkbox#ToggleCB()<cr>
