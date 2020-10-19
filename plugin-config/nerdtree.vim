@@ -19,8 +19,4 @@ autocmd FileType nerdtree setlocal signcolumn=no nocursorcolumn
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" Open NERDTree when open a directory
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | wincmd p | ene | exe 'NERDTree' argv()[0] | endif
-
 " let NERDTreeIgnore=['.aux', '.fdb_latexmk', '.log', '.lot', '.lof', '.out', '.toc', '.synctex.gz']

@@ -17,6 +17,18 @@ if exists('g:plugs["defx.nvim"]')
           \ 'selected_icon': '✓',
           \ })
 
+    " Open Defx when open a directory
+    augroup defx
+        au!
+        au VimEnter * sil! au! FileExplorer *
+        au BufEnter * if s:isdir(expand('%')) | bd | exe 'Defx' | endif
+    augroup END
+
+    fu! s:isdir(dir) abort
+        return !empty(a:dir) && (isdirectory(a:dir) ||
+        \ (!empty($SYSTEMDRIVE) && isdirectory('/'.tolower($SYSTEMDRIVE[0]).a:dir)))
+    endfu
+
     function! s:defx_my_settings() abort
       " Define mappings
       nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')
@@ -73,7 +85,7 @@ if exists('g:plugs["defx.nvim"]')
       \ line('.') == line('$') ? 'gg' : 'j'
       nnoremap <silent><buffer><expr> k
       \ line('.') == 1 ? 'G' : 'k'
-      nnoremap <silent><buffer><expr> <C-l>
+      nnoremap <silent><buffer><expr> <C-r>
       \ defx#do_action('redraw')
       nnoremap <silent><buffer><expr> <C-g>
       \ defx#do_action('print')

@@ -7,7 +7,7 @@ let maplocalleader = ','
 " for edit my .vimrc
 nmap <silent> <leader>ev :e ~/.config/nvim/README.md<cr>
                        \ :cd %:p:h<cr>
-                       \ :NERDTreeToggle<cr>
+                       \ :call Defxtoggle()<cr>
                        \ :wincmd l<cr>
                        \ :cal cursor(1,1)<cr>
 
@@ -62,9 +62,24 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " toggle NerdTree plugin
-"nmap <F12> :NERDTreeToggle<cr>
-nmap <F12> :Defx<cr>
-autocmd FileType defx nnoremap <silent><buffer><expr> <F12> defx#do_action('quit')
+" nmap <F12> :NERDTreeToggle<cr>
+
+" Defx
+nmap <C-n> :Defx<cr>
+autocmd FileType defx nnoremap <silent><buffer><expr> <C-n> defx#do_action('quit')
+
+
+" Defx toggle
+nnoremap <F12> :call Defxtoggle()<cr>
+fun! Defxtoggle()
+  if bufwinnr('defx') > 0
+    execute "bdelete " . bufnr('defx')
+  else
+    leftabove vert split
+    Defx
+    vert resize 40
+  endif
+endfun
 
 " for move focus to each split
 nmap <C-h> <C-w><C-h>
