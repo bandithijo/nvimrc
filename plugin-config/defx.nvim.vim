@@ -35,16 +35,18 @@ if exists('g:plugs["defx.nvim"]')
     function! s:defx_my_settings() abort
       " Define mappings
       nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')
+      nnoremap <silent><buffer><expr> <2-LeftMouse> defx#do_action('drop')
+      nnoremap <silent><buffer><expr> <2-RightMouse> defx#do_action('open_or_close_tree')
       nnoremap <silent><buffer><expr> c
       \ defx#do_action('copy')
       nnoremap <silent><buffer><expr> m
       \ defx#do_action('move')
       nnoremap <silent><buffer><expr> p
       \ defx#do_action('paste')
-      nnoremap <silent><buffer><expr> l
-      \ defx#do_action('open')
-      nnoremap <silent><buffer><expr> E
-      \ defx#do_action('open', 'vsplit')
+      nnoremap <silent><buffer><expr> v
+      \ defx#do_action('drop', 'vsplit')
+      nnoremap <silent><buffer><expr> s
+      \ defx#do_action('drop', 'split')
       nnoremap <silent><buffer><expr> P
       \ defx#do_action('open', 'pedit')
       nnoremap <silent><buffer><expr> o
@@ -68,13 +70,13 @@ if exists('g:plugs["defx.nvim"]')
       \ defx#do_action('execute_command')
       nnoremap <silent><buffer><expr> x
       \ defx#do_action('execute_system')
-      nnoremap <silent><buffer><expr> yy
+      nnoremap <silent><buffer><expr> yp
       \ defx#do_action('yank_path')
       nnoremap <silent><buffer><expr> .
       \ defx#do_action('toggle_ignored_files')
       nnoremap <silent><buffer><expr> ;
       \ defx#do_action('repeat')
-      nnoremap <silent><buffer><expr> h
+      nnoremap <silent><buffer><expr> <Backspace>
       \ defx#do_action('cd', ['..'])
       nnoremap <silent><buffer><expr> ~
       \ defx#do_action('cd')
