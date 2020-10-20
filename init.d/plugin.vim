@@ -13,6 +13,7 @@ else
 endif
 
 Plug 'kristijanhusak/defx-icons'
+Plug 'kristijanhusak/defx-git'
 
 " A light and configurable statusline/tabline plugin for Vim
 Plug 'itchyny/lightline.vim'

@@ -7,15 +7,18 @@ if exists('g:plugs["defx.nvim"]')
         " \ 'direction': 'topleft',
     call defx#custom#option('_', {
         \ 'show_ignored_files': 0,
-        \ 'buffer_name': 'defxplorer',
+        \ 'buffer_name': 'defx',
         \ 'toggle': 1,
-        \ 'columns': 'icon:indent:icons:filename',
+        \ 'columns': 'git:indent:icons:filename',
         \ 'resume': 1,
+        \ 'auto_cd': 1,
         \ })
 
     call defx#custom#column('icon', {
         \ 'directory_icon': ' ',
         \ 'opened_icon': ' ',
+        \ 'readonly_icon': '✗',
+        \ 'selected_icon': '✓',
         \ })
 
     call defx#custom#column('filename', {

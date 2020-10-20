@@ -18,6 +18,7 @@
     "typescript": ["javascript"],
     "liquid": ["markdown"]
   },
+  "explorer.icon.enableNerdfont": true,
   "languageserver": {
     "ccls": {
       "command": "ccls",
