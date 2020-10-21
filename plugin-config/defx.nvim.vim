@@ -1,6 +1,7 @@
 if exists('g:plugs["defx.nvim"]')
     autocmd FileType defx call s:defx_my_settings()
     autocmd BufWritePost * call defx#redraw()
+    autocmd BufEnter * call s:open_defx_if_directory()
 
         " \ 'winwidth': 40,
         " \ 'split': 'vertical',
@@ -17,8 +18,6 @@ if exists('g:plugs["defx.nvim"]')
     call defx#custom#column('icon', {
         \ 'directory_icon': ' ',
         \ 'opened_icon': ' ',
-        \ 'readonly_icon': '✗',
-        \ 'selected_icon': '✓',
         \ })
 
     call defx#custom#column('filename', {
@@ -27,15 +26,17 @@ if exists('g:plugs["defx.nvim"]')
         \ })
 
     " Open Defx when open a directory
-    augroup defx
-        au!
-        au BufEnter * if s:isdir(expand('%')) | bd | exe 'Defx' | endif
-    augroup END
+    function! s:open_defx_if_directory()
+        try
+            let l:full_path = expand(expand('%:p'))
+        catch
+            return
+        endtry
 
-    fu! s:isdir(dir) abort
-        return !empty(a:dir) && (isdirectory(a:dir) ||
-        \ (!empty($SYSTEMDRIVE) && isdirectory('/'.tolower($SYSTEMDRIVE[0]).a:dir)))
-    endfu
+        if isdirectory(l:full_path)
+            execute "Defx `expand('%:p')` | bd " . expand('%:r')
+        endif
+    endfunction
 
     function! s:defx_my_settings() abort
         " Define mappings
@@ -102,4 +103,5 @@ if exists('g:plugs["defx.nvim"]')
         nnoremap <silent><buffer><expr> cd
         \ defx#do_action('change_vim_cwd')
     endfunction
+
 endif

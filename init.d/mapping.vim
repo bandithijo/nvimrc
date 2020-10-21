@@ -52,10 +52,6 @@ vnoremap <F1> <ESC>
 " Defx Sidebar
 nmap <silent> <F12> :Defx -winwidth=40 -split='vertical' -direction='topleft'<cr>
 
-" Defx fullwindow
-nmap <silent> <C-n> :Defx<cr>
-autocmd FileType defx nnoremap <silent><buffer><expr> <C-n> defx#do_action('quit')
-
 " for move focus to each split
 nmap <C-h> <C-w><C-h>
 nmap <C-j> <C-w><C-j>
