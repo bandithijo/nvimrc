@@ -17,9 +17,9 @@ if exists('g:plugs["defx-git"]')
     hi Defx_git_Untracked ctermfg=214 ctermbg=NONE
     hi Defx_git_Ignored   ctermfg=214 ctermbg=NONE
     hi Defx_git_Unknown   ctermfg=214 ctermbg=NONE
-    hi Defx_git_Renamed   ctermfg=214
-    hi Defx_git_Modified  ctermfg=214
-    hi Defx_git_Unmerged  ctermfg=214
-    hi Defx_git_Deleted   ctermfg=214
-    hi Defx_git_Staged    ctermfg=214
+    hi Defx_git_Renamed   ctermfg=214 ctermbg=NONE
+    hi Defx_git_Modified  ctermfg=214 ctermbg=NONE
+    hi Defx_git_Unmerged  ctermfg=214 ctermbg=NONE
+    hi Defx_git_Deleted   ctermfg=214 ctermbg=NONE
+    hi Defx_git_Staged    ctermfg=214 ctermbg=NONE
 endif
