@@ -1,8 +1,9 @@
 " Keyboard Mappings
 
-" my leader key is comma
-let mapleader = ","
-let maplocalleader = ','
+" my leader key is space
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+let maplocalleader = " "
 
 " for edit my .vimrc
 nmap <silent> <leader>ev :e ~/.config/nvim/README.md<cr>
@@ -50,7 +51,7 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " Defx Sidebar
-nmap <silent> <F12> :Defx -winwidth=40 -split='vertical' -direction='topleft'<cr>
+nmap <silent> <F12> :Defx<cr>
 
 " for move focus to each split
 nmap <C-h> <C-w><C-h>
