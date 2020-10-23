@@ -9,6 +9,7 @@ let maplocalleader = " "
 nmap <silent> <leader>ev :e ~/.config/nvim/README.md<cr>
                        \ :cd %:p:h<cr>
                        \ :cal cursor(1,1)<cr>
+                       \ :Defx<cr>
 
 " source vimrc
 nmap <leader>so :source $MYVIMRC<cr>
@@ -58,6 +59,10 @@ nmap <C-h> <C-w><C-h>
 nmap <C-j> <C-w><C-j>
 nmap <C-k> <C-w><C-k>
 nmap <C-l> <C-w><C-l>
+
+" easy exit & move from insert mode on terminal
+tnoremap <C-h> <c-\><c-n><c-w>h
+tnoremap <C-k> <c-\><c-n><c-w>k
 
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
