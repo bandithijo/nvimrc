@@ -15,9 +15,9 @@ nmap <silent> <leader>ev :e ~/.config/nvim/README.md<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 
 " for switch & delete buffer
-nmap <leader>n :bn<cr>
-nmap <leader>p :bp<cr>
-nnoremap <leader>bd :bp<cr>:bd! #<cr>
+nmap <leader>n  :bn<cr>
+nmap <leader>b  :bp<cr>
+nmap <leader>bd :bp<cr>:bd! #<cr>
 
 " for switch & close tabs
 nmap <leader><S-n> :tabnext<cr>

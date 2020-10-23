@@ -53,41 +53,40 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 
 ## Keybinds
 
-| Function                                     | Mode | Key Name                                                |
-|----------------------------------------------|------|---------------------------------------------------------|
-| Leader                                       | N    | <kbd>,</kbd>                                            |
-| Local Leader                                 | N    | <kbd>,</kbd>                                            |
-| Open this nvim config                        | N    | <kbd>,</kbd> <kbd>e</kbd> <kbd>v</kbd>                  |
-| Source vimrc                                 | N    | <kbd>,</kbd> <kbd>s</kbd> <kbd>o</kbd>                  |
-| Buffer next                                  | N    | <kbd>,</kbd> <kbd>n</kbd>                               |
-| Buffer previous                              | N    | <kbd>,</kbd> <kbd>p</kbd>                               |
-| Buffer close                                 | N    | <kbd>,</kbd> <kbd>b</kbd>+<kbd>d</kbd>                  |
-| Tab next                                     | N    | <kbd>,</kbd> <kbd>Shift</kbd>+<kbd>n</kbd>              |
-| Tab previous                                 | N    | <kbd>,</kbd> <kbd>Shift</kbd>+<kbd>p</kbd>              |
-| Tab close                                    | N    | <kbd>,</kbd> <kbd>Shift</kbd>+<kbd>t</kbd>+<kbd>d</kbd> |
-| Clear highlight                              | N    | <kbd>,</kbd> <kbd>n</kbd> <kbd>h</kbd>                  |
-| Strip all trailing whitespace                | N    | <kbd>,</kbd> <kbd>Shift</kbd>+<kbd>w</kbd>              |
-| Change to CWD with open buffer as refference | N    | <kbd>,</kbd> <kbd>c</kbd> <kbd>d</kbd>                  |
-| Clean coc.nvim yank pum                      | N    | <kbd>,</kbd> <kbd>c</kbd> <kbd>l</kbd>                  |
-| Check/Uncheck checkbox (.md)                 | N    | <kbd>,</kbd> <kbd>c</kbd> <kbd>c</kbd>                  |
-| Load View (Folding)                          | N    | <kbd>,</kbd> <kbd>l</kbd> <kbd>v</kbd>                  |
-| Easy align                                   | N    | <kbd>g</kbd> <kbd>a</kbd>                               |
-| Search keyword forward                       | N    | <kbd>n</kbd>                                            |
-| Search keyword backward                      | N    | <kbd>Shift</kbd>+<kbd>n</kbd>                           |
-| Defx sidebar toggle on/off                   | N    | <kbd>F12</kbd>                                          |
-| Tlist toggle on/off (.org)                   | N    | <kbd>F11</kbd>                                          |
-| Tagbar toggle on/off                         | N    | <kbd>F11</kbd>                                          |
-| FZF `:Buffers`                               | N    | <kbd>Control</kbd>+<kbd>p</kbd>                         |
-| FZF `:Files`                                 | N    | <kbd>Control</kbd>+<kbd>f</kbd>                         |
-| Move window pane focus to left               | N    | <kbd>Control</kbd>+<kbd>h</kbd>                         |
-| Move window pane focus to down               | N    | <kbd>Control</kbd>+<kbd>j</kbd>                         |
-| Move window pane focus to up                 | N    | <kbd>Control</kbd>+<kbd>k</kbd>                         |
-| Move window pane focus to right              | N    | <kbd>Control</kbd>+<kbd>l</kbd>                         |
-| Page up with focus on middle                 | N    | <kbd>Control</kbd>+<kbd>u</kbd>                         |
-| Page down with focus on middle               | N    | <kbd>Control</kbd>+<kbd>d</kbd>                         |
-| Exit from insert mode to normal              | I    | <kbd>j</kbd> <kbd>j</kbd>                               |
-| Exit from terminal mode                      | T    | <kbd>Esc</kbd>                                          |
-| Sudo save                                    | C    | <kbd>w</kbd> <kbd>!</kbd> <kbd>!</kbd>                  |
+| Function                                     | Mode | Key Name                                                    |
+|----------------------------------------------|------|-------------------------------------------------------------|
+| Leader                                       | N    | <kbd>Space</kbd>                                            |
+| Local Leader                                 | N    | <kbd>Space</kbd>                                            |
+| Open this nvim config                        | N    | <kbd>Space</kbd> <kbd>e</kbd> <kbd>v</kbd>                  |
+| Source vimrc                                 | N    | <kbd>Space</kbd> <kbd>s</kbd> <kbd>o</kbd>                  |
+| Buffer next                                  | N    | <kbd>Space</kbd> <kbd>n</kbd>                               |
+| Buffer previous                              | N    | <kbd>Space</kbd> <kbd>b</kbd>                               |
+| Buffer close                                 | N    | <kbd>Space</kbd> <kbd>b</kbd>+<kbd>d</kbd>                  |
+| Tab next                                     | N    | <kbd>Space</kbd> <kbd>Shift</kbd>+<kbd>n</kbd>              |
+| Tab previous                                 | N    | <kbd>Space</kbd> <kbd>Shift</kbd>+<kbd>p</kbd>              |
+| Tab close                                    | N    | <kbd>Space</kbd> <kbd>Shift</kbd>+<kbd>t</kbd>+<kbd>d</kbd> |
+| Clear highlight                              | N    | <kbd>Space</kbd> <kbd>n</kbd> <kbd>h</kbd>                  |
+| Strip all trailing whitespace                | N    | <kbd>Space</kbd> <kbd>Shift</kbd>+<kbd>w</kbd>              |
+| Change to CWD with open buffer as refference | N    | <kbd>Space</kbd> <kbd>c</kbd> <kbd>d</kbd>                  |
+| Clean coc.nvim yank pum                      | N    | <kbd>Space</kbd> <kbd>c</kbd> <kbd>l</kbd>                  |
+| Check/Uncheck checkbox (.md)                 | N    | <kbd>Space</kbd> <kbd>c</kbd> <kbd>c</kbd>                  |
+| Load View (Folding)                          | N    | <kbd>Space</kbd> <kbd>l</kbd> <kbd>v</kbd>                  |
+| Easy align                                   | N    | <kbd>g</kbd> <kbd>a</kbd>                                   |
+| Search keyword forward                       | N    | <kbd>n</kbd>                                                |
+| Search keyword backward                      | N    | <kbd>Shift</kbd>+<kbd>n</kbd>                               |
+| Defx sidebar toggle on/off                   | N    | <kbd>F12</kbd>                                              |
+| Tlist toggle on/off (.org)                   | N    | <kbd>F11</kbd>                                              |
+| Tagbar toggle on/off                         | N    | <kbd>F11</kbd>                                              |
+| FZF `:Buffers`                               | N    | <kbd>Control</kbd>+<kbd>p</kbd>                             |
+| FZF `:Files`                                 | N    | <kbd>Control</kbd>+<kbd>f</kbd>                             |
+| Move window pane focus to left               | N    | <kbd>Control</kbd>+<kbd>h</kbd>                             |
+| Move window pane focus to down               | N    | <kbd>Control</kbd>+<kbd>j</kbd>                             |
+| Move window pane focus to up                 | N    | <kbd>Control</kbd>+<kbd>k</kbd>                             |
+| Move window pane focus to right              | N    | <kbd>Control</kbd>+<kbd>l</kbd>                             |
+| Page up with focus on middle                 | N    | <kbd>Control</kbd>+<kbd>u</kbd>                             |
+| Page down with focus on middle               | N    | <kbd>Control</kbd>+<kbd>d</kbd>                             |
+| Exit from terminal mode                      | T    | <kbd>Esc</kbd>                                              |
+| Sudo save                                    | C    | <kbd>w</kbd> <kbd>!</kbd> <kbd>!</kbd>                      |
 
 > MODE<br>
 > N: Normal, I: Insert, T: Terminal, C: Command
