@@ -60,10 +60,6 @@ nmap <C-j> <C-w><C-j>
 nmap <C-k> <C-w><C-k>
 nmap <C-l> <C-w><C-l>
 
-" easy exit & move from insert mode on terminal
-tnoremap <C-h> <c-\><c-n><c-w>h
-tnoremap <C-k> <c-\><c-n><c-w>k
-
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
 
