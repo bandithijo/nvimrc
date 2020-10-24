@@ -16,7 +16,7 @@
 " Optional:
 " - highlight [string default 'Comment']: Highlight group for border
 " - rounded [boolean default v:true]: Use rounded border
-let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.8, 'highlight': 'Normal', 'rounded': v:false } }
+let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95, 'highlight': 'Normal', 'rounded': v:false } }
 
 "command! -bang -nargs=? -complete=dir Files
 "    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--info=inline']}), <bang>0)
