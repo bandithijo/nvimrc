@@ -1,7 +1,7 @@
 " FZF
 
 " Define FZF default command
-"let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l ""'
+let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore --ignore-file ".gitignore" '
 
 " Always enable preview window on the right with 60% width
 "let g:fzf_preview_window = ''
@@ -17,9 +17,6 @@
 " - highlight [string default 'Comment']: Highlight group for border
 " - rounded [boolean default v:true]: Use rounded border
 let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95, 'highlight': 'Normal', 'rounded': v:false } }
-
-"command! -bang -nargs=? -complete=dir Files
-"    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--info=inline']}), <bang>0)
 
 " Customize fzf colors to match your color scheme
 " let g:fzf_colors =

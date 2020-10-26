@@ -41,8 +41,10 @@ if exists('g:plugs["defx.nvim"]')
     function! s:defx_my_settings() abort
         " Define mappings
         nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')
-        nnoremap <silent><buffer><expr> <2-LeftMouse> defx#do_action('drop')
-        nnoremap <silent><buffer><expr> <2-RightMouse> defx#do_action('open_or_close_tree')
+        nnoremap <silent><buffer><expr> <2-LeftMouse>
+        \ defx#do_action('drop')
+        nnoremap <silent><buffer><expr> <2-RightMouse>
+        \ defx#do_action('open_or_close_tree')
         nnoremap <silent><buffer><expr> c
         \ defx#do_action('copy')
         nnoremap <silent><buffer><expr> m

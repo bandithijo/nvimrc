@@ -180,4 +180,7 @@ Plug 'APZelos/blamer.nvim'
 " A tiny translate-shell wrapper for Vim
 Plug 'VincentCordobes/vim-translate'
 
+" A Save vim undo files as /path/to/file instead of %path%to%file.
+Plug 'pixelastic/vim-undodir-tree'
+
 call plug#end()
