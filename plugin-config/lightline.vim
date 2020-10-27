@@ -15,11 +15,11 @@ let g:lightline = {
 \             [ 'filetype', 'fileencoding', 'fileformat' ] ]
 \   },
 \   'tab': {
-\     'active': ['tabnum'],
+\     'active':   ['tabnum'],
 \     'inactive': ['tabnum']
 \   },
 \   'tabline': {
-\   'left': [['buffers']],
+\   'left':  [['buffers']],
 \   'right': [['string1'], ['string2', 'smarttabs']]
 \   },
 \   'separator': {
@@ -33,21 +33,21 @@ let g:lightline = {
 \     'filename': '%<%f'
 \   },
 \   'component_function': {
-\     'gitbranch': 'LightlineFugitive',
-\     'readonly': 'LightlineReadonly',
-\     'modified': 'LightlineModified',
+\     'gitbranch':  'LightlineFugitive',
+\     'readonly':   'LightlineReadonly',
+\     'modified':   'LightlineModified',
 \     'fileformat': 'LightlineFileformat',
-\     'filetype': 'LightlineFiletype',
+\     'filetype':   'LightlineFiletype',
 \   },
 \   'component_expand': {
-\     'buffers': 'lightline#bufferline#buffers',
-\     'string1': 'String1',
-\     'string2': 'String2',
+\     'buffers':   'lightline#bufferline#buffers',
+\     'string1':   'String1',
+\     'string2':   'String2',
 \     'smarttabs': 'SmartTabsIndicator',
-\     'trailing': 'lightline#trailing_whitespace#component'
+\     'trailing':  'lightline#trailing_whitespace#component'
 \   },
 \   'component_type': {
-\   'buffers': 'tabsel',
+\   'buffers':  'tabsel',
 \   'trailing': 'warning'
 \   }
 \}

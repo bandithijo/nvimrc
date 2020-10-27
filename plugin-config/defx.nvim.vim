@@ -1,6 +1,7 @@
 if exists('g:plugs["defx.nvim"]')
     autocmd FileType defx call s:defx_my_settings()
-    autocmd BufWritePost * call defx#redraw()
+    " autocmd BufWritePost * call defx#redraw()
+    " autocmd BufWinEnter * call defx#redraw()
     autocmd BufEnter * call s:open_defx_if_directory()
 
     call defx#custom#option('_', {
@@ -51,9 +52,9 @@ if exists('g:plugs["defx.nvim"]')
         \ defx#do_action('move')
         nnoremap <silent><buffer><expr> p
         \ defx#do_action('paste')
-        nnoremap <silent><buffer><expr> v
+        nnoremap <silent><buffer><expr> V
         \ defx#do_action('drop', 'vsplit')
-        nnoremap <silent><buffer><expr> s
+        nnoremap <silent><buffer><expr> S
         \ defx#do_action('drop', 'split')
         nnoremap <silent><buffer><expr> P
         \ defx#do_action('open', 'pedit')
@@ -65,10 +66,7 @@ if exists('g:plugs["defx.nvim"]')
         \ defx#do_action('new_file')
         nnoremap <silent><buffer><expr> M
         \ defx#do_action('new_multiple_files')
-        nnoremap <silent><buffer><expr> C
-        \ defx#do_action('toggle_columns',
-        \                'mark:indent:icon:filename:type:size:time')
-        nnoremap <silent><buffer><expr> S
+        nnoremap <silent><buffer><expr> T
         \ defx#do_action('toggle_sort', 'time')
         nnoremap <silent><buffer><expr> d
         \ defx#do_action('remove')
@@ -106,4 +104,15 @@ if exists('g:plugs["defx.nvim"]')
         \ defx#do_action('change_vim_cwd')
     endfunction
 
+    " for disable lightline statusline on Defx
+    augroup filetype_defx
+        au!
+        au FileType defx call s:disable_lightline_on_defx()
+        au WinEnter,BufWinEnter,TabEnter * call s:disable_lightline_on_defx()
+    augroup END
+
+    fu s:disable_lightline_on_defx() abort
+        let defx_winnr = index(map(range(1, winnr('$')), {_,v -> getbufvar(winbufnr(v), '&ft')}), 'defx') + 1
+        call timer_start(0, {-> defx_winnr && setwinvar(defx_winnr, '&stl', '%<%f %=%l,%c')})
+    endfu
 endif
