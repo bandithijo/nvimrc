@@ -18,7 +18,7 @@
 
 " All structure file is sorted & ordered with purposes.
 " Please, consider if you want to reorder.
-" It will raise an error on issue.
+" Maybe it will raise an error or issue.
 
 runtime init.d/setting.vim
 runtime init.d/formating.vim
