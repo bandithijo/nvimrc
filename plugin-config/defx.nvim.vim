@@ -1,7 +1,7 @@
 if exists('g:plugs["defx.nvim"]')
     autocmd FileType defx call s:defx_my_settings()
     " autocmd BufWritePost * call defx#redraw()
-    " autocmd BufWinEnter * call defx#redraw()
+    autocmd BufWinEnter * call defx#redraw()
     autocmd BufEnter * call s:open_defx_if_directory()
 
     call defx#custom#option('_', {
@@ -104,15 +104,4 @@ if exists('g:plugs["defx.nvim"]')
         \ defx#do_action('change_vim_cwd')
     endfunction
 
-    " for disable lightline statusline on Defx
-    augroup filetype_defx
-        au!
-        au FileType defx call s:disable_lightline_on_defx()
-        au WinEnter,BufWinEnter,TabEnter * call s:disable_lightline_on_defx()
-    augroup END
-
-    fu s:disable_lightline_on_defx() abort
-        let defx_winnr = index(map(range(1, winnr('$')), {_,v -> getbufvar(winbufnr(v), '&ft')}), 'defx') + 1
-        call timer_start(0, {-> defx_winnr && setwinvar(defx_winnr, '&stl', '%<%f %=%l,%c')})
-    endfu
 endif
