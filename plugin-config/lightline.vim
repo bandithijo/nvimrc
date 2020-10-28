@@ -26,7 +26,7 @@ let g:lightline = {
 \     'left': '', 'right': ''
 \   },
 \   'subseparator': {
-\   'left': '', 'right': ''
+\   'left': '|', 'right': '|'
 \   },
 \   'component': {
 \     'filename': '%<%{LightlineFileName()}'
@@ -173,4 +173,3 @@ function! LightlineReload()
 endfunction
 set showtabline=2  " Show tabline, 2 show, 1 hide
 set guioptions-=e  " Don't use GUI tabline
-set noshowmode
