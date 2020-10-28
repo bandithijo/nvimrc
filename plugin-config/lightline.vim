@@ -29,13 +29,12 @@ let g:lightline = {
 \   'left': '', 'right': ''
 \   },
 \   'component': {
-\     'filename': '%<%f'
+\     'filename': '%<%{LightlineFileName()}'
 \   },
 \   'component_function': {
 \     'gitbranch':    'LightlineFugitive',
 \     'readonly':     'LightlineReadonly',
 \     'modified':     'LightlineModified',
-\     'filename':     'LightlineFileName',
 \     'fileformat':   'LightlineFileformat',
 \     'filetype':     'LightlineFiletype',
 \     'fileencoding': 'LightlineFileEncoding',
