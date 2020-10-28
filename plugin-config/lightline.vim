@@ -121,16 +121,12 @@ endfunction
 
 function! LightlineFileName()
   let filename = expand('%')
-
   if &filetype !=? 'defx'
-
     if filename ==# ''
       return '[No Name]'
     endif
 
     let parts = split(filename, ':')
-
-    " Show the shell with full path as filename
     if parts[0] ==# 'term'
       return parts[-1]
     endif
