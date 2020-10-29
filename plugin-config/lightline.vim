@@ -51,11 +51,24 @@ let g:lightline = {
 \   'component_type': {
 \   'buffers':  'tabsel',
 \   'trailing': 'warning'
+\   },
+\   'mode_map': {
+\     'n':      ' N0RMAL',
+\     'i':      ' INSERT',
+\     'R':      ' REPLACE',
+\     'v':      ' VISUAL',
+\     'V':      ' V-LINE',
+\     "\<C-v>": ' V-BL0CK',
+\     'c':      ' COMMAND',
+\     's':      ' SELECT',
+\     'S':      ' S-LINE',
+\     "\<C-s>": ' S-BL0CK',
+\     't':      ' TERMINAL',
 \   }
 \}
 
 function! LightlineReadonly()
-  return &readonly ? '' : ''
+  return &readonly ? '' : ''
 endfunction
 
 function! LightlineFugitive()
@@ -133,7 +146,7 @@ function! LightlineFileName()
 endfunction
 
 function! LightlineMode()
-  return &filetype ==# 'defx' ?  'DEFX' : lightline#mode()
+  return &filetype ==# 'defx' ?  ' DEFX' : lightline#mode()
 endfunction
 
 function! String1()
