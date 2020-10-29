@@ -6,21 +6,21 @@
 let g:lightline = {
 \   'colorscheme': 'codedark_bandit',
 \   'active': {
-\    'left' :[[ 'mode', 'paste' ],
-\             [ 'gitbranch', 'readonly' ],
-\             [ 'filename' ]],
-\    'right':[[ 'trailing' ],
-\             [ 'lineinfo' ],
-\             [ 'percent' ],
-\             [ 'filetype', 'fileencoding', 'fileformat' ] ]
+\    'left' : [[ 'mode', 'paste' ],
+\              [ 'gitbranch', 'readonly' ],
+\              [ 'filename' ]],
+\    'right': [[ 'trailing' ],
+\              [ 'lineinfo' ],
+\              [ 'percent' ],
+\              [ 'filetype', 'fileencoding', 'fileformat' ] ]
 \   },
 \   'tab': {
-\     'active':   ['tabnum'],
-\     'inactive': ['tabnum']
+\     'active'   : ['tabnum'],
+\     'inactive' : ['tabnum']
 \   },
 \   'tabline': {
-\   'left':  [['buffers']],
-\   'right': [['string1'], ['string2', 'smarttabs']]
+\   'left'  : [['buffers']],
+\   'right' : [['string1'], ['string2', 'smarttabs']]
 \   },
 \   'separator': {
 \     'left': '', 'right': ''
@@ -32,38 +32,38 @@ let g:lightline = {
 \     'filename': '%<%{LightlineFileName()}'
 \   },
 \   'component_function': {
-\     'gitbranch':    'LightlineFugitive',
-\     'readonly':     'LightlineReadonly',
-\     'fileformat':   'LightlineFileformat',
-\     'filetype':     'LightlineFiletype',
-\     'fileencoding': 'LightlineFileEncoding',
-\     'lineinfo':     'LightlineLineInfo',
-\     'percent':      'LightlinePercent',
-\     'mode':         'LightlineMode',
+\     'gitbranch'    : 'LightlineFugitive',
+\     'readonly'     : 'LightlineReadonly',
+\     'fileformat'   : 'LightlineFileformat',
+\     'filetype'     : 'LightlineFiletype',
+\     'fileencoding' : 'LightlineFileEncoding',
+\     'lineinfo'     : 'LightlineLineInfo',
+\     'percent'      : 'LightlinePercent',
+\     'mode'         : 'LightlineMode',
 \   },
 \   'component_expand': {
-\     'buffers':   'lightline#bufferline#buffers',
-\     'string1':   'String1',
-\     'string2':   'String2',
-\     'smarttabs': 'SmartTabsIndicator',
-\     'trailing':  'LightlineTrailingWhitespace',
+\     'buffers'   : 'lightline#bufferline#buffers',
+\     'string1'   : 'String1',
+\     'string2'   : 'String2',
+\     'smarttabs' : 'SmartTabsIndicator',
+\     'trailing'  : 'LightlineTrailingWhitespace',
 \   },
 \   'component_type': {
-\   'buffers':  'tabsel',
-\   'trailing': 'warning'
+\   'buffers'  : 'tabsel',
+\   'trailing' : 'warning'
 \   },
 \   'mode_map': {
-\     'n':      ' N0RMAL',
-\     'i':      ' INSERT',
-\     'R':      ' REPLACE',
-\     'v':      ' VISUAL',
-\     'V':      ' V-LINE',
-\     "\<C-v>": ' V-BL0CK',
-\     'c':      ' COMMAND',
-\     's':      ' SELECT',
-\     'S':      ' S-LINE',
-\     "\<C-s>": ' S-BL0CK',
-\     't':      ' TERMINAL',
+\     'n'      : ' N0RMAL',
+\     'i'      : ' INSERT',
+\     'R'      : ' REPLACE',
+\     'v'      : ' VISUAL',
+\     'V'      : ' V-LINE',
+\     "\<C-v>" : ' V-BL0CK',
+\     'c'      : ' COMMAND',
+\     's'      : ' SELECT',
+\     'S'      : ' S-LINE',
+\     "\<C-s>" : ' S-BL0CK',
+\     't'      : ' TERMINAL',
 \   }
 \}
 
@@ -180,5 +180,5 @@ function! LightlineReload()
   call lightline#colorscheme()
   call lightline#update()
 endfunction
-set showtabline=2  " Show tabline, 2 show, 1 hide
-set guioptions-=e  " Don't use GUI tabline
+set showtabline = 2  " Show tabline, 2 show, 1 hide
+set guioptions -= e  " Don't use GUI tabline

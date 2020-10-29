@@ -16,9 +16,9 @@ if [ ! -f "$HOME/.config/nvim/vimrc" ]; then
     echo "DONE: Create tmp directory on ~/.local/share/nvim"
 
     if command -v nvim &> /dev/null; then
-            nvim -c ':PlugInstall' -cqa
+        nvim -c ':PlugInstall' -cqa
     else
-            vim -c ':PlugInstall' -cqa
+        vim -c ':PlugInstall' -cqa
     fi
     echo "DONE: All plugin installed"
     echo "Now, you can open nvim and vim with same file config."

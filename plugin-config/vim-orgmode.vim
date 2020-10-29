@@ -27,14 +27,14 @@ let g:org_todo_keyword_faces          = [
 
 " Custom color for vim-orgmode
 function OrgmodeCustomColor()
-  hi org_heading1 ctermfg=255 cterm=bold
-  hi org_heading2 ctermfg=255 cterm=bold
-  hi org_heading3 ctermfg=255 cterm=bold
-  hi org_heading4 ctermfg=255 cterm=bold
-  hi org_heading5 ctermfg=255 cterm=bold
-  hi org_heading6 ctermfg=255 cterm=bold
+  hi org_heading1  ctermfg=255 cterm=bold
+  hi org_heading2  ctermfg=255 cterm=bold
+  hi org_heading3  ctermfg=255 cterm=bold
+  hi org_heading4  ctermfg=255 cterm=bold
+  hi org_heading5  ctermfg=255 cterm=bold
+  hi org_heading6  ctermfg=255 cterm=bold
   hi org_underline cterm=none
-  hi hyperlink ctermfg=117
+  hi hyperlink     ctermfg=117
 endfunction
 
 " Custom key for vim-orgmode

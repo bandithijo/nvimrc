@@ -1,43 +1,43 @@
 #page-ctn {
-  margin:    0 auto;
-  max-width: 900px;
-  color:     #ffffff;
+  margin    : 0 auto;
+  max-width : 900px;
+  color     : #ffffff;
 }
 
 #page-header {
-  padding:          0;
-  background-color: #ffffff;
-  border-color:     #ffffff;
-  border-style:     solid;
-  border-width:     1px 1px 0;
-  border-top-left-radius:  3px;
-  border-top-right-radius: 3px;
+  padding                 : 0;
+  background-color        : #ffffff;
+  border-color            : #ffffff;
+  border-style            : solid;
+  border-width            : 1px 1px 0;
+  border-top-left-radius  : 3px;
+  border-top-right-radius : 3px;
 }
 
 #page-header svg {
-  display:      inline-block;
-  margin-right: 5px;
-  overflow:     hidden;
-  fill:         currentColor;
+  display      : inline-block;
+  margin-right : 5px;
+  overflow     : hidden;
+  fill         : currentColor;
 }
 
 #page-header h3 {
-  display:       flex;
-  align-items:   center;
-  margin-top:    0;
-  margin-bottom: 0;
-  padding-right: 16px;
-  font-family:   "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
-                 sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-                 "Segoe UI Symbol";
-  font-size:     14px;
-  font-weight:   600;
+  display       : flex;
+  align-items   : center;
+  margin-top    : 0;
+  margin-bottom : 0;
+  padding-right : 16px;
+  font-family   : "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
+                  sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                  "Segoe UI Symbol";
+  font-size     : 14px;
+  font-weight   : 600;
 }
 
 hr.footer {
-  border:        none;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 16px;
+  border        : none;
+  border-bottom : 1px solid #eee;
+  margin-bottom : 16px;
 }
 
 #footer-box .alignl {
@@ -60,22 +60,22 @@ header#page-header {
 .markdown-body ul ul ol,
 .markdown-body ol ul ul,
 .markdown-body ul ul ul {
-  margin-top:    0;
-  margin-bottom: 0;
+  margin-top    : 0;
+  margin-bottom : 0;
 }
 .markdown-body {
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
-               sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-               "Segoe UI Symbol";
-  font-size:   16px;
-  color:       #333;
-  line-height: 1.6;
-  word-wrap:   break-word;
-  padding:     45px;
-  background:  #fff;
-  border:                1px solid #fff;
-  -webkit-border-radius: 0 0 3px 3px;
-  border-radius:         0 0 3px 3px;
+  font-family           : "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,
+                          sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                          "Segoe UI Symbol";
+  font-size             : 16px;
+  color                 : #333;
+  line-height           : 1.6;
+  word-wrap             : break-word;
+  padding               : 45px;
+  background            : #fff;
+  border                : 1px solid #fff;
+  -webkit-border-radius : 0 0 3px 3px;
+  border-radius         : 0 0 3px 3px;
 }
 .markdown-body > *:first-child {
   margin-top: 0 !important;
@@ -84,9 +84,9 @@ header#page-header {
   margin-bottom: 0 !important;
 }
 .markdown-body * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-  box-sizing:         border-box;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  box-sizing         : border-box;
 }
 .markdown-body h1,
 .markdown-body h2,
@@ -94,10 +94,10 @@ header#page-header {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  margin-top:    1em;
-  margin-bottom: 16px;
-  font-weight:   bold;
-  line-height:   1.4;
+  margin-top    : 1em;
+  margin-bottom : 16px;
+  font-weight   : bold;
+  line-height   : 1.4;
 }
 .markdown-body p,
 .markdown-body blockquote,
@@ -106,25 +106,25 @@ header#page-header {
 .markdown-body dl,
 .markdown-body table,
 .markdown-body pre {
-  margin-top:    0;
-  margin-bottom: 16px;
+  margin-top    : 0;
+  margin-bottom : 16px;
 }
 .markdown-body h1 {
-  margin:         0.67em 0;
-  padding-bottom: 0.3em;
-  font-size:      2.25em;
-  line-height:    1.2;
-  border-bottom:  1px solid #eee;
+  margin         : 0.67em 0;
+  padding-bottom : 0.3em;
+  font-size      : 2.25em;
+  line-height    : 1.2;
+  border-bottom  : 1px solid #eee;
 }
 .markdown-body h2 {
-  padding-bottom: 0.3em;
-  font-size:      1.75em;
-  line-height:    1.225;
-  border-bottom:  1px solid #eee;
+  padding-bottom : 0.3em;
+  font-size      : 1.75em;
+  line-height    : 1.225;
+  border-bottom  : 1px solid #eee;
 }
 .markdown-body h3 {
-  font-size:   1.5em;
-  line-height: 1.43;
+  font-size   : 1.5em;
+  line-height : 1.43;
 }
 .markdown-body h4 {
   font-size: 1.25em;
@@ -159,90 +159,90 @@ header#page-header {
   list-style-type: disc;
 }
 .markdown-body blockquote {
-  margin-left:  0;
-  margin-right: 0;
-  padding:      0 15px;
-  color:        #777;
-  border-left:  4px solid #ddd;
+  margin-left  : 0;
+  margin-right : 0;
+  padding      : 0 15px;
+  color        : #777;
+  border-left  : 4px solid #ddd;
 }
 .markdown-body table {
-  display:         block;
-  width:           100%;
-  overflow:        auto;
-  word-break:      normal;
-  word-break:      keep-all;
-  border-collapse: collapse;
-  border-spacing:  0;
+  display         : block;
+  width           : 100%;
+  overflow        : auto;
+  word-break      : normal;
+  word-break      : keep-all;
+  border-collapse : collapse;
+  border-spacing  : 0;
 }
 .markdown-body table tr {
-  background-color: #fff;
-  border-top:       1px solid #ccc;
+  background-color : #fff;
+  border-top       : 1px solid #ccc;
 }
 .markdown-body table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
 .markdown-body table th,
 .markdown-body table td {
-  padding: 6px 13px;
-  border:  1px solid #ddd;
+  padding : 6px 13px;
+  border  : 1px solid #ddd;
 }
 .markdown-body pre {
-  word-wrap:        normal;
-  padding:          16px;
-  overflow:         auto;
-  font-size:        85%;
-  line-height:      1.45;
-  background-color: #f7f7f7;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  word-wrap             : normal;
+  padding               : 16px;
+  overflow              : auto;
+  font-size             : 85%;
+  line-height           : 1.45;
+  background-color      : #f7f7f7;
+  -webkit-border-radius : 3px;
+  border-radius         : 3px;
 }
 .markdown-body pre code {
-  background-color: transparent;
-  display:          inline;
-  max-width:        initial;
-  padding:          0;
-  margin:           0;
-  overflow:         initial;
-  font-size:        100%;
-  line-height:      inherit;
-  word-wrap:        normal;
-  white-space:      pre;
-  border:           0;
-  -webkit-border-radius: 3px;
-  border-radius:         3px;
+  background-color      : transparent;
+  display               : inline;
+  max-width             : initial;
+  padding               : 0;
+  margin                : 0;
+  overflow              : initial;
+  font-size             : 100%;
+  line-height           : inherit;
+  word-wrap             : normal;
+  white-space           : pre;
+  border                : 0;
+  -webkit-border-radius : 3px;
+  border-radius         : 3px;
 }
 .markdown-body pre code:before,
 .markdown-body pre code:after {
   content: normal;
 }
 .markdown-body code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  padding:          0;
-  padding-top:      0.2em;
-  padding-bottom:   0.2em;
-  margin:           0;
-  font-size:        85%;
-  background-color: rgba(0,0,0,0.04);
-  -webkit-border-radius: 3px;
-  border-radius:         3px;
+  font-family           : Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding               : 0;
+  padding-top           : 0.2em;
+  padding-bottom        : 0.2em;
+  margin                : 0;
+  font-size             : 85%;
+  background-color      : rgba(0,0,0,0.04);
+  -webkit-border-radius : 3px;
+  border-radius         : 3px;
 }
 .markdown-body code:before,
 .markdown-body code:after {
-  letter-spacing: -0.2em;
-  content:        "\00a0";
+  letter-spacing : -0.2em;
+  content        : "\00a0";
 }
 .markdown-body a {
-  color:           #4078c0;
-  text-decoration: none;
-  background:      transparent;
+  color           : #4078c0;
+  text-decoration : none;
+  background      : transparent;
 }
 .markdown-body img {
-  max-width:             100%;
-  max-height:            100%;
-  -webkit-border-radius: 4px;
-  border-radius:         4px;
-  -webkit-box-shadow:    0 0 10px #555;
-  box-shadow:            0 0 10px #555;
+  max-width             : 100%;
+  max-height            : 100%;
+  -webkit-border-radius : 4px;
+  border-radius         : 4px;
+  -webkit-box-shadow    : 0 0 10px #555;
+  box-shadow            : 0 0 10px #555;
 }
 .markdown-body strong {
   font-weight: bold;
@@ -257,26 +257,26 @@ header#page-header {
   list-style-type: none;
 }
 .task-list-item input {
-  font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans,
+  font           : 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans,
                  clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
                  "Segoe UI Symbol";
-  margin: 0 0.4em 0.25em -1.6em;
-  vertical-align: middle;
+  margin         : 0 0.4em 0.25em -1.6em;
+  vertical-align : middle;
 }
 .task-list-item input[disabled] {
   cursor: default;
 }
 .task-list-item input[type="checkbox"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-  box-sizing:         border-box;
-  padding:            0;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  box-sizing         : border-box;
+  padding            : 0;
 }
 .task-list-item input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-  box-sizing:         border-box;
-  padding:            0;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  box-sizing         : border-box;
+  padding            : 0;
 }
 .anchor {
   display: none;
@@ -290,24 +290,24 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 */
 
 .hljs {
-  display:    block;
-  overflow-x: auto;
-  padding:    0.5em;
-  color:      #333;
-  background: #f8f8f8;
+  display    : block;
+  overflow-x : auto;
+  padding    : 0.5em;
+  color      : #333;
+  background : #f8f8f8;
 }
 
 .hljs-comment,
 .hljs-quote {
-  color:      #998;
-  font-style: italic;
+  color      : #998;
+  font-style : italic;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color:       #333;
-  font-weight: bold;
+  color       : #333;
+  font-weight : bold;
 }
 
 .hljs-number,
@@ -326,8 +326,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-title,
 .hljs-section,
 .hljs-selector-id {
-  color:       #900;
-  font-weight: bold;
+  color       : #900;
+  font-weight : bold;
 }
 
 .hljs-subst {
@@ -336,15 +336,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .hljs-type,
 .hljs-class .hljs-title {
-  color:       #458;
-  font-weight: bold;
+  color       : #458;
+  font-weight : bold;
 }
 
 .hljs-tag,
 .hljs-name,
 .hljs-attribute {
-  color:       #000080;
-  font-weight: normal;
+  color       : #000080;
+  font-weight : normal;
 }
 
 .hljs-regexp,
@@ -363,8 +363,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 
 .hljs-meta {
-  color:       #999;
-  font-weight: bold;
+  color       : #999;
+  font-weight : bold;
 }
 
 .hljs-deletion {

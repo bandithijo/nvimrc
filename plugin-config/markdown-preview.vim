@@ -64,15 +64,15 @@ let g:mkdp_browserfunc = ''
 " hide_yaml_meta: if hide yaml metadata, default is 1
 " sequence_diagrams: js-sequence-diagrams options
 let g:mkdp_preview_options = {
-    \ 'mkit':                {},
-    \ 'katex':               {},
-    \ 'uml':                 {},
-    \ 'maid':                {},
-    \ 'disable_sync_scroll': 0,
-    \ 'sync_scroll_type':    'middle',
-    \ 'hide_yaml_meta':      1,
-    \ 'sequence_diagrams':   {},
-    \ 'flowchart_diagrams':  {}
+    \ 'mkit'                : {},
+    \ 'katex'               : {},
+    \ 'uml'                 : {},
+    \ 'maid'                : {},
+    \ 'disable_sync_scroll' : 0,
+    \ 'sync_scroll_type'    : 'middle',
+    \ 'hide_yaml_meta'      : 1,
+    \ 'sequence_diagrams'   : {},
+    \ 'flowchart_diagrams'  : {}
     \ }
 
 " use a custom markdown style must be absolute path

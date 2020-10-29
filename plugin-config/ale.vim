@@ -23,17 +23,17 @@ nmap <silent> <A-k> <Plug>(ale_previous_wrap)
 nmap <silent> <A-j> <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
-\   'ruby':       ['rubocop'],
-\   'python':     ['pylint', 'flake8'],
-\   'javascript': ['eslint'],
-\   'c':          ['ccls'],
-\   'cpp':        ['ccls'],
+\   'ruby'       : ['rubocop'],
+\   'python'     : ['pylint', 'flake8'],
+\   'javascript' : ['eslint'],
+\   'c'          : ['ccls'],
+\   'cpp'        : ['ccls'],
 \}
 
 let g:ale_fixers = {
-\   'ruby':       ['rubocop'],
-\   'python':     ['pylint', 'flake8'],
-\   'javascript': ['eslint'],
+\   'ruby'       : ['rubocop'],
+\   'python'     : ['pylint', 'flake8'],
+\   'javascript' : ['eslint'],
 \}
 
 " source: https://github.com/dense-analysis/ale/issues/371
