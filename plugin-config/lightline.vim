@@ -8,7 +8,7 @@ let g:lightline = {
 \   'active': {
 \    'left' :[[ 'mode', 'paste' ],
 \             [ 'gitbranch', 'readonly' ],
-\             [ 'filename', 'modified' ]],
+\             [ 'filename' ]],
 \    'right':[[ 'trailing' ],
 \             [ 'lineinfo' ],
 \             [ 'percent' ],
@@ -34,7 +34,6 @@ let g:lightline = {
 \   'component_function': {
 \     'gitbranch':    'LightlineFugitive',
 \     'readonly':     'LightlineReadonly',
-\     'modified':     'LightlineModified',
 \     'fileformat':   'LightlineFileformat',
 \     'filetype':     'LightlineFiletype',
 \     'fileencoding': 'LightlineFileEncoding',
@@ -54,10 +53,6 @@ let g:lightline = {
 \   'trailing': 'warning'
 \   }
 \}
-
-function! LightlineModified()
-  return &modified ? '' : ''
-endfunction
 
 function! LightlineReadonly()
   return &readonly ? '' : ''
@@ -120,6 +115,7 @@ endfunction
 
 function! LightlineFileName()
   let filename = expand('%')
+  let modified = &modified ? '' : ''
   if &filetype !=? 'defx'
     if filename ==# ''
       return '[No Name]'
@@ -127,10 +123,10 @@ function! LightlineFileName()
 
     let parts = split(filename, ':')
     if parts[0] ==# 'term'
-      return parts[-1]
+      return '[' . parts[-1] . ']'
     endif
 
-    return filename
+    return filename . ' ' . modified
   else
     return '[defx]'
   endif
