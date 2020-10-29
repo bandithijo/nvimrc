@@ -26,7 +26,7 @@ let g:lightline = {
 \     'left': '', 'right': ''
 \   },
 \   'subseparator': {
-\   'left': '|', 'right': '|'
+\   'left': '│', 'right': '│'
 \   },
 \   'component': {
 \     'filename': '%<%{LightlineFileName()}'

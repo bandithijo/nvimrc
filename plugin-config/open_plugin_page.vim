@@ -1,2 +1,4 @@
+" Open Plugin Page
+
 let g:opp_open_command = "firefox"
-map <leader>fo <Plug>OpenPluginPage
+map <leader>po <Plug>OpenPluginPage

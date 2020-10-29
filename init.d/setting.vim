@@ -75,4 +75,4 @@ set redrawtime=5000
 autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 " Declare this variable before polyglot is loaded. Please don't move this
-let g:polyglot_disabled = ['autoindent', 'csv']
+"let g:polyglot_disabled = ['autoindent', 'csv']

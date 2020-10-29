@@ -1,22 +1,22 @@
 {
   "emmet.includeLanguages": {
-    "eruby": "html",
+    "eruby":  "html",
     "liquid": "html",
-    "js": "javascript"
+    "js":     "javascript"
   },
-  "python.jediEnabled": false,
-  "python.linting.enabled": true,
+  "python.jediEnabled":           false,
+  "python.linting.enabled":       true,
   "python.linting.pylintEnabled": true,
   "python.linting.pylamaEnabled": false,
-  "solargraph.completion": true,
-  "solargraph.hover": true,
-  "solargraph.autoformat": true,
-  "solargraph.formatting": true,
+  "solargraph.completion":        true,
+  "solargraph.hover":             true,
+  "solargraph.autoformat":        true,
+  "solargraph.formatting":        true,
   "snippets.extends": {
-    "cpp": ["c"],
+    "cpp":             ["c"],
     "javascriptreact": ["javascript"],
-    "typescript": ["javascript"],
-    "liquid": ["markdown"]
+    "typescript":      ["javascript"],
+    "liquid":          ["markdown"]
   },
   "explorer.icon.enableNerdfont": true,
   "languageserver": {

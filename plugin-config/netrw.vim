@@ -23,6 +23,6 @@ let g:netrw_browse_split = 0
 
 " HIDE BY DEFAULT
 " Make netrw start with dotfiles hidden. Press gh for toggle hide & show
-let g:netrw_hide = 1
-let ghregex='\(^\|\s\s\)\zs\.\S\+'
-let g:netrw_list_hide=ghregex
+let g:netrw_hide      = 1
+let ghregex           = '\(^\|\s\s\)\zs\.\S\+'
+let g:netrw_list_hide = ghregex

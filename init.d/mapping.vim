@@ -2,7 +2,7 @@
 
 " my leader key is space
 nnoremap <SPACE> <Nop>
-let mapleader = " "
+let mapleader      = " "
 let maplocalleader = " "
 
 " for edit my .vimrc
