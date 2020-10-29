@@ -2,7 +2,7 @@
 
 " highlight CodiVirtualText guifg=cyan
 
-let $SHELL='/bin/zsh'
+let $SHELL = '/bin/zsh'
 
 " A dictionary of user-defined interpreters. See |codi-interpreters| for the
 " format specification
