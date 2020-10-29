@@ -30,7 +30,7 @@ set modifiable
 set splitbelow splitright
 
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
-au FocusGained,BufEnter * :checktime  " auto update trigger on buffer change or terminal focus
+au FocusGained,BufEnter   * checktime " auto update trigger on buffer change or terminal focus
 
 " restore cursor position when opening file
 autocmd BufReadPost *

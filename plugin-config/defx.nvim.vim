@@ -1,17 +1,16 @@
 if exists('g:plugs["defx.nvim"]')
-  autocmd FileType    defx call s:defx_my_settings()
-  " autocmd BufWritePost * call defx#redraw()
-  autocmd BufWinEnter * call defx#redraw()
-  autocmd BufEnter    * call s:open_defx_if_directory()
+  autocmd FileType     defx call s:defx_my_settings()
+  autocmd BufWritePost *    call defx#redraw()
+  autocmd BufEnter     *    call s:open_defx_if_directory()
 
   call defx#custom#option('_', {
     \ 'winwidth'           : 40,
     \ 'split'              : 'vertical',
     \ 'direction'          : 'topleft',
-    \ 'show_ignored_files' : 0,
     \ 'buffer_name'        : 'defx',
-    \ 'toggle'             : 1,
     \ 'columns'            : 'git:indent:icons:filename',
+    \ 'show_ignored_files' : 0,
+    \ 'toggle'             : 1,
     \ 'resume'             : 1,
     \ 'auto_cd'            : 1,
     \ })
