@@ -1,7 +1,7 @@
 " LightLine
 
-" separator    :  
-" subseparator :  
+" separator    : \ue0b0 \ue0b2
+" subseparator : \ue0b1 \ue0b3
 
 let g:lightline = {
 \   'colorscheme': 'codedark_bandit',
@@ -26,7 +26,7 @@ let g:lightline = {
 \     'left': '', 'right': ''
 \   },
 \   'subseparator': {
-\   'left': '│', 'right': '│'
+\   'left': '\u2502', 'right': '\u2502'
 \   },
 \   'component': {
 \     'filename': '%<%{LightlineFileName()}'
@@ -74,8 +74,8 @@ endfunction
 function! LightlineFugitive()
   if &filetype !=? 'defx'
     if exists('*fugitive#head')
-        let branch = fugitive#head()
-        return branch !=# '' ? ' ' . branch : ''
+      let branch = fugitive#head()
+      return branch !=# '' ? ' ' . branch : ''
     endif
     return fugitive#head()
   else
