@@ -1,6 +1,6 @@
-" netrw is a vim's default file explorer.
-" I need to ricing this because if file explorer fallback to Netrw, it dosen't
-" look so bad. (^_^)
+" NETRW IS A VIM'S DEFAULT FILE EXPLORER.
+" I NEED TO RICING THIS BECAUSE IF FILE EXPLORER FALLBACK TO NETRW, IT DOSEN'T
+" LOOK SO BAD. (^_^)
 
 let g:netrw_banner = 0
 
