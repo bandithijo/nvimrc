@@ -72,7 +72,7 @@ function! LightlineReadonly()
 endfunction
 
 function! LightlineFugitive()
-  if &filetype !=? 'defx'
+  if &filetype !=? ('defx' || 'tagbar')
     if exists('*fugitive#head')
       let branch = fugitive#head()
       return branch !=# '' ? ' ' . branch : ''
@@ -84,7 +84,7 @@ function! LightlineFugitive()
 endfunction
 
 function! LightlineFileformat()
-  if &filetype !=? 'defx'
+  if &filetype !=? ('defx' || 'tagbar')
     return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) . ' ' : ''
   else
     return ''
@@ -92,7 +92,7 @@ function! LightlineFileformat()
 endfunction
 
 function! LightlineFiletype()
-  if &filetype !=? 'defx'
+  if &filetype !=? ('defx' || 'tagbar')
     return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
   else
     return ''
@@ -100,7 +100,7 @@ function! LightlineFiletype()
 endfunction
 
 function! LightlineFileEncoding()
-  if &filetype !=? 'defx'
+  if &filetype !=? ('defx' || 'tagbar')
     return &fileencoding
   else
     return ''
@@ -108,7 +108,7 @@ function! LightlineFileEncoding()
 endfunction
 
 function! LightlineLineInfo()
-  if &filetype !=? 'defx'
+  if &filetype !=? ('defx' || 'tagbar')
     let current_line = printf('%3s', line('.'))
     let current_col  = printf('%-3s', col('.'))
     let lineinfo     = ' ' . current_line . ':' . current_col
@@ -119,7 +119,7 @@ function! LightlineLineInfo()
 endfunction
 
 function! LightlinePercent()
-  if &filetype !=? 'defx'
+  if &filetype !=? ('defx' || 'tagbar')
     return printf(' %3s', (line('.') * 100 / line('$'))) . '%'
   else
     return ''
@@ -146,7 +146,9 @@ function! LightlineFileName()
 endfunction
 
 function! LightlineMode()
-  return &filetype ==# 'defx' ?  ' DEFX' : lightline#mode()
+  return expand('%:t') ==# '__Tagbar__.1' ? ' TAGBAR' :
+       \ &filetype ==# 'defx' ?  ' DEFX' :
+       \ lightline#mode()
 endfunction
 
 function! String1()
@@ -164,7 +166,7 @@ function! SmartTabsIndicator()
 endfunction
 
 function! LightlineTrailingWhitespace()
-  if &filetype !=? 'defx'
+  if &filetype !=? ('defx' || 'tagbar')
     let status = lightline#trailing_whitespace#component()
     return status == 'trailing' ? '!' : ''
   else
