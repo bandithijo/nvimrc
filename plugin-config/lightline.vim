@@ -75,7 +75,7 @@ function! LightlineFugitive()
   if &filetype !=? 'defx'
     if exists('*fugitive#head')
         let branch = fugitive#head()
-        return branch !=# '' ? ' '.branch : ''
+        return branch !=# '' ? ' ' . branch : ''
     endif
     return fugitive#head()
   else
@@ -110,7 +110,7 @@ endfunction
 function! LightlineLineInfo()
   if &filetype !=? 'defx'
     let current_line = printf('%3s', line('.'))
-    let current_col  = printf('%-2s', col('.'))
+    let current_col  = printf('%-3s', col('.'))
     let lineinfo     = ' ' . current_line . ':' . current_col
     return lineinfo
   else
@@ -120,7 +120,7 @@ endfunction
 
 function! LightlinePercent()
   if &filetype !=? 'defx'
-    return printf('%3s', (line('.') * 100 / line('$'))) . '%'
+    return printf(' %3s', (line('.') * 100 / line('$'))) . '%'
   else
     return ''
   endif
@@ -166,7 +166,7 @@ endfunction
 function! LightlineTrailingWhitespace()
   if &filetype !=? 'defx'
     let status = lightline#trailing_whitespace#component()
-    return status == 'trailing' ? '' : ''
+    return status == 'trailing' ? '!' : ''
   else
     return ''
   endif
