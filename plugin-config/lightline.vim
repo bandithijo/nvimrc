@@ -134,9 +134,9 @@ function! LightlineFileName()
       return '[No Name]'
     endif
 
-    let parts = split(filename, ':')
-    if parts[0] ==# 'term'
-      return '[' . parts[-1] . ']'
+    let terms = split(filename, ':')
+    if terms[0] ==# 'term'
+      return '[' . terms[-1] . ']'
     endif
 
     return filename . ' ' . modified
