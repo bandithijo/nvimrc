@@ -7,7 +7,7 @@ let g:lightline = {
 \   'colorscheme': 'codedark_bandit',
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
-\              [ 'gitbranch', 'readonly' ],
+\              [ 'gitbranch' ],
 \              [ 'filename' ]],
 \    'right': [[ 'trailing' ],
 \              [ 'lineinfo' ],
@@ -67,10 +67,6 @@ let g:lightline = {
 \   }
 \}
 
-function! LightlineReadonly()
-  return &readonly ? '' : ''
-endfunction
-
 function! LightlineFugitive()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
     if exists('*fugitive#head')
@@ -129,6 +125,7 @@ endfunction
 function! LightlineFileName()
   let filename = expand('%')
   let modified = &modified ? '' : ''
+  let readonly = &readonly
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
     if filename ==# ''
       return '[No Name]'
@@ -139,7 +136,7 @@ function! LightlineFileName()
       return '[' . terms[-1] . ']'
     endif
 
-    return filename . ' ' . modified
+    return filename . ' ' . (readonly ? '' : modified)
   else
     return expand('%:t') ==# '__Tagbar__.1' ? '[tagbar]' :
          \ expand('%:t') ==# '__Tag_List__' ? '[taglist]' :
