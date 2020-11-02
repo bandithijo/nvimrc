@@ -68,7 +68,8 @@ let g:lightline = {
 \}
 
 function! LightlineFugitive()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
+  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  \  &filetype !=? 'taglist'
     if exists('*fugitive#head')
       let branch = fugitive#head()
       return branch !=# '' ? ' ' . branch : ''
@@ -80,7 +81,8 @@ function! LightlineFugitive()
 endfunction
 
 function! LightlineFileformat()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
+  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  \  &filetype !=? 'taglist'
     return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) . ' ' : ''
   else
     return ''
@@ -97,7 +99,8 @@ function! LightlineFiletype()
 endfunction
 
 function! LightlineFileEncoding()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
+  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  \  &filetype !=? 'taglist'
     return &fileencoding
   else
     return ''
@@ -117,7 +120,8 @@ function! LightlineLineInfo()
 endfunction
 
 function! LightlinePercent()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
+  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  \  &filetype !=? 'taglist'
     return printf(' %3s', (line('.') * 100 / line('$'))) . '%'
   else
     return ''
@@ -128,7 +132,8 @@ function! LightlineFileName()
   let filename = expand('%')
   let modified = &modified ? '' : ''
   let readonly = &readonly
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
+  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  \  &filetype !=? 'taglist'
     if filename ==# ''
       return '[No Name]'
     endif
@@ -140,7 +145,7 @@ function! LightlineFileName()
 
     return filename . ' ' . (readonly ? '' : modified)
   else
-    return expand('%:t') ==# '__Tagbar__.1' ? '[tagbar]' :
+    return expand('%:t') ==# '__Tagbar__.1' ? '[tagbar]'  :
          \ expand('%:t') ==# '__Tag_List__' ? '[taglist]' :
          \ &filetype ==# 'defx' ?  '[defx]' :
          \ ''
@@ -148,7 +153,7 @@ function! LightlineFileName()
 endfunction
 
 function! LightlineMode()
-  return expand('%:t') ==# '__Tagbar__.1' ? ' TAGBAR' :
+  return expand('%:t') ==# '__Tagbar__.1' ? ' TAGBAR'  :
        \ expand('%:t') ==# '__Tag_List__' ? ' TAGLIST' :
        \ &filetype ==# 'defx' ?  ' DEFX' :
        \ lightline#mode()
