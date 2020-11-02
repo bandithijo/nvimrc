@@ -21,7 +21,7 @@ nmap <leader>bd :bp<cr>:bd! #<cr>
 
 " for switch & close tabs
 nmap <leader><S-n> :tabnext<cr>
-nmap <leader><S-p> :tabprev<cr>
+nmap <leader><S-b> :tabprev<cr>
 nnoremap <leader><S-t><S-d> :tabclose<cr>
 
 " this key combination gets rid of the search highlights

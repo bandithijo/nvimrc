@@ -21,3 +21,6 @@ autocmd BufRead,BufNewFile *.tex setlocal ft=tex
 
 " For compatibilty bash to sh, because there is no bash filetype
 let g:is_bash = 1
+
+" Add filetype for terminal, the reason I'm doing this is for Lightline
+autocmd TermOpen * setfiletype term

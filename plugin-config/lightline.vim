@@ -88,7 +88,8 @@ function! LightlineFileformat()
 endfunction
 
 function! LightlineFiletype()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
+  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  \  &filetype !=? 'taglist' && &filetype !=? 'term'
     return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
   else
     return ''
@@ -104,7 +105,8 @@ function! LightlineFileEncoding()
 endfunction
 
 function! LightlineLineInfo()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' && &filetype !=? 'taglist'
+  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  \  &filetype !=? 'taglist' && &filetype !=? 'term'
     let current_line = printf('%3s', line('.'))
     let current_col  = printf('%-3s', col('.'))
     let lineinfo     = ' ' . current_line . ':' . current_col
@@ -184,5 +186,5 @@ function! LightlineReload()
   call lightline#update()
 endfunction
 
-set showtabline=2  " Show tabline, 2 show, 1 hide
+set showtabline=2  " Show tabline, 2 show, 1 hide when only 1 buffer, 0 hide
 set guioptions-=e  " Don't use GUI tabline
