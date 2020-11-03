@@ -83,7 +83,9 @@ endfunction
 function! LightlineFileformat()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist'
-    return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) . ' ' : ''
+    return winwidth(0) > 70 ?
+         \ (tolower(&fileformat) . ' ' . WebDevIconsGetFileFormatSymbol()) . ' ' :
+         \ ''
   else
     return ''
   endif
@@ -92,7 +94,11 @@ endfunction
 function! LightlineFiletype()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'term'
-    return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+    return winwidth(0) > 70 ?
+         \ (strlen(&filetype) ?
+         \ &filetype . ' ' . WebDevIconsGetFileTypeSymbol() :
+         \ 'no ft') :
+         \ ''
   else
     return ''
   endif
@@ -101,7 +107,7 @@ endfunction
 function! LightlineFileEncoding()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist'
-    return &fileencoding
+    return tolower(&fileencoding)
   else
     return ''
   endif
@@ -109,11 +115,11 @@ endfunction
 
 function! LightlineLineInfo()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
-  \  &filetype !=? 'taglist' && &filetype !=? 'term'
+  \  &filetype !=? 'taglist'
     let current_line = printf('%3s', line('.'))
     let current_col  = printf('%-3s', col('.'))
     let lineinfo     = ' ' . current_line . ':' . current_col
-    return lineinfo
+    return &filetype !=? 'term' ? lineinfo : 'TERMINAL'
   else
     return ''
   endif

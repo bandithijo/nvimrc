@@ -75,7 +75,7 @@ set redrawtime=5000
 autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 " Disable relative number on Terminal
-autocmd TermOpen * setlocal nonumber norelativenumber
+"autocmd TermOpen * setlocal nonumber norelativenumber
 
 " Declare this variable before polyglot is loaded. Please don't move this
 "let g:polyglot_disabled = ['autoindent', 'csv']
