@@ -23,7 +23,7 @@ let s:p.replace.right   = s:p.normal.right
 let s:p.tabline.left    = [ ['gray9', 'gray4'] ]
 let s:p.tabline.tabsel  = [ ['gray3', 'gray10', 'bold'] ]
 let s:p.tabline.middle  = [ ['gray4', 'gray2'] ]
-let s:p.tabline.right   = [ ['gray9', 'gray3', 'bold'], ['gray4', 'gray2'] ]
+let s:p.tabline.right   = [ ['gray9', 'gray3', 'bold'], ['gray6', 'gray2'] ]
 let s:p.normal.error    = [ ['gray1', 'brightestred'] ]
 let s:p.normal.warning  = [ ['white', 'orange'] ]
 
