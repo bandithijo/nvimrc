@@ -94,11 +94,9 @@ endfunction
 function! LightlineFiletype()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'term'
-    return winwidth(0) > 70 ?
-         \ (strlen(&filetype) ?
+    return strlen(&filetype) ?
          \ &filetype . ' ' . WebDevIconsGetFileTypeSymbol() :
-         \ 'no ft') :
-         \ ''
+         \ 'no ft'
   else
     return ''
   endif
@@ -107,7 +105,7 @@ endfunction
 function! LightlineFileEncoding()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist'
-    return tolower(&fileencoding)
+    return winwidth(0) > 70 ? tolower(&fileencoding) : ''
   else
     return ''
   endif
@@ -166,7 +164,7 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return ' BANDITHIJO.GITHUB.IO'
+  return ' BANDITHIJ0'
 endfunction
 
 function! String2()
