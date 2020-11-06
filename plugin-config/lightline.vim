@@ -63,7 +63,7 @@ let g:lightline = {
 \     's'      : ' SELECT',
 \     'S'      : ' S-LINE',
 \     "\<C-s>" : ' S-BL0CK',
-\     't'      : ' TERMINAL',
+\     't'      : ' TERMINAL',
 \   }
 \}
 
@@ -164,7 +164,7 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return ' BANDITHIJ0'
+  return ''
 endfunction
 
 function! String2()
