@@ -79,3 +79,13 @@ autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 " Declare this variable before polyglot is loaded. Please don't move this
 "let g:polyglot_disabled = ['autoindent', 'csv']
+
+" define function GetNVimVersion for chec neovim version
+if has('nvim')
+  function! GetNVimVersion()
+    redir => s
+    silent! version
+    redir END
+    return matchstr(s, 'NVIM v\zs[^\n]*')
+  endfunction
+endif
