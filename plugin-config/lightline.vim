@@ -2,6 +2,7 @@
 
 " separator    : \ue0b0 \ue0b2
 " subseparator : \ue0b1 \ue0b3
+" \   'left': '\u2502', 'right': '\u2502'
 
 let g:lightline = {
 \   'colorscheme': 'codedark_bandit',
@@ -168,13 +169,13 @@ function! String1()
 endfunction
 
 function! String2()
-  return 'BUFFERS'
+  return 'BUFFERS'
 endfunction
 
 function! SmartTabsIndicator()
   let tabs = lightline#tab#tabnum(tabpagenr())
   let tab_total = tabpagenr('$')
-  return tabpagenr('$') > 1 ? ('TABS ' . tabs . '/' . tab_total) : ''
+  return tabpagenr('$') > 1 ? ('TABS ' . tabs . '/' . tab_total) : ''
 endfunction
 
 function! LightlineTrailingWhitespace()
