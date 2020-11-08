@@ -84,6 +84,18 @@ Plug 'vim-ruby/vim-ruby'
 " Highlight eruby code blocks within html.
 Plug 'vim-scripts/eruby.vim'
 
+" rbenv.vim: Minimal rbenv support
+Plug 'tpope/vim-rbenv'
+
+" bundler.vim: Lightweight support for Ruby's Bundler
+Plug 'tpope/vim-bundler'
+
+" rake.vim: it's like rails.vim without the rails
+Plug 'tpope/vim-rake'
+
+" Automatic ctags generation on gem install
+Plug 'tpope/gem-ctags'
+
 " A vim plugin to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
 
