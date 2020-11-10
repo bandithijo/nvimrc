@@ -195,4 +195,7 @@ Plug 'VincentCordobes/vim-translate'
 " A Save vim undo files as /path/to/file instead of %path%to%file.
 Plug 'pixelastic/vim-undodir-tree'
 
+" REPLs play nicely with :terminal on Vim and Neovim
+Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+
 call plug#end()
