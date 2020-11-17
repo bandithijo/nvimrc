@@ -2,11 +2,13 @@
 " checking and semantic errors) in NeoVim 0.2.0+ and Vim 8 while you edit your
 " text files, and acts as a Vim Language Server Protocol client.
 
-let g:ale_sign_error   = '❌'
-let g:ale_sign_warning = '⚠️ '
+let g:ale_sign_error   = ''
+let g:ale_sign_warning = ''
 
-hi clear ALEErrorSign
-hi clear ALEWarningSign
+hi ALEErrorSign   ctermfg=196
+hi ALEWarningSign ctermfg=214
+" hi clear ALEErrorSign
+" hi clear ALEWarningSign
 
 let g:ale_echo_msg_error_str   = 'E'
 let g:ale_echo_msg_warning_str = 'W'
