@@ -43,8 +43,23 @@ autocmd BufWinLeave *.* mkview!
 "autocmd BufWinEnter *.* silent loadview
 
 " for italic on tmux
-set t_ZH=[3m
-set t_ZR=[23m
+"set t_ZH=[3m
+"set t_ZR=[23m
+"let &t_SI = "\e[6 q"
+"let &t_EI = "\e[2 q"
+
+" Optionally reset the cursor on start:
+"augroup myCmds
+"au!
+"autocmd VimEnter * silent !echo -ne "\e[2 q"
+"augroup END
+if exists('$TMUX')
+  let &t_SI .= "\e[6 q"
+  let &t_EI .= "\e[2 q"
+else
+  let &t_SI .= "\<Esc>[6 q"
+  let &t_EI .= "\<Esc>[2 q"
+endif
 
 " Share configuration between vim and neovim
 let g:is_nvim = has('nvim')
