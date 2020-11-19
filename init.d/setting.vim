@@ -39,7 +39,7 @@ autocmd BufReadPost *
     \ endif
 
 " Make views automatic
-autocmd BufWinLeave *.* mkview!
+"autocmd BufWinLeave *.* mkview!
 "autocmd BufWinEnter *.* silent loadview
 
 " for italic on tmux

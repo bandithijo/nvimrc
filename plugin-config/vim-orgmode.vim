@@ -49,6 +49,7 @@ augroup END
 
 nmap <silent> gp :OrgHyperlinkPreviousLink<cr>
 
+autocmd BufWinLeave *.org mkview!
 
 " NOTE: DO NOT ENABLE THIS! STILL ON MY EXPERIMENT
 " Custom conceal for vim-orgmode
