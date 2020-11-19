@@ -115,8 +115,8 @@ vnoremap <C-a> :call Incr()<CR>
 au FileType markdown map <silent> <leader>cc :call checkbox#ToggleCB()<cr>
 
 " Easy move it up or down
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Printing ascii character under the cursor
 nnoremap g8 :as<cr>
