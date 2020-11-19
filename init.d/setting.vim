@@ -53,13 +53,11 @@ autocmd BufWinLeave *.* mkview!
 "au!
 "autocmd VimEnter * silent !echo -ne "\e[2 q"
 "augroup END
-if exists('$TMUX')
-  let &t_SI .= "\e[6 q"
-  let &t_EI .= "\e[2 q"
-else
-  let &t_SI .= "\<Esc>[6 q"
-  let &t_EI .= "\<Esc>[2 q"
-endif
+
+" I love cursor with block shape very much!
+" Although, neovim change cursor to beam when on insert mode,
+" I want to keep with block shape =P
+set guicursor=n-v-c:block
 
 " Share configuration between vim and neovim
 let g:is_nvim = has('nvim')
