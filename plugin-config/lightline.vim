@@ -72,9 +72,8 @@ function! LightlineFugitive()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist'
     if exists('*fugitive#head')
-      let [a,m,r] = GitGutterGetHunkSummary()
       let branch = fugitive#head()
-      return branch !=# '' ? ' ' . '+' . a . ' ~' . m . ' -' . r . ' ' . branch : ''
+      return branch !=# '' ? ' ' . branch : ''
     endif
     return fugitive#head()
   else
