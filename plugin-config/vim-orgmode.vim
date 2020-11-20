@@ -47,7 +47,7 @@ augroup OrgmodeCustomColor
   au FileType org call OrgmodeCustomColor()
 augroup END
 
-nmap <silent> gp :OrgHyperlinkPreviousLink<cr>
+au FileType org nmap <silent> gp :OrgHyperlinkPreviousLink<cr>
 
 autocmd BufWinLeave *.org mkview!
 
