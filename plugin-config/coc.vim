@@ -101,6 +101,10 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>l  :<C-u>CocListResume<CR>
 
+" Basic floating scrolling without leaving insert mode, and without touching mouse:
+nnoremap <silent><expr> <down> coc#float#scroll(1, 1)
+nnoremap <silent><expr> <up>   coc#float#scroll(0, 1)
+
 let g:LanguageClient_serverCommands = {
     \ 'ruby': ['~/.rbenv/shims/solargraph'],
     \ }
