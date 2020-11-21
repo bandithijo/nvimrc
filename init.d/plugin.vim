@@ -201,4 +201,7 @@ Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 " The Best Color Picker for Vim! - A Color, Date, and File Chooser for Vim/NeoVim using Zenity
 Plug 'DougBeney/pickachu'
 
+" Make the yanked region apparent!
+Plug 'machakann/vim-highlightedyank'
+
 call plug#end()
