@@ -121,3 +121,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Printing ascii character under the cursor
 nnoremap g8 :as<cr>
+
+" Basic floating scrolling without leaving insert mode, and without touching mouse:
+nnoremap <silent><expr> <down> coc#float#scroll(1, 1)
+nnoremap <silent><expr> <up>   coc#float#scroll(0, 1)
