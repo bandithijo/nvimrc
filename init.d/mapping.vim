@@ -18,7 +18,7 @@ nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>n  :bn<cr>
 nmap <leader>p  :bp<cr>
 nmap <leader>bd :bp<cr>:bd! #<cr>
-nmap <leader>w  <c-w><c-o>:bw<cr>
+nmap <leader>bw  <c-w><c-o>:bw<cr>
 
 " for switch & close tabs
 nmap <leader><S-n> :tabnext<cr>
