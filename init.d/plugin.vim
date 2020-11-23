@@ -204,4 +204,7 @@ Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 " Make the yanked region apparent!
 Plug 'machakann/vim-highlightedyank'
 
+" Change an HTML(ish) opening tag and take the closing one along as well
+Plug 'AndrewRadev/tagalong.vim'
+
 call plug#end()
