@@ -4,3 +4,4 @@ swap
 view
 vimrc
 .netrwhist
+plug.vim.old
