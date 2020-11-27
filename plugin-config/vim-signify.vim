@@ -11,6 +11,6 @@ let g:signify_sign_delete_first_line = '‾'
 let g:signify_sign_change            = '~'
 
 " Colors
-highlight SignifySignAdd    ctermfg=green  ctermbg=NONE
-highlight SignifySignDelete ctermfg=red    ctermbg=NONE
-highlight SignifySignChange ctermfg=yellow ctermbg=NONE
+highlight SignifySignAdd    ctermfg=46  ctermbg=NONE
+highlight SignifySignDelete ctermfg=196    ctermbg=NONE
+highlight SignifySignChange ctermfg=214 ctermbg=NONE
