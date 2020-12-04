@@ -34,6 +34,9 @@ endif
 " fugitive.vim: A Git wrapper so awesome, it should be illegal.
 Plug 'tpope/vim-fugitive'
 
+" rhubarb.vim: GitHub extension for fugitive.vim
+Plug 'tpope/vim-rhubarb'
+
 " A command-line fuzzy finder.
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
