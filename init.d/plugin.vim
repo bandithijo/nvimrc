@@ -214,4 +214,8 @@ Plug 'machakann/vim-highlightedyank'
 " Change an HTML(ish) opening tag and take the closing one along as well
 Plug 'AndrewRadev/tagalong.vim'
 
+" Nvim Treesitter configurations and abstraction layer
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
+
 call plug#end()
