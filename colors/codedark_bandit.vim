@@ -401,7 +401,6 @@ call <sid>hi('rubyClassName',    s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('rubyModuleName',   s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('rubyConstant',     s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('rubyVariable',     s:cdBlue, {}, 'none', {})
-" By BanditHijo
 call <sid>hi('rubySymbol',       s:cdBlue, {}, 'none', {})
 
 " Golang:
@@ -454,17 +453,19 @@ call <sid>hi('texDocType',          s:cdPink, {}, 'none', {})
 call <sid>hi('texDocTypeArgs',      s:cdLightBlue, {}, 'none', {})
 
 " Git:
-call <sid>hi('gitcommitHeader',        s:cdGray, {}, 'none', {})
-call <sid>hi('gitcommitOnBranch',      s:cdGray, {}, 'none', {})
-call <sid>hi('gitcommitBranch',        s:cdPink, {}, 'none', {})
-call <sid>hi('gitcommitComment',       s:cdGray, {}, 'none', {})
+call <sid>hi('gitcommitHeader',        s:cdGray,  {}, 'none', {})
+call <sid>hi('gitcommitOnBranch',      s:cdGray,  {}, 'none', {})
+call <sid>hi('gitcommitBranch',        s:cdPink,  {}, 'none', {})
+call <sid>hi('gitcommitComment',       s:cdGray,  {}, 'none', {})
 call <sid>hi('gitcommitSelectedType',  s:cdGreen, {}, 'none', {})
 call <sid>hi('gitcommitSelectedFile',  s:cdGreen, {}, 'none', {})
-call <sid>hi('gitcommitDiscardedType', s:cdRed, {}, 'none', {})
-call <sid>hi('gitcommitDiscardedFile', s:cdRed, {}, 'none', {})
-call <sid>hi('gitcommitOverflow',      s:cdRed, {}, 'none', {})
-call <sid>hi('gitcommitSummary',       s:cdPink, {}, 'none', {})
-call <sid>hi('gitcommitBlank',         s:cdPink, {}, 'none', {})
+call <sid>hi('gitcommitDiscardedType', s:cdRed,   {}, 'none', {})
+call <sid>hi('gitcommitDiscardedFile', s:cdRed,   {}, 'none', {})
+call <sid>hi('gitcommitOverflow',      s:cdRed,   {}, 'none', {})
+call <sid>hi('gitcommitSummary',       s:cdPink,  {}, 'none', {})
+call <sid>hi('gitcommitBlank',         s:cdPink,  {}, 'none', {})
+call <sid>hi('diffAdded',              s:cdBlue,  {}, 'none', {})
+call <sid>hi('diffRemoved',            s:cdRed,   {}, 'none', {})
 
 " Lua:
 call <sid>hi('luaFuncCall',    s:cdYellow, {}, 'none', {})
