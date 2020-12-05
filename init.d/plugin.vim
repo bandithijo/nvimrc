@@ -21,9 +21,6 @@ Plug 'itchyny/lightline.vim'
 " A lightweight plugin to display the list of buffers in the lightline vim plugin
 Plug 'mengelbrecht/lightline-bufferline'
 
-" A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
-"Plug 'airblade/vim-gitgutter'
-
 " Show a diff using Vim its sign column.
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
