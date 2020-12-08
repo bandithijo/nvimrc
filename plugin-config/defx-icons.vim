@@ -24,3 +24,5 @@ hi default link DefxIconsSymlinkDirectory Directory
 hi default link DefxIconsOpenedTreeIcon   Directory
 hi default link DefxIconsNestedTreeIcon   Directory
 hi default link DefxIconsClosedTreeIcon   Directory
+hi default link Defx_filename_root        Directory
+hi default link Defx_filename_directory   Directory

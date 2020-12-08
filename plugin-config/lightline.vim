@@ -5,7 +5,7 @@
 " \   'left': '\u2502', 'right': '\u2502'
 
 let g:lightline = {
-\   'colorscheme': 'codedark_bandit',
+\   'colorscheme': 'solarized_bandit',
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
 \              [ 'gitbranch' ],
@@ -27,7 +27,7 @@ let g:lightline = {
 \     'left': '', 'right': ''
 \   },
 \   'subseparator': {
-\   'left': '\u2502', 'right': '\u2502'
+\   'left': '', 'right': ''
 \   },
 \   'component': {
 \     'filename': '%<%{LightlineFileName()}'

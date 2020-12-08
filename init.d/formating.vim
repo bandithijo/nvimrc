@@ -1,5 +1,5 @@
 " Interface
-colorscheme codedark_bandit
+colorscheme solarized_bandit
 set background=dark
 set incsearch " incremental search aka search as you type
 set hlsearch " highlight search matches
@@ -32,7 +32,7 @@ hi clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 highlight clear SignColumn
 
 if &diff " change colorscheme when using vimdiff
-  colorscheme codedark_bandit
+  colorscheme solarized_bandit
 endif
 
 " Text Formating
