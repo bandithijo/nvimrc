@@ -17,7 +17,7 @@ set nu " turn on line number on selected line
 set relativenumber " turn on line numbers
 set report=0 " tell us when anything is changed
 set ruler " always show current positions along the bottom
-set fillchars+=vert:\| "split character between window"
+set fillchars+=vert:\|,eob:\ " vertical sparator and en of buffer
 set foldmethod=manual
 set foldlevel=0 " default unfold when open a file
 set shortmess=aAtToO " shortens messages to avoid 'press a key' prompt
