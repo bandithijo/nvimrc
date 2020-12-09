@@ -51,7 +51,7 @@ let g:lightline = {
 \   },
 \   'component_type': {
 \   'buffers'  : 'tabsel',
-\   'trailing' : 'warning'
+\   'trailing' : 'error'
 \   },
 \   'mode_map': {
 \     'n'      : ' N0RMAL',
