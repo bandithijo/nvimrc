@@ -11,9 +11,14 @@ let g:lightline = {
 \              [ 'gitbranch' ],
 \              [ 'filename' ]],
 \    'right': [[ 'trailing' ],
-\              [ 'lineinfo' ],
 \              [ 'percent' ],
+\              [ 'lineinfo' ],
 \              [ 'filetype', 'fileencoding', 'fileformat' ] ]
+\   },
+\   'inactive': {
+\    'left' : [[ 'filename' ]],
+\    'right': [[ 'percent' ],
+\              [ 'lineinfo' ] ]
 \   },
 \   'tab': {
 \     'active'   : ['tabnum'],
@@ -116,7 +121,7 @@ function! LightlineLineInfo()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist'
     let current_line = printf('%3s', line('.'))
-    let current_col  = printf('%-3s', col('.'))
+    let current_col  = printf('%0s', col('.'))
     let lineinfo     = ' ' . current_line . ':' . current_col
     return &filetype !=? 'term' ? lineinfo : 'TERMINAL'
   else
@@ -127,7 +132,7 @@ endfunction
 function! LightlinePercent()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist'
-    return printf(' %3s', (line('.') * 100 / line('$'))) . '%'
+    return printf('%3s', (line('.') * 100 / line('$'))) . '%  '
   else
     return ''
   endif
@@ -165,7 +170,7 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return ''
+  return ' '
 endfunction
 
 function! String2()
