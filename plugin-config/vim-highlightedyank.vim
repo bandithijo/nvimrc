@@ -5,4 +5,4 @@ let g:highlightedyank_highlight_duration = 1000
 " HighlightedyankRegion highlight group.
 " Note that the line should be located after :colorscheme command execution in
 " your vimrc.
-hi HighlightedyankRegion ctermfg=255 ctermbg=3
+hi HighlightedyankRegion ctermfg=8 ctermbg=3
