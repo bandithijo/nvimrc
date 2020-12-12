@@ -76,7 +76,7 @@ noremap <C-d> <C-d>zz
 autocmd FileType org nmap <buffer> <F11> :TlistToggle<cr>
 
 " toggle Tagbar plugin
-nmap <F11> :TagbarToggle<cr>
+nmap <F11> :Vista!!<cr>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
