@@ -59,7 +59,10 @@ Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-ragtag'
 
 " Vim plugin that displays tags in a window, ordered by scope. with F8
-Plug 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
+
+" Viewer & Finder for LSP symbols and tags
+Plug 'liuchengxu/vista.vim'
 
 " A commentary.vim: comment stuff out
 Plug 'tpope/vim-commentary'
