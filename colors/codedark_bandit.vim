@@ -65,48 +65,48 @@ endif
 " General appearance colors:
 " (some of them may be unused)
 
-let s:cdNone  = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'}
-let s:cdFront = {'gui': '#D4D4D4', 'cterm': s:cterm05, 'cterm256': '188'}
+let s:cdNone               = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'}
+let s:cdFront              = {'gui': '#D4D4D4', 'cterm': s:cterm05, 'cterm256': '188'}
 " let s:cdBack = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
-let s:cdBack  = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '0'}
+let s:cdBack               = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '0'}
 
-let s:cdTabCurrent = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
-let s:cdTabOther   = {'gui': '#2D2D2D', 'cterm': s:cterm01, 'cterm256': '236'}
-let s:cdTabOutside = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
+let s:cdTabCurrent         = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
+let s:cdTabOther           = {'gui': '#2D2D2D', 'cterm': s:cterm01, 'cterm256': '236'}
+let s:cdTabOutside         = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
 
-let s:cdLeftDark  = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
-let s:cdLeftMid   = {'gui': '#373737', 'cterm': s:cterm03, 'cterm256': '237'}
-let s:cdLeftLight = {'gui': '#3F3F46', 'cterm': s:cterm03, 'cterm256': '238'}
+let s:cdLeftDark           = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
+let s:cdLeftMid            = {'gui': '#373737', 'cterm': s:cterm03, 'cterm256': '237'}
+let s:cdLeftLight          = {'gui': '#3F3F46', 'cterm': s:cterm03, 'cterm256': '238'}
 " let s:cdLeftGrey = {'gui': '#585858', 'cterm': s:cterm03, 'cterm256': '240'}
-let s:cdLeftGrey  = {'gui': '#303030', 'cterm': s:cterm03, 'cterm256': '236'}
+let s:cdLeftGrey           = {'gui': '#303030', 'cterm': s:cterm03, 'cterm256': '236'}
 
-let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
-let s:cdPopupBack  = {'gui': '#2D2D30', 'cterm': s:cterm01, 'cterm256': '236'}
+let s:cdPopupFront         = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
+let s:cdPopupBack          = {'gui': '#2D2D30', 'cterm': s:cterm01, 'cterm256': '236'}
 let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': '24'}
 let s:cdPopupHighlightGray = {'gui': '#3D3D40', 'cterm': s:cterm03, 'cterm256': '237'}
 
-let s:cdSplitLight = {'gui': '#898989', 'cterm': s:cterm04, 'cterm256': '245'}
-let s:cdSplitDark  = {'gui': '#444444', 'cterm': s:cterm03, 'cterm256': '238'}
-let s:cdSplitThumb = {'gui': '#424242', 'cterm': s:cterm04, 'cterm256': '238'}
+let s:cdSplitLight         = {'gui': '#898989', 'cterm': s:cterm04, 'cterm256': '245'}
+let s:cdSplitDark          = {'gui': '#444444', 'cterm': s:cterm03, 'cterm256': '238'}
+let s:cdSplitThumb         = {'gui': '#424242', 'cterm': s:cterm04, 'cterm256': '238'}
 " let s:cdSplitGrey = {'gui': '#585858', 'cterm': s:cterm04, 'cterm256': '240'}
-let s:cdSplitGrey  = {'gui': '#303030', 'cterm': s:cterm04, 'cterm256': '236'}
+let s:cdSplitGrey          = {'gui': '#303030', 'cterm': s:cterm04, 'cterm256': '236'}
 
-let s:cdCursorDarkDark = {'gui': '#222222', 'cterm': s:cterm01, 'cterm256': '235'}
-let s:cdCursorDark     = {'gui': '#51504F', 'cterm': s:cterm03, 'cterm256': '239'}
-let s:cdCursorLight    = {'gui': '#AEAFAD', 'cterm': s:cterm04, 'cterm256': '145'}
-let s:cdSelection      = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
-let s:cdLineNumber     = {'gui': '#5A5A5A', 'cterm': s:cterm04, 'cterm256': '240'}
+let s:cdCursorDarkDark     = {'gui': '#222222', 'cterm': s:cterm01, 'cterm256': '235'}
+let s:cdCursorDark         = {'gui': '#51504F', 'cterm': s:cterm03, 'cterm256': '239'}
+let s:cdCursorLight        = {'gui': '#AEAFAD', 'cterm': s:cterm04, 'cterm256': '145'}
+let s:cdSelection          = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
+let s:cdLineNumber         = {'gui': '#5A5A5A', 'cterm': s:cterm04, 'cterm256': '240'}
 
-let s:cdDiffRedDark       = {'gui': '#4B1818', 'cterm': s:cterm08, 'cterm256': '52'}
-let s:cdDiffRedLight      = {'gui': '#6F1313', 'cterm': s:cterm08, 'cterm256': '52'}
-let s:cdDiffRedLightLight = {'gui': '#FB0101', 'cterm': s:cterm08, 'cterm256': '09'}
-let s:cdDiffGreenDark     = {'gui': '#373D29', 'cterm': s:cterm0B, 'cterm256': '237'}
-let s:cdDiffGreenLight    = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
+let s:cdDiffRedDark        = {'gui': '#4B1818', 'cterm': s:cterm08, 'cterm256': '52'}
+let s:cdDiffRedLight       = {'gui': '#6F1313', 'cterm': s:cterm08, 'cterm256': '52'}
+let s:cdDiffRedLightLight  = {'gui': '#FB0101', 'cterm': s:cterm08, 'cterm256': '09'}
+let s:cdDiffGreenDark      = {'gui': '#373D29', 'cterm': s:cterm0B, 'cterm256': '237'}
+let s:cdDiffGreenLight     = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
 
 " let s:cdSearchCurrent = {'gui': '#49545F', 'cterm': s:cterm09, 'cterm256': '236'}
 " let s:cdSearch = {'gui': '#4C4E50', 'cterm': s:cterm0A, 'cterm256': '236'}
-let s:cdSearchCurrent = {'gui': '#49545F', 'cterm': s:cterm09, 'cterm256': '24'}
-let s:cdSearch        = {'gui': '#4C4E50', 'cterm': s:cterm0A, 'cterm256': '24'}
+let s:cdSearchCurrent      = {'gui': '#49545F', 'cterm': s:cterm09, 'cterm256': '24'}
+let s:cdSearch             = {'gui': '#4C4E50', 'cterm': s:cterm0A, 'cterm256': '24'}
 
 " Syntax colors:
 
