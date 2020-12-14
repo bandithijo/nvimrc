@@ -87,6 +87,7 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 | Page down with focus on middle               | N    | <kbd>Control</kbd>+<kbd>d</kbd>                             |
 | Exit from terminal mode                      | T    | <kbd>Esc</kbd>                                              |
 | Sudo save                                    | C    | <kbd>w</kbd> <kbd>!</kbd> <kbd>!</kbd>                      |
+| Emmet leader key                             | N    | <kbd>Control</kbd>+<kbd>n</kbd> <kbd>,</kbd>                |
 
 > MODE<br>
 > N: Normal, I: Insert, T: Terminal, C: Command
