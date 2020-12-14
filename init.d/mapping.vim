@@ -121,3 +121,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Printing ascii character under the cursor
 nnoremap g8 :as<cr>
+
+" Handle Ctrl-y not working as expected. Cursor block leaves cursor line.
+noremap <C-e> <C-e>kj
+noremap <C-y> <C-y>jk
