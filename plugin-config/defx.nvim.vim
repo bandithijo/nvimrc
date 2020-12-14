@@ -40,7 +40,11 @@ if exists('g:plugs["defx.nvim"]')
 
   function! s:defx_my_settings() abort
     " Define mappings
-    nnoremap <silent><buffer><expr> <CR> defx#is_directory() ? defx#do_action('open_or_close_tree') : defx#do_action('drop')
+    nnoremap <silent><buffer><expr> <CR>
+    \ defx#is_directory() ?
+    \ defx#do_action('open_or_close_tree') : defx#do_action('drop')
+    nnoremap <silent><buffer><expr> o
+    \ defx#do_action('drop')
     nnoremap <silent><buffer><expr> <2-LeftMouse>
     \ defx#do_action('drop')
     nnoremap <silent><buffer><expr> <2-RightMouse>
@@ -57,8 +61,6 @@ if exists('g:plugs["defx.nvim"]')
     \ defx#do_action('drop', 'split')
     nnoremap <silent><buffer><expr> P
     \ defx#do_action('open', 'pedit')
-    nnoremap <silent><buffer><expr> o
-    \ defx#do_action('open_or_close_tree')
     nnoremap <silent><buffer><expr> K
     \ defx#do_action('new_directory')
     nnoremap <silent><buffer><expr> N
