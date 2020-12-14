@@ -11,7 +11,7 @@ set linespace=0 " don't insert any extra pixel lines between rows
 "set list " no show traling listchars
 set listchars=tab:\ ,trail:·,extends:>,precedes:<
 "set listchars=tab:▸\ ,eol:$,trail:¬,extends:❯,precedes:❮,nbsp:~
-set nostartofline " don't move the cursor to first non-blank character after some command    s (:25 e.g.)
+set nostartofline " don't move the cursor to first non-blank character after some command
 set novisualbell " don't blink
 set nu " turn on line number on selected line
 set relativenumber " turn on line numbers
