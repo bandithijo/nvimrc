@@ -21,6 +21,9 @@ Plug 'itchyny/lightline.vim'
 " A lightweight plugin to display the list of buffers in the lightline vim plugin
 Plug 'mengelbrecht/lightline-bufferline'
 
+" A trailing whitespace component for the lightline vim plugin
+Plug 'maximbaz/lightline-trailing-whitespace'
+
 " Show a diff using Vim its sign column.
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -168,9 +171,6 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 
 " A solid language pack for Vim.
 "Plug 'sheerun/vim-polyglot'
-
-" A trailing whitespace component for the lightline vim plugin
-Plug 'maximbaz/lightline-trailing-whitespace'
 
 " A surround.vim: quoting/parenthesizing made simple
 Plug 'tpope/vim-surround'
