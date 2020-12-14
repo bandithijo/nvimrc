@@ -89,16 +89,3 @@ autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 " Disable relative number on Terminal
 "autocmd TermOpen * setlocal nonumber norelativenumber
-
-" Declare this variable before polyglot is loaded. Please don't move this
-"let g:polyglot_disabled = ['autoindent', 'csv']
-
-" define function GetNVimVersion for chec neovim version
-if has('nvim')
-  function! GetNVimVersion()
-    redir => s
-    silent! version
-    redir END
-    return matchstr(s, 'NVIM v\zs[^\n]*')
-  endfunction
-endif
