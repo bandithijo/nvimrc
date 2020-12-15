@@ -101,7 +101,7 @@ function! LightlineFiletype()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'term' && &filetype !=? 'vista'
     return strlen(&filetype) ?
-         \ '[' . &tabstop . '] ' . &filetype . ' ' . WebDevIconsGetFileTypeSymbol() :
+         \ '[' . &shiftwidth . '] ' . &filetype . ' ' . WebDevIconsGetFileTypeSymbol() :
          \ 'no ft'
   else
     return ''
