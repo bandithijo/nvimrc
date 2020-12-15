@@ -63,7 +63,7 @@ endif
 let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [ s:base03, s:base1, 'bold' ], [ s:base03, s:base1 ] ]
 let s:p.normal.middle   = [ [ s:base02, s:base1 ] ]
-let s:p.normal.right    = [ [ s:base03, s:base1, 'bold' ], [ s:base03, s:base1 ] ]
+let s:p.normal.right    = [ [ s:base03, s:base1, 'bold' ], [ s:base03, s:base1, 'bold' ], [ s:base03, s:base1, 'bold' ]  ]
 let s:p.inactive.right  = [ [ s:base02, s:base1 ], [ s:base02, s:base1 ] ]
 let s:p.inactive.left   = [ [ s:base02, s:base1 ], [ s:base02, s:base1 ] ]
 let s:p.insert.left     = [ [ s:base03, s:orange, 'bold' ], [ s:base03, s:orange ] ]
