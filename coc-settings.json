@@ -12,6 +12,7 @@
   "solargraph.hover"             : true,
   "solargraph.autoformat"        : true,
   "solargraph.formatting"        : true,
+  "diagnostic.displayByAle"      : true,
   "snippets.extends": {
     "cpp"             : ["c"],
     "javascriptreact" : ["javascript"],
