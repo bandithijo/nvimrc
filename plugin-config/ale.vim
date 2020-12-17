@@ -28,7 +28,7 @@ nmap <silent> <A-k> <Plug>(ale_previous_wrap)
 nmap <silent> <A-j> <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
-\   'ruby'       : ['rubocop'],
+\   'ruby'       : ['sorbet', 'rubocop'],
 \   'python'     : ['pylint', 'flake8'],
 \   'javascript' : ['eslint'],
 \   'c'          : ['ccls'],
@@ -36,7 +36,7 @@ let g:ale_linters = {
 \}
 
 let g:ale_fixers = {
-\   'ruby'       : ['rubocop'],
+\   'ruby'       : ['sorbet', 'rubocop'],
 \   'python'     : ['pylint', 'flake8'],
 \   'javascript' : ['eslint'],
 \}
