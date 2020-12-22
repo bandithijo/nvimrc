@@ -19,5 +19,5 @@
     "typescript"      : ["javascript"],
     "liquid"          : ["markdown"]
   },
-  "explorer.icon.enableNerdfont": true,
+  "explorer.icon.enableNerdfont": true
 }
