@@ -76,10 +76,10 @@ let s:p.visual.left     = [ [ s:base03, s:orange, 'bold' ], [ s:base03, s:orange
 let s:p.visual.middle   = [ [ s:base03, s:orange ] ]
 let s:p.visual.right    = [ [ s:base03, s:orange ], [ s:base03, s:orange ] ]
 let s:p.inactive.middle = [ [ s:base02, s:base1 ] ]
-let s:p.tabline.left    = [ [ s:base02, s:base1 ] ]
-let s:p.tabline.tabsel  = [ [ s:base03, s:base1, 'bold' ] ]
-let s:p.tabline.middle  = [ [ s:base02, s:base1 ] ]
-let s:p.tabline.right   = copy(s:p.normal.right)
+let s:p.tabline.left    = [ [ s:base1,  s:base02 ] ]
+let s:p.tabline.tabsel  = [ [ s:base1,  s:base02, 'bold' ] ]
+let s:p.tabline.middle  = [ [ s:base1,  s:base02 ] ]
+let s:p.tabline.right   = [ [ s:base1,  s:base02 ], [ s:base1, s:base02 ] ]
 let s:p.normal.error    = [ [ s:base03, s:red, 'bold' ] ]
 let s:p.normal.warning  = [ [ s:base03, s:yellow, 'bold' ] ]
 
