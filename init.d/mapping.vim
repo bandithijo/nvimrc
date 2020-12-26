@@ -121,3 +121,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Printing ascii character under the cursor
 nnoremap g8 :as<cr>
+
+" Scrolling horizontal right and left
+map <C-l> zl
+map <C-h> zh
