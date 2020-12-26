@@ -18,6 +18,7 @@ if exists('g:plugs["defx.nvim"]')
   call defx#custom#column('icon', {
     \ 'directory_icon' : ' ',
     \ 'opened_icon'    : ' ',
+    \ 'root_icon'      : ' ',
     \ })
 
   call defx#custom#column('filename', {
@@ -104,5 +105,4 @@ if exists('g:plugs["defx.nvim"]')
     nnoremap <silent><buffer><expr> cd
     \ defx#do_action('change_vim_cwd')
   endfunction
-
 endif

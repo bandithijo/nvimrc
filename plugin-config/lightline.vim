@@ -121,7 +121,7 @@ function! LightlineLineInfo()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     let current_line = printf('%3s', line('.'))
-    let current_col  = printf('%0s', col('.'))
+    let current_col  = printf('%-2s', col('.'))
     let lineinfo     = ' ' . current_line . ':' . current_col
     return &filetype !=? 'term' ? lineinfo : 'TERMINAL'
   else
@@ -132,7 +132,7 @@ endfunction
 function! LightlinePercent()
   if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
-    return printf('%3s', (line('.') * 100 / line('$'))) . '%  '
+    return printf('%2s', (line('.') * 100 / line('$'))) . '%  '
   else
     return ''
   endif
