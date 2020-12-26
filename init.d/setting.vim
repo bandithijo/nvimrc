@@ -1,36 +1,36 @@
 " Basic
 
 set encoding=UTF-8
-set t_Co=256                   " set terminal 256 color
-set nocompatible               " be iMproved, required
+set t_Co=256                           " set terminal 256 color
+set nocompatible                       " be iMproved, required
 syntax enable
 filetype plugin indent on
 
 " General
-set backspace=indent,eol,start " make backspace a more flexible
-set backup " make backup files
+set backspace=indent,eol,start         " make backspace a more flexible
+set backup                             " make backup files
 set backupdir=~/.local/share/nvim/tmp/backup " where to put backup files
-set directory=~/.local/share/nvim/tmp/swap " directory to place swap files in
-set viewdir=~/.local/share/nvim/tmp/view " directory to place view files in
-set undodir=~/.local/share/nvim/tmp/undo " directory to place undo files in
-set undofile " make undo possible after the file is closed and reopened
-set clipboard=unnamedplus " share clipboard (unnamedplus)
-set hidden " you can change buffers without saving
-set mouse=n " use mouse everywhere default a
-set noerrorbells " don't make noise
-set wildmenu " turn on command line completion wild style
+set directory=~/.local/share/nvim/tmp/swap   " directory to place swap files in
+set viewdir=~/.local/share/nvim/tmp/view     " directory to place view files in
+set undodir=~/.local/share/nvim/tmp/undo     " directory to place undo files in
+set undofile                           " make undo possible after the file is closed and reopened
+set clipboard=unnamedplus              " share clipboard (unnamedplus)
+set hidden                             " you can change buffers without saving
+set mouse=n                            " use mouse everywhere default a
+set noerrorbells                       " don't make noise
+set wildmenu                           " turn on command line completion wild style
 set wildmode=full
-set ttyfast " i have a fast terminal
-set gdefault " global substitutions are default s/a/b/g
-set ttimeoutlen=0  " make Esc work faster
-set autoread " make vim monitor realtime changes to a file
+set ttyfast                            " i have a fast terminal
+set gdefault                           " global substitutions are default s/a/b/g
+set ttimeoutlen=0                      " make Esc work faster
+set autoread                           " make vim monitor realtime changes to a file
 set modifiable
 
 " Splits open at the bottom and right
 set splitbelow splitright
 
-au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
-au FocusGained,BufEnter   * checktime " auto update trigger on buffer change or terminal focus
+au CursorHold,CursorHoldI * checktime  " auto update trigger when cursor stops moving
+au FocusGained,BufEnter   * checktime  " auto update trigger on buffer change or terminal focus
 
 " restore cursor position when opening file
 autocmd BufReadPost *
@@ -42,7 +42,7 @@ autocmd BufReadPost *
 "autocmd BufWinLeave *.* mkview!
 "autocmd BufWinEnter *.* silent loadview
 
-" for italic on tmux
+" For italic on tmux
 "set t_ZH=[3m
 "set t_ZR=[23m
 "let &t_SI = "\e[6 q"
