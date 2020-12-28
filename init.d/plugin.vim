@@ -221,4 +221,7 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
 
+" Auto close parentheses and repeat by dot dot dot...
+Plug 'cohama/lexima.vim'
+
 call plug#end()
