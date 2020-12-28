@@ -19,11 +19,11 @@ let g:ale_echo_msg_format      = '[%linter%] %s [%severity%]'
 
 let g:ale_fix_on_save = 0
 
-" if you don't want linters to run on opening a file
+" If you don't want linters to run on opening a file
 " default: 1
 let g:ale_lint_on_enter = 0
 
-" navigate between errors quickly
+" Navigate between errors quickly
 nmap <silent> <A-k> <Plug>(ale_previous_wrap)
 nmap <silent> <A-j> <Plug>(ale_next_wrap)
 
