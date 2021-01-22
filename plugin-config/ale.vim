@@ -5,8 +5,8 @@
 " How can I use ALE and coc.nvim together?
 let g:ale_disable_lsp  = 1
 
-let g:ale_sign_error   = ''
-let g:ale_sign_warning = ''
+let g:ale_sign_error   = ''
+let g:ale_sign_warning = ''
 
 hi ALEErrorSign   ctermfg=196
 hi ALEWarningSign ctermfg=214
