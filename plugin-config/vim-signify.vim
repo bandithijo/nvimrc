@@ -15,6 +15,6 @@ let g:signify_sign_show_count        = 0
 let g:signify_sign_show_text         = 1
 
 " Colors
-highlight SignifySignAdd    ctermfg=4 ctermbg=NONE cterm=bold
+highlight SignifySignAdd    ctermfg=2 ctermbg=NONE cterm=bold
 highlight SignifySignDelete ctermfg=1 ctermbg=NONE cterm=bold
 highlight SignifySignChange ctermfg=3 ctermbg=NONE cterm=bold
