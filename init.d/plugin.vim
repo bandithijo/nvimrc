@@ -227,4 +227,7 @@ Plug 'nvim-treesitter/playground'
 " Auto close parentheses and repeat by dot dot dot...
 Plug 'cohama/lexima.vim'
 
+" Asynchronous build and test dispatcher
+Plug 'tpope/vim-dispatch'
+
 call plug#end()
