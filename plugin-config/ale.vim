@@ -5,6 +5,8 @@
 " How can I use ALE and coc.nvim together?
 let g:ale_disable_lsp  = 1
 
+let g:ale_completion_enabled = 0
+
 let g:ale_sign_error   = ''
 let g:ale_sign_warning = ''
 
@@ -21,7 +23,7 @@ let g:ale_fix_on_save = 0
 
 " If you don't want linters to run on opening a file
 " default: 1
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_enter = 1
 
 " Navigate between errors quickly
 nmap <silent> <A-k> <Plug>(ale_previous_wrap)
