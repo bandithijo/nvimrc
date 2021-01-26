@@ -3,8 +3,9 @@
 " Define FZF default command
 let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore --ignore-file ".gitignore" '
 
-" Always enable preview window on the right with 60% width
-"let g:fzf_preview_window = ''
+" Preview window on the upper side of the window with 40% height,
+" hidden by default, ctrl-/ to toggle
+let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']
 
 " Default fzf layout
 " - down / up / left / right
@@ -16,7 +17,12 @@ let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore --ignore-file ".gitignore" '
 " Optional:
 " - highlight [string default 'Comment']: Highlight group for border
 " - rounded [boolean default v:true]: Use rounded border
-let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95, 'highlight': 'Normal', 'rounded': v:false } }
+"let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95, 'highlight': 'Comment', 'rounded': v:false } }
+let g:fzf_layout = { 'window': { 'width': 1.00, 'height': 0.50, 'xoffset': 0.80, 'yoffset': 1.00, 'highlight': 'Comment', 'rounded': v:false } }
+
+" Hide status line
+"autocmd! FileType fzf set laststatus=0 noshowmode noruler
+"  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
 " Customize fzf colors to match your color scheme
 " let g:fzf_colors =
@@ -42,11 +48,11 @@ let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95, 'highlight': 'No
 
 " Custom statusline
 "function! s:fzf_statusline()
-"  Override statusline as you like
+"  " Override statusline as you like
 "  highlight fzf1 ctermfg=0 ctermbg=15
 "  highlight fzf2 ctermfg=0 ctermbg=15
 "  highlight fzf3 ctermfg=0 ctermbg=15
 "  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
 "endfunction
-"
+
 "autocmd! User FzfStatusLine call <SID>fzf_statusline()
