@@ -1,6 +1,7 @@
 " Firefox
 " Check if an instance is already running, and if yes use it, else start firefox.
-let g:utl_cfg_hdl_scm_http_system    = ':silent !xdg-open "%u" &'
+"let g:utl_cfg_hdl_scm_http_system    = ':silent !xdg-open "%u" &'
+let g:utl_cfg_hdl_scm_http_system    = ':silent !qutebrowser "%u" &'
 
 " PDF
 let g:utl_cfg_hdl_mt_application_pdf = ':silent !xdg-open "%p" &'

@@ -164,7 +164,10 @@ Plug 'lervag/vimtex'
 Plug 'tomasiser/vim-code-dark'
 
 " A preview colours in source code while editing
-Plug 'ap/vim-css-color'
+"Plug 'ap/vim-css-color'
+
+" A color hex codes and color names
+Plug 'chrisbra/Colorizer'
 
 " A Syntax Highlight for Vue.js components
 Plug 'posva/vim-vue'
