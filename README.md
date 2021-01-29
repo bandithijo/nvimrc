@@ -77,8 +77,8 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 | Defx sidebar toggle on/off                   | N    | <kbd>F12</kbd>                                              |
 | Tlist toggle on/off (.org)                   | N    | <kbd>F11</kbd>                                              |
 | Tagbar toggle on/off                         | N    | <kbd>F11</kbd>                                              |
-| FZF `:Buffers`                               | N    | <kbd>Control</kbd>+<kbd>p</kbd>                             |
-| FZF `:Files`                                 | N    | <kbd>Control</kbd>+<kbd>f</kbd>                             |
+| FZF `:Files`                                 | N    | <kbd>Control</kbd>+<kbd>p</kbd>                             |
+| FZF `:Buffers`                               | N    | <kbd>Control</kbd>+<kbd>f</kbd>                             |
 | Move window pane focus to left               | N    | <kbd>Control</kbd>+<kbd>h</kbd>                             |
 | Move window pane focus to down               | N    | <kbd>Control</kbd>+<kbd>j</kbd>                             |
 | Move window pane focus to up                 | N    | <kbd>Control</kbd>+<kbd>k</kbd>                             |

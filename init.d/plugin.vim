@@ -118,6 +118,9 @@ Plug 'tpope/gem-ctags'
 " A vim plugin to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
 
+" A Indent guides on blank lines for Neovim
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 " A Typescript syntax files for Vim
 "Plug 'leafgarland/typescript-vim'
 
@@ -171,9 +174,6 @@ Plug 'chrisbra/Colorizer'
 
 " A Syntax Highlight for Vue.js components
 Plug 'posva/vim-vue'
-
-" A Indent guides on blank lines for Neovim
-Plug 'lukas-reineke/indent-blankline.nvim'
 
 " A solid language pack for Vim.
 "Plug 'sheerun/vim-polyglot'
