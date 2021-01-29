@@ -23,7 +23,7 @@ fun! Start()
         \ norelativenumber
 
     " Now we can just write to the buffer, whatever you want.
-    call append('$', 'Vim Tips:')
+    call append('$', ' Vim Tips:')
     call append('$', '')
     for line in split(system('fortune 100% vimtips'), '\n')
         call append('$', '    ' . l:line)
