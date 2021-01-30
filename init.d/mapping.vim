@@ -17,7 +17,7 @@ nmap <leader>so :source $MYVIMRC<cr>
 " for switch & delete buffer
 nmap <leader>n  :bn<cr>
 nmap <leader>p  :bp<cr>
-nmap <leader>bd :bp<cr>:bd! #<cr>
+nmap <leader>bd :bd<cr>
 nmap <leader>bw  <c-w><c-o>:bw<cr>
 
 " for switch & close tabs

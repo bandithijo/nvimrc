@@ -1,5 +1,8 @@
 " FZF
 
+" [Buffers] Jump to the existing window if possible
+let g:fzf_buffers_jump = 1
+
 " Define FZF default command
 let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore --ignore-file ".gitignore" '
 
