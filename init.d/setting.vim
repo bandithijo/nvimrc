@@ -3,6 +3,7 @@
 set encoding=UTF-8
 set t_Co=256                           " set terminal 256 color
 set nocompatible                       " be iMproved, required
+set termguicolors
 syntax enable
 filetype plugin indent on
 

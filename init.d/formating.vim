@@ -1,6 +1,6 @@
 " Interface
-colorscheme solarized_bandit
 set background=dark
+colorscheme solarized8_flat_bandit
 set incsearch                 " incremental search aka search as you type
 set hlsearch                  " highlight search matches
 set ignorecase                " ignore case
@@ -32,7 +32,7 @@ hi clear ModeMsg              " disable Color StatusLine on Insert Mode and Visu
 highlight clear SignColumn
 
 if &diff                      " change colorscheme when using vimdiff
-  colorscheme solarized_bandit
+  colorscheme solarized8_flat_bandit
 endif
 
 " Text Formating

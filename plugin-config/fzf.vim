@@ -24,8 +24,8 @@ let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']
 let g:fzf_layout = { 'window': { 'width': 1.00, 'height': 0.50, 'xoffset': 0.80, 'yoffset': 1.00, 'highlight': 'Comment', 'rounded': v:false } }
 
 " Hide status line
-"autocmd! FileType fzf set laststatus=0 noshowmode noruler
-"  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+autocmd! FileType fzf set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
 " Customize fzf colors to match your color scheme
 " let g:fzf_colors =

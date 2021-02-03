@@ -4,7 +4,8 @@
     "liquid" : "html",
     "js"     : "javascript"
   },
-  "explorer.icon.enableNerdfont": true,
+  "coc.preferences.colorSupport" : false,
+  "explorer.icon.enableNerdfont" : true,
   "python.jediEnabled"           : false,
   "python.linting.enabled"       : true,
   "python.linting.pylintEnabled" : true,
@@ -15,7 +16,7 @@
   "solargraph.formatting"        : true,
   "diagnostic.displayByAle"      : true,
   "codeLens.enable"              : true,
-  "snippets.extends": {
+  "snippets.extends"  : {
     "cpp"             : ["c"],
     "javascriptreact" : ["javascript"],
     "typescript"      : ["javascript"],

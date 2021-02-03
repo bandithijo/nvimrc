@@ -5,7 +5,7 @@
 " \   'left': '\u2502', 'right': '\u2502'
 
 let g:lightline = {
-\   'colorscheme': 'solarized_bandit',
+\   'colorscheme': 'solarized8_bandit',
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
 \              [ 'gitbranch' ],

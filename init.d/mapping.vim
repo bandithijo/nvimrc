@@ -85,7 +85,8 @@ nmap ga <Plug>(EasyAlign)
 
 " fzf.vim
 nmap <C-f> :Buffers<cr>
-nmap <C-p> :GitFiles<cr>
+nmap <C-p> :Files<cr>
+nmap <C-A-p> :Files<cr>
 
 " prevent Vim scrolling when splitting a window
 nnoremap <C-W>s Hmx`` \|:split<CR>`xzt``

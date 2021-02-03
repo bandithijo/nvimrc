@@ -10,8 +10,8 @@ let g:ale_completion_enabled = 0
 let g:ale_sign_error   = ''
 let g:ale_sign_warning = ''
 
-hi ALEErrorSign   ctermfg=196
-hi ALEWarningSign ctermfg=214
+hi ALEErrorSign   ctermfg=196 guifg=#DC322F
+hi ALEWarningSign ctermfg=214 guifg=#B58900
 " hi clear ALEErrorSign
 " hi clear ALEWarningSign
 

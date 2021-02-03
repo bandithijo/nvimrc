@@ -163,14 +163,8 @@ Plug 'wakatime/vim-wakatime'
 " A modern vim plugin for editing LaTeX files
 Plug 'lervag/vimtex'
 
-" A dark color scheme for Vim and vim-airline, inspired by Dark+ in Visual Studio Code
-Plug 'tomasiser/vim-code-dark'
-
-" A preview colours in source code while editing
-"Plug 'ap/vim-css-color'
-
-" A color hex codes and color names
-Plug 'chrisbra/Colorizer'
+" A hexokinase.vim - (Neo)Vim plugin for asynchronously displaying the colours in the file (#rrggbb, #rgb, rgb(a)?
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " A Syntax Highlight for Vue.js components
 Plug 'posva/vim-vue'
@@ -192,12 +186,6 @@ Plug 'dense-analysis/ale'
 
 " A Vim plugin for quick opening plugin's page on Github
 Plug 'xvadim/open_plugin_page'
-
-" A Displays the results of every line of code in your file
-"Plug 'hwartig/vim-seeing-is-believing'
-
-" A The interactive scratchpad for hackers.
-"Plug 'metakirby5/codi.vim'
 
 " A Switch between single-line and multiline forms of code
 Plug 'AndrewRadev/splitjoin.vim'
