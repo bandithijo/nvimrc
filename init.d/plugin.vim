@@ -221,4 +221,8 @@ Plug 'cohama/lexima.vim'
 " Asynchronous build and test dispatcher
 Plug 'tpope/vim-dispatch'
 
+" An eye friendly plugin that fades your inactive buffers and preserves your
+" syntax highlighting!
+Plug 'TaDaa/vimade'
+
 call plug#end()
