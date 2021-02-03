@@ -169,7 +169,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi PmenuSel guifg=#eee8d5 guibg=#586e75 gui=NONE cterm=NONE
     hi PmenuThumb guifg=NONE guibg=#586e75 gui=NONE cterm=NONE
     hi Question guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-    hi Search guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
+    " hi Search guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
+    hi Search guifg=#cb4b16 guibg=NONE gui=reverse cterm=reverse
     hi SignColumn guifg=#839496 guibg=NONE gui=NONE cterm=NONE
     hi TabLine guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
     hi TabLineFill guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
@@ -555,7 +556,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi PmenuSel guifg=#fdf6e3 guibg=#93a1a1 gui=NONE cterm=NONE
   hi PmenuThumb guifg=NONE guibg=#93a1a1 gui=NONE cterm=NONE
   hi Question guifg=#2aa198 guibg=NONE gui=bold cterm=bold
-  hi Search guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
+  " hi Search guifg=#b58900 guibg=NONE gui=reverse cterm=reverse
+  hi Search guifg=#cb4b16 guibg=NONE gui=reverse cterm=reverse
   hi SignColumn guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
   hi TabLine guifg=#93a1a1 guibg=#eee8d5 gui=NONE cterm=NONE
   hi TabLineFill guifg=#93a1a1 guibg=#eee8d5 gui=NONE cterm=NONE
