@@ -153,7 +153,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi ColorColumn guifg=NONE guibg=#073642 gui=NONE cterm=NONE
     hi Conceal guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
     hi CursorColumn guifg=NONE guibg=#073642 gui=NONE cterm=NONE
-    hi Directory guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+    " hi Directory guifg=#268bd2 guibg=NONE gui=NONE cterm=NONE
+    hi Directory guifg=#cb4b16 guibg=NONE gui=bold cterm=NONE
     hi EndOfBuffer guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ErrorMsg guifg=#dc322f guibg=#fdf6e3 gui=reverse cterm=reverse
     hi FoldColumn guifg=#839496 guibg=NONE gui=NONE cterm=NONE
@@ -188,7 +189,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi Statement guifg=#859900 guibg=NONE gui=NONE cterm=NONE
     hi Todo guifg=#d33682 guibg=NONE gui=bold cterm=bold
     hi Type guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-    hi Underlined guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
+    " hi Underlined guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
+    hi Underlined guifg=NONE guibg=NONE gui=underline cterm=NONE
     hi InsertMode guifg=#073642 guibg=#2aa198 gui=bold,reverse cterm=bold,reverse
     hi ReplaceMode guifg=#073642 guibg=#cb4b16 gui=bold,reverse cterm=bold,reverse
     hi VisualMode guifg=#073642 guibg=#d33682 gui=bold,reverse cterm=bold,reverse
@@ -573,7 +575,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi Statement guifg=#859900 guibg=NONE gui=NONE cterm=NONE
   hi Todo guifg=#d33682 guibg=NONE gui=bold cterm=bold
   hi Type guifg=#b58900 guibg=NONE gui=NONE cterm=NONE
-  hi Underlined guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
+  " hi Underlined guifg=#6c71c4 guibg=NONE gui=NONE cterm=NONE
+  hi Underlined guifg=NONE guibg=NONE gui=underline cterm=NONE
   hi InsertMode guifg=#eee8d5 guibg=#2aa198 gui=bold,reverse cterm=bold,reverse
   hi ReplaceMode guifg=#eee8d5 guibg=#cb4b16 gui=bold,reverse cterm=bold,reverse
   hi VisualMode guifg=#eee8d5 guibg=#d33682 gui=bold,reverse cterm=bold,reverse
