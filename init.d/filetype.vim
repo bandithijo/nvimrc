@@ -27,9 +27,9 @@ let g:is_bash = 1
 autocmd TermOpen * setfiletype term
 
 " Override html syntax color for solarized
-hi htmlTag            guifg=#586e75 guibg=NONE gui=NONE   cterm=NONE
-hi htmlEndTag         guifg=#586e75 guibg=NONE gui=NONE   cterm=NONE
-hi htmlTagN           guifg=#93a1a1 guibg=NONE gui=bold   cterm=bold
-hi htmlTagName        guifg=#268bd2 guibg=NONE gui=bold   cterm=bold
-hi htmlSpecialTagName guifg=#268bd2 guibg=NONE gui=italic cterm=italic
-hi htmlArg            guifg=#657b83 guibg=NONE gui=NONE   cterm=NONE
+hi htmlTag            guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
+hi htmlEndTag         guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
+hi htmlTagN           guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
+hi htmlTagName        guifg=#268bd2 guibg=NONE gui=bold cterm=bold
+hi htmlSpecialTagName guifg=#268bd2 guibg=NONE gui=bold cterm=bold
+hi htmlArg            guifg=#657b83 guibg=NONE gui=NONE cterm=NONE
