@@ -6,8 +6,6 @@ require'nvim-treesitter.configs'.setup {
     disable = { },                 -- list of language that will be disabled
   },
 }
-EOF
 
-lua <<EOF
 require'nvim-treesitter.parsers'.get_parser_configs().html.used_by = {'html', 'liquid'}
 EOF
