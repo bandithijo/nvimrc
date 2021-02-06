@@ -3,17 +3,9 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" A The dark powered file explorer implementation
-if has('nvim')
-  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/defx.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-Plug 'kristijanhusak/defx-icons'
-Plug 'kristijanhusak/defx-git'
+" A file explorer tree for neovim written in lua
+" Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 " A light and configurable statusline/tabline plugin for Vim
 Plug 'itchyny/lightline.vim'
