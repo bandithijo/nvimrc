@@ -9,7 +9,7 @@ let maplocalleader = " "
 nmap <silent> <leader>ev :e ~/.config/nvim/README.md<cr>
                        \ :cd %:p:h<cr>
                        \ :cal cursor(1,1)<cr>
-                       \ :Defx<cr>
+                       \ :NvimTreeToggle<cr>
 
 " source vimrc
 nmap <leader>so :source $MYVIMRC<cr>
