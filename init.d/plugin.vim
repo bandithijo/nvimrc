@@ -25,6 +25,10 @@ Plug 'tpope/vim-fugitive'
 " rhubarb.vim: GitHub extension for fugitive.vim
 Plug 'tpope/vim-rhubarb'
 
+" A Find, Filter, Preview, Pick. All lua, all the time.
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Better whitespace highlighting for Vim.
 Plug 'ntpeters/vim-better-whitespace'
