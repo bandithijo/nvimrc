@@ -46,10 +46,6 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-" Defx Sidebar
-nmap <silent> <F12> :Defx<cr>
-nmap <silent> <leader><F12> :Defx -search=`expand('%:p')`<cr>
-
 " for move focus to each split
 nmap <C-h> <C-w><C-h>
 nmap <C-j> <C-w><C-j>
