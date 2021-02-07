@@ -74,7 +74,7 @@ let g:lightline = {
 \}
 
 function! LightlineFugitive()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     if exists('*fugitive#head')
       let branch = fugitive#head()
@@ -87,7 +87,7 @@ function! LightlineFugitive()
 endfunction
 
 function! LightlineFileformat()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     return winwidth(0) > 70 ?
          \ (tolower(&fileformat) . ' ' . WebDevIconsGetFileFormatSymbol()) . ' ' :
@@ -98,7 +98,7 @@ function! LightlineFileformat()
 endfunction
 
 function! LightlineFiletype()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'term' && &filetype !=? 'vista'
     return strlen(&filetype) ?
          \ '[' . &shiftwidth . '] ' . &filetype . ' ' . WebDevIconsGetFileTypeSymbol() :
@@ -109,7 +109,7 @@ function! LightlineFiletype()
 endfunction
 
 function! LightlineFileEncoding()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     return winwidth(0) > 70 ? tolower(&fileencoding) : ''
   else
@@ -118,7 +118,7 @@ function! LightlineFileEncoding()
 endfunction
 
 function! LightlineLineInfo()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     let current_line = printf('%3s', line('.'))
     let current_col  = printf('%-2s', col('.'))
@@ -130,7 +130,7 @@ function! LightlineLineInfo()
 endfunction
 
 function! LightlinePercent()
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     return printf('%2s', (line('.') * 100 / line('$'))) . '%  '
   else
@@ -142,7 +142,7 @@ function! LightlineFileName()
   let filename = expand('%')
   let modified = &modified ? '' : ''
   let readonly = &readonly
-  if &filetype !=? 'defx' && &filetype !=? 'tagbar' &&
+  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     if filename ==# ''
       return '[No Name]'
@@ -167,7 +167,7 @@ function! LightlineMode()
   return expand('%:t') ==# '__Tagbar__.1' ? ' TAGBAR'  :
        \ expand('%:t') ==# '__Tag_List__' ? ' TAGLIST' :
        \ expand('%:t') ==# '__vista__'    ? ' VISTA' :
-       \ &filetype ==# 'defx' ?  ' DEFX' :
+       \ &filetype ==# 'NvimTree' ?  'NvimTree' :
        \ lightline#mode()
 endfunction
 
@@ -186,7 +186,7 @@ function! SmartTabsIndicator()
 endfunction
 
 function! LightlineTrailingWhitespace()
-  if &filetype !=? 'defx'
+  if &filetype !=? 'NvimTree'
     let status = lightline#trailing_whitespace#component()
     return status == 'trailing' ? '!' : ''
   else
