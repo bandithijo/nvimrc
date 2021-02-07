@@ -24,11 +24,11 @@ let g:run_rspec_result_lines = 20
 highlight rspecFile               ctermfg=4     cterm=underline
 
 " Progress line like ....FF.FF.F..
-highlight rspecProgressPassed     ctermfg=2     cterm=bold
-highlight rspecProgressFailure    ctermfg=Red   cterm=bold
-highlight rspecProgressPending    ctermfg=brown cterm=bold
+highlight rspecProgressPassed     guifg=#859900 cterm=bold
+highlight rspecProgressFailure    guifg=#DC322F cterm=bold
+highlight rspecProgressPending    guifg=#B58900 cterm=bold
 
 " Summary
-highlight rspecSummaryAllPassed   ctermfg=2
-highlight rspecSummaryHasPending  ctermfg=brown
-highlight rspecSummaryHasFailures ctermfg=Red
+highlight rspecSummaryAllPassed   guifg=#859900 cterm=bold
+highlight rspecSummaryHasPending  guifg=#B58900 cterm=bold
+highlight rspecSummaryHasFailures guifg=#DC322F cterm=bold
