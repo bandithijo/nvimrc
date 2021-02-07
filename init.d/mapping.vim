@@ -5,12 +5,6 @@ nnoremap <SPACE> <Nop>
 let mapleader      = " "
 let maplocalleader = " "
 
-" for edit my .vimrc
-nmap <silent> <leader>ev :e ~/.config/nvim/README.md<cr>
-                       \ :cd %:p:h<cr>
-                       \ :cal cursor(1,1)<cr>
-                       \ :NvimTreeToggle<cr>
-
 " source vimrc
 nmap <leader>so :source $MYVIMRC<cr>
 
