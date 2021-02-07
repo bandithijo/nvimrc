@@ -60,20 +60,6 @@ autocmd BufReadPost *
 " I want to keep with block shape =P
 set guicursor=n-v-c:block
 
-" Share configuration between vim and neovim
-let g:is_nvim = has('nvim')
-let g:is_vim8 = v:version >= 800 ? 1 : 0
-
-" Reuse nvim's runtimepath and packpath in vim
-if !g:is_nvim && g:is_vim8
-  set runtimepath-=~/.vim
-    \ runtimepath^=~/.local/share/nvim/site runtimepath^=~/.vim
-    \ runtimepath-=~/.vim/after
-    \ runtimepath+=~/.local/share/nvim/site/after runtimepath+=~/.vim/after
-    \ runtimepath^=~/.vim/view
-  let &packpath = &runtimepath
-endif
-
 " Redrawtime for LSP (default 2000)
 " Time in milliseconds for redrawing the display.
 " Applies to 'hlsearch', 'inccommand', :match highlighting and

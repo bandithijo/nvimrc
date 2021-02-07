@@ -17,11 +17,7 @@ Plug 'mengelbrecht/lightline-bufferline'
 Plug 'maximbaz/lightline-trailing-whitespace'
 
 " Show a diff using Vim its sign column.
-if has('nvim') || has('patch-8.0.902')
-  Plug 'mhinz/vim-signify'
-else
-  Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
-endif
+Plug 'mhinz/vim-signify'
 
 " fugitive.vim: A Git wrapper so awesome, it should be illegal.
 Plug 'tpope/vim-fugitive'
