@@ -21,7 +21,7 @@ let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']
 " - highlight [string default 'Comment']: Highlight group for border
 " - rounded [boolean default v:true]: Use rounded border
 "let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.95, 'highlight': 'Comment', 'rounded': v:false } }
-let g:fzf_layout = { 'window': { 'width': 1.00, 'height': 0.50, 'xoffset': 0.80, 'yoffset': 1.00, 'highlight': 'Comment', 'rounded': v:false } }
+let g:fzf_layout = { 'window': { 'width': 1.00, 'height': 0.30, 'xoffset': 0.80, 'yoffset': 1.00, 'highlight': 'Comment', 'rounded': v:false } }
 
 " Hide status line
 " autocmd! FileType fzf set laststatus=0 noshowmode noruler
