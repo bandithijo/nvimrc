@@ -25,12 +25,6 @@ Plug 'tpope/vim-fugitive'
 " rhubarb.vim: GitHub extension for fugitive.vim
 Plug 'tpope/vim-rhubarb'
 
-" A command-line fuzzy finder.
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-
-" Manage branches and tags with fzf
-Plug 'stsewd/fzf-checkout.vim'
 
 " Better whitespace highlighting for Vim.
 Plug 'ntpeters/vim-better-whitespace'
