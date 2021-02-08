@@ -22,12 +22,12 @@ require('telescope').setup{
     layout_strategy      = "horizontal",
     layout_defaults      = {
       horizontal = {
-        width_padding    = 0.05,
-        height_padding   = 0.1,
+        width_padding    = 0.3,
+        height_padding   = 0.2,
         preview_width    = 0.5
       },
       vertical = {
-        width_padding    = 0.05,
+        width_padding    = 0.1,
         height_padding   = 0.5,
         preview_height   = 0.5
       }
@@ -94,7 +94,7 @@ require('telescope').setup {
     extensions = {
       fzy_native = {
         override_generic_sorter = false,
-        override_file_sorter = true,
+        override_file_sorter    = true,
       }
     }
 }
@@ -103,9 +103,9 @@ require('telescope').load_extension('fzy_native')
 EOF
 
 " Find files using Telescope command-line sugar.
-nnoremap <C-p> <cmd>Telescope find_files<cr>
-nnoremap <C-f> <cmd>Telescope buffers<cr>
-nnoremap <C-g> <cmd>Telescope git_branches<cr>
+nnoremap <C-p> <cmd>Telescope find_files   previewer=false<cr>
+nnoremap <C-f> <cmd>Telescope buffers      previewer=false<cr>
+nnoremap <C-g> <cmd>Telescope git_branches previewer=false<cr>
 
 highlight TelescopeSelection      guifg=#93A1A1 gui=bold " selected item
 highlight TelescopeSelectionCaret guifg=#CB4B16 " selection caret
