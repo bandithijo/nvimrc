@@ -80,7 +80,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi ToolbarButton guifg=#93a1a1 guibg=NONE gui=bold cterm=bold
       hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
     else " opaque
-      hi Normal guifg=#839496 guibg=#002b36 gui=NONE cterm=NONE
+      " hi Normal guifg=#839496 guibg=#002b36 gui=NONE cterm=NONE
+      hi Normal guifg=#839496 guibg=NONE gui=NONE cterm=NONE
       hi CursorLine guifg=NONE guibg=#073642 gui=NONE cterm=NONE
       hi Terminal guifg=fg guibg=#002b36 gui=NONE cterm=NONE
       hi ToolbarButton guifg=#93a1a1 guibg=#073642 gui=bold cterm=bold
@@ -436,16 +437,16 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
         \ '#268bd2', '#d33682', '#2aa198', '#eee8d5', '#002b36', '#cb4b16',
         \ '#586e75', '#657b83', '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
   if has('nvim')
-    let g:terminal_color_0 = '#073642'
-    let g:terminal_color_1 = '#dc322f'
-    let g:terminal_color_2 = '#859900'
-    let g:terminal_color_3 = '#b58900'
-    let g:terminal_color_4 = '#268bd2'
-    let g:terminal_color_5 = '#d33682'
-    let g:terminal_color_6 = '#2aa198'
-    let g:terminal_color_7 = '#eee8d5'
-    let g:terminal_color_8 = '#002b36'
-    let g:terminal_color_9 = '#cb4b16'
+    let g:terminal_color_0  = '#073642'
+    let g:terminal_color_1  = '#dc322f'
+    let g:terminal_color_2  = '#859900'
+    let g:terminal_color_3  = '#b58900'
+    let g:terminal_color_4  = '#268bd2'
+    let g:terminal_color_5  = '#d33682'
+    let g:terminal_color_6  = '#2aa198'
+    let g:terminal_color_7  = '#eee8d5'
+    let g:terminal_color_8  = '#002b36'
+    let g:terminal_color_9  = '#cb4b16'
     let g:terminal_color_10 = '#586e75'
     let g:terminal_color_11 = '#657b83'
     let g:terminal_color_12 = '#839496'
