@@ -15,6 +15,7 @@ fun! Start()
     \ nonumber
     \ noswapfile
     \ norelativenumber
+    \ colorcolumn=0
 
   " Our message goes here. Mine is simple.
   "call append('$', 'hello')
