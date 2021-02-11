@@ -113,5 +113,5 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 nnoremap g8 :as<cr>
 
 " Scrolling horizontal right and left
-map <C-A-l> zl
-map <C-A-h> zh
+map <C-A-l> z5l
+map <C-A-h> z5h
