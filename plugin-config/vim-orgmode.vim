@@ -15,24 +15,24 @@ let g:org_todo_keywords               = [
   \  ['CANCELED(c)']
   \  ]
 let g:org_todo_keyword_faces          = [
-  \  ['TODO',       [':foreground 0', ':background 1', ':weight bold']],
-  \  ['WAITING',    [':foreground 0', ':background 3', ':weight bold']],
-  \  ['DONE',       [':foreground 0', ':background 2', ':weight bold']],
-  \  ['REPORT',     [':foreground 0', ':background 3', ':weight bold']],
-  \  ['BUG',        [':foreground 0', ':background 3', ':weight bold']],
-  \  ['KNOWNCAUSE', [':foreground 0', ':background 3', ':weight bold']],
-  \  ['FIXED',      [':foreground 0', ':background 2', ':weight bold']],
-  \  ['CANCELED',   [':foreground 0', ':background 1', ':weight bold']]
+  \  ['TODO',       [':foreground #002b36', ':background #DC322F', ':weight bold']],
+  \  ['WAITING',    [':foreground #002b36', ':background #B58900', ':weight bold']],
+  \  ['DONE',       [':foreground #002b36', ':background #859900', ':weight bold']],
+  \  ['REPORT',     [':foreground #002b36', ':background #B58900', ':weight bold']],
+  \  ['BUG',        [':foreground #002b36', ':background #B58900', ':weight bold']],
+  \  ['KNOWNCAUSE', [':foreground #002b36', ':background #B58900', ':weight bold']],
+  \  ['FIXED',      [':foreground #002b36', ':background #859900', ':weight bold']],
+  \  ['CANCELED',   [':foreground #002b36', ':background #DC322F', ':weight bold']]
   \  ]
 
 " Custom color for vim-orgmode
 function OrgmodeCustomColor()
-  hi org_heading1  ctermfg=255 cterm=bold
-  hi org_heading2  ctermfg=255 cterm=bold
-  hi org_heading3  ctermfg=255 cterm=bold
-  hi org_heading4  ctermfg=255 cterm=bold
-  hi org_heading5  ctermfg=255 cterm=bold
-  hi org_heading6  ctermfg=255 cterm=bold
+  hi org_heading1  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
+  hi org_heading2  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
+  hi org_heading3  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
+  hi org_heading4  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
+  hi org_heading5  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
+  hi org_heading6  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
   hi org_underline cterm=none
   hi hyperlink     ctermfg=117
 endfunction
