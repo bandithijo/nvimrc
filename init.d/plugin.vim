@@ -25,12 +25,16 @@ Plug 'tpope/vim-fugitive'
 " rhubarb.vim: GitHub extension for fugitive.vim
 Plug 'tpope/vim-rhubarb'
 
-" A Find, Filter, Preview, Pick. All lua, all the time.
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+" A command-line fuzzy finder.
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
+" A Find, Filter, Preview, Pick. All lua, all the time.
+" Plug 'nvim-lua/popup.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
+
+" Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 " Better whitespace highlighting for Vim.
 Plug 'ntpeters/vim-better-whitespace'
