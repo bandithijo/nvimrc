@@ -6,16 +6,15 @@ fun! Start()
   " Set some options for this buffer to make sure that does not act like a
   " normal winodw.
   setlocal
+    \ colorcolumn=0
+    \ noswapfile
     \ bufhidden=wipe
     \ buftype=nofile
-    \ nobuflisted
     \ nocursorcolumn
     \ nocursorline
     \ nolist
     \ nonumber
-    \ noswapfile
     \ norelativenumber
-    \ colorcolumn=0
 
   " Our message goes here. Mine is simple.
   "call append('$', 'hello')
