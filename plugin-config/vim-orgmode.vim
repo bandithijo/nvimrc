@@ -33,11 +33,12 @@ function OrgmodeCustomColor()
   hi org_heading4  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
   hi org_heading5  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
   hi org_heading6  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
-  hi org_underline cterm=none
-  hi hyperlink     ctermfg=117
+  hi org_underline cterm=none  gui=none
+  hi hyperlink     ctermfg=117 guifg=#87D7FF
 endfunction
 
 " Custom key for vim-orgmode
+"" For set TODO label
 function OrgmodeCustomKey()
   nmap <leader>d <Plug>OrgTodoToggleInteractive
 endfunction
@@ -47,6 +48,7 @@ augroup OrgmodeCustomColor
   au FileType org call OrgmodeCustomColor()
 augroup END
 
+"" For go to previous link
 au FileType org nmap <silent> gp :OrgHyperlinkPreviousLink<cr>
 
 autocmd BufWinLeave *.org mkview!
