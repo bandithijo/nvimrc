@@ -27,6 +27,13 @@ let g:ale_fix_on_save = 0
 " default: 1
 let g:ale_lint_on_enter = 1
 
+let g:ale_floating_preview           = 1
+let g:ale_hover_to_floating_preview  = 1
+let g:ale_detail_to_floating_preview = 1
+let g:ale_close_preview_on_insert    = 1
+let g:float_preview#docked           = 0
+let g:ale_cursor_detail              = 1
+
 " Navigate between errors quickly
 nmap <silent> <A-k> <Plug>(ale_previous_wrap)
 nmap <silent> <A-j> <Plug>(ale_next_wrap)
