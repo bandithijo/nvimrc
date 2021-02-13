@@ -3,7 +3,7 @@
 " text files, and acts as a Vim Language Server Protocol client.
 
 " How can I use ALE and coc.nvim together?
-let g:ale_disable_lsp  = 1
+let g:ale_disable_lsp  = 0
 
 let g:ale_completion_enabled = 0
 
