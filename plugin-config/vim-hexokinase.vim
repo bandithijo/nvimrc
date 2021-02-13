@@ -7,4 +7,14 @@ let g:Hexokinase_highlighters = [ 'virtual' ]
 let g:Hexokinase_optInPatterns = 'full_hex,rgb,rgba,hsl,hsla,colour_names'
 
 " Sample value, to keep default behaviour don't define this variable
-let g:Hexokinase_ftEnabled = ['css', 'scss', 'html', 'javascript', 'eruby', 'xdefaults', 'vim']
+let g:Hexokinase_ftEnabled = [
+      \ 'css',
+      \ 'eruby',
+      \ 'html',
+      \ 'javascript',
+      \ 'python',
+      \ 'scss',
+      \ 'sh',
+      \ 'vim',
+      \ 'xdefaults',
+      \]
