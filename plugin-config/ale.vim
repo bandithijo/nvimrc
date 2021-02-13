@@ -35,6 +35,12 @@ let g:ale_lint_on_enter = 1
 "let g:float_preview#docked           = 0
 "let g:ale_cursor_detail              = 1
 
+" ALE VirtualText
+let g:ale_virtualtext_cursor          = 1
+let g:ale_virtualtext_prefix          = '<- '
+hi ALEVirtualTextError   ctermfg=196 guifg=#FF0000
+hi ALEVirtualTextWarning ctermfg=244 guifg=#586E75
+
 " Navigate between errors quickly
 nmap <silent> <A-k> <Plug>(ale_previous_wrap)
 nmap <silent> <A-j> <Plug>(ale_next_wrap)
