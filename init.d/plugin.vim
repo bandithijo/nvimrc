@@ -152,9 +152,6 @@ Plug 'pbrisbin/vim-mkdir'
 " A open source plugins for automatic programming metrics
 Plug 'wakatime/vim-wakatime'
 
-" A modern vim plugin for editing LaTeX files
-Plug 'lervag/vimtex'
-
 " A hexokinase.vim - (Neo)Vim plugin for asynchronously displaying the colours in the file (#rrggbb, #rgb, rgb(a)?
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
