@@ -38,7 +38,7 @@ let g:ale_lint_on_enter = 1
 " ALE VirtualText
 let g:ale_virtualtext_cursor          = 1
 let g:ale_virtualtext_prefix          = '<- '
-hi ALEVirtualTextError   ctermfg=196 guifg=#FF0000
+hi ALEVirtualTextError   ctermfg=160 guifg=#DC322F
 hi ALEVirtualTextWarning ctermfg=244 guifg=#586E75
 
 " Navigate between errors quickly
