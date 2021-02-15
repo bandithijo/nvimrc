@@ -49,6 +49,7 @@ let g:ale_linters = {
 \   'ruby'       : ['rubocop', 'sorbet'],
 \   'python'     : ['pylint', 'flake8'],
 \   'javascript' : ['eslint'],
+\   'yaml'       : ['yamllint'],
 \   'c'          : ['clangd'],
 \   'cpp'        : ['clangd'],
 \}
@@ -57,6 +58,7 @@ let g:ale_fixers = {
 \   'ruby'       : ['rubocop', 'sorbet'],
 \   'python'     : ['pylint', 'flake8'],
 \   'javascript' : ['eslint'],
+\   'yaml'       : ['yamllint'],
 \}
 
 " source: https://github.com/dense-analysis/ale/issues/371

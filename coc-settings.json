@@ -14,7 +14,7 @@
   "solargraph.hover"             : true,
   "solargraph.autoformat"        : true,
   "solargraph.formatting"        : true,
-  "diagnostic.displayByAle"      : false,
+  "diagnostic.displayByAle"      : true,
   "codeLens.enable"              : true,
   "snippets.extends"  : {
     "cpp"             : ["c"],
