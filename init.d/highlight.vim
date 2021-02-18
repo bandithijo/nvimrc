@@ -13,3 +13,5 @@ hig diffAdded         guifg=#859900
 hig diffRemoved       guifg=#dc322f
 hig diffLine          guifg=#268bd2
 hig diffSubname       guifg=#cb4b16 gui=bold
+
+highlight ExtraWhitespace guifg=#002B36 guibg=#dc322f
