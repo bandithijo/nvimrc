@@ -1,3 +1,6 @@
+hi clear ModeMsg              " disable Color StatusLine on Insert Mode and Visual Mode
+hi clear SignColumn
+
 " Override html syntax color
 hi htmlTag            guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
 hi htmlEndTag         guifg=#586e75 guibg=NONE gui=NONE cterm=NONE
