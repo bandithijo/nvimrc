@@ -8,7 +8,7 @@ set smartcase                 " but when the query starts with upper character b
 set laststatus=2              " always show the status line, vim 1, neovim 2
 set lazyredraw                " do not redraw while running macros
 set linespace=0               " don't insert any extra pixel lines between rows
-"set list                     " no show traling listchars
+set list                      " no show traling listchars
 set listchars=tab:\ ,trail:·,extends:>,precedes:<
 "set listchars=tab:▸\ ,eol:$,trail:¬,extends:❯,precedes:❮,nbsp:~
 set nostartofline             " don't move the cursor to first non-blank character after some command
@@ -28,8 +28,6 @@ set showmatch                 " show matching brackets
 "set sidescrolloff=10         " keep 5 lines at the size
 set cursorline                " visually mark current line
 "set showbreak=↪              " indicate wrapped line
-hi clear ModeMsg              " disable Color StatusLine on Insert Mode and Visual Mode
-highlight clear SignColumn
 
 if &diff                      " change colorscheme when using vimdiff
   colorscheme solarized8_flat_bandit
