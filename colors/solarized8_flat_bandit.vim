@@ -175,7 +175,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi SignColumn guifg=#839496 guibg=NONE gui=NONE cterm=NONE
     hi TabLine guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
     hi TabLineFill guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
-    hi VertSplit guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
+    " hi VertSplit guifg=#586e75 guibg=#073642 gui=NONE cterm=NONE
+    hi VertSplit guifg=#586e75 guibg=#002B36 gui=NONE cterm=NONE
     hi Visual guifg=#586e75 guibg=#002b36 gui=reverse cterm=reverse
     hi VisualNOS guifg=NONE guibg=#073642 gui=reverse cterm=reverse
     hi WarningMsg guifg=#cb4b16 guibg=NONE gui=bold cterm=bold
