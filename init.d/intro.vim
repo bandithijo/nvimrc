@@ -18,7 +18,7 @@ fun! Start()
 
   " Our message goes here. Mine is simple.
   "call append('$', 'hello')
-  silent exec ':r ~/.config/nvim/vimasciilogo'
+  silent exec ':r ~/.config/nvim/asciiart/nvimasciilogo'
 
   " When we are done writing out message set the buffer to readonly.
   setlocal
