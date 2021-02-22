@@ -53,7 +53,6 @@ Plug 'jparise/vim-graphql'
 " ragtag.vim: ghetto HTML/XML mappings (formerly allml.vim)*
 Plug 'tpope/vim-ragtag'
 
-
 " Viewer & Finder for LSP symbols and tags
 Plug 'liuchengxu/vista.vim'
 
@@ -89,9 +88,6 @@ Plug 'vim-ruby/vim-ruby'
 
 " Highlight eruby code blocks within html.
 Plug 'vim-scripts/eruby.vim'
-
-" rbenv.vim: Minimal rbenv support
-Plug 'tpope/vim-rbenv'
 
 " bundler.vim: Lightweight support for Ruby's Bundler
 Plug 'tpope/vim-bundler'
