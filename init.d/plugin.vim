@@ -47,8 +47,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
 Plug 'jparise/vim-graphql'
 
-" rsi.vim: Readline style insertion (saya pakai untuk alt+delete: menghapus 1 kata).
-Plug 'tpope/vim-rsi'
+" rsi.vim: Readline style insertion
+"Plug 'tpope/vim-rsi'
 
 " ragtag.vim: ghetto HTML/XML mappings (formerly allml.vim)*
 Plug 'tpope/vim-ragtag'
