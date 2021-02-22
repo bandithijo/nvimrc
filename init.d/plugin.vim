@@ -152,9 +152,6 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " A Syntax Highlight for Vue.js components
 Plug 'posva/vim-vue'
 
-" A solid language pack for Vim.
-"Plug 'sheerun/vim-polyglot'
-
 " A surround.vim: quoting/parenthesizing made simple
 Plug 'tpope/vim-surround'
 
