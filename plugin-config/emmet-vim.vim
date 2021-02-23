@@ -1,8 +1,7 @@
 " emmet-vim trigger key remap
-
 " Default leader key is <c-y>,
-let g:user_emmet_leader_key='<C-n>'        " then press , (comma) to do magic !
-let g:user_emmet_mode = 'a'                "enable all function in all mode
+let g:user_emmet_leader_key = '<C-n>'        " then press , (comma) to do magic !
+let g:user_emmet_mode       = 'a'            "enable all function in all mode
 
 " Centered the cursor on Emmet
 inoremap <silent><expr> <cr> pumvisible() ?
