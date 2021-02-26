@@ -1,5 +1,6 @@
 let g:reply_repls = {
-\  'ruby': ['irb']
+\  'ruby': ['irb'],
+\  'sh': ['bash']
 \}
 
 nnoremap <leader><space> :ReplSend<cr>
