@@ -80,6 +80,9 @@ Plug 'tpope/vim-liquid'
 " Quickstart configurations for the Nvim LSP client
 Plug 'neovim/nvim-lspconfig'
 
+" Auto completion plugin for nvim that written in Lua
+Plug 'hrsh7th/nvim-compe'
+
 " rails.vim: Ruby on Rails power tools
 Plug 'tpope/vim-rails'
 
