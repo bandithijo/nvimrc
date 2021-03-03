@@ -77,8 +77,6 @@ Plug 'ryanoasis/vim-devicons'
 " Vim Liquid runtime files with Jekyll enhancements.
 Plug 'tpope/vim-liquid'
 
-" A Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " rails.vim: Ruby on Rails power tools
 Plug 'tpope/vim-rails'
@@ -160,9 +158,6 @@ Plug 'junegunn/vim-easy-align'
 
 " A The Vim RuboCop plugin runs RuboCop and displays the results in Vim
 Plug 'ngmy/vim-rubocop'
-
-" A Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
-Plug 'dense-analysis/ale'
 
 " A Vim plugin for quick opening plugin's page on Github
 Plug 'xvadim/open_plugin_page'
