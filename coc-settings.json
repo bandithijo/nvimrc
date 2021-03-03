@@ -15,5 +15,5 @@
   "solargraph.autoformat"        : true,
   "solargraph.formatting"        : true,
   "diagnostic.displayByAle"      : true,
-  "codeLens.enable"              : true,
+  "codeLens.enable"              : true
 }
