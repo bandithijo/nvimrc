@@ -16,10 +16,4 @@
   "solargraph.formatting"        : true,
   "diagnostic.displayByAle"      : true,
   "codeLens.enable"              : true,
-  "snippets.extends"  : {
-    "cpp"             : ["c"],
-    "javascriptreact" : ["javascript"],
-    "typescript"      : ["javascript"],
-    "liquid"          : ["markdown"]
-  }
 }
