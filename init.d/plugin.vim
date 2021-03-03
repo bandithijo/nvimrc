@@ -77,6 +77,8 @@ Plug 'ryanoasis/vim-devicons'
 " Vim Liquid runtime files with Jekyll enhancements.
 Plug 'tpope/vim-liquid'
 
+" Quickstart configurations for the Nvim LSP client
+Plug 'neovim/nvim-lspconfig'
 
 " rails.vim: Ruby on Rails power tools
 Plug 'tpope/vim-rails'
