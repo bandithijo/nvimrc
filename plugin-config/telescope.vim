@@ -18,6 +18,8 @@ require('telescope').setup{
     },
     prompt_position      = 'bottom',
     prompt_prefix        = '> ',
+    selection_caret      = '> ',
+    entry_prefix         = '  ',
     initial_mode         = 'insert',
     scroll_strategy      = 'cycle',
     selection_strategy   = 'reset',
@@ -115,7 +117,7 @@ nnoremap <C-f> <cmd>Telescope buffers      previewer=false<cr>
 nnoremap <C-g> <cmd>Telescope git_branches previewer=false<cr>
 
 highlight TelescopeSelection      guifg=#93A1A1 gui=bold " selected item
-highlight TelescopeSelectionCaret guifg=#CB4B16 " selection caret
+highlight TelescopeSelectionCaret guifg=#93A1A1 " selection caret
 highlight TelescopeMultiSelection guifg=#928374 " multisections
 
 " Border highlight groups.
