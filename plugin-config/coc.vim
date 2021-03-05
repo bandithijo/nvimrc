@@ -105,6 +105,9 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 nnoremap <silent><expr> <down> coc#float#scroll(1, 1)
 nnoremap <silent><expr> <up>   coc#float#scroll(0, 1)
 
+" Clean yank history
+nmap <silent> <leader>cl :CocCommand yank.clean<cr>
+
 let g:LanguageClient_serverCommands = {
     \ 'ruby': ['~/.rbenv/shims/solargraph'],
     \ }

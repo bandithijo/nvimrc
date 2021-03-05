@@ -83,9 +83,6 @@ nnoremap <C-W>s Hmx`` \|:split<CR>`xzt``
 " change current directory with open buffer as refference
 nmap <silent> <leader>cd :cd %:p:h<cr>
 
-" clean yank history
-nmap <silent> <leader>cl :CocCommand yank.clean<cr>
-
 " load view
 nmap <silent> <leader>lv :loadview<cr>
 
