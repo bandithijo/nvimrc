@@ -206,4 +206,6 @@ Plug 'tpope/vim-dispatch'
 " syntax highlighting!
 Plug 'TaDaa/vimade'
 
+Plug 'tweekmonster/startuptime.vim'
+
 call plug#end()
