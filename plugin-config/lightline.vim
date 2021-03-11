@@ -158,7 +158,7 @@ function! LightlineFileName()
     return expand('%:t') ==# '__Tagbar__.1' ? '[tagbar]'  :
          \ expand('%:t') ==# '__Tag_List__' ? '[taglist]' :
          \ expand('%:t') ==# '__vista__'    ? '[vista]' :
-         \ &filetype ==# 'defx' ?  '[defx]' :
+         \ &filetype ==# 'NvimTree' ?  '[nvimtree]' :
          \ ''
   endif
 endfunction
@@ -167,7 +167,7 @@ function! LightlineMode()
   return expand('%:t') ==# '__Tagbar__.1' ? ' TAGBAR'  :
        \ expand('%:t') ==# '__Tag_List__' ? ' TAGLIST' :
        \ expand('%:t') ==# '__vista__'    ? ' VISTA' :
-       \ &filetype ==# 'NvimTree' ?  'NvimTree' :
+       \ &filetype ==# 'NvimTree' ?  ' EXPLORER' :
        \ lightline#mode()
 endfunction
 
