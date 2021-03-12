@@ -208,4 +208,7 @@ Plug 'TaDaa/vimade'
 
 Plug 'tweekmonster/startuptime.vim'
 
+" Vim plugin to edit binary files in a hex mode automatically.
+Plug 'fidian/hexmode'
+
 call plug#end()
