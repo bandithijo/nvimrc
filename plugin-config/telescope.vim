@@ -2,7 +2,6 @@
 " Source: https://github.com/elianiva/dotfiles/blob/master/nvim/.config/nvim/lua/plugins/_telescope.lua
 
 lua << EOF
-
 local actions = require('telescope.actions')
 
 require('telescope').setup{
