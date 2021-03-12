@@ -66,10 +66,80 @@ require'nvim-web-devicons'.setup {
       color = "#93A1A1",
       name = "Html",
     },
+    ["c"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "C"
+    },
+    ["c++"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "CPlusPlus"
+    },
+    ["cp"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Cp",
+    },
+    ["cpp"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Cpp",
+    },
+    ["h"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "H",
+    },
+    ["gif"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Gif",
+    },
+    ["jpg"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Jpg",
+    },
+    ["jpeg"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Jpeg",
+    },
+    ["pdf"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Pdf"
+    },
+    ["php"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Php"
+    };
+    ["go"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Go",
+    },
     ["png"] = {
       icon = "",
       color = "#93A1A1",
       name = "Png"
+    },
+    ["py"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Py"
+    },
+    ["pyc"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Pyc"
+    },
+    ["svg"] = {
+      icon = "",
+      color = "#93A1A1",
+      name = "Svg"
     },
     ["favicon.ico"] = {
       icon = "",
