@@ -88,8 +88,8 @@ EOF
 " default will show icon by default if no icon is provided
 " default shows no icon by default
 let g:nvim_tree_icons = {
-    \ 'default':     ' ',
-    \ 'symlink':     ' ',
+    \ 'default':     '',
+    \ 'symlink':     '',
     \ 'git': {
     \   'unstaged':  "",
     \   'staged':    "",

@@ -4,7 +4,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " A file explorer tree for neovim written in lua
-" Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " A light and configurable statusline/tabline plugin for Vim
