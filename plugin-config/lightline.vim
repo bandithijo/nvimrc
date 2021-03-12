@@ -26,7 +26,7 @@ let g:lightline = {
 \   },
 \   'tabline': {
 \   'left'  : [['buffers']],
-\   'right' : [['linter_checking', 'linter_info','linter_warnings', 'linter_errors'], ['cocstatus', 'string2', 'smarttabs']]
+\   'right' : [['linter_checking', 'linter_info','linter_warnings', 'linter_errors', 'string1'], ['cocstatus', 'string2', 'smarttabs']]
 \   },
 \   'separator': {
 \     'left': '', 'right': ''
@@ -178,7 +178,7 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return ' '
+  return ' ' " U+E62F, custom font
 endfunction
 
 function! String2()
