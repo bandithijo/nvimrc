@@ -209,6 +209,7 @@ Plug 'tpope/vim-dispatch'
 " syntax highlighting!
 Plug 'TaDaa/vimade'
 
+" Breakdown Vim's --startuptime output
 Plug 'tweekmonster/startuptime.vim'
 
 " Vim plugin to edit binary files in a hex mode automatically.
