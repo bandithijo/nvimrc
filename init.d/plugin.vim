@@ -16,6 +16,9 @@ Plug 'mengelbrecht/lightline-bufferline'
 " A trailing whitespace component for the lightline vim plugin
 Plug 'maximbaz/lightline-trailing-whitespace'
 
+" ALE indicator for the lightline vim plugin
+Plug 'maximbaz/lightline-ale'
+
 " Show a diff using Vim its sign column.
 Plug 'mhinz/vim-signify'
 
