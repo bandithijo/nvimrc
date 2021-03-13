@@ -1,6 +1,9 @@
 " Enable line highlighting in addition to using signs by default.
 let g:signify_line_highlight = 0
 
+" default updatetime 4000ms is not good for async update
+set updatetime=100
+
 " The sign to use if a line was added, deleted or changed or a combination of
 " these.
 " You can use Unicode characters, but signs must not take up more than two
