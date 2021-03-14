@@ -1,6 +1,6 @@
 " Interface
 set background=dark
-colorscheme solarized8_flat_bandit
+colorscheme ateliersulphurpool_dark
 set incsearch                 " incremental search aka search as you type
 set hlsearch                  " highlight search matches
 set ignorecase                " ignore case
@@ -30,7 +30,7 @@ set cursorline                " visually mark current line
 "set showbreak=↪              " indicate wrapped line
 
 if &diff                      " change colorscheme when using vimdiff
-  colorscheme solarized8_flat_bandit
+  colorscheme ateliersulphurpool_dark
 endif
 
 " Text Formating

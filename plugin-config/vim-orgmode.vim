@@ -34,7 +34,7 @@ function OrgmodeCustomColor()
   hi org_heading5  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
   hi org_heading6  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
   hi org_underline cterm=none  gui=none
-  hi hyperlink     ctermfg=117 guifg=#87D7FF
+  hi hyperlink     ctermfg=4   guifg=#3D8FD1
 endfunction
 
 " Custom key for vim-orgmode

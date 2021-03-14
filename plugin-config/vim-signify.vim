@@ -18,6 +18,6 @@ let g:signify_sign_show_count        = 0
 let g:signify_sign_show_text         = 1
 
 " Colors
-highlight SignifySignAdd    ctermfg=4 ctermbg=NONE cterm=bold guifg=#268BD2 gui=bold
-highlight SignifySignDelete ctermfg=1 ctermbg=NONE cterm=bold guifg=#DC322F gui=bold
-highlight SignifySignChange ctermfg=3 ctermbg=NONE cterm=bold guifg=#B58900 gui=bold
+highlight SignifySignAdd    ctermfg=4 ctermbg=NONE cterm=bold guifg=#268BD2 guibg=NONE gui=bold
+highlight SignifySignDelete ctermfg=1 ctermbg=NONE cterm=bold guifg=#DC322F guibg=NONE gui=bold
+highlight SignifySignChange ctermfg=3 ctermbg=NONE cterm=bold guifg=#B58900 guibg=NONE gui=bold
