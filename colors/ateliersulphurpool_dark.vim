@@ -59,7 +59,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-ateliersulphurpool"
+let g:colors_name = "ateliersulphurpool_dark"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
@@ -309,6 +309,7 @@ call <sid>hi("rubyRegexp",                  s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("rubySymbol",                  s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("rubyStringDelimiter",         s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("rubyDefine",                  s:gui0D, "", s:cterm0D, "", "bold")
+call <sid>hi("rubyConditional",             s:gui0D, "", s:cterm0D, "", "bold")
 
 " eRuby highlighting
 call <sid>hi("erubyDelimiter",   s:gui0D, "", s:cterm0D, "", "bold")
