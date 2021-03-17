@@ -88,8 +88,8 @@ EOF
 " default will show icon by default if no icon is provided
 " default shows no icon by default
 let g:nvim_tree_icons = {
-    \ 'default':     ' ',
-    \ 'symlink':     ' ',
+    \ 'default':     '',
+    \ 'symlink':     '',
     \ 'git': {
     \   'unstaged':  "",
     \   'staged':    "",
@@ -108,15 +108,15 @@ let g:nvim_tree_icons = {
 
 nnoremap <F12>     :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
+nnoremap <leader>f :NvimTreeFindFile<CR>
 " NvimTreeOpen and NvimTreeClose are also available if you need them
 
 "set termguicolors " this variable must be enabled for colors to be applied properly
 
 " a list of groups can be found at `:help nvim_tree_highlight`
-highlight NvimTreeRootFolder   guifg=#cb4b16 guibg=NONE gui=bold
-highlight NvimTreeFolderIcon   guifg=#cb4b16 guibg=NONE
-highlight NvimTreeIndentMarker guifg=#586E75 guibg=NONE
+highlight NvimTreeRootFolder   guifg=#6679cc guibg=NONE
+highlight NvimTreeFolderIcon   guifg=#6679cc guibg=NONE
+highlight NvimTreeIndentMarker guifg=#5e6687 guibg=NONE
 
 highlight NvimTreeGitDirty     guifg=#B58900 guibg=NONE
 highlight NvimTreeGitStaged    guifg=#B58900 guibg=NONE

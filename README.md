@@ -15,7 +15,7 @@
 
 Modular NeoVim configuration inspired by [@mnambila](https://github.com/mnabila/nvimrc) nvimrc.
 
-This is NeoVim config with ~~Vim compatibility~~.
+This is NeoVim config with Nightly build.
 
 ## Install
 

@@ -1,6 +1,9 @@
 " Enable line highlighting in addition to using signs by default.
 let g:signify_line_highlight = 0
 
+" default updatetime 4000ms is not good for async update
+set updatetime=100
+
 " The sign to use if a line was added, deleted or changed or a combination of
 " these.
 " You can use Unicode characters, but signs must not take up more than two
@@ -15,6 +18,6 @@ let g:signify_sign_show_count        = 0
 let g:signify_sign_show_text         = 1
 
 " Colors
-highlight SignifySignAdd    ctermfg=4 ctermbg=NONE cterm=bold guifg=#268BD2 gui=bold
-highlight SignifySignDelete ctermfg=1 ctermbg=NONE cterm=bold guifg=#DC322F gui=bold
-highlight SignifySignChange ctermfg=3 ctermbg=NONE cterm=bold guifg=#B58900 gui=bold
+highlight SignifySignAdd    ctermfg=4 ctermbg=NONE cterm=bold guifg=#268BD2 guibg=NONE gui=bold
+highlight SignifySignDelete ctermfg=1 ctermbg=NONE cterm=bold guifg=#DC322F guibg=NONE gui=bold
+highlight SignifySignChange ctermfg=3 ctermbg=NONE cterm=bold guifg=#B58900 guibg=NONE gui=bold

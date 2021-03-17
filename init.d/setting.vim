@@ -43,18 +43,6 @@ autocmd BufReadPost *
 "autocmd BufWinLeave *.* mkview!
 "autocmd BufWinEnter *.* silent loadview
 
-" For italic on tmux
-"set t_ZH=[3m
-"set t_ZR=[23m
-"let &t_SI = "\e[6 q"
-"let &t_EI = "\e[2 q"
-
-" Optionally reset the cursor on start:
-"augroup myCmds
-"au!
-"autocmd VimEnter * silent !echo -ne "\e[2 q"
-"augroup END
-
 " I love cursor with block shape very much!
 " Although, neovim change cursor to beam when on insert mode,
 " I want to keep with block shape =P
@@ -64,7 +52,7 @@ set guicursor=n-v-c:block
 " Time in milliseconds for redrawing the display.
 " Applies to 'hlsearch', 'inccommand', :match highlighting and
 " syntax highlighting.
-set redrawtime=5000
+set redrawtime=2000
 
 " Automatically deletes all trailing whitespace on save.
 " I need to disable this because of colaborative work, need to manual execute.

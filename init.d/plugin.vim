@@ -4,7 +4,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " A file explorer tree for neovim written in lua
-" Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " A light and configurable statusline/tabline plugin for Vim
@@ -16,6 +16,9 @@ Plug 'mengelbrecht/lightline-bufferline'
 " A trailing whitespace component for the lightline vim plugin
 Plug 'maximbaz/lightline-trailing-whitespace'
 
+" ALE indicator for the lightline vim plugin
+Plug 'maximbaz/lightline-ale'
+
 " Show a diff using Vim its sign column.
 Plug 'mhinz/vim-signify'
 
@@ -25,16 +28,13 @@ Plug 'tpope/vim-fugitive'
 " rhubarb.vim: GitHub extension for fugitive.vim
 Plug 'tpope/vim-rhubarb'
 
-" A command-line fuzzy finder.
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-
 " A Find, Filter, Preview, Pick. All lua, all the time.
-" Plug 'nvim-lua/popup.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
-" Plug 'nvim-telescope/telescope-fzy-native.nvim'
+" FZY style sorter that is compiled
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 " Better whitespace highlighting for Vim.
 Plug 'ntpeters/vim-better-whitespace'
@@ -173,12 +173,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 " A git blame plugin for neovim inspired by VS Code's GitLens plugin
 Plug 'APZelos/blamer.nvim'
 
-" A Use Vim as a Python shell--like Jupyter but it's in Vim.
-"Plug 'mrever/Vython'
-
-" A tiny translate-shell wrapper for Vim
-Plug 'VincentCordobes/vim-translate'
-
 " A Save vim undo files as /path/to/file instead of %path%to%file.
 Plug 'pixelastic/vim-undodir-tree'
 
@@ -204,5 +198,11 @@ Plug 'tpope/vim-dispatch'
 " An eye friendly plugin that fades your inactive buffers and preserves your
 " syntax highlighting!
 Plug 'TaDaa/vimade'
+
+" Breakdown Vim's --startuptime output
+Plug 'tweekmonster/startuptime.vim'
+
+" Vim plugin to edit binary files in a hex mode automatically.
+Plug 'fidian/hexmode'
 
 call plug#end()

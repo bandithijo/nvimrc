@@ -5,7 +5,7 @@
 " \   'left': '\u2502', 'right': '\u2502'
 
 let g:lightline = {
-\   'colorscheme': 'solarized8_bandit',
+\   'colorscheme': 'ateliersulphurpool',
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
 \              [ 'gitbranch' ],
@@ -26,7 +26,7 @@ let g:lightline = {
 \   },
 \   'tabline': {
 \   'left'  : [['buffers']],
-\   'right' : [['string1'], ['string2', 'smarttabs']]
+\   'right' : [['string1'], ['cocstatus', 'linter_checking', 'linter_info','linter_warnings', 'linter_errors', 'string2', 'smarttabs']]
 \   },
 \   'separator': {
 \     'left': '', 'right': ''
@@ -53,10 +53,16 @@ let g:lightline = {
 \     'string2'   : 'String2',
 \     'smarttabs' : 'SmartTabsIndicator',
 \     'trailing'  : 'LightlineTrailingWhitespace',
+\     'cocstatus' : 'LightLineCoc',
+\     'linter_checking': 'lightline#ale#checking',
+\     'linter_infos': 'lightline#ale#infos',
+\     'linter_warnings': 'lightline#ale#warnings',
+\     'linter_errors': 'lightline#ale#errors',
+\     'linter_ok': 'lightline#ale#ok',
 \   },
 \   'component_type': {
 \   'buffers'  : 'tabsel',
-\   'trailing' : 'error'
+\   'trailing' : 'error',
 \   },
 \   'mode_map': {
 \     'n'      : ' N0RMAL',
@@ -158,7 +164,7 @@ function! LightlineFileName()
     return expand('%:t') ==# '__Tagbar__.1' ? '[tagbar]'  :
          \ expand('%:t') ==# '__Tag_List__' ? '[taglist]' :
          \ expand('%:t') ==# '__vista__'    ? '[vista]' :
-         \ &filetype ==# 'defx' ?  '[defx]' :
+         \ &filetype ==# 'NvimTree' ?  '[nvimtree]' :
          \ ''
   endif
 endfunction
@@ -167,12 +173,12 @@ function! LightlineMode()
   return expand('%:t') ==# '__Tagbar__.1' ? ' TAGBAR'  :
        \ expand('%:t') ==# '__Tag_List__' ? ' TAGLIST' :
        \ expand('%:t') ==# '__vista__'    ? ' VISTA' :
-       \ &filetype ==# 'NvimTree' ?  'NvimTree' :
+       \ &filetype ==# 'NvimTree' ?  ' EXPLORER' :
        \ lightline#mode()
 endfunction
 
 function! String1()
-  return ' '
+  return '' " U+E630 (Neovim), U+E62F (Vimneo)
 endfunction
 
 function! String2()
@@ -194,6 +200,13 @@ function! LightlineTrailingWhitespace()
   endif
 endfunction
 
+function! LightLineCoc()
+  if empty(get(g:, 'coc_status', '')) && empty(get(b:, 'coc_diagnostic_info', {}))
+    return ''
+  endif
+  return trim(coc#status())
+endfunction
+
 " autoreload
 command! LightlineReload call LightlineReload()
 
@@ -205,3 +218,9 @@ endfunction
 
 set showtabline=2  " Show tabline, 2 show, 1 hide when only 1 buffer, 0 hide
 set guioptions-=e  " Don't use GUI tabline
+
+let lightline#ale#indicator_checking   = ' '
+let g:lightline#ale#indicator_warnings = ' '
+let g:lightline#ale#indicator_errors   = ' '
+let g:lightline#ale#indicator_ok       = ' '
+let g:lightline#ale#indicator_infos    = ' '
