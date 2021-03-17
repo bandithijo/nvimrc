@@ -53,6 +53,13 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 
 ## Keybinds
 
+**MODE:**<br>
+**N**: Normal, **I**: Insert, **T**: Terminal, **C**: Command
+
+**NOTE:**<br>
+<kbd>a</kbd> <kbd>b</kbd> means "press <kbd>a</kbd> (release), then press <kbd>b</kbd>"<br>
+<kbd>a</kbd>+<kbd>b</kbd> means "press <kbd>a</kbd> (hold it), then press <kbd>b</kbd>"
+
 | Function                                     | Mode | Key Name                                                    |
 |----------------------------------------------|------|-------------------------------------------------------------|
 | Leader                                       | N    | <kbd>Space</kbd>                                            |
@@ -89,9 +96,3 @@ I'm using WakaTime Vim Metrics. After all process installation completed, when y
 | Sudo save                                    | C    | <kbd>w</kbd> <kbd>!</kbd> <kbd>!</kbd>                      |
 | Emmet leader key                             | N    | <kbd>Control</kbd>+<kbd>n</kbd> <kbd>,</kbd>                |
 
-> MODE<br>
-> N: Normal, I: Insert, T: Terminal, C: Command
-
-> NOTE<br>
-> <kbd>a</kbd> <kbd>b</kbd> means "press <kbd>a</kbd> (release), then press <kbd>b</kbd>"<br>
-> <kbd>a</kbd>+<kbd>b</kbd> means "press <kbd>a</kbd> (hold it), then press <kbd>b</kbd>"
