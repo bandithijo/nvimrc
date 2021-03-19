@@ -95,6 +95,8 @@ Plug 'tpope/vim-bundler'
 " rake.vim: it's like rails.vim without the rails
 Plug 'tpope/vim-rake'
 
+" Run your tests at the speed of thought
+Plug 'vim-test/vim-test'
 
 " Automatic ctags generation on gem install
 Plug 'tpope/gem-ctags'
