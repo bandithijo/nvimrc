@@ -21,6 +21,8 @@ Plug 'maximbaz/lightline-ale'
 
 " Show a diff using Vim its sign column.
 Plug 'mhinz/vim-signify'
+" Git signs written in pure lua.
+Plug 'lewis6991/gitsigns.nvim'
 
 " fugitive.vim: A Git wrapper so awesome, it should be illegal.
 Plug 'tpope/vim-fugitive'
