@@ -4,6 +4,9 @@ let test#strategy = {
 \  'suite'  : 'neovim',
 \}
 
+" for neovim
+let test#neovim#term_position = "bot 20"
+
 " these 'Ctrl mappings' work well when Caps Lock is mapped to Ctrl
 nmap <silent> t<C-n> :TestNearest<CR>
 nmap <silent> t<C-f> :TestFile<CR>
