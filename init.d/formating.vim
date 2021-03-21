@@ -28,6 +28,7 @@ set showmatch                 " show matching brackets
 "set sidescrolloff=10         " keep 5 lines at the size
 set cursorline                " visually mark current line
 "set showbreak=↪              " indicate wrapped line
+set signcolumn=yes            " enable sign column
 
 if &diff                      " change colorscheme when using vimdiff
   colorscheme ateliersulphurpool_dark

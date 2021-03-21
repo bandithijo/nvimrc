@@ -308,8 +308,9 @@ call <sid>hi("rubyInterpolationDelimiter",  s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("rubyRegexp",                  s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("rubySymbol",                  s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("rubyStringDelimiter",         s:gui0B, "", s:cterm0B, "", "")
-call <sid>hi("rubyDefine",                  s:gui0D, "", s:cterm0D, "", "bold")
-call <sid>hi("rubyConditional",             s:gui0D, "", s:cterm0D, "", "bold")
+call <sid>hi("rubyDefine",                  s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("rubyConditional",             s:gui0D, "", s:cterm0D, "", "")
+call <sid>hi("rubyControl",                 s:gui0D, "", s:cterm0D, "", "")
 
 " eRuby highlighting
 call <sid>hi("erubyDelimiter",   s:gui0D, "", s:cterm0D, "", "bold")

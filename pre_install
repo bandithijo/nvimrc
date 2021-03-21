@@ -1,12 +1,7 @@
 #!/bin/sh
 
-if [ ! -f "$HOME/.config/nvim/vimrc" ]; then
+if [ ! -f "$HOME/.config/nvim/init.vim" ]; then
     cd $HOME/.config/nvim
-
-    # neovim config with vim compatibilty runtime
-    ln -sf ./init.vim ~/.config/nvim/vimrc
-    ln -sf ./.config/nvim ~/.vim
-    echo "DONE: Add symlink for Vimrc & ~/.Vim"
 
     # Create the temp dir
     mkdir -p $HOME/.local/share/nvim/tmp/backup \
@@ -18,10 +13,11 @@ if [ ! -f "$HOME/.config/nvim/vimrc" ]; then
     if command -v nvim &> /dev/null; then
         nvim -c ':PlugInstall' -cqa
     else
-        vim -c ':PlugInstall' -cqa
+        "You don't have Neovim on your path."
+        exit
     fi
+
     echo "DONE: All plugin installed"
-    echo "Now, you can open nvim and vim with same file config."
 else
     echo "You have run this script!"
 fi

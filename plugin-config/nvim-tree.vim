@@ -98,8 +98,8 @@ let g:nvim_tree_icons = {
     \   'untracked': ""
     \   },
     \ 'folder': {
-    \   'default':   "",
-    \   'open':      "",
+    \   'default':   "",
+    \   'open':      "",
     \   'empty':     "",
     \   'empty_open':"",
     \   'symlink':   "",

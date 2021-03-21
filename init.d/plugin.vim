@@ -16,11 +16,8 @@ Plug 'mengelbrecht/lightline-bufferline'
 " A trailing whitespace component for the lightline vim plugin
 Plug 'maximbaz/lightline-trailing-whitespace'
 
-" ALE indicator for the lightline vim plugin
-Plug 'maximbaz/lightline-ale'
-
-" Show a diff using Vim its sign column.
-Plug 'mhinz/vim-signify'
+" Git signs written in pure lua.
+Plug 'lewis6991/gitsigns.nvim'
 
 " fugitive.vim: A Git wrapper so awesome, it should be illegal.
 Plug 'tpope/vim-fugitive'
@@ -98,8 +95,8 @@ Plug 'tpope/vim-bundler'
 " rake.vim: it's like rails.vim without the rails
 Plug 'tpope/vim-rake'
 
-" Lovely rspec runner for vim
-Plug 'itmammoth/run-rspec.vim'
+" Run your tests at the speed of thought
+Plug 'vim-test/vim-test'
 
 " Automatic ctags generation on gem install
 Plug 'tpope/gem-ctags'
