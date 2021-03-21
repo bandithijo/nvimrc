@@ -16,9 +16,6 @@ Plug 'mengelbrecht/lightline-bufferline'
 " A trailing whitespace component for the lightline vim plugin
 Plug 'maximbaz/lightline-trailing-whitespace'
 
-" ALE indicator for the lightline vim plugin
-Plug 'maximbaz/lightline-ale'
-
 " Git signs written in pure lua.
 Plug 'lewis6991/gitsigns.nvim'
 
@@ -77,8 +74,11 @@ Plug 'ryanoasis/vim-devicons'
 " Vim Liquid runtime files with Jekyll enhancements.
 Plug 'tpope/vim-liquid'
 
-" A Intellisense engine for Vim8 & Neovim, full language server protocol support as VSCode
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Quickstart configurations for the Nvim LSP client
+Plug 'neovim/nvim-lspconfig'
+
+" Auto completion plugin for nvim that written in Lua
+Plug 'hrsh7th/nvim-compe'
 
 " rails.vim: Ruby on Rails power tools
 Plug 'tpope/vim-rails'
@@ -160,9 +160,6 @@ Plug 'junegunn/vim-easy-align'
 
 " A The Vim RuboCop plugin runs RuboCop and displays the results in Vim
 Plug 'ngmy/vim-rubocop'
-
-" A Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
-Plug 'dense-analysis/ale'
 
 " A Vim plugin for quick opening plugin's page on Github
 Plug 'xvadim/open_plugin_page'
