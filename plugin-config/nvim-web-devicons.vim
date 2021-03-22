@@ -13,207 +13,207 @@ require'nvim-web-devicons'.setup {
     },
     rs = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Rust"
     },
     rb = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Ruby"
     },
     ["config.ru"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "ConfigRu"
     },
     js = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Javascript"
     },
     json = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "JSON"
     },
     md = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Md"
     },
     markdown = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Markdown"
     },
     ["_erb"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Erb"
     },
     [".html.erb"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Erb"
     },
     yml = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Yml"
     },
     enc = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = ""
     },
     ["html"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Html",
     },
     ["c"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "C"
     },
     ["c++"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "CPlusPlus"
     },
     ["cp"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Cp",
     },
     ["cpp"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Cpp",
     },
     ["h"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "H",
     },
     ["gif"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Gif",
     },
     ["jpg"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Jpg",
     },
     ["jpeg"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Jpeg",
     },
     ["pdf"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Pdf"
     },
     ["php"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Php"
     };
     ["go"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Go",
     },
     ["png"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Png"
     },
     ["py"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Py"
     },
     ["pyc"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Pyc"
     },
     ["svg"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Svg"
     },
     ["favicon.ico"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Favicon",
     },
     key = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = ""
     },
     sqlite3 = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = ""
     },
     zsh = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Zsh"
     },
     ["sh"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Sh"
     },
     ["license"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "License"
     },
     ["LICENSE"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "License"
     },
     ["README.md"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Readme"
     },
     ["rake"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Rake"
     },
     ["coffee"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Coffee",
     },
     ["css"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Css"
     },
     ["scss"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Scss"
     },
     ["vue"] = {
       icon = "﵂",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Vue"
     },
     ["vim"] = {
       icon = "",
-      color = "#93A1A1",
+      color = "#D4D4D4",
       name = "Vim"
     },
   };

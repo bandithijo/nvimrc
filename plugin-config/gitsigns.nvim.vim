@@ -40,6 +40,6 @@ require('gitsigns').setup {
 EOF
 
 " Colors
-highlight GitSignsAdd    ctermfg=4 ctermbg=NONE cterm=bold guifg=#268BD2 guibg=NONE gui=bold
-highlight GitSignsChange ctermfg=3 ctermbg=NONE cterm=bold guifg=#B58900 guibg=NONE gui=bold
-highlight GitSignsDelete ctermfg=1 ctermbg=NONE cterm=bold guifg=#DC322F guibg=NONE gui=bold
+highlight GitSignsAdd    ctermfg=4 ctermbg=NONE cterm=bold guifg=#569CD6 guibg=NONE gui=bold
+highlight GitSignsChange ctermfg=3 ctermbg=NONE cterm=bold guifg=#CCB17A guibg=NONE gui=bold
+highlight GitSignsDelete ctermfg=1 ctermbg=NONE cterm=bold guifg=#D16969 guibg=NONE gui=bold
