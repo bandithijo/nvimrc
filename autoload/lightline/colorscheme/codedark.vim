@@ -1,40 +1,49 @@
 " =============================================================================
 " Filename: autoload/lightline/colorscheme/codedark.vim
 " Author: artanikin
+" Modificator: bandithijo
 " License: MIT License
-" Last Change: 2019/12/05 12:26:00
+" Last Change: 2021/03/22 07:26:01
 " =============================================================================
 
-let s:term_red = 204
-let s:term_green = 114
-let s:term_yellow = 3
-let s:term_blue = 39
-let s:term_purple = 170
-let s:term_white = 145
-let s:term_black = 235
-let s:term_grey = 236
+let s:base00 = '#1E1E1E'
+let s:base01 = '#262626'
+let s:base02 = '#303030'
+let s:base03 = '#3C3C3C'
+let s:base04 = '#808080'
+let s:base05 = '#D4D4D4'
+let s:base06 = '#E9E9E9'
+let s:base07 = '#FFFFFF'
+let s:base08 = '#F24646'
+let s:base09 = '#CC9077'
+let s:base0A = '#D7BA7D'
+let s:base0B = '#608B4E'
+let s:base0C = '#9CDCFE'
+let s:base0D = '#5395D4'
+let s:base0E = '#BB80C5'
+let s:base0F = '#636594'
 
-let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-
-let s:p.normal.left = [ [ '#262626', '#608B4E', s:term_black, s:term_green, 'bold' ], [ '#608B4E', '#262626', s:term_green, s:term_black ] ]
-let s:p.normal.right = [ [ '#262626', '#608B4E', s:term_black, s:term_green ], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ], [ '#608B4E', '#262626', s:term_green, s:term_black ] ]
-let s:p.inactive.right = [ [ '#262626', '#569CD6', s:term_black, s:term_blue], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ] ]
-let s:p.inactive.left = s:p.inactive.right[1:]
-" her
-let s:p.insert.left = [ [ '#262626', '#569CD6', s:term_black, s:term_blue, 'bold' ], [ '#569CD6', '#262626', s:term_blue, s:term_black ] ]
-let s:p.insert.right = [ [ '#262626', '#569CD6', s:term_black, s:term_blue ], [ '#D4D4D4', '#3C3C3C', s:term_white, s:term_grey ], [ '#569CD6', '#262626', s:term_blue, s:term_black ] ]
-let s:p.replace.left = [ [ '#262626', '#D16969', s:term_black, s:term_red, 'bold' ], [ '#D16969', '#262626', s:term_red, s:term_black ] ]
-let s:p.replace.right = [ [ '#262626', '#D16969', s:term_black, s:term_red, 'bold' ], s:p.normal.right[1], [ '#D16969', '#262626', s:term_red, s:term_black ] ]
-let s:p.visual.left = [ [ '#262626', '#C586C0', s:term_black, s:term_purple, 'bold' ], [ '#C586C0', '#262626', s:term_purple, s:term_black ] ]
-let s:p.visual.right = [ [ '#262626', '#C586C0', s:term_black, s:term_purple, 'bold' ], s:p.normal.right[1], [ '#C586C0', '#262626', s:term_purple, s:term_black ] ]
-let s:p.normal.middle = [ [ '#D4D4D4', '#262626', s:term_white, s:term_black ] ]
-let s:p.insert.middle = s:p.normal.middle
-let s:p.replace.middle = s:p.normal.middle
-let s:p.tabline.left = [ s:p.normal.left[1] ]
-let s:p.tabline.tabsel = [ s:p.normal.left[0] ]
-let s:p.tabline.middle = s:p.normal.middle
-let s:p.tabline.right = [ s:p.normal.left[1] ]
-let s:p.normal.error = [ [ '#262626', '#D16969', s:term_black, s:term_red ] ]
-let s:p.normal.warning = [ [ '#262626', '#D7BA7D', s:term_black, s:term_yellow ] ]
+let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
+let s:p.normal.left     = [ [s:base01, s:base05, 'bold'], [s:base01, s:base05] ]
+let s:p.normal.right    = [ [s:base01, s:base05, 'bold'], [s:base01, s:base05, 'bold'], [s:base01, s:base05] ]
+let s:p.normal.middle   = [ [s:base01, s:base05] ]
+let s:p.normal.error    = [ [s:base01, s:base08] ]
+let s:p.normal.warning  = [ [s:base01, s:base0A] ]
+let s:p.inactive.left   = [ [s:base03, s:base05] ]
+let s:p.inactive.right  = [ [s:base03, s:base05] ]
+let s:p.inactive.middle = [ [s:base03, s:base05] ]
+let s:p.insert.left     = [ [s:base01, s:base0A, 'bold'], [s:base01, s:base0A] ]
+let s:p.insert.right    = [ [s:base01, s:base0A], [s:base01, s:base0A, 'bold'], [s:base01, s:base0A], [s:base01, s:base0A] ]
+let s:p.insert.middle   = [ [s:base01, s:base0A] ]
+let s:p.replace.left    = [ [s:base01, s:base08, 'bold'], [s:base01, s:base08] ]
+let s:p.replace.right   = [ [s:base01, s:base08, 'bold'], [s:base01, s:base08] ]
+let s:p.replace.middle  = [ [s:base01, s:base08] ]
+let s:p.visual.left     = [ [s:base01, s:base0D, 'bold'], [s:base01, s:base0D] ]
+let s:p.visual.right    = [ [s:base01, s:base0D, 'bold'], [s:base01, s:base0D] ]
+let s:p.visual.middle   = [ [s:base01, s:base0D] ]
+let s:p.tabline.left    = [ [s:base04, s:base00] ]
+let s:p.tabline.right   = [ [s:base04, s:base00, 'bold'], [s:base04, s:base00] ]
+let s:p.tabline.middle  = [ [s:base04, s:base00] ]
+let s:p.tabline.tabsel  = [ [s:base05, s:base00, 'bold'] ]
 
 let g:lightline#colorscheme#codedark#palette = lightline#colorscheme#fill(s:p)
