@@ -5,7 +5,7 @@
 " \   'left': '\u2502', 'right': '\u2502'
 
 let g:lightline = {
-\   'colorscheme': 'ateliersulphurpool',
+\   'colorscheme': 'codedark',
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
 \              [ 'gitbranch' ],

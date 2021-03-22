@@ -1,6 +1,6 @@
 " Interface
 set background=dark
-colorscheme ateliersulphurpool_dark
+colorscheme codedark
 set incsearch                 " incremental search aka search as you type
 set hlsearch                  " highlight search matches
 set ignorecase                " ignore case
@@ -31,7 +31,7 @@ set cursorline                " visually mark current line
 set signcolumn=yes            " enable sign column
 
 if &diff                      " change colorscheme when using vimdiff
-  colorscheme ateliersulphurpool_dark
+  colorscheme codedark
 endif
 
 " Text Formating
