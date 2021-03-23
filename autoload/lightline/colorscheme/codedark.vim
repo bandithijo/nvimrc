@@ -42,7 +42,7 @@ let s:p.visual.left     = [ [s:base01, s:base0D, 'bold'], [s:base01, s:base0D] ]
 let s:p.visual.right    = [ [s:base01, s:base0D, 'bold'], [s:base01, s:base0D] ]
 let s:p.visual.middle   = [ [s:base01, s:base0D] ]
 let s:p.tabline.left    = [ [s:base04, s:base00] ]
-let s:p.tabline.right   = [ [s:base04, s:base00, 'bold'], [s:base04, s:base00] ]
+let s:p.tabline.right   = [ [s:base05, s:base00, 'bold'], [s:base05, s:base00] ]
 let s:p.tabline.middle  = [ [s:base04, s:base00] ]
 let s:p.tabline.tabsel  = [ [s:base05, s:base00, 'bold'] ]
 
