@@ -205,4 +205,7 @@ Plug 'tweekmonster/startuptime.vim'
 " Vim plugin to edit binary files in a hex mode automatically.
 Plug 'fidian/hexmode'
 
+" vim-snipmate default snippets (Previously snipmate-snippets)
+Plug 'honza/vim-snippets'
+
 call plug#end()
