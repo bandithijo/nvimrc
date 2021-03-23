@@ -15,26 +15,28 @@ let g:org_todo_keywords               = [
   \  ['CANCELED(c)']
   \  ]
 let g:org_todo_keyword_faces          = [
-  \  ['TODO',       [':foreground #002b36', ':background #DC322F', ':weight bold']],
-  \  ['WAITING',    [':foreground #002b36', ':background #B58900', ':weight bold']],
-  \  ['DONE',       [':foreground #002b36', ':background #859900', ':weight bold']],
-  \  ['REPORT',     [':foreground #002b36', ':background #B58900', ':weight bold']],
-  \  ['BUG',        [':foreground #002b36', ':background #B58900', ':weight bold']],
-  \  ['KNOWNCAUSE', [':foreground #002b36', ':background #B58900', ':weight bold']],
-  \  ['FIXED',      [':foreground #002b36', ':background #859900', ':weight bold']],
-  \  ['CANCELED',   [':foreground #002b36', ':background #DC322F', ':weight bold']]
+  \  ['TODO',       [':foreground #002b36', ':background #F24646', ':weight bold']],
+  \  ['WAITING',    [':foreground #002b36', ':background #D7BA7D', ':weight bold']],
+  \  ['DONE',       [':foreground #002b36', ':background #608B4E', ':weight bold']],
+  \  ['REPORT',     [':foreground #002b36', ':background #D7BA7D', ':weight bold']],
+  \  ['BUG',        [':foreground #002b36', ':background #D7BA7D', ':weight bold']],
+  \  ['KNOWNCAUSE', [':foreground #002b36', ':background #D7BA7D', ':weight bold']],
+  \  ['FIXED',      [':foreground #002b36', ':background #608B4E', ':weight bold']],
+  \  ['CANCELED',   [':foreground #002b36', ':background #F24646', ':weight bold']]
   \  ]
 
 " Custom color for vim-orgmode
 function OrgmodeCustomColor()
-  hi org_heading1  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
-  hi org_heading2  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
-  hi org_heading3  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
-  hi org_heading4  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
-  hi org_heading5  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
-  hi org_heading6  ctermfg=255 cterm=bold guifg=#EEEEEE gui=bold
-  hi org_underline cterm=none  gui=none
-  hi hyperlink     ctermfg=4   guifg=#3D8FD1
+  hi org_heading1  guifg=#E9E9E9 gui=bold
+  hi org_heading2  guifg=#E9E9E9 gui=bold
+  hi org_heading3  guifg=#E9E9E9 gui=bold
+  hi org_heading4  guifg=#E9E9E9 gui=bold
+  hi org_heading5  guifg=#E9E9E9 gui=bold
+  hi org_heading6  guifg=#E9E9E9 gui=bold
+  hi org_list_unordered guifg=#E9E9E9 gui=bold
+  hi org_subtask_number_all guifg=#608B4E gui=bold
+  hi org_underline gui=none
+  hi hyperlink     guifg=#5395D4
 endfunction
 
 " Custom key for vim-orgmode
