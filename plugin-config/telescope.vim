@@ -115,18 +115,18 @@ nnoremap <C-p> <cmd>Telescope find_files   previewer=false<cr>
 nnoremap <C-f> <cmd>Telescope buffers      previewer=false<cr>
 nnoremap <C-g> <cmd>Telescope git_branches previewer=false<cr>
 
-highlight TelescopeSelection      guifg=#93A1A1 gui=bold " selected item
-highlight TelescopeSelectionCaret guifg=#93A1A1 " selection caret
-highlight TelescopeMultiSelection guifg=#928374 " multisections
+highlight TelescopeSelection      guifg=#D4D4D4 gui=bold " selected item
+highlight TelescopeSelectionCaret guifg=#D4D4D4 " selection caret
+highlight TelescopeMultiSelection guifg=#D7BA7D " multisections
 
 " Border highlight groups.
-highlight TelescopeBorder         guifg=#93A1A1
-highlight TelescopePromptBorder   guifg=#93A1A1
-highlight TelescopeResultsBorder  guifg=#93A1A1
-highlight TelescopePreviewBorder  guifg=#93A1A1
+highlight TelescopeBorder         guifg=#D4D4D4
+highlight TelescopePromptBorder   guifg=#D4D4D4
+highlight TelescopeResultsBorder  guifg=#D4D4D4
+highlight TelescopePreviewBorder  guifg=#D4D4D4
 
 " Used for highlighting characters that you match.
-highlight TelescopeMatching       guifg=#CB4B16
+highlight TelescopeMatching       guifg=#608B4E
 
 " Used for the prompt prefix
-highlight TelescopePromptPrefix   guifg=#CB4B16
+highlight TelescopePromptPrefix   guifg=#608B4E
