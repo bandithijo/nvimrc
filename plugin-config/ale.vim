@@ -37,7 +37,7 @@ let g:ale_lint_on_enter = 1
 
 " ALE VirtualText
 let g:ale_virtualtext_cursor          = 1
-let g:ale_virtualtext_prefix          = '<- '
+let g:ale_virtualtext_prefix          = ' '
 hi ALEVirtualTextError   guifg=#F24646
 hi ALEVirtualTextWarning guifg=#608B4E
 
@@ -46,7 +46,7 @@ nmap <silent> <A-k> <Plug>(ale_previous_wrap)
 nmap <silent> <A-j> <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
-\   'ruby'       : ['standardrb'],
+\   'ruby'       : ['rubocop'],
 \   'python'     : ['pylint', 'flake8'],
 \   'javascript' : ['eslint'],
 \   'yaml'       : ['yamllint'],
@@ -55,7 +55,7 @@ let g:ale_linters = {
 \}
 
 let g:ale_fixers = {
-\   'ruby'       : ['standardrb'],
+\   'ruby'       : ['rubocop'],
 \   'python'     : ['pylint', 'flake8'],
 \   'javascript' : ['eslint'],
 \   'yaml'       : ['yamllint'],
