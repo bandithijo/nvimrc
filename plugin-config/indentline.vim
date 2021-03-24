@@ -2,7 +2,7 @@
 " indentLine_char_list = ['|', '¦', '┆', '┊']
 
 let g:indentLine_color_term               = 10
-let g:indentLine_color_gui                = '#586e75'
+let g:indentLine_color_gui                = '#3C3C3C'
 let g:indentLine_first_char               = '┊'
 let g:indentLine_char                     = '┊'
 let g:indentLine_fileTypeExclude          = [

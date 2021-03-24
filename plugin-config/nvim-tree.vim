@@ -116,7 +116,7 @@ nnoremap <leader>f :NvimTreeFindFile<CR>
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeRootFolder   guifg=#569CD6 guibg=NONE
 highlight NvimTreeFolderIcon   guifg=#569CD6 guibg=NONE
-highlight NvimTreeIndentMarker guifg=#569CD6 guibg=NONE
+highlight NvimTreeIndentMarker guifg=#3C3C3C guibg=NONE
 
 highlight NvimTreeGitDirty     guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitStaged    guifg=#CCB17A guibg=NONE
