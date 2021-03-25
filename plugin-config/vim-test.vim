@@ -1,7 +1,7 @@
 let test#strategy = {
-\  'nearest': 'neovim',
-\  'file'   : 'neovim',
-\  'suite'  : 'neovim',
+\  'nearest': 'floaterm',
+\  'file'   : 'floaterm',
+\  'suite'  : 'floaterm',
 \}
 
 " for neovim

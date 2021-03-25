@@ -208,4 +208,7 @@ Plug 'fidian/hexmode'
 " vim-snipmate default snippets (Previously snipmate-snippets)
 Plug 'honza/vim-snippets'
 
+" Terminal manager for (neo)vim
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()
