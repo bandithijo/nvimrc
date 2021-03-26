@@ -5,6 +5,14 @@ let g:floaterm_title = '─[  $1:$2 ]─'
 " left, topleft, topright, botright, botleft).
 let g:floaterm_borderchars = '─│─│┌┐┘└'
 
+" Type Number (number of lines) or Float (between 0 and 1). If Float, the
+" height is relative to &lines.
+let g:floaterm_width = 0.8
+
+" Type Number (number of lines) or Float (between 0 and 1). If Float, the
+" height is relative to &lines.
+let g:floaterm_height = 0.8
+
 " Set floaterm window's background to black
 hi Floaterm guibg=NONE
 " Set floating window border line color to cyan, and background to orange
