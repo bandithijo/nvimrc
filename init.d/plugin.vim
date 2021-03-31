@@ -211,4 +211,7 @@ Plug 'honza/vim-snippets'
 " Terminal manager for (neo)vim
 Plug 'voldikss/vim-floaterm'
 
+" A neovim port of Assorted Biscuits. Ends up with more supported languages too.
+Plug 'code-biscuits/nvim-biscuits'
+
 call plug#end()
