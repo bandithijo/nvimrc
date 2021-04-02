@@ -1,17 +1,17 @@
 lua <<EOF
 require('nvim-biscuits').setup({
   default_config = {
-    max_length      = 10,
+    max_length      = 20,
     min_destance    = 10,
     prefix_string   = " "
   },
   language_config = {
     html = {
-      prefix_string = " "
+      -- prefix_string = " "
     },
     javascript = {
-      prefix_string = " ",
-      max_length    = 10
+      -- prefix_string = " ",
+      -- max_length    = 10
     }
   }
 })
