@@ -23,3 +23,6 @@ let g:floaterm_keymap_new    = '<Leader>ft'
 let g:floaterm_keymap_prev   = '<Leader>fn'
 let g:floaterm_keymap_next   = '<Leader>fp'
 let g:floaterm_keymap_toggle = '<Leader>fh'
+
+" Lazygit
+nnoremap <leader>lg :FloatermNew --height=0.99 --width=0.99 --position=center lazygit<cr>
