@@ -216,6 +216,11 @@ require'nvim-web-devicons'.setup {
       color = "#D4D4D4",
       name = "Vim"
     },
+    [".gitignore"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "GitIgnore"
+    },
   };
   -- globally enable default icons (default to false)
   -- will get overriden by `get_icons` option
