@@ -42,6 +42,22 @@ Plugin installed on `$HOME/.local/share/nvim/plugged/` directory.
 
 Enjoy!
 
+## Update
+
+There are 2 kinds of update:
+
+**Plugins Update**
+
+```
+:PlugUpdate
+```
+
+**Coc Update**
+
+```
+:CocUpdate
+```
+
 ## Note
 
 I'm using WakaTime Vim Metrics. After all process installation completed, when you open vim/nvim, it will ask about your WakaTime **Secret API Key**. Ignore it, or enter your secret API key if you have.
