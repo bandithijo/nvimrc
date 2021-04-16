@@ -22,7 +22,7 @@ let s:base0C = '#9CDCFE'
 let s:base0D = '#5395D4'
 let s:base0E = '#BB80C5'
 let s:base0F = '#636594'
-let s:status = '#005AA3'
+let s:status = '#007ACC'
 
 let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [s:base07, s:status, 'bold'], [s:base07, s:status] ]
