@@ -15,6 +15,7 @@ set nostartofline             " don't move the cursor to first non-blank charact
 set novisualbell              " don't blink
 set nu                        " turn on line number on selected line
 set relativenumber            " turn on line numbers
+set numberwidth=1             " width the line number column
 set report=0                  " tell us when anything is changed
 set ruler                     " always show current positions along the bottom
 set fillchars+=eob:\ ,vert:\| " vertical sparator and en of buffer
