@@ -113,6 +113,10 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 " A Vim runtime files for Haml, Sass, and SCSS
 Plug 'tpope/vim-haml'
 
+" Text outlining and task management for Vim based on Emacs' Org-Mode
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'
+
 " A open source plugins for automatic programming metrics
 Plug 'wakatime/vim-wakatime'
 
