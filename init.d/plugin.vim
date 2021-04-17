@@ -98,9 +98,6 @@ Plug 'tpope/vim-rake'
 " Run your tests at the speed of thought
 Plug 'vim-test/vim-test'
 
-" Automatic ctags generation on gem install
-Plug 'tpope/gem-ctags'
-
 " A vim plugin to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
 
@@ -140,17 +137,11 @@ Plug 'bandithijo/utl.vim'
 Plug 'dhruvasagar/vim-table-mode'
 " (vim-orgmode need this) }}}
 
-" A Automatically create any non-existent directories before writing the buffer.
-Plug 'pbrisbin/vim-mkdir'
-
 " A open source plugins for automatic programming metrics
 Plug 'wakatime/vim-wakatime'
 
 " A hexokinase.vim - (Neo)Vim plugin for asynchronously displaying the colours in the file (#rrggbb, #rgb, rgb(a)?
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-
-" A Syntax Highlight for Vue.js components
-Plug 'posva/vim-vue'
 
 " A surround.vim: quoting/parenthesizing made simple
 Plug 'tpope/vim-surround'
