@@ -65,7 +65,7 @@ let g:lightline = {
 \   'trailing' : 'error',
 \   },
 \   'mode_map': {
-\     'n'      : ' N0RMAL',
+\     'n'      : ' N0RMAL',
 \     'i'      : ' INSERT',
 \     'R'      : ' REPLACE',
 \     'v'      : ' VISUAL',
