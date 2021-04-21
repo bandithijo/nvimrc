@@ -113,8 +113,12 @@ highlight NvimTreeGitMerge     guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitRenamed   guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitNew       guifg=#CCB17A guibg=NONE
 
-highlight NvimTreeStatusLine   guibg=#007ACC
-highlight NvimTreeStatuslineNC guibg=#007ACD
+" IMPORTANT! you can't make the same color between
+" NvimTreeStatusLine & NvimTreeStatuslineNC.
+" It will raise caret char (^) on statusline.
+" https://vi.stackexchange.com/a/15894/12228
+highlight link NvimTreeStatusLine   StatusLine
+highlight link NvimTreeStatuslineNC StatusLineNC
 
 " NvimTreeSymlink
 " NvimTreeFolderName
