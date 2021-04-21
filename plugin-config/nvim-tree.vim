@@ -86,7 +86,13 @@ let g:nvim_tree_icons = {
     \   'empty_open': "",
     \   'symlink': "",
     \   'symlink_open': "",
-    \ }
+    \ },
+    \   'lsp': {
+    \     'hint': "",
+    \     'info': "",
+    \     'warning': "",
+    \     'error': "",
+    \   }
     \}
 
 nnoremap <F12>     :NvimTreeToggle<CR>
@@ -106,6 +112,9 @@ highlight NvimTreeGitStaged    guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitMerge     guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitRenamed   guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitNew       guifg=#CCB17A guibg=NONE
+
+highlight NvimTreeStatusLine   guibg=#007ACC
+highlight NvimTreeStatuslineNC guibg=#007ACD
 
 " NvimTreeSymlink
 " NvimTreeFolderName
