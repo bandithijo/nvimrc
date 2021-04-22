@@ -150,6 +150,9 @@ Plug 'pixelastic/vim-undodir-tree'
 " REPLs play nicely with :terminal on Vim and Neovim
 Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 
+" The interactive scratchpad for hackers.
+Plug 'metakirby5/codi.vim'
+
 " Make the yanked region apparent!
 Plug 'machakann/vim-highlightedyank'
 
