@@ -20,4 +20,4 @@ hi clear SignColumn
 " hi diffLine           guifg=#268bd2
 " hi diffSubname        guifg=#cb4b16 gui=bold
 
-hi ExtraWhitespace    guifg=#202746 guibg=#c94922
+hi ExtraWhitespace    guifg=#1E1E1E guibg=#F24646
