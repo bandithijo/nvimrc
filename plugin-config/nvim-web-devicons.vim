@@ -227,6 +227,11 @@ require'nvim-web-devicons'.setup {
       name = "GitIgnore",
       name = "Gemspec",
     },
+    ["desktop"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "DesktopEntry"
+    },
   };
   -- globally enable default icons (default to false)
   -- will get overriden by `get_icons` option
