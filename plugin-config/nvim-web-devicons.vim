@@ -8,7 +8,7 @@ require'nvim-web-devicons'.setup {
   override = {
     default_icon = {
       icon = "",
-      color = "#6d8086",
+      color = "#D4D4D4",
       name = "Default",
     },
     rs = {
@@ -220,6 +220,11 @@ require'nvim-web-devicons'.setup {
       icon = "",
       color = "#D4D4D4",
       name = "GitIgnore"
+    },
+    [".gitattributes"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "GitAttributes"
     },
     ["gemspec"] = {
       icon = "",
