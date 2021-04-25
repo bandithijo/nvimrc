@@ -15,6 +15,9 @@ hi ALEWarningSign guifg=#D7BA7D
 " hi clear ALEErrorSign
 " hi clear ALEWarningSign
 
+hi ALEError   gui=undercurl
+hi ALEWarning gui=undercurl
+
 let g:ale_set_highlights = 0
 
 let g:ale_echo_msg_error_str   = 'E'
