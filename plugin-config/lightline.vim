@@ -17,8 +17,7 @@ let g:lightline = {
 \   },
 \   'inactive': {
 \    'left' : [[ 'filename' ]],
-\    'right': [[ 'percent' ],
-\              [ 'lineinfo' ] ]
+\    'right': [[ 'percent' ]]
 \   },
 \   'tab': {
 \     'active'   : ['tabnum'],
