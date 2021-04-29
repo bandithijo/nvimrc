@@ -62,9 +62,6 @@ Plug 'tpope/vim-commentary'
 " Vim plugin which provides sgml (xml, html, etc.) end tag completion. autoclose tag </
 Plug 'ervandew/sgmlendtag'
 
-" Make terminal vim and tmux work better together.
-Plug 'tmux-plugins/vim-tmux-focus-events'
-
 " Syntax highlighting, matching rules and mappings for the original Markdown and extensions.
 Plug 'plasticboy/vim-markdown'
 
