@@ -5,7 +5,6 @@
     "js"     : "javascript"
   },
   "coc.preferences.colorSupport" : false,
-  "explorer.icon.enableNerdfont" : true,
   "python.jediEnabled"           : false,
   "python.linting.enabled"       : true,
   "python.linting.pylintEnabled" : true,
@@ -15,5 +14,14 @@
   "solargraph.autoformat"        : true,
   "solargraph.formatting"        : true,
   "diagnostic.displayByAle"      : true,
-  "codeLens.enable"              : true
+  "codeLens.enable"              : true,
+  "sh.enable"                    : true,
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  }
 }
