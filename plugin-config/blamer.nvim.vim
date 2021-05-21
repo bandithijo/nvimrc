@@ -10,7 +10,7 @@ let g:blamer_enabled = 0
 " The delay in milliseconds for the blame message to show. Setting this too
 " low may cause performance issues.
 " Default: 1000
-let g:blamer_delay = 1000
+let g:blamer_delay = 500
 
 " Prefix
 " The prefix that will be added to the template.
@@ -43,4 +43,4 @@ let g:blamer_show_in_insert_modes = 0
 " Highlight
 " The color of the blame message.
 " Default: link Blamer Comment
-highlight Blamer ctermfg = 65
+highlight Blamer guifg=2

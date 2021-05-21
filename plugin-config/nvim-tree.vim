@@ -103,8 +103,8 @@ nnoremap <leader>f :NvimTreeFindFile<CR>
 "set termguicolors " this variable must be enabled for colors to be applied properly
 
 " a list of groups can be found at `:help nvim_tree_highlight`
-highlight NvimTreeRootFolder   guifg=#569CD6 guibg=NONE
-highlight NvimTreeFolderIcon   guifg=#569CD6 guibg=NONE
+highlight link NvimTreeRootFolder Directory
+highlight link NvimTreeFolderIcon Directory
 highlight NvimTreeIndentMarker guifg=#3C3C3C guibg=NONE
 
 highlight NvimTreeGitDirty     guifg=#CCB17A guibg=NONE

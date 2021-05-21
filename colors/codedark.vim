@@ -130,7 +130,7 @@ let s:cdViolet       = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue         = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
 let s:cdDarkBlue     = {'gui': '#223E55', 'cterm': s:cterm0D, 'cterm256': '73'}
 let s:cdLightBlue    = {'gui': '#9CDCFE', 'cterm': s:cterm0C, 'cterm256': '117'}
-let s:cdStatus       = {'gui': '#007ACC', 'cterm': s:cterm0E, 'cterm256': '176'}
+let s:cdStatus       = {'gui': '#005F8F', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdLightBlue = s:cdFront | endif
 let s:cdGreen        = {'gui': '#6A9955', 'cterm': s:cterm0B, 'cterm256': '65'}
 let s:cdBlueGreen    = {'gui': '#4EC9B0', 'cterm': s:cterm0F, 'cterm256': '43'}
@@ -153,7 +153,7 @@ call <sid>hi('Cursor',       s:cdCursorDark, s:cdCursorLight, 'none', {})
 call <sid>hi('CursorLine',   {}, s:cdCursorDarkDark, 'none', {})
 call <sid>hi('CursorColumn', {}, s:cdCursorDarkDark, 'none', {})
 " call <sid>hi('Directory', s:cdBlue, s:cdBack, 'none', {})
-call <sid>hi('Directory',    s:cdBlue, s:cdNone, 'none', {})
+call <sid>hi('Directory',    s:cdYellowOrange, s:cdNone, 'none', {})
 call <sid>hi('DiffAdd',      {}, s:cdDiffGreenLight, 'none', {})
 call <sid>hi('DiffChange',   {}, s:cdDiffRedDark, 'none', {})
 call <sid>hi('DiffDelete',   {}, s:cdDiffRedLight, 'none', {})
