@@ -126,7 +126,7 @@ highlight TelescopeResultsBorder  guifg=#D4D4D4
 highlight TelescopePreviewBorder  guifg=#D4D4D4
 
 " Used for highlighting characters that you match.
-highlight TelescopeMatching       guifg=#608B4E
+highlight link TelescopeMatching  Directory
 
 " Used for the prompt prefix
-highlight TelescopePromptPrefix   guifg=#608B4E
+highlight link TelescopePromptPrefix Directory
