@@ -5,6 +5,7 @@ autocmd FileType c          setlocal shiftwidth=4 tabstop=4 conceallevel=0
 autocmd FileType cpp        setlocal shiftwidth=4 tabstop=4 conceallevel=0
 autocmd FileType css        setlocal shiftwidth=2 tabstop=2
 autocmd FileType csv        setlocal shiftwidth=2 tabstop=2 conceallevel=0
+autocmd FileType cucumber   setlocal shiftwidth=4 tabstop=4 conceallevel=0
 autocmd FileType dockerfile setlocal shiftwidth=2 tabstop=2 conceallevel=0
 autocmd FileType html       setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
