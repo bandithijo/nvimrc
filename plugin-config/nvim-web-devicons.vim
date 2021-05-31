@@ -11,6 +11,11 @@ require'nvim-web-devicons'.setup {
       color = "#D4D4D4",
       name = "Default",
     },
+    ["diff"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Diff",
+    },
     rs = {
       icon = "",
       color = "#D4D4D4",
@@ -20,6 +25,11 @@ require'nvim-web-devicons'.setup {
       icon = "",
       color = "#D4D4D4",
       name = "Ruby"
+    },
+    ["erb"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Erb",
     },
     ["config.ru"] = {
       icon = "",
