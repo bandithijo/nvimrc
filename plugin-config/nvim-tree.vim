@@ -10,17 +10,19 @@ let g:nvim_tree_follow               = 1 "0 by default, this option allows the c
 let g:nvim_tree_indent_markers       = 1 "0 by default, this option shows indent markers when folders are open
 let g:nvim_tree_hide_dotfiles        = 1 "0 by default, this option hides files and folders starting with a dot `.`
 let g:nvim_tree_git_hl               = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
-let g:nvim_tree_root_folder_modifier = ':~' "This is the default. See :help filename-modifiers for more options
+let g:nvim_tree_root_folder_modifier = ':p:.' "This is the default. See :help filename-modifiers for more options
 let g:nvim_tree_tab_open             = 1 "0 by default, will open the tree when entering a new tab and the tree was previously open
 let g:nvim_tree_width_allow_resize   = 1 "0 by default, will not resize the tree when opening a file
 let g:nvim_tree_disable_netrw        = 1 "1 by default, disables netrw
 let g:nvim_tree_hijack_netrw         = 1 "1 by default, prevents netrw from automatically opening when opening directories (but lets you keep its other utilities)
+let g:nvim_tree_hijack_cursor        = 0 " When 1, moving cursor in the tree will position the cursor at the start of the fil eon the current line
 let g:nvim_tree_add_trailing         = 0 "0 by default, append a trailing slash to folder names
 let g:nvim_tree_group_empty          = 0 "0 by default, compact folders that only contain a single folder into one node in the file tree
 let g:nvim_tree_show_icons = {
     \ 'git': 1,
     \ 'folders': 1,
     \ 'files': 1,
+    \ 'folder_arrows': 1,
     \ }
 "If 0, do not show the icons for one of 'git' 'folder' and 'files'
 "1 by default, notice that if 'files' is 1, it will only display
@@ -30,6 +32,14 @@ lua << EOF
 local get_lua_cb = function (cb_name)
   return string.format(":lua require'nvim-tree'.on_keypress('%s')<CR>", cb_name)
 end
+
+-- List of filenames that gets highlighted
+vim.g.nvim_tree_special_files = {
+  Makefile       = true,
+  ["Cargo.toml"] = true,
+  ["README.md"]  = false,
+  ["readme.md"]  = true,
+}
 
 -- Mappings for nvimtree
 vim.g.nvim_tree_bindings = {
@@ -68,30 +78,30 @@ EOF
 " default will show icon by default if no icon is provided
 " default shows no icon by default
 let g:nvim_tree_icons = {
-    \ 'default': '',
-    \ 'symlink': '',
-    \ 'git': {
-    \   'unstaged': "",
-    \   'staged': "",
-    \   'unmerged': "",
-    \   'renamed': "➜",
-    \   'untracked': "",
-    \   'deleted': "",
-    \   'ignored': "◌"
+    \ 'default'        : '',
+    \ 'symlink'        : '',
+    \ 'git' : {
+    \   'unstaged'     : "✗",
+    \   'staged'       : "✓",
+    \   'unmerged'     : "",
+    \   'renamed'      : "➜",
+    \   'untracked'    : "",
+    \   'deleted'      : "",
+    \   'ignored'      : "◌"
     \ },
-    \ 'folder': {
-    \   'default': "",
-    \   'open': "",
-    \   'empty': "",
-    \   'empty_open': "",
-    \   'symlink': "",
-    \   'symlink_open': "",
+    \ 'folder' : {
+    \   'default'      : "",
+    \   'open'         : "",
+    \   'empty'        : "",
+    \   'empty_open'   : "",
+    \   'symlink'      : "",
+    \   'symlink_open' : "",
     \ },
-    \   'lsp': {
-    \     'hint': "",
-    \     'info': "",
-    \     'warning': "",
-    \     'error': "",
+    \   'lsp' : {
+    \     'hint'       : "",
+    \     'info'       : "",
+    \     'warning'    : "",
+    \     'error'      : "",
     \   }
     \}
 
