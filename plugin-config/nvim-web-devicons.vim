@@ -31,6 +31,11 @@ require'nvim-web-devicons'.setup {
       color = "#D4D4D4",
       name = "Erb",
     },
+    ["conf"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Conf",
+    },
     ["config.ru"] = {
       icon = "",
       color = "#D4D4D4",
