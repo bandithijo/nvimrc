@@ -113,6 +113,7 @@ Plug 'tpope/vim-haml'
 " Text outlining and task management for Vim based on Emacs' Org-Mode
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
+Plug 'vim-scripts/utl.vim'
 
 " A open source plugins for automatic programming metrics
 Plug 'wakatime/vim-wakatime'
