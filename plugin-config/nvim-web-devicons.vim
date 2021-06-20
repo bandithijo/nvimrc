@@ -21,6 +21,11 @@ require'nvim-web-devicons'.setup {
       color = "#D4D4D4",
       name = "Rust"
     },
+    ["ini"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Ini",
+    },
     rb = {
       icon = "",
       color = "#D4D4D4",
