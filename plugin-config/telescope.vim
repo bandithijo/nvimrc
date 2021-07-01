@@ -15,7 +15,6 @@ require('telescope').setup{
       '--column',
       '--smart-case'
     },
-    prompt_position      = 'bottom',
     prompt_prefix        = '> ',
     selection_caret      = '> ',
     entry_prefix         = '  ',
@@ -24,18 +23,31 @@ require('telescope').setup{
     selection_strategy   = 'reset',
     sorting_strategy     = 'descending',
     layout_strategy      = 'horizontal',
-    layout_defaults      = {
+    layout_config = {
       horizontal = {
-        width_padding    = 0.1,
-        height_padding   = 0.2,
-        preview_width    = 0.5
+        mirror = false,
       },
       vertical = {
-        width_padding    = 0.1,
-        height_padding   = 0.5,
-        preview_height   = 0.5
-      }
+        mirror = false,
+      },
     },
+    file_sorter          = require'telescope.sorters'.get_fuzzy_file,
+    file_ignore_patterns = {},
+    generic_sorter       = require'telescope.sorters'.get_generic_fuzzy_sorter,
+    shorten_path         = true,
+    winblend             = 0,
+    border               = {},
+    borderchars          = { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
+    color_devicons       = false,
+    use_less             = false,
+    set_env              = { ['COLORTERM'] = 'truecolor' },
+    file_previewer       = require'telescope.previewers'.vim_buffer_cat.new,
+    grep_previewer       = require'telescope.previewers'.vim_buffer_vimgrep.new,
+    qflist_previewer     = require'telescope.previewers'.vim_buffer_qflist.new,
+
+    -- Developer configurations: Not meant for general override
+    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
+
     default_mappings = {
       i = {
         ["<C-j>"] = actions.move_selection_next,
@@ -73,38 +85,18 @@ require('telescope').setup{
         ["<Tab>"] = actions.toggle_selection,
         -- ["<C-w>l"] = actions.preview_switch_window_right,
       }
-    },
-    file_sorter          = require'telescope.sorters'.get_fuzzy_file,
-    file_ignore_patterns = {},
-    generic_sorter       = require'telescope.sorters'.get_generic_fuzzy_sorter,
-    shorten_path         = true,
-    winblend             = 0,
-    width                = 0.75,
-    preview_cutoff       = 120,
-    results_height       = 1,
-    results_width        = 0.8,
-    border               = {},
-    borderchars          = { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
-    color_devicons       = false,
-    use_less             = false,
-    set_env              = { ['COLORTERM'] = 'truecolor' },
-    file_previewer       = require'telescope.previewers'.vim_buffer_cat.new,
-    grep_previewer       = require'telescope.previewers'.vim_buffer_vimgrep.new,
-    qflist_previewer     = require'telescope.previewers'.vim_buffer_qflist.new,
-
-    -- Developer configurations: Not meant for general override
-    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
+    }
   }
 }
 
 -- depends on `nvim-telescope/telescope-fzy-native.nvim`
 require('telescope').setup {
-    extensions = {
-      fzy_native = {
-        override_generic_sorter = false,
-        override_file_sorter    = true,
-      }
+  extensions = {
+    fzy_native = {
+      override_generic_sorter = false,
+      override_file_sorter    = true,
     }
+  }
 }
 require('telescope').load_extension('fzy_native')
 
