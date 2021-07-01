@@ -25,4 +25,4 @@ let g:floaterm_keymap_next   = '<Leader>fp'
 let g:floaterm_keymap_toggle = '<Leader>fh'
 
 " Lazygit
-nnoremap <leader>lg :FloatermNew --height=0.99 --width=0.99 --position=center lazygit<cr>
+nnoremap <leader>lg :FloatermNew --title=─ --height=0.99 --width=0.99 --position=center lazygit<cr>
