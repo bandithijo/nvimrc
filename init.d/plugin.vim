@@ -111,9 +111,12 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-haml'
 
 " Text outlining and task management for Vim based on Emacs' Org-Mode
-Plug 'jceb/vim-orgmode'
-Plug 'tpope/vim-speeddating'
-Plug 'vim-scripts/utl.vim'
+"Plug 'jceb/vim-orgmode'
+"Plug 'tpope/vim-speeddating'
+"Plug 'vim-scripts/utl.vim'
+
+" Orgmode clone written in Lua for Neovim 0.5.
+Plug 'kristijanhusak/orgmode.nvim'
 
 " A open source plugins for automatic programming metrics
 Plug 'wakatime/vim-wakatime'
