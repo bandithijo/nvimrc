@@ -188,4 +188,7 @@ Plug 'code-biscuits/nvim-biscuits'
 " A VIM Table Mode for instant table creation.
 Plug 'dhruvasagar/vim-table-mode'
 
+" Zeal for Vim
+Plug 'KabbAmine/zeavim.vim'
+
 call plug#end()
