@@ -46,10 +46,10 @@ let g:nvim_tree_show_icons = {
 lua << EOF
 -- List of filenames that gets highlighted
 vim.g.nvim_tree_special_files = {
-  Makefile       = true,
-  ["Cargo.toml"] = true,
+  Makefile       = false,
+  ["Cargo.toml"] = false,
   ["README.md"]  = false,
-  ["readme.md"]  = true,
+  ["readme.md"]  = false,
 }
 
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
@@ -106,8 +106,8 @@ let g:nvim_tree_icons = {
     \   'unmerged'     : '',
     \   'renamed'      : '➜',
     \   'untracked'    : '',
-    \   'deleted'      : '',
-    \   'ignored'      : '◌'
+    \   'deleted'      : '-',
+    \   'ignored'      : '^'
     \ },
     \ 'folder' : {
     \   'default'      : '',
