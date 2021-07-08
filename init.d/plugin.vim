@@ -191,4 +191,7 @@ Plug 'dhruvasagar/vim-table-mode'
 " Zeal for Vim
 Plug 'KabbAmine/zeavim.vim'
 
+" Asciidoctor plugin for Vim
+Plug 'habamax/vim-asciidoctor'
+
 call plug#end()
