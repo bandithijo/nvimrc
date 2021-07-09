@@ -18,6 +18,7 @@ let g:nvim_tree_hijack_netrw          = 1 "1 by default, prevents netrw from aut
 let g:nvim_tree_hijack_cursor         = 0 " When 1, moving cursor in the tree will position the cursor at the start of the fil eon the current line
 let g:nvim_tree_add_trailing          = 0 "0 by default, append a trailing slash to folder names
 let g:nvim_tree_group_empty           = 0 "0 by default, compact folders that only contain a single folder into one node in the file tree
+let g:nvim_tree_icon_padding          = ' ' "one space by default, used for rendering the space between the icon and the filename. Use with caution, it could break rendering if you set an empty string depending on your font.
 let g:nvim_tree_update_cwd            = 1 "0 by default, will update the tree cwd when changing nvim's directory (DirChanged event). Behaves strangely with autochdir set.
 let g:nvim_tree_disable_window_picker = 0 "0 by default, will disable the window picker.
 let g:nvim_tree_window_picker_exclude = {
@@ -34,9 +35,9 @@ let g:nvim_tree_window_picker_exclude = {
 " selectable.
 
 let g:nvim_tree_show_icons = {
-    \ 'git': 1,
-    \ 'folders': 1,
-    \ 'files': 1,
+    \ 'git':           1,
+    \ 'folders':       1,
+    \ 'files':         1,
     \ 'folder_arrows': 1,
     \ }
 "If 0, do not show the icons for one of 'git' 'folder' and 'files'
@@ -112,8 +113,8 @@ let g:nvim_tree_icons = {
     \ 'folder' : {
     \   'default'      : '',
     \   'open'         : '',
-    \   'empty'        : '',
-    \   'empty_open'   : '',
+    \   'empty'        : '',
+    \   'empty_open'   : '',
     \   'symlink'      : '',
     \   'symlink_open' : '',
     \ },
@@ -122,7 +123,7 @@ let g:nvim_tree_icons = {
     \     'info'       : '',
     \     'warning'    : '',
     \     'error'      : '',
-    \   }
+    \ }
     \}
 
 nnoremap <F12>     :NvimTreeToggle<CR>
