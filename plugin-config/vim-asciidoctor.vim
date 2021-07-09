@@ -1,6 +1,6 @@
 " ASCIIDOCTOR
 " What to use for HTML, default `asciidoctor`.
-let g:asciidoctor_executable = 'asciidoctor'
+let g:asciidoctor_executable = 'asciidoctor -a data-uri -a allow-uri-read'
 
 " What extensions to use for HTML, default `[]`.
 let g:asciidoctor_extensions = ['asciidoctor-diagram', 'asciidoctor-rouge']
@@ -13,7 +13,7 @@ let g:asciidoctor_css = 'haba-asciidoctor.css'
 
 " ASCIIDOCTOR-PDF
 " What to use for PDF, default `asciidoctor-pdf`.
-let g:asciidoctor_pdf_executable = 'asciidoctor-pdf'
+let g:asciidoctor_pdf_executable = 'asciidoctor-pdf -a data-uri -a allow-uri-read'
 
 " What extensions to use for PDF, default `[]`.
 let g:asciidoctor_pdf_extensions = ['asciidoctor-diagram']
@@ -73,7 +73,7 @@ fun! AsciidoctorMappings()
     nnoremap <buffer> <leader>ch :Asciidoctor2HTML<CR>
     nnoremap <buffer> <leader>cp :Asciidoctor2PDF<CR>
     nnoremap <buffer> <leader>cx :Asciidoctor2DOCX<CR>
-    nnoremap <buffer> <leader>p :AsciidoctorPasteImage<CR>
+    nnoremap <buffer> <leader>p  :AsciidoctorPasteImage<CR>
     " :make will build pdfs
     compiler asciidoctor2pdf
 endfun
