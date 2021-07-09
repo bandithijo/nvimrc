@@ -95,9 +95,6 @@ Plug 'tpope/vim-rake'
 " Run your tests at the speed of thought
 Plug 'vim-test/vim-test'
 
-" A vim plugin to display the indention levels with thin vertical lines
-Plug 'Yggdroot/indentLine'
-
 " A Indent guides on blank lines for Neovim
 Plug 'lukas-reineke/indent-blankline.nvim'
 
