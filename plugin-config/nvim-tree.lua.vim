@@ -18,6 +18,7 @@ let g:nvim_tree_hijack_netrw          = 1 "1 by default, prevents netrw from aut
 let g:nvim_tree_hijack_cursor         = 0 " When 1, moving cursor in the tree will position the cursor at the start of the fil eon the current line
 let g:nvim_tree_add_trailing          = 0 "0 by default, append a trailing slash to folder names
 let g:nvim_tree_group_empty           = 0 "0 by default, compact folders that only contain a single folder into one node in the file tree
+let g:nvim_tree_lsp_diagnostics       = 0
 let g:nvim_tree_icon_padding          = ' ' "one space by default, used for rendering the space between the icon and the filename. Use with caution, it could break rendering if you set an empty string depending on your font.
 let g:nvim_tree_update_cwd            = 1 "0 by default, will update the tree cwd when changing nvim's directory (DirChanged event). Behaves strangely with autochdir set.
 let g:nvim_tree_disable_window_picker = 0 "0 by default, will disable the window picker.
@@ -53,48 +54,48 @@ vim.g.nvim_tree_special_files = {
   ["readme.md"]  = false,
 }
 
-local tree_cb = require'nvim-tree.config'.nvim_tree_callback
+-- local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 -- default mappings
-vim.g.nvim_tree_bindings = {
-  { key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
-  { key = {"<2-RightMouse>", "<C-}>"},    cb = tree_cb("cd") },
-  { key = "<C-v>",                        cb = tree_cb("vsplit") },
-  { key = "<C-x>",                        cb = tree_cb("split") },
-  { key = "<C-t>",                        cb = tree_cb("tabnew") },
-  { key = "<",                            cb = tree_cb("prev_sibling") },
-  { key = ">",                            cb = tree_cb("next_sibling") },
-  { key = "P",                            cb = tree_cb("parent_node") },
-  { key = "<BS>",                         cb = tree_cb("close_node") },
-  { key = "<S-CR>",                       cb = tree_cb("close_node") },
-  { key = "<Tab>",                        cb = tree_cb("preview") },
-  { key = "K",                            cb = tree_cb("first_sibling") },
-  { key = "J",                            cb = tree_cb("last_sibling") },
-  { key = "I",                            cb = tree_cb("toggle_ignored") },
-  { key = "H",                            cb = tree_cb("toggle_dotfiles") },
-  { key = "R",                            cb = tree_cb("refresh") },
-  { key = "a",                            cb = tree_cb("create") },
-  { key = "d",                            cb = tree_cb("remove") },
-  { key = "r",                            cb = tree_cb("rename") },
-  { key = "<C->",                         cb = tree_cb("full_rename") },
-  { key = "x",                            cb = tree_cb("cut") },
-  { key = "c",                            cb = tree_cb("copy") },
-  { key = "p",                            cb = tree_cb("paste") },
-  { key = "y",                            cb = tree_cb("copy_name") },
-  { key = "Y",                            cb = tree_cb("copy_path") },
-  { key = "gy",                           cb = tree_cb("copy_absolute_path") },
-  { key = "[c",                           cb = tree_cb("prev_git_item") },
-  { key = "}c",                           cb = tree_cb("next_git_item") },
-  { key = "-",                            cb = tree_cb("dir_up") },
-  { key = "q",                            cb = tree_cb("close") },
-  { key = "g?",                           cb = tree_cb("toggle_help") },
-}
+-- vim.g.nvim_tree_bindings = {
+--   { key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
+--   { key = {"<2-RightMouse>", "<C-}>"},    cb = tree_cb("cd") },
+--   { key = "<C-v>",                        cb = tree_cb("vsplit") },
+--   { key = "<C-x>",                        cb = tree_cb("split") },
+--   { key = "<C-t>",                        cb = tree_cb("tabnew") },
+--   { key = "<",                            cb = tree_cb("prev_sibling") },
+--   { key = ">",                            cb = tree_cb("next_sibling") },
+--   { key = "P",                            cb = tree_cb("parent_node") },
+--   { key = "<BS>",                         cb = tree_cb("close_node") },
+--   { key = "<S-CR>",                       cb = tree_cb("close_node") },
+--   { key = "<Tab>",                        cb = tree_cb("preview") },
+--   { key = "K",                            cb = tree_cb("first_sibling") },
+--   { key = "J",                            cb = tree_cb("last_sibling") },
+--   { key = "I",                            cb = tree_cb("toggle_ignored") },
+--   { key = "H",                            cb = tree_cb("toggle_dotfiles") },
+--   { key = "R",                            cb = tree_cb("refresh") },
+--   { key = "a",                            cb = tree_cb("create") },
+--   { key = "d",                            cb = tree_cb("remove") },
+--   { key = "r",                            cb = tree_cb("rename") },
+--   { key = "<C->",                         cb = tree_cb("full_rename") },
+--   { key = "x",                            cb = tree_cb("cut") },
+--   { key = "c",                            cb = tree_cb("copy") },
+--   { key = "p",                            cb = tree_cb("paste") },
+--   { key = "y",                            cb = tree_cb("copy_name") },
+--   { key = "Y",                            cb = tree_cb("copy_path") },
+--   { key = "gy",                           cb = tree_cb("copy_absolute_path") },
+--   { key = "[c",                           cb = tree_cb("prev_git_item") },
+--   { key = "}c",                           cb = tree_cb("next_git_item") },
+--   { key = "-",                            cb = tree_cb("dir_up") },
+--   { key = "q",                            cb = tree_cb("close") },
+--   { key = "g?",                           cb = tree_cb("toggle_help") },
+-- }
 EOF
 
 " You can toggle the help UI by pressing g?.
 
 " Disable default mappings by plugin
 " Bindings are enable by default, disabled on any non-zero value
-" let nvim_tree_disable_keybindings=1
+let nvim_tree_disable_keybindings = 0
 
 " default will show icon by default if no icon is provided
 " default shows no icon by default
