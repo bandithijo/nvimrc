@@ -128,7 +128,7 @@ function! LightlineLineInfo()
     let current_line = printf('%3s', line('.'))
     let current_col  = printf('%-2s', col('.'))
     let lineinfo     = ' ' . current_line . ':' . current_col
-    return &filetype !=? 'term' ? lineinfo : 'TERMINAL'
+    return &filetype !=? 'term' ? lineinfo : 'shell'
   else
     return ''
   endif

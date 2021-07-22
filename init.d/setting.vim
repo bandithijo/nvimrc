@@ -63,4 +63,4 @@ set redrawtime=2000
 autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
 " Disable relative number on Terminal
-"autocmd TermOpen * setlocal nonumber norelativenumber
+autocmd TermOpen * setlocal nonumber norelativenumber scl=no
