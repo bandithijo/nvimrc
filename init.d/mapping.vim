@@ -31,15 +31,9 @@ nmap <silent> <leader>W :StripWhitespace<cr>
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>C :w! \| !compiler <c-r>%<CR>
 
-" Remap exit from terminal mode
-tnoremap <Esc> <C-\><C-n>
-
 " keep search matches in the middle of the window.
 nnoremap n nzzzv
 nnoremap N Nzzzv
-
-" another way to esc mode
-imap jj <Esc>
 
 " I hit F1 too often when reaching esc button
 inoremap <F1> <ESC>
