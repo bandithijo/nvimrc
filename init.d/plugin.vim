@@ -191,4 +191,7 @@ Plug 'KabbAmine/zeavim.vim'
 " Asciidoctor plugin for Vim
 Plug 'habamax/vim-asciidoctor'
 
+" Plugin for calling lazygit from within neovim
+Plug 'kdheepak/lazygit.nvim'
+
 call plug#end()
