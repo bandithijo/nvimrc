@@ -254,8 +254,12 @@ require'nvim-web-devicons'.setup {
     },
     ["desktop"] = {
       icon = "",
-      color = "#D4D4D4",
       name = "DesktopEntry"
+    },
+    ["xml"] = {
+      icon = "謹",
+      color = "#D4D4D4",
+      name = "Xml",
     },
   };
   -- globally enable default icons (default to false)
