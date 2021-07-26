@@ -145,7 +145,7 @@ endfunction
 
 function! LightlineFileName()
   let filename = expand('%')
-  let modified = &modified ? '' : ''
+  let modified = &modified ? '' : ''
   let readonly = &readonly
   if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
