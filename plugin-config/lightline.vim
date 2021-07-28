@@ -17,7 +17,7 @@ let g:lightline = {
 \   },
 \   'inactive': {
 \    'left' : [[ 'filename' ]],
-\    'right': [[ 'percent' ]]
+\    'right': [[ 'handler' ]]
 \   },
 \   'tab': {
 \     'active'   : ['tabnum'],
@@ -50,6 +50,7 @@ let g:lightline = {
 \     'buffers'   : 'lightline#bufferline#buffers',
 \     'string1'   : 'String1',
 \     'string2'   : 'String2',
+\     'handler'   : 'Handler',
 \     'smarttabs' : 'SmartTabsIndicator',
 \     'trailing'  : 'LightlineTrailingWhitespace',
 \     'cocstatus' : 'LightLineCoc',
@@ -95,7 +96,7 @@ function! LightlineFileformat()
   if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     return winwidth(0) > 70 ?
-         \ (tolower(&fileformat) . ' ' . WebDevIconsGetFileFormatSymbol()) . ' ' :
+         \ (tolower(&fileformat) . ' ' . WebDevIconsGetFileFormatSymbol()) :
          \ ''
   else
     return ''
@@ -127,7 +128,7 @@ function! LightlineLineInfo()
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     let current_line = printf('%3s', line('.'))
     let current_col  = printf('%-2s', col('.'))
-    let lineinfo     = ' ' . current_line . ':' . current_col
+    let lineinfo     = '' . current_line . ':' . current_col
     return &filetype !=? 'term' ? lineinfo : 'shell'
   else
     return ''
@@ -177,11 +178,15 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return '' " U+E630 (Neovim), U+E62F (Vimneo)
+  return '' " U+E630 (Neovim, from JetBrainsMono Nerd Font Bandit)
 endfunction
 
 function! String2()
   return 'BUFFERS'
+endfunction
+
+function! Handler()
+  return ' '
 endfunction
 
 function! SmartTabsIndicator()
@@ -218,7 +223,7 @@ endfunction
 set showtabline=2  " Show tabline, 2 show, 1 hide when only 1 buffer, 0 hide
 set guioptions-=e  " Don't use GUI tabline
 
-let lightline#ale#indicator_checking   = ' '
+let g:lightline#ale#indicator_checking = ' '
 let g:lightline#ale#indicator_warnings = ' '
 let g:lightline#ale#indicator_errors   = ' '
 let g:lightline#ale#indicator_ok       = ' '
