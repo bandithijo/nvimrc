@@ -17,7 +17,7 @@ let g:lightline = {
 \   },
 \   'inactive': {
 \    'left' : [[ 'filename' ]],
-\    'right': [[ 'handler' ]]
+\    'right': [[ 'percent' ]]
 \   },
 \   'tab': {
 \     'active'   : ['tabnum'],
@@ -50,7 +50,6 @@ let g:lightline = {
 \     'buffers'   : 'lightline#bufferline#buffers',
 \     'string1'   : 'String1',
 \     'string2'   : 'String2',
-\     'handler'   : 'Handler',
 \     'smarttabs' : 'SmartTabsIndicator',
 \     'trailing'  : 'LightlineTrailingWhitespace',
 \     'cocstatus' : 'LightLineCoc',
@@ -183,10 +182,6 @@ endfunction
 
 function! String2()
   return 'BUFFERS'
-endfunction
-
-function! Handler()
-  return ' '
 endfunction
 
 function! SmartTabsIndicator()
