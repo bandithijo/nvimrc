@@ -109,3 +109,6 @@ map <C-A-h> z5h
 " move indentation
 vnoremap < <gv
 vnoremap > >gv
+
+" excape terminal mode
+tnoremap <C-\> <C-\><C-N>
