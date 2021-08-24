@@ -5,16 +5,12 @@
     "js"     : "javascript"
   },
   "coc.preferences.colorSupport" : false,
+  "diagnostic.displayByAle"      : true,
+  "codeLens.enable"              : true,
   "python.jediEnabled"           : false,
   "python.linting.enabled"       : true,
   "python.linting.pylintEnabled" : true,
   "python.linting.pylamaEnabled" : false,
-  "solargraph.completion"        : true,
-  "solargraph.hover"             : true,
-  "solargraph.autoformat"        : true,
-  "solargraph.formatting"        : true,
-  "diagnostic.displayByAle"      : true,
-  "codeLens.enable"              : true,
   "sh.enable"                    : true,
   "languageserver": {
     "bash": {
@@ -24,5 +20,15 @@
       "ignoredRootPaths": ["~"]
     }
   },
-  "clangd.path": "/home/bandithijo/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
+  "solargraph.completion"        : true,
+  "solargraph.hover"             : true,
+  "solargraph.autoformat"        : true,
+  "solargraph.formatting"        : true,
+  "solargraph.commandPath"       : "bundle exec solargraph",
+  "solargraph.useBundler"        : false,
+  "solargraph.transport": "external",
+  "solargraph.externalServer": {
+      "host": "localhost",
+      "port": 7658
+  }
 }
