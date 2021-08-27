@@ -50,7 +50,7 @@ nmap <silent> <A-j> <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
 \   'ruby'       : ['rubocop'],
-\   'python'     : ['pylint', 'flake8'],
+\   'python'     : ['pyright'],
 \   'javascript' : ['eslint'],
 \   'yaml'       : ['yamllint'],
 \   'c'          : ['clangd'],
@@ -59,7 +59,7 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 \   'ruby'       : ['rubocop'],
-\   'python'     : ['pylint', 'flake8'],
+\   'python'     : ['pyright'],
 \   'javascript' : ['eslint'],
 \   'yaml'       : ['yamllint'],
 \}
