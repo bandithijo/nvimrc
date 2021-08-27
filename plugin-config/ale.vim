@@ -41,8 +41,8 @@ let g:ale_lint_on_enter = 1
 " ALE VirtualText
 let g:ale_virtualtext_cursor          = 1
 let g:ale_virtualtext_prefix          = ' '
-hi ALEVirtualTextError   guifg=#F24646
-hi ALEVirtualTextWarning guifg=#D7BA7D
+hi ALEVirtualTextError   guifg=#F24646 guibg=#222222
+hi ALEVirtualTextWarning guifg=#D7BA7D guibg=#222222
 
 " Navigate between errors quickly
 nmap <silent> <A-k> <Plug>(ale_previous_wrap)
