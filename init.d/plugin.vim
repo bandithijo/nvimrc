@@ -180,7 +180,7 @@ Plug 'honza/vim-snippets'
 Plug 'voldikss/vim-floaterm'
 
 " A neovim port of Assorted Biscuits. Ends up with more supported languages too.
-Plug 'code-biscuits/nvim-biscuits'
+" Plug 'code-biscuits/nvim-biscuits'
 
 " A VIM Table Mode for instant table creation.
 Plug 'dhruvasagar/vim-table-mode'
