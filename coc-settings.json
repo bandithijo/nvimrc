@@ -7,10 +7,6 @@
   "coc.preferences.colorSupport" : false,
   "diagnostic.displayByAle"      : true,
   "codeLens.enable"              : true,
-  "python.linting.enabled"       : true,
-  "python.linting.pylintEnabled" : false,
-  "python.linting.pylamaEnabled" : false,
-  "pyright.enable"               : true,
   "sh.enable"                    : true,
   "languageserver": {
     "bash": {

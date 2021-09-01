@@ -191,4 +191,7 @@ Plug 'KabbAmine/zeavim.vim'
 " Asciidoctor plugin for Vim
 Plug 'habamax/vim-asciidoctor'
 
+" Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+
 call plug#end()

@@ -59,7 +59,7 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 \   'ruby'       : ['rubocop'],
-\   'python'     : ['pyright'],
+\   'python'     : ['autopep8'],
 \   'javascript' : ['eslint'],
 \   'yaml'       : ['yamllint'],
 \}
