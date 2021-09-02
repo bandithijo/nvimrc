@@ -223,3 +223,5 @@ let g:lightline#ale#indicator_warnings = ' '
 let g:lightline#ale#indicator_errors   = ' '
 let g:lightline#ale#indicator_ok       = ' '
 let g:lightline#ale#indicator_infos    = ' '
+
+let g:lightline.component_raw          = {'buffers': 1}
