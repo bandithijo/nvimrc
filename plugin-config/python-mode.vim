@@ -37,7 +37,7 @@ let g:pymode_lint_checkers = ['pep8', 'pyflakes']
 
 " Skip errors and warnings
 " E.g. ["W", "E2"] (Skip all Warnings and the Errors starting with E2) etc.
-let g:pymode_lint_ignore = ["E722", "W391"]
+let g:pymode_lint_ignore = ["E722", "E221", "W391"]
 
 " Select some error or warnings.
 " By example you disable all warnings starting from 'W', but want to see warning
