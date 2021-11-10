@@ -1,26 +1,66 @@
-let g:nvim_tree_side                  = 'left'
-let g:nvim_tree_width                 = 35 "30 by default
-let g:nvim_tree_ignore                = [ '.git', 'node_modules', '.cache' ] "empty by default
+lua << EOF
+require'nvim-tree'.setup {
+  disable_netrw       = true,
+  hijack_netrw        = true,
+  open_on_setup       = false,
+  ignore_ft_on_setup  = {},
+  update_to_buf_dir   = {
+    enable = true,
+    auto_open = true,
+  },
+  auto_close          = false,
+  open_on_tab         = false,
+  hijack_cursor       = false,
+  update_cwd          = true,
+  diagnostics         = {
+    enable = false,
+    icons = {
+      hint = "",
+      info = "",
+      warning = "",
+      error = "",
+    }
+  },
+  update_focused_file = {
+    enable      = false,
+    update_cwd  = false,
+    ignore_list = {}
+  },
+  system_open = {
+    cmd  = nil,
+    args = {}
+  },
+  view = {
+    width = 35,
+    height = 30,
+    side = 'left',
+    auto_resize = false,
+    mappings = {
+      custom_only = false,
+      list = {}
+    }
+  },
+  filters = {
+    dotfiles = false,
+    custom = {}
+  }
+}
+EOF
+
+" let g:nvim_tree_ignore                = [ '.git', 'node_modules', '.cache' ] "empty by default
 let g:nvim_tree_gitignore             = 1 "0 by default
 let g:nvim_tree_auto_ignore_ft        = [ 'startify', 'dashboard' ] "empty by default, don't auto open tree on specific filetypes.
-let g:nvim_tree_auto_open             = 0 "0 by default, opens the tree when typing `vim $DIR` or `vim`
-let g:nvim_tree_auto_close            = 1 "0 by default, closes the tree when it's the last window
 let g:nvim_tree_quit_on_open          = 0 "0 by default, closes the tree when you open a file
-let g:nvim_tree_follow                = 1 "0 by default, this option allows the cursor to be updated when entering a buffer
+" let g:nvim_tree_follow                = 1 "0 by default, this option allows the cursor to be updated when entering a buffer
 let g:nvim_tree_indent_markers        = 1 "0 by default, this option shows indent markers when folders are open
-let g:nvim_tree_hide_dotfiles         = 1 "0 by default, this option hides files and folders starting with a dot `.`
+" let g:nvim_tree_hide_dotfiles         = 1 "0 by default, this option hides files and folders starting with a dot `.`
 let g:nvim_tree_git_hl                = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
 let g:nvim_tree_root_folder_modifier  = ':p:.' "This is the default. See :help filename-modifiers for more options
-let g:nvim_tree_tab_open              = 1 "0 by default, will open the tree when entering a new tab and the tree was previously open
 let g:nvim_tree_width_allow_resize    = 1 "0 by default, will not resize the tree when opening a file
-let g:nvim_tree_disable_netrw         = 1 "1 by default, disables netrw
-let g:nvim_tree_hijack_netrw          = 1 "1 by default, prevents netrw from automatically opening when opening directories (but lets you keep its other utilities)
-let g:nvim_tree_hijack_cursor         = 0 " When 1, moving cursor in the tree will position the cursor at the start of the fil eon the current line
 let g:nvim_tree_add_trailing          = 0 "0 by default, append a trailing slash to folder names
 let g:nvim_tree_group_empty           = 0 "0 by default, compact folders that only contain a single folder into one node in the file tree
-let g:nvim_tree_lsp_diagnostics       = 0
+" let g:nvim_tree_lsp_diagnostics       = 0
 let g:nvim_tree_icon_padding          = ' ' "one space by default, used for rendering the space between the icon and the filename. Use with caution, it could break rendering if you set an empty string depending on your font.
-let g:nvim_tree_update_cwd            = 1 "0 by default, will update the tree cwd when changing nvim's directory (DirChanged event). Behaves strangely with autochdir set.
 let g:nvim_tree_disable_window_picker = 0 "0 by default, will disable the window picker.
 let g:nvim_tree_window_picker_exclude = {
     \   'filetype': [
@@ -90,12 +130,7 @@ vim.g.nvim_tree_special_files = {
 --   { key = "g?",                           cb = tree_cb("toggle_help") },
 -- }
 EOF
-
 " You can toggle the help UI by pressing g?.
-
-" Disable default mappings by plugin
-" Bindings are enable by default, disabled on any non-zero value
-let nvim_tree_disable_keybindings = 0
 
 " default will show icon by default if no icon is provided
 " default shows no icon by default
@@ -135,10 +170,11 @@ nnoremap <leader>f :NvimTreeFindFile<CR>
 "set termguicolors " this variable must be enabled for colors to be applied properly
 
 " a list of groups can be found at `:help nvim_tree_highlight`
-highlight link NvimTreeRootFolder Directory
-highlight link NvimTreeFolderIcon Directory
+"highlight link NvimTreeRootFolder Directory
+"highlight link NvimTreeFolderIcon Directory
+highlight NvimTreeRootFolder   guifg=#CCB17A guibg=NONE
+highlight NvimTreeFolderIcon   guifg=#CCB17A guibg=NONE
 highlight NvimTreeIndentMarker guifg=#3C3C3C guibg=NONE
-
 highlight NvimTreeGitDirty     guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitStaged    guifg=#CCB17A guibg=NONE
 highlight NvimTreeGitMerge     guifg=#CCB17A guibg=NONE
