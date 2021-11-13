@@ -25,7 +25,7 @@ let g:lightline = {
 \   },
 \   'tabline': {
 \   'left'  : [['buffers']],
-\   'right' : [['string1'], ['cocstatus', 'linter_checking', 'linter_info','linter_warnings', 'linter_errors', 'string2', 'smarttabs']]
+\   'right' : [['string1'], ['linter_checking', 'linter_info', 'linter_warnings', 'linter_errors', 'string2', 'smarttabs']]
 \   },
 \   'separator': {
 \     'left': '', 'right': ''
@@ -52,7 +52,6 @@ let g:lightline = {
 \     'string2'   : 'String2',
 \     'smarttabs' : 'SmartTabsIndicator',
 \     'trailing'  : 'LightlineTrailingWhitespace',
-\     'cocstatus' : 'LightLineCoc',
 \     'linter_checking': 'lightline#ale#checking',
 \     'linter_infos': 'lightline#ale#infos',
 \     'linter_warnings': 'lightline#ale#warnings',
