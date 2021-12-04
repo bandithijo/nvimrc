@@ -56,8 +56,8 @@ Plug 'tpope/vim-ragtag'
 " Viewer & Finder for LSP symbols and tags
 Plug 'liuchengxu/vista.vim'
 
-" A commentary.vim: comment stuff out
-Plug 'tpope/vim-commentary'
+" Smart and powerful comment plugin for neovim. Supports treesitter, dot repeat, left-right/up-down motions, hooks, and more
+Plug 'numToStr/Comment.nvim'
 
 " Vim plugin which provides sgml (xml, html, etc.) end tag completion. autoclose tag </
 Plug 'ervandew/sgmlendtag'
