@@ -4,7 +4,8 @@
 lua << EOF
 local actions = require('telescope.actions')
 
-require('telescope').setup {
+require('telescope').setup
+{
   defaults = {
     vimgrep_arguments    = {
       'rg',
@@ -85,11 +86,8 @@ require('telescope').setup {
         -- ["<C-w>l"] = actions.preview_switch_window_right,
       }
     }
-  }
-}
-
--- depends on `nvim-telescope/telescope-fzy-native.nvim`
-require('telescope').setup {
+  },
+  -- depends on `nvim-telescope/telescope-fzy-native.nvim`
   extensions = {
     fzy_native = {
       override_generic_sorter = false,
