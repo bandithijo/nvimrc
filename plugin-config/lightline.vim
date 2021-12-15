@@ -25,7 +25,7 @@ let g:lightline = {
 \   },
 \   'tabline': {
 \   'left'  : [['buffers']],
-\   'right' : [['string1'], ['linter_checking', 'linter_info', 'linter_warnings', 'linter_errors', 'string2', 'smarttabs']]
+\   'right' : [['string1', 'smarttabs'], ['linter_checking', 'linter_info', 'linter_warnings', 'linter_errors']]
 \   },
 \   'separator': {
 \     'left': '', 'right': ''
@@ -49,7 +49,6 @@ let g:lightline = {
 \   'component_expand': {
 \     'buffers'   : 'lightline#bufferline#buffers',
 \     'string1'   : 'String1',
-\     'string2'   : 'String2',
 \     'smarttabs' : 'SmartTabsIndicator',
 \     'trailing'  : 'LightlineTrailingWhitespace',
 \     'linter_checking': 'lightline#ale#checking',
@@ -94,7 +93,7 @@ function! LightlineFileformat()
   if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     return winwidth(0) > 70 ?
-         \ (tolower(&fileformat) . ' ' . WebDevIconsGetFileFormatSymbol()) :
+         \ (tolower(&fileformat)) :
          \ ''
   else
     return ''
@@ -105,7 +104,7 @@ function! LightlineFiletype()
   if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'term' && &filetype !=? 'vista'
     return strlen(&filetype) ?
-         \ '[' . &shiftwidth . '] ' . &filetype . ' ' . WebDevIconsGetFileTypeSymbol() :
+         \ '[' . &shiftwidth . '] ' . &filetype :
          \ 'no ft'
   else
     return ''
@@ -126,7 +125,7 @@ function! LightlineLineInfo()
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
     let current_line = printf('%3s', line('.'))
     let current_col  = printf('%-2s', col('.'))
-    let lineinfo     = '' . current_line . ':' . current_col
+    let lineinfo     = current_line . ':' . current_col
     return &filetype !=? 'term' ? lineinfo : 'shell'
   else
     return ''
@@ -176,10 +175,6 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return '' " U+E630 (Neovim, from JetBrainsMono Nerd Font Bandit)
-endfunction
-
-function! String2()
   return 'BUFFERS'
 endfunction
 
