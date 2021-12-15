@@ -102,7 +102,7 @@ EOF
 " Find files using Telescope command-line sugar.
 nnoremap <C-p> <cmd>Telescope find_files   previewer=false<cr>
 nnoremap <C-f> <cmd>Telescope buffers      previewer=false<cr>
-nnoremap <C-g> <cmd>Telescope git_branches previewer=false<cr>
+nnoremap <C-g> <cmd>Telescope live_grep<cr>
 
 highlight TelescopeSelection      guifg=#D4D4D4 gui=bold " selected item
 highlight TelescopeSelectionCaret guifg=#D4D4D4 " selection caret
