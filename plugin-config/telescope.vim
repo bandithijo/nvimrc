@@ -9,12 +9,13 @@ require('telescope').setup
   defaults = {
     vimgrep_arguments    = {
       'rg',
-      '--color = never',
+      '--color=never',
       '--no-heading',
       '--with-filename',
       '--line-number',
       '--column',
-      '--smart-case'
+      '--smart-case',
+      '--trim'
     },
     prompt_prefix        = '> ',
     selection_caret      = '> ',
@@ -25,13 +26,12 @@ require('telescope').setup
     sorting_strategy     = 'descending',
     layout_strategy      = 'horizontal',
     layout_config = {
-      horizontal = {
-        mirror = false,
-      },
-      vertical = {
-        mirror = false,
-      },
+      preview_width      = 0.5
+
     },
+    results_title        = false,
+    preview_title        = false,
+    show_line            = false,
     file_sorter          = require'telescope.sorters'.get_fzy_sorter,
     file_ignore_patterns = {},
     generic_sorter       = require'telescope.sorters'.get_generic_fzy_sorter,
@@ -100,8 +100,8 @@ require('telescope').load_extension('fzy_native')
 EOF
 
 " Find files using Telescope command-line sugar.
-nnoremap <C-p> <cmd>Telescope find_files   previewer=false<cr>
-nnoremap <C-f> <cmd>Telescope buffers      previewer=false<cr>
+nnoremap <C-p> <cmd>Telescope find_files<cr>
+nnoremap <C-f> <cmd>Telescope buffers<cr>
 nnoremap <C-g> <cmd>Telescope live_grep<cr>
 
 highlight TelescopeSelection      guifg=#D4D4D4 gui=bold " selected item
