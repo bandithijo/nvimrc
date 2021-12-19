@@ -4,14 +4,14 @@ require'nvim-tree'.setup {
   hijack_netrw        = true,
   open_on_setup       = false,
   ignore_ft_on_setup  = {},
-  update_to_buf_dir   = {
-    enable = true,
-    auto_open = true,
-  },
   auto_close          = false,
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = true,
+  update_to_buf_dir   = {
+    enable = true,
+    auto_open = true,
+  },
   diagnostics         = {
     enable = false,
     icons = {
@@ -38,7 +38,10 @@ require'nvim-tree'.setup {
     mappings = {
       custom_only = false,
       list = {}
-    }
+    },
+    number = true,
+    relativenumber = true,
+    signcolumn = "yes"
   },
   filters = {
     dotfiles = true,
@@ -47,23 +50,34 @@ require'nvim-tree'.setup {
     }
   },
   git = {
+    enable = true,
+    ignore = true,
     ignore = true
+  },
+  trash = {
+    cmd = "trash",
+    require_confirm = true
   }
 }
 EOF
 
-let g:nvim_tree_auto_ignore_ft        = [ 'startify', 'dashboard' ] "empty by default, don't auto open tree on specific filetypes.
-let g:nvim_tree_quit_on_open          = 0 "0 by default, closes the tree when you open a file
-let g:nvim_tree_indent_markers        = 1 "0 by default, this option shows indent markers when folders are open
-let g:nvim_tree_git_hl                = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
-let g:nvim_tree_root_folder_modifier  = ':p:.' "This is the default. See :help filename-modifiers for more options
-let g:nvim_tree_width_allow_resize    = 1 "0 by default, will not resize the tree when opening a file
-let g:nvim_tree_add_trailing          = 0 "0 by default, append a trailing slash to folder names
-let g:nvim_tree_group_empty           = 0 "0 by default, compact folders that only contain a single folder into one node in the file tree
-let g:nvim_tree_icon_padding          = ' ' "one space by default, used for rendering the space between the icon and the filename. Use with caution, it could break rendering if you set an empty string depending on your font.
-let g:nvim_tree_disable_window_picker = 0 "0 by default, will disable the window picker.
-let g:nvim_tree_window_picker_exclude = {
+let g:nvim_tree_quit_on_open            = 0 "0 by default, closes the tree when you open a file
+let g:nvim_tree_indent_markers          = 1 "0 by default, this option shows indent markers when folders are open
+let g:nvim_tree_git_hl                  = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
+let g:nvim_tree_highlight_opened_files  = 0 "0 by default, will enable folder and file icon highlight for opened files/directories.
+let g:nvim_tree_root_folder_modifier    = ':p:.' "This is the default. See :help filename-modifiers for more options
+let g:nvim_tree_add_trailing            = 0 "0 by default, append a trailing slash to folder names
+let g:nvim_tree_group_empty             = 0 "0 by default, compact folders that only contain a single folder into one node in the file tree
+let g:nvim_tree_disable_window_picker   = 0 "0 by default, will disable the window picker.
+let g:nvim_tree_icon_padding            = ' ' "one space by default, used for rendering the space between the icon and the filename. Use with caution, it could break rendering if you set an empty string depending on your font.
+let g:nvim_tree_symlink_arrow           = ' >> ' " defaults to ' ➛ '. used as a separator between symlinks' source and target.
+let g:nvim_tree_respect_buf_cwd         = 1 "0 by default, will change cwd of nvim-tree to that of new buffer's when opening nvim-tree.
+let g:nvim_tree_create_in_closed_folder = 0 "1 by default, When creating files, sets the path of a file when cursor is on a closed folder to the parent folder when 0, and inside the folder when 1.
+let g:nvim_tree_width_allow_resize      = 1 "0 by default, will not resize the tree when opening a file
+let g:nvim_tree_refresh_wait            = 500 "1000 by default, control how often the tree can be refreshed, 1000 means the tree can be refresh once per 1000ms.
+let g:nvim_tree_window_picker_exclude   = {
     \   'filetype': [
+    \     'notify',
     \     'packer',
     \     'qf'
     \   ],
@@ -153,18 +167,12 @@ let g:nvim_tree_icons = {
     \   'empty_open'   : '',
     \   'symlink'      : '',
     \   'symlink_open' : '',
-    \ },
-    \   'lsp' : {
-    \     'hint'       : '',
-    \     'info'       : '',
-    \     'warning'    : '',
-    \     'error'      : '',
     \ }
     \}
 
-nnoremap <F12>     :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>f :NvimTreeFindFile<CR>
+nnoremap <silent> <F12>     :NvimTreeToggle<CR>
+nnoremap <silent> <leader>r :NvimTreeRefresh<CR>
+nnoremap <silent> <leader>f :NvimTreeFindFile<CR>
 " NvimTreeOpen and NvimTreeClose are also available if you need them
 
 "set termguicolors " this variable must be enabled for colors to be applied properly
