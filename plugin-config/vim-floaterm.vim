@@ -7,11 +7,11 @@ let g:floaterm_borderchars = '─│─│┌┐┘└'
 
 " Type Number (number of lines) or Float (between 0 and 1). If Float, the
 " height is relative to &lines.
-let g:floaterm_width = 0.8
+let g:floaterm_width = 0.9
 
 " Type Number (number of lines) or Float (between 0 and 1). If Float, the
 " height is relative to &lines.
-let g:floaterm_height = 0.8
+let g:floaterm_height = 0.9
 
 " Set floaterm window's background to black
 hi Floaterm guibg=NONE
