@@ -194,4 +194,7 @@ Plug 'habamax/vim-asciidoctor'
 " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
+" A (Neo)vim plugin for formatting code.
+Plug 'sbdchd/neoformat'
+
 call plug#end()
