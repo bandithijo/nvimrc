@@ -15,10 +15,10 @@ require'nvim-tree'.setup {
   diagnostics         = {
     enable = false,
     icons = {
-      hint = "",
-      info = "",
-      warning = "",
-      error = "",
+      hint = '',
+      info = '',
+      warning = '',
+      error = '',
     }
   },
   update_focused_file = {
@@ -41,7 +41,7 @@ require'nvim-tree'.setup {
     },
     number = true,
     relativenumber = true,
-    signcolumn = "yes"
+    signcolumn = 'yes'
   },
   filters = {
     dotfiles = true,
@@ -50,12 +50,11 @@ require'nvim-tree'.setup {
     }
   },
   git = {
-    enable = true,
-    ignore = true,
+    enable = false,
     ignore = true
   },
   trash = {
-    cmd = "trash",
+    cmd = 'trash',
     require_confirm = true
   }
 }
@@ -73,7 +72,7 @@ let g:nvim_tree_icon_padding            = ' ' "one space by default, used for re
 let g:nvim_tree_symlink_arrow           = ' >> ' " defaults to ' ➛ '. used as a separator between symlinks' source and target.
 let g:nvim_tree_respect_buf_cwd         = 1 "0 by default, will change cwd of nvim-tree to that of new buffer's when opening nvim-tree.
 let g:nvim_tree_create_in_closed_folder = 0 "1 by default, When creating files, sets the path of a file when cursor is on a closed folder to the parent folder when 0, and inside the folder when 1.
-let g:nvim_tree_width_allow_resize      = 1 "0 by default, will not resize the tree when opening a file
+let g:nvim_tree_width_allow_resize      = 0 "0 by default, will not resize the tree when opening a file
 let g:nvim_tree_refresh_wait            = 500 "1000 by default, control how often the tree can be refreshed, 1000 means the tree can be refresh once per 1000ms.
 let g:nvim_tree_window_picker_exclude   = {
     \   'filetype': [
