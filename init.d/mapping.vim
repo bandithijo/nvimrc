@@ -93,7 +93,7 @@ endfunction
 vnoremap <C-a> :call Incr()<CR>
 
 " toggle for markdown checkbox with <leader>tt remap to <leader>cc
-au FileType markdown map <silent> <leader>cc :call checkbox#ToggleCB()<cr>
+au FileType markdown,pango,asc map <silent> <leader>cc :call checkbox#ToggleCB()<cr>
 
 " Easy move it up or down
 vnoremap <A-j> :m '>+1<CR>gv=gv
