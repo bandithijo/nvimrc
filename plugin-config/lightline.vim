@@ -7,13 +7,9 @@
 let g:lightline = {
 \   'colorscheme': 'codedark',
 \   'active': {
-\    'left' : [[ 'mode', 'paste' ],
-\              [ 'gitbranch' ],
-\              [ 'filename' ]],
+\    'left' : [[ 'mode', 'paste', 'gitbranch', 'filename' ]],
 \    'right': [[ 'trailing' ],
-\              [ 'percent' ],
-\              [ 'lineinfo' ],
-\              [ 'filetype', 'fileencoding', 'fileformat' ] ]
+\              [ 'filetype', 'fileencoding', 'fileformat', 'lineinfo', 'percent' ]]
 \   },
 \   'inactive': {
 \    'left' : [[ 'filename' ]],
@@ -135,7 +131,7 @@ endfunction
 function! LightlinePercent()
   if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
   \  &filetype !=? 'taglist' && &filetype !=? 'vista'
-    return printf('%2s', (line('.') * 100 / line('$'))) . '%  '
+    return printf('%s', (line('.') * 100 / line('$'))) . '%  '
   else
     return ''
   endif
