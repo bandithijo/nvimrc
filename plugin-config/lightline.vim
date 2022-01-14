@@ -9,7 +9,7 @@ let g:lightline = {
 \   'active': {
 \    'left' : [[ 'mode', 'paste', 'gitbranch', 'filename' ]],
 \    'right': [[ 'trailing' ],
-\              [ 'filetype', 'fileencoding', 'fileformat', 'lineinfo', 'percent' ]]
+\              [ 'filetype', 'fileformat', 'lineinfo', 'percent' ]]
 \   },
 \   'inactive': {
 \    'left' : [[ 'filename' ]],
@@ -37,7 +37,6 @@ let g:lightline = {
 \     'readonly'     : 'LightlineReadonly',
 \     'fileformat'   : 'LightlineFileformat',
 \     'filetype'     : 'LightlineFiletype',
-\     'fileencoding' : 'LightlineFileEncoding',
 \     'lineinfo'     : 'LightlineLineInfo',
 \     'percent'      : 'LightlinePercent',
 \     'mode'         : 'LightlineMode',
@@ -102,15 +101,6 @@ function! LightlineFiletype()
     return strlen(&filetype) ?
          \ '[' . &shiftwidth . '] ' . &filetype :
          \ 'no ft'
-  else
-    return ''
-  endif
-endfunction
-
-function! LightlineFileEncoding()
-  if &filetype !=? 'NvimTree' && &filetype !=? 'tagbar' &&
-  \  &filetype !=? 'taglist' && &filetype !=? 'vista'
-    return winwidth(0) > 70 ? tolower(&fileencoding) : ''
   else
     return ''
   endif
