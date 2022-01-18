@@ -43,4 +43,3 @@ let g:blamer_show_in_insert_modes = 0
 " Highlight
 " The color of the blame message.
 " Default: link Blamer Comment
-highlight Blamer guifg=#608B4E guibg=#222222

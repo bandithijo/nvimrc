@@ -3,6 +3,9 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+" A precision colorscheme for the vim text editor
+Plug 'altercation/vim-colors-solarized'
+
 " A file explorer tree for neovim written in lua
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'

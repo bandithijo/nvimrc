@@ -22,8 +22,8 @@ let s:base0C = '#9CDCFE'
 let s:base0D = '#5395D4'
 let s:base0E = '#BB80C5'
 let s:base0F = '#636594'
-let s:status = '#005F8F'
-let s:statin = '#6D9DB6'
+let s:status = '#262626'
+let s:statin = '#808080'
 
 let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left     = [ [s:base05, s:status, 'bold'], [s:base05, s:status] ]
@@ -43,9 +43,9 @@ let s:p.replace.middle  = [ [s:base05, s:status] ]
 let s:p.visual.left     = [ [s:base05, s:status, 'bold'], [s:base05, s:status] ]
 let s:p.visual.right    = [ [s:base05, s:status, 'bold'], [s:base05, s:status] ]
 let s:p.visual.middle   = [ [s:base05, s:status] ]
-let s:p.tabline.left    = [ [s:base04, s:base00] ]
-let s:p.tabline.right   = [ [s:base05, s:base00, 'bold'], [s:base05, s:base00] ]
-let s:p.tabline.middle  = [ [s:base04, s:base00] ]
-let s:p.tabline.tabsel  = [ [s:base05, s:base00, 'bold'] ]
+let s:p.tabline.left    = [ [s:base04, s:status] ]
+let s:p.tabline.right   = [ [s:base05, s:status, 'bold'], [s:base05, s:status] ]
+let s:p.tabline.middle  = [ [s:base04, s:status] ]
+let s:p.tabline.tabsel  = [ [s:base05, s:status, 'bold'] ]
 
 let g:lightline#colorscheme#codedark#palette = lightline#colorscheme#fill(s:p)

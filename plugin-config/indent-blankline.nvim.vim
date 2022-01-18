@@ -18,8 +18,3 @@ let g:indent_blankline_bufname_exclude                = ['README.md', '.*\.py']
 
 let g:indent_blankline_disable_warning_message        = v:false
 let g:indent_blankline_debug                          = v:true
-
-highlight IndentBlanklineChar guifg=#3c3c3c gui=nocombine
-" highlight IndentBlanklineSpaceChar          guifg=#00FF00 gui=nocombine
-" highlight IndentBlanklineSpaceCharBlankline guifg=#00FF00 gui=nocombine
-" highlight IndentBlanklineContextChar        guifg=#00FF00 gui=nocombine

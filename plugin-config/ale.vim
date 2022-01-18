@@ -10,8 +10,6 @@ let g:ale_completion_enabled = 0
 let g:ale_sign_error   = ''
 let g:ale_sign_warning = ''
 
-hi ALEErrorSign   guifg=#F24646
-hi ALEWarningSign guifg=#D7BA7D
 " hi clear ALEErrorSign
 " hi clear ALEWarningSign
 
@@ -41,8 +39,6 @@ let g:ale_lint_on_enter = 1
 " ALE VirtualText
 let g:ale_virtualtext_cursor          = 1
 let g:ale_virtualtext_prefix          = ' '
-hi ALEVirtualTextError   guifg=#F24646 guibg=#222222
-hi ALEVirtualTextWarning guifg=#D7BA7D guibg=#222222
 
 " Navigate between errors quickly
 nmap <silent> <A-k> <Plug>(ale_previous_wrap)

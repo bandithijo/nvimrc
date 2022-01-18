@@ -103,19 +103,3 @@ EOF
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 nnoremap <C-f> <cmd>Telescope buffers<cr>
 nnoremap <C-g> <cmd>Telescope live_grep<cr>
-
-highlight TelescopeSelection      guifg=#D4D4D4 gui=bold " selected item
-highlight TelescopeSelectionCaret guifg=#D4D4D4 " selection caret
-highlight TelescopeMultiSelection guifg=#D7BA7D " multisections
-
-" Border highlight groups.
-highlight TelescopeBorder         guifg=#D4D4D4
-highlight TelescopePromptBorder   guifg=#D4D4D4
-highlight TelescopeResultsBorder  guifg=#D4D4D4
-highlight TelescopePreviewBorder  guifg=#D4D4D4
-
-" Used for highlighting characters that you match.
-highlight TelescopeMatching       guifg=#F24646
-
-" Used for the prompt prefix
-highlight TelescopePromptPrefix   guifg=#F24646
