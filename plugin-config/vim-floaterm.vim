@@ -26,3 +26,6 @@ let g:floaterm_keymap_toggle = '<Leader>fh'
 
 " Lazygit
 nnoremap <leader>lg :FloatermNew --title=─ --height=0.99 --width=0.99 --position=center lazygit<cr>
+
+" tig
+nnoremap <leader>lt :FloatermNew --title=─ --height=0.99 --width=0.99 --position=center tig<cr>
