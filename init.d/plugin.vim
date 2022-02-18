@@ -200,4 +200,7 @@ Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " A (Neo)vim plugin for formatting code.
 Plug 'sbdchd/neoformat'
 
+" A Neovim plugin to stabilize window open/close events.
+Plug 'luukvbaal/stabilize.nvim'
+
 call plug#end()
