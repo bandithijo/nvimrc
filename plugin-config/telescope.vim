@@ -26,8 +26,9 @@ require('telescope').setup
     sorting_strategy     = 'descending',
     layout_strategy      = 'horizontal',
     layout_config = {
-      preview_width      = 0.5
-
+      horizontal = {
+        width = 0.85
+      }
     },
     results_title        = false,
     preview_title        = false,
