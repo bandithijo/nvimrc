@@ -57,17 +57,17 @@ let g:lightline = {
 \   'trailing' : 'error',
 \   },
 \   'mode_map': {
-\     'n'      : ' N0RMAL',
-\     'i'      : ' INSERT',
-\     'R'      : ' REPLACE',
-\     'v'      : ' VISUAL',
-\     'V'      : ' V-LINE',
-\     "\<C-v>" : ' V-BL0CK',
-\     'c'      : ' COMMAND',
-\     's'      : ' SELECT',
-\     'S'      : ' S-LINE',
-\     "\<C-s>" : ' S-BL0CK',
-\     't'      : ' TERMINAL',
+\     'n'      : 'N0RMAL',
+\     'i'      : 'INSERT',
+\     'R'      : 'REPLACE',
+\     'v'      : 'VISUAL',
+\     'V'      : 'V-LINE',
+\     "\<C-v>" : 'V-BL0CK',
+\     'c'      : 'COMMAND',
+\     's'      : 'SELECT',
+\     'S'      : 'S-LINE',
+\     "\<C-s>" : 'S-BL0CK',
+\     't'      : 'TERMINAL',
 \   }
 \}
 
@@ -153,10 +153,10 @@ function! LightlineFileName()
 endfunction
 
 function! LightlineMode()
-  return expand('%:t') ==# '__Tagbar__.1' ? ' TAGBAR'  :
-       \ expand('%:t') ==# '__Tag_List__' ? ' TAGLIST' :
-       \ expand('%:t') ==# '__vista__'    ? ' VISTA' :
-       \ &filetype ==# 'NvimTree' ?  ' EXPLORER' :
+  return expand('%:t') ==# '__Tagbar__.1' ? 'TAGBAR'  :
+       \ expand('%:t') ==# '__Tag_List__' ? 'TAGLIST' :
+       \ expand('%:t') ==# '__vista__'    ? 'VISTA' :
+       \ &filetype ==# 'NvimTree' ?  'EXPLORER' :
        \ lightline#mode()
 endfunction
 
