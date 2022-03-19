@@ -71,6 +71,9 @@ Plug 'plasticboy/vim-markdown'
 " A markdown preview plugin for (neo)vim
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
+" A vim plugin that adds some nice extra's for working with markdown documents
+Plug 'SidOfc/mkdx'
+
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more.
 Plug 'ryanoasis/vim-devicons'
 
