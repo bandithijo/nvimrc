@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["alpha-nvim"] = {
-    loaded = true,
-    path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/alpha-nvim",
-    url = "https://github.com/goolord/alpha-nvim"
-  },
   ["blamer.nvim"] = {
     loaded = true,
     path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/blamer.nvim",

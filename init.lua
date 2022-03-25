@@ -11,7 +11,6 @@ require('keymaps')
 require('plugins')
 
 -- plugin config
-require('plugin-config/alpha-nvim')
 require('plugin-config/indent-blankline')
 require('plugin-config/vim-better-whitespace')
 require('plugin-config/vim-checkbox')

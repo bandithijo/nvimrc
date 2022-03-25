@@ -19,8 +19,6 @@ require('packer').startup(function()
   --   'feline-nvim/feline.nvim', branch = 'develop'
   -- }
 
-  -- welcome
-  use 'goolord/alpha-nvim'
 
   -- startup time check
   use 'tweekmonster/startuptime.vim'
