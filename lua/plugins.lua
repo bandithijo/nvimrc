@@ -15,10 +15,10 @@ require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua'
 
   -- statusline
-  -- use {
-  --   'feline-nvim/feline.nvim', branch = 'develop'
-  -- }
+  use 'feline-nvim/feline.nvim'
 
+  -- gps
+  use 'SmiteshP/nvim-gps'
 
   -- startup time check
   use 'tweekmonster/startuptime.vim'
@@ -79,7 +79,7 @@ require('packer').startup(function()
   use {
     'nvim-telescope/telescope.nvim',
     requires = {
-      'nvim-lua/plenary.nvim',
+      'nvim-lua/plenary.nvim'
     }
   }
 
@@ -91,6 +91,9 @@ require('packer').startup(function()
 
   -- autoclose parenthesis
   use 'cohama/lexima.vim'
+
+  -- formater
+  use 'sbdchd/neoformat'
 
   -- language parser
   use 'nvim-treesitter/nvim-treesitter'

@@ -1,25 +1,25 @@
 -- following options are the default
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
 vim.g.nvim_tree_icons = {
-  default = "",
-  symlink = "",
+  default = '',
+  symlink = '',
   git = {
-    unstaged = "",
-    staged = "S",
-    unmerged = "",
-    renamed = "➜",
-    deleted = "",
-    untracked = "U",
-    ignored = "◌",
+    unstaged = '',
+    staged = 'S',
+    unmerged = '',
+    renamed = '➜',
+    deleted = '',
+    untracked = 'U',
+    ignored = '◌',
   },
   folder = {
     -- arrow_open = " ",
     -- arrow_closed = " ",
-    default = "",
-    open = "",
-    empty = "",
-    empty_open = "",
-    symlink = "",
+    default = '',
+    open = '',
+    empty = '',
+    empty_open = '',
+    symlink = '',
   },
 }
 
@@ -38,11 +38,12 @@ end
 nvim_tree.setup {
   disable_netrw = true,
   hijack_netrw = true,
+  auto_reload_on_write = true,
   open_on_setup = false,
   ignore_ft_on_setup = {
-    "startify",
-    "dashboard",
-    "alpha",
+    'startify',
+    'dashboard',
+    'alpha',
   },
   auto_close = false,
   open_on_tab = false,
@@ -52,15 +53,39 @@ nvim_tree.setup {
     enable = true,
     auto_open = true
   },
+  view = {
+    width = 35,
+    height = 30,
+    side = 'left',
+    hide_root_folder = true,
+    auto_resize = false,
+    mappings = {
+      custom_only = false,
+      list = {
+        -- user mappings goes here
+        { key = '<C-e>', action = '' }, -- disable <C-e> for edit file
+        -- { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
+        -- { key = "h", cb = tree_cb "close_node" },
+        -- { key = "v", cb = tree_cb "vsplit" },
+      },
+    },
+    number = true,
+    relativenumber = true,
+    signcolumn = 'yes'
+  },
   diagnostics = {
     enable = false,
     icons = {
-      hint = "",
-      info = "",
-      warning = "",
-      error = "",
+      hint = '',
+      info = '',
+      warning = '',
+      error = '',
     },
   },
+  -- hijack_directories = {
+  --   enable = true,
+  --   auto_open = true,
+  -- },
   update_focused_file = {
     enable = true,
     update_cwd = true,
@@ -81,24 +106,24 @@ nvim_tree.setup {
     ignore = true,
     timeout = 500,
   },
-  view = {
-    width = 35,
-    height = 30,
-    hide_root_folder = true,
-    side = 'left',
-    auto_resize = false,
-    mappings = {
-      custom_only = false,
-      list = {
-        -- { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        -- { key = "h", cb = tree_cb "close_node" },
-        -- { key = "v", cb = tree_cb "vsplit" },
-      },
-    },
-    number = true,
-    relativenumber = true,
-    signcolumn = 'yes'
-  },
+  -- actions = {
+  --   change_dir = {
+  --     enable = true,
+  --     global = false,
+  --   },
+  --   open_file = {
+  --     quit_on_open = false,
+  --     resize_window = false,
+  --     window_picker = {
+  --       enable = true,
+  --       chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
+  --       exclude = {
+  --         filetype = { 'notify', 'packer', 'qf', 'diff', 'fugitive', 'fugitiveblame' },
+  --         buftype = { 'nofile', 'terminal', 'help' },
+  --       },
+  --     },
+  --   },
+  -- },
   trash = {
     cmd = 'trash',
     require_confirm = true,
@@ -121,7 +146,7 @@ vim.g.nvim_tree_add_trailing            = 0 -- 0 by default, append a trailing s
 vim.g.nvim_tree_group_empty             = 0 -- 0 by default, compact folders that only contain a single folder into one node in the file tree
 vim.g.nvim_tree_icon_padding            = ' ' -- one space by default, used for rendering the space between the icon and the filename. Use with caution, it could break rendering if you set an empty string depending on your font.
 vim.g.nvim_tree_symlink_arrow           = ' >> ' -- defaults to ' ➛ '. used as a separator between symlinks' source and target.
-vim.g.nvim_tree_respect_buf_cwd         = 1 -- 0 by default, will change cwd of nvim-tree to that of new buffer's when opening nvim-tree.
+vim.g.nvim_tree_respect_buf_cwd         = 0 -- 0 by default, will change cwd of nvim-tree to that of new buffer's when opening nvim-tree.
 vim.g.nvim_tree_create_in_closed_folder = 0 -- 1 by default, When creating files, sets the path of a file when cursor is on a closed folder to the parent folder when 0, and inside the folder when 1.
 vim.g.nvim_tree_width_allow_resize      = 0 -- 0 by default, will not resize the tree when opening a file
 vim.g.nvim_tree_refresh_wait            = 500 -- 1000 by default, control how often the tree can be refreshed, 1000 means the tree can be refresh once per 1000ms.

@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["feline.nvim"] = {
+    loaded = true,
+    path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    url = "https://github.com/feline-nvim/feline.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -114,10 +119,20 @@ _G.packer_plugins = {
     path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/lexima.vim",
     url = "https://github.com/cohama/lexima.vim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-gps"] = {
+    loaded = true,
+    path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/nvim-gps",
+    url = "https://github.com/SmiteshP/nvim-gps"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
