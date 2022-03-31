@@ -1,8 +1,9 @@
-backup
-undo
-swap
-view
+backup/
+undo/
+swap/
+view/
+tmp/
+plugin/
+
 vimrc
 .netrwhist
-tmp
-plugin
