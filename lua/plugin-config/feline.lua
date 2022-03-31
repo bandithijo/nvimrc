@@ -72,34 +72,18 @@ force_inactive.buftypes = {
 --   },
 --   right_sep = ' '
 -- }
--- filename
+-- filename & filemodified
 components.active[1][1] = {
   provider = function()
-    local filename
+    local filename, modifier, readonly
 
     filename = vim.api.nvim_buf_get_name(0)
-
     -- if vim.api.nvim_win_get_width(0) > 1 then
     --   filename = vim.fn.fnamemodify(filename, ":~:.")
     -- else
     --   filename = vim.fn.fnamemodify(filename, ":t")
     -- end
     filename = vim.fn.fnamemodify(filename, ":~:.")
-
-    return string.format(" %s", filename)
-  end,
-  enabled = function()
-    return vim.api.nvim_win_get_width(0) > 50 and vim.api.nvim_buf_get_name(0) ~= ""
-  end,
-  hl = {
-    fg = "fg",
-    bg = "bg",
-  }
-}
--- filemodified
-components.active[1][2] = {
-  provider = function()
-    local modifier, readonly
 
     if vim.bo.readonly then
       readonly = " [RO] "
@@ -112,13 +96,40 @@ components.active[1][2] = {
     else
       modifier = ""
     end
-    return string.format("%s%s", readonly, modifier)
+
+    return string.format(" %s%s%s", filename, readonly, modifier)
+  end,
+  enabled = function()
+    return vim.api.nvim_win_get_width(0) > 50 and vim.api.nvim_buf_get_name(0) ~= ""
   end,
   hl = {
-    fg = 'fg',
-    bg = 'bg',
+    fg = "fg",
+    bg = "bg",
   }
 }
+-- filemodified
+-- components.active[1][2] = {
+--   provider = function()
+--     local modifier, readonly
+--
+--     if vim.bo.readonly then
+--       readonly = " [RO] "
+--     else
+--       readonly = ""
+--     end
+--
+--     if vim.bo.modified then
+--       modifier = " [+]"
+--     else
+--       modifier = ""
+--     end
+--     return string.format("%s%s", readonly, modifier)
+--   end,
+--   hl = {
+--     fg = 'fg',
+--     bg = 'bg',
+--   }
+-- }
 -- nvimGps
 -- components.active[1][4] = {
 --   provider = function() return gps.get_location() end,
