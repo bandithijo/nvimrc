@@ -22,9 +22,9 @@ hi TelescopePromptPrefix   guifg=#F24646
 hi IndentBlanklineChar     guifg=#3C3C3C gui=nocombine
 
 hi DiagnosticVirtualTextError guifg=#D16969
-hi DiagnosticVirtualTextInfo  guifg=#404040
-hi DiagnosticVirtualTextWarn  guifg=#404040
-hi DiagnosticVirtualTextHint  guifg=#404040
+hi DiagnosticVirtualTextInfo  guifg=#3C3C3C
+hi DiagnosticVirtualTextWarn  guifg=#3C3C3C
+hi DiagnosticVirtualTextHint  guifg=#3C3C3C
 
 " hi DiagnosticSignError        guifg=#D7BA7D
 " hi DiagnosticSignInfo         guifg=#D7BA7D
