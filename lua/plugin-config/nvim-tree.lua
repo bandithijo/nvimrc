@@ -39,16 +39,13 @@ nvim_tree.setup {
   disable_netrw = true,
   hijack_netrw = true,
   auto_reload_on_write = true,
-  open_on_setup = false,
-  ignore_ft_on_setup = {
-    'startify',
-    'dashboard',
-    'alpha',
-  },
   auto_close = false,
   open_on_tab = false,
+  open_on_setup = false,
   hijack_cursor = false,
-  update_cwd = true,
+  hijack_unnamed_buffer_when_opening = false,
+  ignore_buffer_on_setup = false,
+  update_cwd = false,
   update_to_buf_dir = {
     enable = true,
     auto_open = true
@@ -73,6 +70,24 @@ nvim_tree.setup {
     relativenumber = true,
     signcolumn = 'yes'
   },
+  hijack_directories = {
+    enable = true,
+    auto_open = true,
+  },
+  update_focused_file = {
+    enable = true,
+    update_cwd = true,
+    ignore_list = {},
+  },
+  ignore_ft_on_setup = {
+    'startify',
+    'dashboard',
+    'alpha'
+  },
+  system_open = {
+    cmd = nil,
+    args = {},
+  },
   diagnostics = {
     enable = false,
     icons = {
@@ -82,23 +97,13 @@ nvim_tree.setup {
       error = '',
     },
   },
-  -- hijack_directories = {
-  --   enable = true,
-  --   auto_open = true,
-  -- },
-  update_focused_file = {
-    enable = true,
-    update_cwd = true,
-    ignore_list = {},
-  },
-  system_open = {
-    cmd = nil,
-    args = {},
-  },
   filters = {
     dotfiles = false,
     custom = {
       'node_modules', '.cache'
+    },
+    exclude = {
+      '.env'
     }
   },
   git = {
@@ -106,40 +111,41 @@ nvim_tree.setup {
     ignore = true,
     timeout = 500,
   },
-  -- actions = {
-  --   change_dir = {
-  --     enable = true,
-  --     global = false,
-  --   },
-  --   open_file = {
-  --     quit_on_open = false,
-  --     resize_window = false,
-  --     window_picker = {
-  --       enable = true,
-  --       chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
-  --       exclude = {
-  --         filetype = { 'notify', 'packer', 'qf', 'diff', 'fugitive', 'fugitiveblame' },
-  --         buftype = { 'nofile', 'terminal', 'help' },
-  --       },
-  --     },
-  --   },
-  -- },
+  actions = {
+    change_dir = {
+      enable = true,
+      global = false,
+    },
+    open_file = {
+      quit_on_open = false,
+      resize_window = false,
+      window_picker = {
+        enable = true,
+        chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
+        exclude = {
+          filetype = { 'notify', 'packer', 'qf', 'diff', 'fugitive', 'fugitiveblame' },
+          buftype = { 'nofile', 'terminal', 'help' },
+        },
+      },
+    },
+  },
   trash = {
     cmd = 'trash',
     require_confirm = true,
-  },
-  quit_on_open = 0,
-  git_hl = 1,
-  disable_window_picker = 0,
-  root_folder_modifier = ":p:.",
-  show_icons = {
-    git = 1,
-    folders = 1,
-    files = 1,
-    folder_arrows = 1
   }
 }
 
+vim.cmd [[
+let g:nvim_tree_show_icons = {
+    \ 'git': 1,
+    \ 'folders': 1,
+    \ 'files': 1,
+    \ 'folder_arrows': 1,
+    \}
+]]
+
+vim.g.nvim_tree_root_folder_modifier    = ":p:."
+vim.g.nvim_tree_git_hl                  = 1
 vim.g.nvim_tree_indent_markers          = 1 -- 0 by default, this option shows indent markers when folders are open
 vim.g.nvim_tree_highlight_opened_files  = 0 -- 0 by default, will enable folder and file icon highlight for opened files/directories.
 vim.g.nvim_tree_add_trailing            = 0 -- 0 by default, append a trailing slash to folder names
@@ -151,11 +157,13 @@ vim.g.nvim_tree_create_in_closed_folder = 0 -- 1 by default, When creating files
 vim.g.nvim_tree_width_allow_resize      = 0 -- 0 by default, will not resize the tree when opening a file
 vim.g.nvim_tree_refresh_wait            = 500 -- 1000 by default, control how often the tree can be refreshed, 1000 means the tree can be refresh once per 1000ms.
 
-vim.cmd 'hi NvimTreeRootFolder   guifg=#CCB17A guibg=NONE'
-vim.cmd 'hi NvimTreeFolderIcon   guifg=#CCB17A guibg=NONE'
-vim.cmd 'hi NvimTreeIndentMarker guifg=#3C3C3C guibg=NONE'
-vim.cmd 'hi NvimTreeGitDirty     guifg=#CCB17A guibg=NONE'
-vim.cmd 'hi NvimTreeGitStaged    guifg=#CCB17A guibg=NONE'
-vim.cmd 'hi NvimTreeGitMerge     guifg=#CCB17A guibg=NONE'
-vim.cmd 'hi NvimTreeGitRenamed   guifg=#CCB17A guibg=NONE'
-vim.cmd 'hi NvimTreeGitNew       guifg=#CCB17A guibg=NONE'
+vim.cmd [[
+hi NvimTreeRootFolder   guifg=#CCB17A guibg=NONE
+hi NvimTreeFolderIcon   guifg=#CCB17A guibg=NONE
+hi NvimTreeIndentMarker guifg=#3C3C3C guibg=NONE
+hi NvimTreeGitDirty     guifg=#CCB17A guibg=NONE
+hi NvimTreeGitStaged    guifg=#CCB17A guibg=NONE
+hi NvimTreeGitMerge     guifg=#CCB17A guibg=NONE
+hi NvimTreeGitRenamed   guifg=#CCB17A guibg=NONE
+hi NvimTreeGitNew       guifg=#CCB17A guibg=NONE
+]]
