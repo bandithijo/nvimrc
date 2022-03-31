@@ -63,30 +63,30 @@ force_inactive.buftypes = {
 -- LEFT
 
 -- vi-mode
-components.active[1][1] = {
-  provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
-  hl = {
-    fg = 'fg',
-    bg = 'bg',
-    style = 'bold'
-  },
-  right_sep = ' '
-}
-
+-- components.active[1][1] = {
+--   provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
+--   hl = {
+--     fg = 'fg',
+--     bg = 'bg',
+--     style = 'bold'
+--   },
+--   right_sep = ' '
+-- }
 -- filename
-components.active[1][2] = {
+components.active[1][1] = {
   provider = function()
     local filename
 
     filename = vim.api.nvim_buf_get_name(0)
 
-    if vim.api.nvim_win_get_width(0) > 1 then
-      filename = vim.fn.fnamemodify(filename, ":~:.")
-    else
-      filename = vim.fn.fnamemodify(filename, ":t")
-    end
+    -- if vim.api.nvim_win_get_width(0) > 1 then
+    --   filename = vim.fn.fnamemodify(filename, ":~:.")
+    -- else
+    --   filename = vim.fn.fnamemodify(filename, ":t")
+    -- end
+    filename = vim.fn.fnamemodify(filename, ":~:.")
 
-    return string.format("%s", filename)
+    return string.format(" %s", filename)
   end,
   enabled = function()
     return vim.api.nvim_win_get_width(0) > 50 and vim.api.nvim_buf_get_name(0) ~= ""
@@ -97,12 +97,12 @@ components.active[1][2] = {
   }
 }
 -- filemodified
-components.active[1][3] = {
+components.active[1][2] = {
   provider = function()
     local modifier, readonly
 
     if vim.bo.readonly then
-      readonly = "  "
+      readonly = " [RO] "
     else
       readonly = ""
     end
@@ -277,17 +277,6 @@ components.active[3][5] = {
   },
   right_sep = ' '
 }
--- logo
-components.active[3][6] = {
-  provider = function()
-    return ' '
-  end,
-  hl = {
-    fg = 'fg',
-    bg = 'bg',
-  },
-  right_sep = ''
-}
 -- LspName
 -- components.active[3][1] = {
 --   provider = 'lsp_client_names',
@@ -385,7 +374,7 @@ components.inactive[1][1] = {
     end
 
     if filename == 'NvimTree_1' then
-      return '  '
+      return ' explorer'
     end
     return ' ' .. filename
   end,
