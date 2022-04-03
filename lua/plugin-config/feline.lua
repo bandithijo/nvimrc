@@ -246,6 +246,7 @@ components.active[3][1] = {
     fg = 'fg',
     bg = 'bg',
   },
+  left_sep = ' ',
   right_sep = ' '
 }
 components.active[3][2] = {
