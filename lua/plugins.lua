@@ -32,6 +32,20 @@ require('packer').startup(function()
   -- whitespace detector
   use 'ntpeters/vim-better-whitespace'
 
+  -- ruby
+  use 'vim-ruby/vim-ruby'
+
+  -- liquid
+  use 'tpope/vim-liquid'
+
+  -- markdown
+  use {
+    'preservim/vim-markdown',
+    requires = {
+      'godlygeek/tabular'
+    }
+  }
+
   -- markdown preview
   use {
     'iamcco/markdown-preview.nvim',
