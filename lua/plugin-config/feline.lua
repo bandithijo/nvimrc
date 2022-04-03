@@ -63,17 +63,15 @@ force_inactive.buftypes = {
 -- LEFT
 
 -- vi-mode
--- components.active[1][1] = {
---   provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
---   hl = {
---     fg = 'fg',
---     bg = 'bg',
---     style = 'bold'
---   },
---   right_sep = ' '
--- }
--- filename & filemodified
 components.active[1][1] = {
+  provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
+  hl = {
+    fg = 'fg',
+    bg = 'bg'
+  }
+}
+-- filename & filemodified
+components.active[1][2] = {
   provider = function()
     local filename, modifier, readonly
 
