@@ -47,6 +47,26 @@ local vi_mode_colors = {
   NONE          = 'bg'
 }
 
+local vi_mode_text = {
+  n      = 'N0RMAL',
+  i      = 'INS3RT',
+  v      = 'VISUAL',
+  [''] = 'V-BLOCK',
+  V      = 'V-LINE',
+  c      = 'C0MMAND',
+  no     = 'UNKNOWN',
+  s      = 'UNKNOWN',
+  S      = 'UNKNOWN',
+  ic     = 'UNKNOWN',
+  R      = 'R3PLACE',
+  Rv     = 'UNKNOWN',
+  cv     = 'UNKWON',
+  ce     = 'UNKNOWN',
+  r      = 'R3PLACE',
+  rm     = 'UNKNOWN',
+  t      = 'INS3RT'
+}
+
 force_inactive.filetypes = {
   'NvimTree',
   'dbui',
@@ -64,7 +84,11 @@ force_inactive.buftypes = {
 
 -- vi-mode
 components.active[1][1] = {
-  provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
+  -- provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
+  provider = function()
+      local current_text = vi_mode_text[vim.fn.mode()]
+      return current_text
+  end,
   hl = {
     fg = 'fg',
     bg = 'bg'
@@ -240,6 +264,7 @@ components.active[1][2] = {
 -- gitBranch
 components.active[3][1] = {
   provider = 'git_branch',
+  icon = ' ',
   hl = {
     fg = 'fg',
     bg = 'bg',
