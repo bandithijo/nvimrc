@@ -87,7 +87,7 @@ components.active[1][1] = {
   -- provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
   provider = function()
       local current_text = vi_mode_text[vim.fn.mode()]
-      return current_text
+      return ' ' .. current_text
   end,
   hl = {
     fg = 'fg',
