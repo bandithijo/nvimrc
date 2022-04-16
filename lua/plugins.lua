@@ -35,6 +35,12 @@ require('packer').startup(function()
   -- ruby
   use 'vim-ruby/vim-ruby'
 
+  -- rspec
+  use 'vim-test/vim-test'
+
+  -- dispatch
+  use 'tpope/vim-dispatch'
+
   -- liquid
   use 'tpope/vim-liquid'
 

@@ -44,6 +44,7 @@ require('plugin-config/vim-rhubarb')
 require('plugin-config/vim-ruby')
 require('plugin-config/vim-surround')
 require('plugin-config/vim-table-mode')
+require('plugin-config/vim-test')
 require('plugin-config/vim-vsnip')
 require('plugin-config/wakatime')
 
