@@ -25,10 +25,17 @@ require('telescope').setup
     scroll_strategy      = 'cycle',
     selection_strategy   = 'reset',
     sorting_strategy     = 'descending',
-    layout_strategy      = 'horizontal',
+    layout_strategy      = 'vertical',
     layout_config = {
+        -- width = 0.99,
+        -- height = 0.99
+      vertical = {
+        width = 0.90,
+        height = 0.90
+      },
       horizontal = {
-        width = 0.85
+        width = 0.90,
+        height = 0.90
       }
     },
     results_title        = false,
@@ -99,6 +106,8 @@ require('telescope').setup
 }
 
 -- Find files using Telescope command-line sugar.
-vim.cmd 'nnoremap <C-p> :Telescope find_files<CR>'
-vim.cmd 'nnoremap <C-f> :Telescope buffers<CR>'
-vim.cmd 'nnoremap <C-g> :Telescope live_grep<CR>'
+vim.cmd [[
+nnoremap <C-p> :Telescope find_files<CR>
+nnoremap <C-f> :Telescope buffers<CR>
+nnoremap <C-g> :Telescope live_grep<CR>
+]]
