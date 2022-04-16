@@ -18,7 +18,7 @@ require('telescope').setup
       '--smart-case',
       '--trim'
     },
-    prompt_prefix        = '> ',
+    prompt_prefix        = '$ ',
     selection_caret      = '> ',
     entry_prefix         = '  ',
     initial_mode         = 'insert',
@@ -92,7 +92,7 @@ require('telescope').setup
   -- depends on `nvim-telescope/telescope-fzy-native.nvim`
   extensions = {
     fzy_native = {
-      override_generic_sorter = false,
+      override_generic_sorter = true,
       override_file_sorter    = true,
     }
   }
