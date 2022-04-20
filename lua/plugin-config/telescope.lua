@@ -30,8 +30,8 @@ require('telescope').setup
         -- width = 0.99,
         -- height = 0.99
       vertical = {
-        width = 0.90,
-        height = 0.90
+        width = 0.80,
+        height = 0.80
       },
       horizontal = {
         width = 0.90,
@@ -40,9 +40,9 @@ require('telescope').setup
     },
     results_title        = false,
     preview_title        = false,
-    show_line            = false,
-    file_sorter          = require'telescope.sorters'.get_fzy_sorter,
+    show_line            = true,
     file_ignore_patterns = {},
+    file_sorter          = require'telescope.sorters'.get_fzy_sorter,
     generic_sorter       = require'telescope.sorters'.get_generic_fzy_sorter,
     winblend             = 0,
     border               = {},
@@ -110,4 +110,6 @@ vim.cmd [[
 nnoremap <C-p> :Telescope find_files<CR>
 nnoremap <C-f> :Telescope buffers<CR>
 nnoremap <C-g> :Telescope live_grep<CR>
+
+hi default link TelescopeResultsFileIcon Variable
 ]]
