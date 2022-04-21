@@ -1,6 +1,6 @@
 -- local lsp = require('feline.providers.lsp')
 local vi_mode_utils = require('feline.providers.vi_mode')
--- local gps = require('nvim-gps')
+local gps = require('nvim-gps')
 
 local force_inactive = {
   filetypes = {},
@@ -48,8 +48,8 @@ local vi_mode_colors = {
 }
 
 local vi_mode_text = {
-  n      = 'N0RMAL',
-  i      = 'INS3RT',
+  n      = 'NORMAL',
+  i      = 'INSERT',
   v      = 'VISUAL',
   [''] = 'V-BLOCK',
   V      = 'V-LINE',
@@ -58,13 +58,13 @@ local vi_mode_text = {
   s      = 'UNKNOWN',
   S      = 'UNKNOWN',
   ic     = 'UNKNOWN',
-  R      = 'R3PLACE',
+  R      = 'REPLACE',
   Rv     = 'UNKNOWN',
   cv     = 'UNKWON',
   ce     = 'UNKNOWN',
-  r      = 'R3PLACE',
+  r      = 'REPLACE',
   rm     = 'UNKNOWN',
-  t      = 'INS3RT'
+  t      = 'INSERT'
 }
 
 force_inactive.filetypes = {
@@ -87,7 +87,7 @@ components.active[1][1] = {
   -- provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
   provider = function()
       local current_text = vi_mode_text[vim.fn.mode()]
-      return ' ' .. current_text
+      return ' ' .. current_text .. ''
   end,
   hl = {
     fg = 'fg',
@@ -153,21 +153,21 @@ components.active[1][2] = {
 --   }
 -- }
 -- nvimGps
--- components.active[1][4] = {
---   provider = function() return gps.get_location() end,
---   enabled = function() return gps.is_available() end,
---   hl = {
---     fg = 'fg',
---     bg = 'bg',
---   },
---   left_sep = {
---     str = ' > ',
---     hl = {
---       fg = 'fg',
---       bg = 'bg',
---     }
---   }
--- }
+components.active[1][3] = {
+  provider = function() return gps.get_location() end,
+  enabled = function() return gps.is_available() end,
+  hl = {
+    fg = 'fg',
+    bg = 'bg',
+  },
+  left_sep = {
+    str = ' > ',
+    hl = {
+      fg = 'fg',
+      bg = 'bg',
+    }
+  }
+}
 -- vi-symbol
 -- components.active[1][2] = {
 --   provider = function()
@@ -417,6 +417,24 @@ components.inactive[1][1] = {
     fg = 'fg',
     bg = 'bg'
   }
+}
+-- lineInfo
+components.inactive[3][1] = {
+  provider = 'position',
+  hl = {
+    fg = 'fg',
+    bg = 'bg',
+  },
+  right_sep = ' '
+}
+-- linePercent
+components.inactive[3][2] = {
+  provider = 'line_percentage',
+  hl = {
+    fg = 'fg',
+    bg = 'bg',
+  },
+  right_sep = ' '
 }
 
 require('feline').setup({

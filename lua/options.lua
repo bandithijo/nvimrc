@@ -2,6 +2,9 @@
 vim.api.nvim_command 'colorscheme codedark'
 vim.opt.background = 'dark'
 
+-- statusline
+vim.opt.laststatus = 3
+
 -- file encoding
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
@@ -98,7 +101,7 @@ vim.opt.cursorcolumn = false
 vim.opt.cursorline = true
 vim.opt.errorbells = false
 vim.opt.expandtab = true
-vim.opt.fillchars = { eob = ' ', vert = '|' }
+vim.opt.fillchars = { eob = ' ', vert = '│' }
 vim.opt.lazyredraw = true
 vim.opt.startofline = false
 vim.opt.visualbell = false
