@@ -39,23 +39,20 @@ nvim_tree.setup {
   disable_netrw = true,
   hijack_netrw = true,
   auto_reload_on_write = true,
-  auto_close = false,
   open_on_tab = false,
   open_on_setup = false,
   hijack_cursor = false,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
-  update_cwd = false,
-  update_to_buf_dir = {
-    enable = true,
-    auto_open = true
-  },
   view = {
     width = 35,
     height = 30,
     side = 'left',
     hide_root_folder = true,
-    auto_resize = false,
+    preserve_window_proportions = false,
+    number = true,
+    relativenumber = true,
+    signcolumn = 'yes',
     mappings = {
       custom_only = false,
       list = {
@@ -66,9 +63,6 @@ nvim_tree.setup {
         -- { key = "v", cb = tree_cb "vsplit" },
       },
     },
-    number = true,
-    relativenumber = true,
-    signcolumn = 'yes'
   },
   renderer = {
     indent_markers = {
@@ -79,6 +73,9 @@ nvim_tree.setup {
         none = "  ",
       },
     },
+    icons = {
+      webdev_colors = false,
+    },
   },
   hijack_directories = {
     enable = true,
@@ -86,7 +83,7 @@ nvim_tree.setup {
   },
   update_focused_file = {
     enable = true,
-    update_cwd = true,
+    update_cwd = false,
     ignore_list = {},
   },
   ignore_ft_on_setup = {
