@@ -17,7 +17,7 @@ local colors = {
   bg        = '#005F87',
   fg        = '#D3D3D3',
   black     = '#282828',
-  yellow    = '#d8a657',
+  yellow    = '#F8D15D',
   cyan      = '#89b482',
   oceanblue = '#45707a',
   green     = '#a9b665',
@@ -89,10 +89,13 @@ components.active[1][1] = {
       local current_text = vi_mode_text[vim.fn.mode()]
       return ' ' .. current_text .. ''
   end,
-  hl = {
-    fg = 'fg',
-    bg = 'bg'
-  }
+  hl = function()
+    local val = {}
+    val.bg = vi_mode_utils.get_mode_color()
+    val.fg = 'fg'
+    val.style = 'none'
+    return val
+  end
 }
 -- filename & filemodified
 components.active[1][2] = {
@@ -108,25 +111,25 @@ components.active[1][2] = {
     filename = vim.fn.fnamemodify(filename, ":~:.")
 
     if vim.bo.readonly then
-      readonly = " [RO] "
+      readonly = ' [RO] '
     else
-      readonly = ""
+      readonly = ''
     end
 
     if vim.bo.modified then
-      modifier = " [+]"
+      modifier = ' [+]'
     else
-      modifier = ""
+      modifier = ''
     end
 
-    return string.format(" %s%s%s", filename, readonly, modifier)
+    return string.format(' %s%s%s', filename, readonly, modifier)
   end,
   enabled = function()
     return vim.api.nvim_win_get_width(0) > 50 and vim.api.nvim_buf_get_name(0) ~= ""
   end,
   hl = {
-    fg = "fg",
-    bg = "bg",
+    fg = 'fg',
+    bg = 'bg',
   }
 }
 -- filemodified
@@ -273,7 +276,7 @@ components.active[3][1] = {
   right_sep = ' '
 }
 components.active[3][2] = {
-  provider = function() return "[" .. vim.bo.shiftwidth .. "]" end,
+  provider = function() return '[' .. vim.bo.shiftwidth .. ']' end,
   hl = function()
     local val = {}
     val.fg = 'fg'
@@ -403,9 +406,9 @@ components.inactive[1][1] = {
     local filename = vim.api.nvim_buf_get_name(0)
 
     if vim.api.nvim_win_get_width(0) > 1 then
-      filename = vim.fn.fnamemodify(filename, ":~:.")
+      filename = vim.fn.fnamemodify(filename, ':~:.')
     else
-      filename = vim.fn.fnamemodify(filename, ":t")
+      filename = vim.fn.fnamemodify(filename, ':t')
     end
 
     if filename == 'NvimTree_1' then
