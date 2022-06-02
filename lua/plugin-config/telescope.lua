@@ -31,7 +31,7 @@ require('telescope').setup
         -- height = 0.99
       vertical = {
         width = 0.80,
-        height = 0.80
+        height = 0.95
       },
       horizontal = {
         width = 0.90,
