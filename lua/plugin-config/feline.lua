@@ -83,22 +83,22 @@ force_inactive.buftypes = {
 -- LEFT
 
 -- vi-mode
-components.active[1][1] = {
-  -- provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
-  provider = function()
-      local current_text = vi_mode_text[vim.fn.mode()]
-      return ' ' .. current_text .. ''
-  end,
-  hl = function()
-    local val = {}
-    val.bg = vi_mode_utils.get_mode_color()
-    val.fg = 'fg'
-    val.style = 'none'
-    return val
-  end
-}
+-- components.active[1][1] = {
+--   -- provider = function() return string.format(" %s", vi_mode_utils.get_vim_mode()) end,
+--   provider = function()
+--       local current_text = vi_mode_text[vim.fn.mode()]
+--       return ' ' .. current_text .. ''
+--   end,
+--   hl = function()
+--     local val = {}
+--     val.bg = vi_mode_utils.get_mode_color()
+--     val.fg = 'fg'
+--     val.style = 'none'
+--     return val
+--   end
+-- }
 -- filename & filemodified
-components.active[1][2] = {
+components.active[1][1] = {
   provider = function()
     local filename, modifier, readonly
 
@@ -108,6 +108,9 @@ components.active[1][2] = {
     -- else
     --   filename = vim.fn.fnamemodify(filename, ":t")
     -- end
+    if filename == '' then
+      return ' [No Name]'
+    end
     filename = vim.fn.fnamemodify(filename, ":~:.")
 
     if vim.bo.readonly then
@@ -124,9 +127,9 @@ components.active[1][2] = {
 
     return string.format(' %s%s%s', filename, readonly, modifier)
   end,
-  enabled = function()
-    return vim.api.nvim_win_get_width(0) > 50 and vim.api.nvim_buf_get_name(0) ~= ""
-  end,
+  -- enabled = function()
+  --   return vim.api.nvim_win_get_width(0) > 50 and vim.api.nvim_buf_get_name(0) ~= ""
+  -- end,
   hl = {
     fg = 'fg',
     bg = 'bg',
@@ -156,7 +159,7 @@ components.active[1][2] = {
 --   }
 -- }
 -- nvimGps
-components.active[1][3] = {
+components.active[1][2] = {
   provider = function() return gps.get_location() end,
   enabled = function() return gps.is_available() end,
   hl = {
