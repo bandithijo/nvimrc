@@ -109,7 +109,7 @@ components.active[1][1] = {
     --   filename = vim.fn.fnamemodify(filename, ":t")
     -- end
     if filename == '' then
-      return ' [No Name]'
+      return ' [neovim]'
     end
     filename = vim.fn.fnamemodify(filename, ":~:.")
 
