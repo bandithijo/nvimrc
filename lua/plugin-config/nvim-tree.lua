@@ -25,14 +25,14 @@ nvim_tree.setup {
   respect_buf_cwd = false,
   create_in_closed_folder = false,
   view = {
-    width = 35,
+    width = 40,
     height = 30,
     side = 'left',
     hide_root_folder = true,
     preserve_window_proportions = false,
     number = true,
     relativenumber = true,
-    signcolumn = 'yes',
+    signcolumn = 'no',
     mappings = {
       custom_only = false,
       list = {
