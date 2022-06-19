@@ -79,6 +79,14 @@ require('packer').startup(function()
   -- comments
   use 'numToStr/Comment.nvim'
 
+  -- fold
+  use {
+    'kevinhwang91/nvim-ufo',
+    requires = {
+      'kevinhwang91/promise-async'
+    }
+  }
+
   -- git fugitive
   use {
     'tpope/vim-fugitive',
