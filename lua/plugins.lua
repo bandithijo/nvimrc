@@ -87,6 +87,9 @@ require('packer').startup(function()
     }
   }
 
+  -- git commit browser
+  use 'junegunn/gv.vim'
+
   -- git blame
   use 'APZelos/blamer.nvim'
 
