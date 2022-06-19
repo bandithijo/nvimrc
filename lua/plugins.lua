@@ -131,6 +131,8 @@ require('packer').startup(function()
 
   -- language parser
   use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-treesitter/playground'
+  use 'p00f/nvim-ts-rainbow'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
@@ -146,4 +148,10 @@ require('packer').startup(function()
   -- snippet
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+
+  -- debugger
+  use 'mfussenegger/nvim-dap'
+  use 'suketa/nvim-dap-ruby'
+  use 'rcarriga/nvim-dap-ui'
+  use 'theHamsta/nvim-dap-virtual-text'
 end)
