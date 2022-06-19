@@ -3,7 +3,7 @@ require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- colorscheme
-  -- use 'tomasiser/vim-code-dark'
+  use 'tomasiser/vim-code-dark'
 
   -- wakatime
   use 'wakatime/vim-wakatime'
