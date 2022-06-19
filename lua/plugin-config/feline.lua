@@ -1,5 +1,5 @@
 -- local lsp = require('feline.providers.lsp')
-local vi_mode_utils = require('feline.providers.vi_mode')
+-- local vi_mode_utils = require('feline.providers.vi_mode')
 local gps = require('nvim-gps')
 
 local force_inactive = {
@@ -47,25 +47,25 @@ local vi_mode_colors = {
   NONE          = 'bg'
 }
 
-local vi_mode_text = {
-  n      = 'NORMAL',
-  i      = 'INSERT',
-  v      = 'VISUAL',
-  [''] = 'V-BLOCK',
-  V      = 'V-LINE',
-  c      = 'COMMAND',
-  no     = 'UNKNOWN',
-  s      = 'UNKNOWN',
-  S      = 'UNKNOWN',
-  ic     = 'UNKNOWN',
-  R      = 'REPLACE',
-  Rv     = 'UNKNOWN',
-  cv     = 'UNKWON',
-  ce     = 'UNKNOWN',
-  r      = 'REPLACE',
-  rm     = 'UNKNOWN',
-  t      = 'INSERT'
-}
+-- local vi_mode_text = {
+--   n      = 'NORMAL',
+--   i      = 'INSERT',
+--   v      = 'VISUAL',
+--   [''] = 'V-BLOCK',
+--   V      = 'V-LINE',
+--   c      = 'COMMAND',
+--   no     = 'UNKNOWN',
+--   s      = 'UNKNOWN',
+--   S      = 'UNKNOWN',
+--   ic     = 'UNKNOWN',
+--   R      = 'REPLACE',
+--   Rv     = 'UNKNOWN',
+--   cv     = 'UNKWON',
+--   ce     = 'UNKNOWN',
+--   r      = 'REPLACE',
+--   rm     = 'UNKNOWN',
+--   t      = 'INSERT'
+-- }
 
 force_inactive.filetypes = {
   'NvimTree',
