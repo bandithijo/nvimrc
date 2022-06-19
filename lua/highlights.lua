@@ -40,4 +40,7 @@ sign define DiagnosticSignError text=e linehl= texthl=DiagnosticSignError numhl=
 sign define DiagnosticSignWarn  text=w linehl= texthl=DiagnosticSignWarn  numhl=
 sign define DiagnosticSignInfo  text=i linehl= texthl=DiagnosticSignInfo  numhl=
 sign define DiagnosticSignHint  text=h linehl= texthl=DiagnosticSignHint  numhl=
+
+hi rubyTSKeyword guifg=#BB80C5
+hi rubyTSSymbol guifg=#5395D4
 ]]
