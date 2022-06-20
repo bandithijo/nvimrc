@@ -1,5 +1,5 @@
 vim.o.foldcolumn = '1'
-vim.o.foldlevel = 99 -- feel free to decrease the value
+vim.o.foldlevel = 10 -- feel free to decrease the value
 vim.o.foldenable = true
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
