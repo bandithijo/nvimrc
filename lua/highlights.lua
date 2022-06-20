@@ -7,6 +7,7 @@ hi ExtraWhitespace         guifg=#1E1E1E guibg=#F24646
 "hi StatusLine              guifg=#262626 guibg=#262626
 "hi StatusLineNC            guifg=#262626 guibg=#262626
 "hi VertSplit               guifg=#262626 guibg=#262626 gui=NONE
+hi Folded                  guifg=#D4D4D4 gui=NONE
 hi NvimTreeIndentMarker    guifg=#3c3c3c guibg=NONE
 hi Blamer                  guifg=#608B4E guibg=#222222
 hi HighlightedyankRegion   guifg=NONE    guibg=#005F8F
@@ -41,6 +42,13 @@ sign define DiagnosticSignWarn  text=w linehl= texthl=DiagnosticSignWarn  numhl=
 sign define DiagnosticSignInfo  text=i linehl= texthl=DiagnosticSignInfo  numhl=
 sign define DiagnosticSignHint  text=h linehl= texthl=DiagnosticSignHint  numhl=
 
+" treesitter overide
 hi rubyTSKeyword guifg=#BB80C5
 hi rubyTSSymbol guifg=#5395D4
+hi markdownTSLiteral guifg=#CE9178
+hi markdownTSTextReference guifg=#CE9178
+hi markdownTSURI guifg=#D4D4D4 gui=underline
+hi markdownTSStrong guifg=#569CD6 gui=bold
+hi markdownTSTitle guifg=#569CD6 gui=bold
+hi markdownTSPunctSpecial guifg=#569CD6 guibg=#252526 gui=bold
 ]]
