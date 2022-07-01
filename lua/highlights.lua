@@ -37,8 +37,8 @@ hi DiagnosticVirtualTextHint  guifg=#3C3C3C
 " hi DiagnosticUnderlineWarn    guifg=#D16969
 " hi DiagnosticUnderlineHint    guifg=#D16969
 
-sign define DiagnosticSignError text=e linehl= texthl=DiagnosticSignError numhl=
-sign define DiagnosticSignWarn  text=w linehl= texthl=DiagnosticSignWarn  numhl=
-sign define DiagnosticSignInfo  text=i linehl= texthl=DiagnosticSignInfo  numhl=
-sign define DiagnosticSignHint  text=h linehl= texthl=DiagnosticSignHint  numhl=
+sign define DiagnosticSignError text= linehl= texthl=DiagnosticSignError numhl=
+sign define DiagnosticSignWarn  text= linehl= texthl=DiagnosticSignWarn  numhl=
+sign define DiagnosticSignInfo  text= linehl= texthl=DiagnosticSignInfo  numhl=
+sign define DiagnosticSignHint  text= linehl= texthl=DiagnosticSignHint  numhl=
 ]]
