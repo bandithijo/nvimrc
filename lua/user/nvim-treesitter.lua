@@ -1,14 +1,23 @@
 local configs = require('nvim-treesitter.configs')
 configs.setup {
   ensure_installed = 'all', -- Only use parses that are maintained
+
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+
+  -- List of parsers to ignore installing (for "all")
+  ignore_install = { "javascript" },
+
   highlight = { -- enabel highlighting
     enable  = true, -- false will disable the whole extension
     disable = {},   -- list of language that will be disabled
     additional_vim_regex_highlighting = true,
   },
+
   indent = {
     enable = false -- default is disabled anyways
   },
+
   playground = {
     enable = true,
     disable = {},
@@ -27,6 +36,7 @@ configs.setup {
       show_help = '?',
     },
   },
+
   rainbow = {
     enable = true,
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
