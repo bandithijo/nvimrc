@@ -1,5 +1,5 @@
 vim.o.foldcolumn = '1'
-vim.o.foldlevel = 10 -- feel free to decrease the value
+vim.o.foldlevel = 5 -- feel free to decrease the value
 vim.o.foldenable = true
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
@@ -8,7 +8,7 @@ vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.foldingRange = {
   dynamicRegistration = false,
-  lineFoldingOnly = false
+  lineFoldingOnly = true
 }
 --
 
