@@ -5,4 +5,4 @@ hi markdownTSTextReference guifg=#CE9178
 hi markdownTSURI guifg=#D4D4D4 gui=underline
 hi markdownTSStrong guifg=#569CD6 gui=bold
 hi markdownTSTitle guifg=#D7BA7D gui=bold
-hi markdownTSPunctSpecial guifg=#569CD6 guibg=#252526 gui=bold
+hi markdownTSPunctSpecial guifg=#569CD6 gui=bold
