@@ -149,6 +149,9 @@ require('packer').startup(function()
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
 
+  -- snippet sample
+  use 'rafamadriz/friendly-snippets'
+
   -- debugger
   use 'mfussenegger/nvim-dap'
   use 'suketa/nvim-dap-ruby'
