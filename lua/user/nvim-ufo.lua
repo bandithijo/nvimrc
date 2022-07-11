@@ -1,6 +1,7 @@
 vim.o.foldcolumn = '1'
-vim.o.foldlevel = 5 -- feel free to decrease the value
+vim.o.foldlevel = 99 -- feel free to decrease the value
 vim.o.foldenable = true
+vim.o.foldlevelstart = -1
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
 -- option 2: nvim lsp as LSP client
