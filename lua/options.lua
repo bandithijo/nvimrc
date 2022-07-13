@@ -122,7 +122,6 @@ vim.opt.expandtab = true
 vim.opt.linespace = 0
 vim.opt.scrolloff = 0
 vim.opt.sidescrolloff = 0
-vim.opt.shiftwidth = 2
 vim.opt.title = true
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
