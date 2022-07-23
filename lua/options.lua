@@ -1,6 +1,7 @@
 -- colorscheme
 vim.api.nvim_command 'colorscheme codedark'
 vim.opt.background = 'dark'
+vim.opt.termguicolors = true
 
 -- statusline
 vim.opt.laststatus = 3
@@ -111,7 +112,6 @@ vim.opt.showmatch = true
 vim.opt.showmode = true
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
-vim.opt.termguicolors = true
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.report = 2
 vim.opt.ruler = true
