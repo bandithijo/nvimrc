@@ -14,19 +14,8 @@ local components = {
 }
 
 local colors = {
-  bg        = '#005F87',
-  fg        = '#D3D3D3',
-  black     = '#282828',
-  yellow    = '#F8D15D',
-  cyan      = '#89b482',
-  oceanblue = '#45707a',
-  green     = '#a9b665',
-  orange    = '#e78a4e',
-  violet    = '#d3869b',
-  magenta   = '#c14a4a',
-  white     = '#a89984',
-  skyblue   = '#7daea3',
-  red       = '#ea6962',
+  bg        = '#005F87', -- 073642
+  fg        = '#D3D3D3', -- 93a1a1
 }
 
 local vi_mode_colors = {

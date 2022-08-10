@@ -4,6 +4,7 @@ require('packer').startup(function()
 
   -- colorscheme
   use 'tomasiser/vim-code-dark'
+  use 'lifepillar/vim-solarized8'
 
   -- wakatime
   use 'wakatime/vim-wakatime'
