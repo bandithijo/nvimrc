@@ -100,6 +100,9 @@ components.active[1][1] = {
     if filename == '' then
       return ' [neovim]'
     end
+    if filename == '__Tagbar__.1' then
+      return ' [tagbar]'
+    end
     filename = vim.fn.fnamemodify(filename, ":~:.")
 
     if vim.bo.readonly then
