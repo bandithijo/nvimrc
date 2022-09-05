@@ -21,7 +21,7 @@ vim.g.indent_blankline_show_first_indent_level        = true
 vim.g.indent_blankline_show_trailing_blankline_indent = false
 vim.g.indent_blankline_show_end_of_line               = true
 vim.g.indent_blankline_filetype                       = {}
-vim.g.indent_blankline_bufname_exclude                = { 'README.md' }
+vim.g.indent_blankline_bufname_exclude                = { 'README.md', '__Tagbar__.*' }
 
 vim.g.indent_blankline_disable_warning_message        = false
 vim.g.indent_blankline_debug                          = true

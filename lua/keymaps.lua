@@ -23,6 +23,9 @@ keymap('n', '<C-s>', ':w<CR>', opts)
 -- explorer
 keymap('n', '<F12>', ':NvimTreeToggle<CR>', opts)
 
+-- tagbar
+keymap('n', '<F11>', ':TagbarToggle<CR>', opts)
+
 -- move text on row up and down
 keymap('v', '<A-j>', ':m \'>+1<CR>gv=gv', opts)
 keymap('v', '<A-k>', ':m \'<-2<CR>gv=gv', opts)
