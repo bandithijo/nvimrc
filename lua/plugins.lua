@@ -127,6 +127,9 @@ require('packer').startup(function()
   -- autoclose parenthesis
   use 'cohama/lexima.vim'
 
+  -- tagbar
+  use 'preservim/tagbar'
+
   -- formater
   use 'sbdchd/neoformat'
 
