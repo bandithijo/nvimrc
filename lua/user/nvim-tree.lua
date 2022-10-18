@@ -26,7 +26,6 @@ nvim_tree.setup {
   create_in_closed_folder = false,
   view = {
     width = 40,
-    height = 30,
     side = 'left',
     hide_root_folder = true,
     preserve_window_proportions = false,
