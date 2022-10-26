@@ -6,6 +6,9 @@ require('packer').startup(function()
   use 'tomasiser/vim-code-dark'
   use 'lifepillar/vim-solarized8'
 
+  -- discord
+  use 'andweeb/presence.nvim'
+
   -- wakatime
   use 'wakatime/vim-wakatime'
 
