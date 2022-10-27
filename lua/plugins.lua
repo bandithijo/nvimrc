@@ -137,7 +137,7 @@ require('packer').startup(function()
   use 'sbdchd/neoformat'
 
   -- language parser
-  use 'nvim-treesitter/nvim-treesitter'
+  use {'nvim-treesitter/nvim-treesitter', commit = '4cccb6f'}
   use 'nvim-treesitter/playground'
   use 'p00f/nvim-ts-rainbow'
 
