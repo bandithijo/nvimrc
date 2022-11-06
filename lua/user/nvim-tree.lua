@@ -129,7 +129,7 @@ nvim_tree.setup {
       'node_modules', '.cache'
     },
     exclude = {
-      '.env'
+      '.env', 'doc'
     }
   },
   git = {
