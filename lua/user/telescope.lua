@@ -105,9 +105,10 @@ require('telescope').setup
 
 -- Find files using Telescope command-line sugar.
 vim.cmd [[
-nnoremap <C-p> :Telescope find_files<CR>
+nnoremap <C-p> :Telescope find_files hidden=true<CR>
 nnoremap <C-f> :Telescope buffers<CR>
 nnoremap <C-g> :Telescope live_grep<CR>
+nnoremap <C-h> :Telescope oldfiles<CR>
 
 hi default link TelescopeResultsFileIcon Variable
 ]]
