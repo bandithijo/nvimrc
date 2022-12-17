@@ -40,6 +40,10 @@ keymap('n', '<C-Down>',  ':resize +5<CR>', opts)
 keymap('n', '<C-u', '<C-u>zz', opts)
 keymap('n', '<C-d', '<C-d>zz', opts)
 
+-- keep cursor in the middle when next/prev search
+keymap('n', 'n', 'nzzzv', opts)
+keymap('n', 'N', 'Nzzzv', opts)
+
 -- indent
 keymap('v', '<', '<gv', opts)
 keymap('v', '>', '>gv', opts)
