@@ -156,6 +156,7 @@ require('packer').startup(function()
   -- snippet
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/vim-vsnip-integ'
 
   -- snippet sample
   use 'rafamadriz/friendly-snippets'
