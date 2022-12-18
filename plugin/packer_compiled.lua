@@ -80,6 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/numToStr/Comment.nvim"
   },
   ["blamer.nvim"] = {
+    config = { 'require("config.blamer")' },
     loaded = true,
     path = "/home/bandithijo/.local/share/nvim/site/pack/packer/start/blamer.nvim",
     url = "https://github.com/APZelos/blamer.nvim"
@@ -382,6 +383,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: blamer.nvim
+time([[Config for blamer.nvim]], true)
+require("config.blamer")
+time([[Config for blamer.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

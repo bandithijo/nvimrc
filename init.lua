@@ -1,2 +1,2 @@
-require("lsp")
-require("user")
+require('user.init')
+require('lsp.init')
