@@ -100,5 +100,5 @@ vim.api.nvim_set_keymap("n", "<leader>g", ":TestVisit<CR>", opts)
 -- telescope
 vim.api.nvim_set_keymap("n", "<C-p>", ":Telescope find_files hidden=true<CR>", opts)
 vim.api.nvim_set_keymap("n", "<C-f>", ":Telescope buffers<CR>", opts)
-vim.api.nvim_set_keymap("n", "<C-g>", ":Telescope life_grep<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-g>", ":Telescope live_grep<CR>", opts)
 vim.api.nvim_set_keymap("n", "<C-h>", ":Telescope oldfiles<CR>", opts)
