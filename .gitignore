@@ -3,6 +3,7 @@ undo/
 swap/
 view/
 tmp/
+plugin/
 
 vimrc
 .netrwhist
