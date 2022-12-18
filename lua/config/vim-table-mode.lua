@@ -4,8 +4,8 @@
 
 -- Corner separators are adjustable:
 -- For Markdown-compatible tables use
---let g:table_mode_corner='|'
+-- vim.cmd('let g:table_mode_corner="|"')
 
 -- To get ReST-compatible tables use
---let g:table_mode_corner_corner='+'
---let g:table_mode_header_fillchar='='
+-- vim.cmd('let g:table_mode_corner_corner="+"')
+-- vim.cmd('let g:table_mode_header_fillchar="="')
