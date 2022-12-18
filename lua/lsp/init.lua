@@ -4,4 +4,4 @@ if not status_ok then
 end
 
 require('lsp/lsp-installer')
--- require('lsp/emmet-ls')
+require('lsp/emmet-ls')

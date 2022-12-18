@@ -1,5 +1,5 @@
 -- colorscheme
-vim.api.nvim_command 'colorscheme codedark'
+vim.cmd.colorscheme 'codedark'
 vim.opt.background = 'dark'
 vim.opt.termguicolors = true
 
