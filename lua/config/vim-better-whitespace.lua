@@ -12,4 +12,4 @@ vim.g.strip_whitespace_on_save = 0
 
 -- To disable the highlighting for specific file types, add the following to your ~/.vimrc:
 -- let g:better_whitespace_filetypes_blacklist=['<filetype1>', '<filetype2>', '<etc>']
-vim.g.better_whitespace_filetypes_blacklist = { 'taskedit', 'mail' }
+vim.g.better_whitespace_filetypes_blacklist = { "taskedit", "mail" }

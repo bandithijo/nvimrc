@@ -4,7 +4,7 @@
 -- g:checkbox_states with an array of characters, which the plugin will cycle
 -- through. The default is:
 
-vim.g.checkbox_states = { ' ', 'x' }
+vim.g.checkbox_states = { " ", "x" }
 
 -- When there's no checkbox on the current line, <leader>tt will insert one at
 -- the pattern defined in g:insert_checkbox. The new checkbox's state will be
@@ -17,8 +17,8 @@ vim.g.checkbox_states = { ' ', 'x' }
 -- g:insert_checkbox_suffix are prepended/appended, respectively. This is
 -- mostly useful for adding a space behind or in front of the checkbox:
 
-vim.g.insert_checkbox_prefix = ''
-vim.g.insert_checkbox_suffix = ' '
+vim.g.insert_checkbox_prefix = ""
+vim.g.insert_checkbox_suffix = " "
 
 -- Inserting a checkbox can be disabled by setting g:insert_checkbox to an
 -- empty string ('').

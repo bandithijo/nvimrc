@@ -1,1 +1,1 @@
-require('dap-ruby').setup()
+require("dap-ruby").setup()

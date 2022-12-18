@@ -1,6 +1,6 @@
 -- source: https://github.com/kyazdani42/nvim-web-devicons/blob/master/lua/nvim-web-devicons.lua
 
-require'nvim-web-devicons'.setup {
+require"nvim-web-devicons".setup {
   -- your personnal icons can go here (to override)
   -- DevIcon will be appended to `name`
   override = {

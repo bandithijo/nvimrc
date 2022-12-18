@@ -1,9 +1,9 @@
 -- Set floaterm window's title
-vim.g.floaterm_title = '─[  $1:$2 ]─'
+vim.g.floaterm_title = "─[  $1:$2 ]─"
 
 -- Type String. 8 characters of the floating window border (top, right, bottom,
 -- left, topleft, topright, botright, botleft).
-vim.g.floaterm_borderchars = '─│─│┌┐┘└'
+vim.g.floaterm_borderchars = "─│─│┌┐┘└"
 
 -- Type Number (number of lines) or Float (between 0 and 1). If Float, the
 -- height is relative to &lines.

@@ -5,5 +5,4 @@ vim.g.highlightedyank_highlight_duration = 1000
 -- HighlightedyankRegion highlight group.
 -- Note that the line should be located after :colorscheme command execution in
 -- your vimrc.
-
-vim.cmd 'hi HighlightedyankRegion guifg=NONE guibg=#005F8F'
+vim.api.nvim_set_hl(0, "HighlightedyankRegion", { fg = "none", bg = "#005F8F" })
