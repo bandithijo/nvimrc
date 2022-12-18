@@ -55,7 +55,7 @@ keymap('n', 'g8', ':as<CR>', opts)
 keymap('t', '<C-\\>', '<C-\\><C-N>', opts)
 
 -- load view
-keymap('n', '<Leader>lv', ':loadview<CR>', opts)
+keymap('n', '<leader>lv', ':loadview<CR>', opts)
 
 -- lsp
 local function nkeymap(key, map)
@@ -71,5 +71,30 @@ nkeymap('gr',         ':lua vim.lsp.buf.references()<CR>')
 nkeymap('gt',         ':lua vim.lsp.buf.type_definition()<CR>')
 nkeymap('K',          ':lua vim.lsp.buf.hover()<CR>')
 nkeymap('<C-k>',      ':lua vim.lsp.buf.signature_help()<CR>')
-nkeymap('<Leader>af', ':lua vim.lsp.buf.code_action()<CR>')
-nkeymap('<Leader>rn', ':lua vim.lsp.buf.rename()<CR>')
+nkeymap('<leader>af', ':lua vim.lsp.buf.code_action()<CR>')
+nkeymap('<leader>rn', ':lua vim.lsp.buf.rename()<CR>')
+
+-- vim-floaterm
+vim.g.floaterm_keymap_new    = '<leader>ft'
+vim.g.floaterm_keymap_prev   = '<leader>fn'
+vim.g.floaterm_keymap_next   = '<leader>fp'
+vim.g.floaterm_keymap_toggle = '<leader>fh'
+
+-- lazygit
+vim.cmd 'nnoremap <leader>lg :FloatermNew --title=─ --height=1.00 --width=1.00 --position=center lazygit<CR>'
+
+-- tig
+vim.cmd 'nnoremap <leader>lt :FloatermNew --title=─ --height=1.00 --width=1.00 --position=center tig<CR>'
+
+-- vim-easy-align
+-- Start interactive EasyAlign in visual mode (e.g. vipga)
+vim.cmd 'xmap ga <Plug>(EasyAlign)'
+-- Start interactive EasyAlign for a motion/text object (e.g. gaip)
+vim.cmd 'nmap ga <Plug>(EasyAlign)'
+
+-- vim-test
+vim.cmd 'nmap <silent> <leader>t :TestNearest<CR>'
+vim.cmd 'nmap <silent> <leader>T :TestFile<CR>'
+vim.cmd 'nmap <silent> <leader>a :TestSuite<CR>'
+vim.cmd 'nmap <silent> <leader>l :TestLast<CR>'
+vim.cmd 'nmap <silent> <leader>g :TestVisit<CR>'
