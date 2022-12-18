@@ -200,7 +200,7 @@ require("packer").startup(function()
   -- language parser
   use {
     "nvim-treesitter/nvim-treesitter",
-    commit = "4cccb6f",
+    -- commit = "4cccb6f",
     config = require("config.nvim-treesitter")
   }
   use { "nvim-treesitter/playground" }
