@@ -1,58 +1,62 @@
+local status_ok, _ = pcall(require, 'lspconfig')
+if not status_ok then
+  return
+end
+
 -- options
 require('options')
 
 -- autocommands
 require('autocmds')
 
--- keymaps
-require('keymaps')
+-- remaps
+require('remaps')
 
--- highlights
-require('highlights')
-
--- plugin manager
-require('plugins')
-
--- plugin config
-require('user/blamer')
-require('user/comment')
-require('user/gitsigns')
-require('user/feline')
-require('user/friendly-snippets')
-require('user/indent-blankline')
-require('user/lexima')
-require('user/markdown-preview')
-require('user/neoformat')
-require('user/nvim-cmp')
-require('user/nvim-dap')
-require('user/nvim-gps')
-require('user/nvim-tree')
-require('user/nvim-treesitter')
-require('user/nvim-ufo')
-require('user/nvim-web-devicons')
-require('user/presence')
-require('user/sgmlendtag')
-require('user/stabilize')
-require('user/startuptime')
-require('user/telescope')
-require('user/tagbar')
-require('user/lspkind')
-require('user/vim-better-whitespace')
-require('user/vim-checkbox')
-require('user/vim-easy-align')
-require('user/vim-floaterm')
-require('user/vim-fugitive')
-require('user/vim-liquid')
-require('user/vim-hexokinase')
-require('user/vim-highlightedyank')
-require('user/vim-markdown')
-require('user/vim-rhubarb')
-require('user/vim-ruby')
-require('user/vim-surround')
-require('user/vim-table-mode')
-require('user/vim-test')
-require('user/vim-vsnip')
-require('user/wakatime')
+-- colors
+require('colors')
 
 -- lsp config
-require('lsp/init')
+require('lsp.lsp-installer')
+require('lsp.emmet-ls')
+
+-- plugin config
+require('plugin.blamer')
+require('plugin.comment')
+require('plugin.gitsigns')
+require('plugin.feline')
+require('plugin.friendly-snippets')
+require('plugin.indent-blankline')
+require('plugin.lexima')
+require('plugin.markdown-preview')
+require('plugin.neoformat')
+require('plugin.nvim-cmp')
+require('plugin.nvim-dap')
+require('plugin.nvim-gps')
+require('plugin.nvim-tree')
+require('plugin.nvim-treesitter')
+require('plugin.nvim-ufo')
+require('plugin.nvim-web-devicons')
+require('plugin.presence')
+require('plugin.sgmlendtag')
+require('plugin.stabilize')
+require('plugin.startuptime')
+require('plugin.telescope')
+require('plugin.tagbar')
+require('plugin.lspkind')
+require('plugin.packer')
+require('plugin.vim-better-whitespace')
+require('plugin.vim-checkbox')
+require('plugin.vim-easy-align')
+require('plugin.vim-floaterm')
+require('plugin.vim-fugitive')
+require('plugin.vim-liquid')
+require('plugin.vim-hexokinase')
+require('plugin.vim-highlightedyank')
+require('plugin.vim-markdown')
+require('plugin.vim-rhubarb')
+require('plugin.vim-ruby')
+require('plugin.vim-surround')
+require('plugin.vim-table-mode')
+require('plugin.vim-test')
+require('plugin.vim-vsnip')
+require('plugin.wakatime')
