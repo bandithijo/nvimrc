@@ -1,3 +1,8 @@
+local status_ok, _ = pcall(require, "feline")
+if not status_ok then
+  return
+end
+
 -- local lsp = require("feline.providers.lsp")
 -- local vi_mode_utils = require("feline.providers.vi_mode")
 local gps = require("nvim-gps")

@@ -1,3 +1,8 @@
+local status_ok, _ = pcall(require, "indent_blankline")
+if not status_ok then
+  return
+end
+
 -- Please see :help indent_blankline.txtfor more details.
 
 require("indent_blankline").setup {

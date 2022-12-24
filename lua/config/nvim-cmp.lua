@@ -1,3 +1,8 @@
+local status_ok, _ = pcall(require, "cmp")
+if not status_ok then
+  return
+end
+
 -- Setup nvim-cmp.
 local cmp = require("cmp")
 

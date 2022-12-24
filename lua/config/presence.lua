@@ -1,3 +1,8 @@
+local status_ok, _ = pcall(require, "presence")
+if not status_ok then
+  return
+end
+
 -- source: https://github.com/andweeb/presence.nvim
 -- The setup config table shows all available config options with their default values:
 require("presence"):setup({

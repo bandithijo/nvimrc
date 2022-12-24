@@ -1,5 +1,7 @@
--- This configuration adopted from Elianiva.
--- Source: https://github.com/elianiva/dotfiles/blob/master/nvim/.config/nvim/lua/plugins/_telescope.lua
+local status_ok, _ = pcall(require, "telescope")
+if not status_ok then
+  return
+end
 
 local actions = require("telescope.actions")
 
