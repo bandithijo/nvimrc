@@ -1,4 +1,4 @@
-vim.cmd [[
+vim.cmd([[
 " NOTE: You can use other key to expand snippet.
 
 " Expand
@@ -26,4 +26,4 @@ xmap        S   <Plug>(vsnip-cut-text)
 let g:vsnip_filetypes = {}
 let g:vsnip_filetypes.javascriptreact = ['javascript']
 let g:vsnip_filetypes.typescriptreact = ['typescript']
-]]
+]])

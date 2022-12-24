@@ -1,3 +1,8 @@
+local status_ok, _ = pcall(require, "ufo")
+if not status_ok then
+  return
+end
+
 vim.o.foldcolumn = "1"
 vim.o.foldlevel = 99 -- feel free to decrease the value
 vim.o.foldenable = true

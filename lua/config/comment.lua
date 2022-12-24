@@ -1,3 +1,8 @@
+local status_ok, _ = pcall(require, "Comment")
+if not status_ok then
+  return
+end
+
 require("Comment").setup({
   -- Add a space b/w comment and the line
   ---@type boolean|fun():boolean

@@ -3,7 +3,10 @@ require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
 
   -- colorscheme
-  use { "tomasiser/vim-code-dark" }
+  use {
+    "tomasiser/vim-code-dark",
+    as = "codedark"
+  }
 
   -- discord
   use {

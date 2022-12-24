@@ -1,3 +1,8 @@
+local status_ok, _ = pcall(require, "nvim-web-devicons")
+if not status_ok then
+  return
+end
+
 -- source: https://github.com/kyazdani42/nvim-web-devicons/blob/master/lua/nvim-web-devicons.lua
 
 require"nvim-web-devicons".setup {
