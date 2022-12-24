@@ -1,4 +1,4 @@
-require("packer").startup(function()
+require("packer").startup(function(use)
   -- plugins manager
   use "wbthomason/packer.nvim"
 

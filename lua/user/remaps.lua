@@ -6,60 +6,57 @@
 --   term_mode         = 't'
 --   command_mode      = 'c'
 
--- shorten function name
-local keymap = vim.api.nvim_set_keymap
-
 -- define opts
 local opts = { noremap = true, silent = true }
 
 -- remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
+vim.api.nvim_set_keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- save
-keymap("n", "<C-s>", ":w<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", opts)
 
 -- explorer
-keymap("n", "<F12>", ":NvimTreeToggle<CR>", opts)
+vim.api.nvim_set_keymap("n", "<F12>", ":NvimTreeToggle<CR>", opts)
 
 -- tagbar
-keymap("n", "<F11>", ":TagbarToggle<CR>", opts)
+vim.api.nvim_set_keymap("n", "<F11>", ":TagbarToggle<CR>", opts)
 
 -- move text on row up and down
-keymap("v", "<A-j>", ":m \'>+1<CR>gv=gv", opts)
-keymap("v", "<A-k>", ":m \'<-2<CR>gv=gv", opts)
+vim.api.nvim_set_keymap("v", "<A-j>", ":m \'>+1<CR>gv=gv", opts)
+vim.api.nvim_set_keymap("v", "<A-k>", ":m \'<-2<CR>gv=gv", opts)
 
 -- resize window
-keymap("n", "<C-Left>",  ":vertical resize +5<CR>", opts)
-keymap("n", "<C-Up>",    ":resize -5<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize -5<CR>", opts)
-keymap("n", "<C-Down>",  ":resize +5<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-Left>",  ":vertical resize +5<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-Up>",    ":resize -5<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-Right>", ":vertical resize -5<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-Down>",  ":resize +5<CR>", opts)
 
 -- page up & down still on center
-keymap("n", "<C-u", "<C-u>zz", opts)
-keymap("n", "<C-d", "<C-d>zz", opts)
+vim.api.nvim_set_keymap("n", "<C-u", "<C-u>zz", opts)
+vim.api.nvim_set_keymap("n", "<C-d", "<C-d>zz", opts)
 
 -- keep cursor in the middle when next/prev search
-keymap("n", "n", "nzzzv", opts)
-keymap("n", "N", "Nzzzv", opts)
+vim.api.nvim_set_keymap("n", "n", "nzzzv", opts)
+vim.api.nvim_set_keymap("n", "N", "Nzzzv", opts)
 
 -- indent
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+vim.api.nvim_set_keymap("v", "<", "<gv", opts)
+vim.api.nvim_set_keymap("v", ">", ">gv", opts)
 
 -- printing ascii character under the cursor
-keymap("n", "g8", ":as<CR>", opts)
+vim.api.nvim_set_keymap("n", "g8", ":as<CR>", opts)
 
 -- excape terminal mode
-keymap("t", "<C-\\>", "<C-\\><C-N>", opts)
+vim.api.nvim_set_keymap("t", "<C-\\>", "<C-\\><C-N>", opts)
 
 -- load view
-keymap("n", "<leader>lv", ":loadview<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>lv", ":loadview<CR>", opts)
 
 -- lsp
 local function nkeymap(key, map)
-  keymap("n", key, map, opts)
+  vim.api.nvim_set_keymap("n", key, map, opts)
 end
 
 nkeymap("gd",         ":lua vim.lsp.buf.definition()<CR>")
