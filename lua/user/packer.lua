@@ -110,6 +110,7 @@ require("packer").startup(function(use)
   -- color indicator
   use {
     "RRethy/vim-hexokinase",
+    run = 'make hexokinase',
     config = require("config.vim-hexokinase")
   }
 
