@@ -1,8 +1,3 @@
--- colorscheme
-vim.api.nvim_command "colorscheme codedark"
-vim.opt.termguicolors = true
-vim.opt.background = "dark"
-
 -- statusline
 vim.opt.laststatus = 3
 

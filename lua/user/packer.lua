@@ -4,8 +4,8 @@ require("packer").startup(function(use)
 
   -- colorscheme
   use {
-    "tomasiser/vim-code-dark",
-    as = "codedark"
+    'Mofiqul/vscode.nvim',
+    config = require("config.vscode")
   }
 
   -- discord
