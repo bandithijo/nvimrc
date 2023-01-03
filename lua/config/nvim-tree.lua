@@ -14,14 +14,15 @@ end
 -- local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
+  auto_reload_on_write = true,
   disable_netrw = true,
   hijack_netrw = true,
-  auto_reload_on_write = true,
-  open_on_tab = false,
-  open_on_setup = false,
   hijack_cursor = false,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
+  open_on_setup = false,
+  open_on_setup_file = false,
+  open_on_tab = false,
   respect_buf_cwd = false,
   create_in_closed_folder = false,
   view = {
@@ -47,7 +48,7 @@ nvim_tree.setup {
     root_folder_modifier = ":p:.",
     highlight_git = true,
     highlight_opened_files = "none",
-    add_trailing = false,
+    add_trailing = true,
     group_empty = false,
     indent_markers = {
       enable = true,
@@ -64,14 +65,17 @@ nvim_tree.setup {
       padding = " ",
       symlink_arrow = " >> ",
       show = {
-        file = true,
-        folder = true,
+        file = false,
+        folder = false,
         folder_arrow = false,
         git = true,
+        modified = true,
       },
       glyphs = {
         default = "",
         symlink = "",
+        bookmark = "",
+        modified = "●",
         folder = {
           arrow_closed = "",
           arrow_open = "",
