@@ -36,6 +36,10 @@ require("vscode").setup({
     -- StatusLineNC = { fg = "#262626", bg = "#262626" },
     -- VertSplit = { fg = "#262626", bg = "#262626" },
 
+    -- diff
+    diffRemoved = { fg = '#D0D0D0', bg = '#5E0101' },
+    diffAdded = { fg = '#D0D0D0', bg = '#015E01' },
+
     -- plugin: highlight-yank-region
     HighlightedyankRegion = { fg = "NONE", bg = "#005F8F" },
 
