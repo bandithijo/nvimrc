@@ -68,19 +68,19 @@ require("vscode").setup({
 
     -- plugin: lsp
     DiagnosticVirtualTextError = { fg = "#D16969" },
-    DiagnosticVirtualTextInfo = { fg = "#3C3C3C" },
     DiagnosticVirtualTextWarn = { fg = "#3C3C3C" },
+    DiagnosticVirtualTextInfo = { fg = "#3C3C3C" },
     DiagnosticVirtualTextHint = { fg = "#3C3C3C" },
 
-    -- DiagnosticSignError = { fg = "#D7BA7D" },
-    -- DiagnosticSignInfo = { fg = "#D7BA7D" },
-    -- DiagnosticSignWarn = { fg = "#D7BA7D" },
-    -- DiagnosticSignHint = { fg = "#D7BA7D" },
-    --
-    -- DiagnosticUnderlineError = { fg = "#D16969" },
-    -- DiagnosticUnderlineInfo = { fg = "#D16969" },
-    -- DiagnosticUnderlineWarn = { fg = "#D16969" },
-    -- DiagnosticUnderlineHint = { fg = "#D16969" },
+    DiagnosticSignError = { fg = "#F24646" },
+    DiagnosticSignWarn = { fg = "#CCB17A" },
+    DiagnosticSignInfo = { fg = "#569CD6" },
+    DiagnosticSignHint = { fg = "#569cd6" },
+
+    DiagnosticUnderlineError = { undercurl = true, sp = "#D16969" },
+    DiagnosticUnderlineWarn = { undercurl = true, sp = "#3C3C3C" },
+    DiagnosticUnderlineInfo = { undercurl = true, sp = "#3C3C3C" },
+    DiagnosticUnderlineHint = { undercurl = true, sp = "#3C3C3C" },
 
     -- plugin: vim-floaterm
     Floaterm = { bg = "#1E1E1E" },
@@ -93,7 +93,7 @@ require("vscode").setup({
   }
 })
 
-vim.cmd.sign("define DiagnosticSignError text= linehl= texthl=DiagnosticSignError numhl=")
-vim.cmd.sign("define DiagnosticSignWarn  text= linehl= texthl=DiagnosticSignWarn  numhl=")
-vim.cmd.sign("define DiagnosticSignInfo  text= linehl= texthl=DiagnosticSignInfo  numhl=")
-vim.cmd.sign("define DiagnosticSignHint  text= linehl= texthl=DiagnosticSignHint  numhl=")
+vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")
+vim.cmd.sign("define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  linehl= numhl=")
+vim.cmd.sign("define DiagnosticSignInfo  text= texthl=DiagnosticSignInfo  linehl= numhl=")
+vim.cmd.sign("define DiagnosticSignHint  text= texthl=DiagnosticSignHint  linehl= numhl=")
