@@ -4,7 +4,7 @@ require("packer").startup(function(use)
 
   -- colorscheme
   use {
-    'Mofiqul/vscode.nvim',
+    "Mofiqul/vscode.nvim",
     config = require("config.vscode")
   }
 
