@@ -8,6 +8,9 @@ require("packer").startup(function(use)
     config = require("config.vscode")
   }
 
+  -- gpg
+  use { "jamessan/vim-gnupg" }
+
   -- discord
   use {
     "andweeb/presence.nvim",
