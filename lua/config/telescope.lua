@@ -5,8 +5,7 @@ end
 
 local actions = require("telescope.actions")
 
-require("telescope").setup
-{
+require("telescope").setup({
   defaults = {
     vimgrep_arguments    = {
       "rg",
@@ -40,8 +39,8 @@ require("telescope").setup
     preview_title        = false,
     show_line            = true,
     file_ignore_patterns = {},
-    file_sorter          = require("telescope.sorters").get_fzy_sorter,
-    generic_sorter       = require("telescope.sorters").get_generic_fzy_sorter,
+    file_sorter          = require("telescope.sorters").get_fuzzy_sorter,
+    generic_sorter       = require("telescope.sorters").get_generic_fuzzy_sorter,
     winblend             = 0,
     border               = {},
     borderchars          = { "─", "│", "─", "│", "┌", "┐", "┘", "└"},
@@ -94,13 +93,17 @@ require("telescope").setup
       }
     }
   },
-  -- depends on `nvim-telescope/telescope-fzy-native.nvim`
+
+  -- depends on `nvim-telescope/telescope-fzf-native.nvim`
   extensions = {
-    fzy_native = {
-      override_generic_sorter = true,
-      override_file_sorter    = true,
+    fzf = {
+      fuzzy = true,                    -- false will only do exact matching
+      override_generic_sorter = true,  -- override the generic sorter
+      override_file_sorter = true,     -- override the file sorter
+      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+                                       -- the default case_mode is "smart_case"
     }
   }
-}
+})
 
-require("telescope").load_extension("fzy_native")
+require("telescope").load_extension("fzf")
