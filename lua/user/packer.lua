@@ -9,7 +9,7 @@ require("packer").startup(function(use)
   }
 
   -- gpg
-  use { "jamessan/vim-gnupg" }
+  -- use { "jamessan/vim-gnupg" }
 
   -- discord
   use {
@@ -214,8 +214,12 @@ require("packer").startup(function(use)
   use { "p00f/nvim-ts-rainbow" }
 
   -- lsp
+  use {
+    "williamboman/mason.nvim",
+    config = require("config.mason")
+  }
+  use { "williamboman/mason-lspconfig.nvim" }
   use { "neovim/nvim-lspconfig" }
-  use { "williamboman/nvim-lsp-installer" }
 
   -- autocomplete
   use { "hrsh7th/cmp-nvim-lsp" }
