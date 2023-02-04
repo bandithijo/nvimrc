@@ -19,9 +19,6 @@ nvim_tree.setup {
   hijack_netrw = true,
   hijack_cursor = false,
   hijack_unnamed_buffer_when_opening = false,
-  ignore_buffer_on_setup = false,
-  open_on_setup = false,
-  open_on_setup_file = false,
   open_on_tab = false,
   respect_buf_cwd = false,
   create_in_closed_folder = false,
@@ -108,11 +105,6 @@ nvim_tree.setup {
     enable = true,
     update_cwd = false,
     ignore_list = {},
-  },
-  ignore_ft_on_setup = {
-    "startify",
-    "dashboard",
-    "alpha"
   },
   system_open = {
     cmd = nil,

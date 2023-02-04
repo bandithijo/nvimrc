@@ -3,7 +3,6 @@ if not status_ok then
   return
 end
 
--- Setup nvim-cmp.
 local cmp = require("cmp")
 
 cmp.setup({

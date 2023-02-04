@@ -1,12 +1,15 @@
 require("packer").startup(function(use)
   -- plugins manager
-  use "wbthomason/packer.nvim"
+  use { "wbthomason/packer.nvim" }
 
   -- colorscheme
   use {
-    'Mofiqul/vscode.nvim',
+    "Mofiqul/vscode.nvim",
     config = require("config.vscode")
   }
+
+  -- gpg
+  -- use { "jamessan/vim-gnupg" }
 
   -- discord
   use {
@@ -37,8 +40,8 @@ require("packer").startup(function(use)
 
   -- gps
   use {
-    "SmiteshP/nvim-gps",
-    config = require("config.nvim-gps")
+    "SmiteshP/nvim-navic",
+    config = require("config.nvim-navic")
   }
 
   -- startup time check
@@ -175,10 +178,11 @@ require("packer").startup(function(use)
     "nvim-telescope/telescope.nvim",
     requires = {
       "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope-fzy-native.nvim" -- fzy_native
+      -- "nvim-telescope/telescope-fzy-native.nvim" -- fzy_native
     },
     config = require("config.telescope")
   }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- stabilize window
   use {
@@ -211,8 +215,12 @@ require("packer").startup(function(use)
   use { "p00f/nvim-ts-rainbow" }
 
   -- lsp
+  use {
+    "williamboman/mason.nvim",
+    config = require("config.mason")
+  }
+  use { "williamboman/mason-lspconfig.nvim" }
   use { "neovim/nvim-lspconfig" }
-  use { "williamboman/nvim-lsp-installer" }
 
   -- autocomplete
   use { "hrsh7th/cmp-nvim-lsp" }
