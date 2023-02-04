@@ -1,22 +1,7 @@
+local status_ok, _ = pcall(require, "mason")
+if not status_ok then
+  return
+end
+
 require("mason").setup({})
 require("mason-lspconfig").setup({})
-
-require("lspconfig").sumneko_lua.setup({})
-require("lspconfig").solargraph.setup({})
-require("lspconfig").clangd.setup({})
-require("lspconfig").gopls.setup({})
-require("lspconfig").tsserver.setup({})
-require("lspconfig").yamlls.setup({})
-require("lspconfig").bashls.setup({})
-require("lspconfig").marksman.setup({})
-require("lspconfig").jsonls.setup({})
-require("lspconfig").html.setup({})
-require("lspconfig").cssls.setup({})
-require("lspconfig").emmet_ls.setup({
-  filetypes = {
-    "html",
-    "css",
-    "eruby",
-    "liquid"
-  },
-})
