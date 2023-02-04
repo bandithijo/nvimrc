@@ -1,6 +1,6 @@
 require("packer").startup(function(use)
   -- plugins manager
-  use "wbthomason/packer.nvim"
+  use { "wbthomason/packer.nvim" }
 
   -- colorscheme
   use {
