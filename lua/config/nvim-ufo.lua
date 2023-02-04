@@ -16,14 +16,15 @@ capabilities.textDocument.foldingRange = {
   dynamicRegistration = false,
   lineFoldingOnly = true
 }
-local language_servers = {} -- like {'gopls', 'clangd'}
-for _, ls in ipairs(language_servers) do
-    require("lspconfig")[ls].setup({
-        capabilities = capabilities,
-    })
-end
 
--- require('ufo').setup()
+local language_servers = {
+  "solargraph", "sumneko_lua"
+}
+for _, ls in ipairs(language_servers) do
+  require("lspconfig")[ls].setup({
+    capabilities = capabilities,
+  })
+end
 
 local ftMap = {
   git = "",
@@ -34,7 +35,9 @@ local ftMap = {
   vim = "indent",
   yaml = "",
 }
-require("ufo").setup({
+
+local ufo = require("ufo")
+ufo.setup({
   open_fold_hl_timeout = 150,
   close_fold_kinds = {"imports", "comment"},
   preview = {
@@ -59,7 +62,7 @@ require("ufo").setup({
     return ftMap[filetype]
   end
 })
-vim.keymap.set("n", "zR", require("ufo").openAllFolds)
-vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
-vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds)
-vim.keymap.set("n", "zm", require("ufo").closeFoldsWith) -- closeAllFolds == closeFoldsWith(0)
+vim.keymap.set("n", "zR", ufo.openAllFolds)
+vim.keymap.set("n", "zM", ufo.closeAllFolds)
+vim.keymap.set("n", "zr", ufo.openFoldsExceptKinds)
+vim.keymap.set("n", "zm", ufo.closeFoldsWith) -- closeAllFolds == closeFoldsWith(0)
