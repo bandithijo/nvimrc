@@ -40,8 +40,8 @@ require("packer").startup(function(use)
 
   -- gps
   use {
-    "SmiteshP/nvim-gps",
-    config = require("config.nvim-gps")
+    "SmiteshP/nvim-navic",
+    config = require("config.nvim-navic")
   }
 
   -- startup time check
