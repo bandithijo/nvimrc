@@ -30,11 +30,10 @@ cmp.setup({
     ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "c" }),
   },
   sources = cmp.config.sources({
-  { name = "nvim_lsp" },
-  { name = "vsnip" }, -- For vsnip users.
-  },
-  {
+    { name = "nvim_lsp" },
+    { name = "vsnip" }, -- For vsnip users.
     { name = "buffer" },
+    { name = "path" },
   })
 })
 
