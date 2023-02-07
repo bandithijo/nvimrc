@@ -175,7 +175,6 @@ require("packer").startup(function(use)
     "nvim-telescope/telescope.nvim",
     requires = {
       "nvim-lua/plenary.nvim",
-      -- "nvim-telescope/telescope-fzy-native.nvim" -- fzy_native
     },
     config = require("config.telescope")
   }
