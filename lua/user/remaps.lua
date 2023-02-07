@@ -54,6 +54,9 @@ vim.api.nvim_set_keymap("t", "<C-\\>", "<C-\\><C-N>", opts)
 -- load view
 vim.api.nvim_set_keymap("n", "<leader>lv", ":loadview<CR>", opts)
 
+-- encrypt with .gpg extension
+vim.api.nvim_set_keymap("n", "<leader>en", ":WriteEncrypted %.gpg<CR> | :e %.gpg", opts)
+
 -- lsp
 local function nkeymap(key, map)
   vim.api.nvim_set_keymap("n", key, map, opts)
