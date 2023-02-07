@@ -6,11 +6,37 @@ end
 local configs = require("nvim-treesitter.configs")
 configs.setup {
   ensure_installed = {
-    "bash", "c", "cpp", "css", "diff", "dot", "gitignore", "go", "help",
-    "html", "ini", "java", "javascript", "jq", "json", "latex", "make",
-    "markdown", "markdown_inline", "meson", "ninja", "pascal", "perl", "php",
-    "phpdoc", "python", "regex", "ruby", "rust", "scala", "scss", "sql",
-    "sxhkdrc", "todotxt", "typescript", "vim", "yaml"
+    "bash",
+    "c",
+    "cpp",
+    "css",
+    "diff",
+    "dot",
+    "gitignore",
+    "go",
+    "help",
+    "html",
+    "ini",
+    "javascript",
+    "jq",
+    "json",
+    "latex",
+    "make",
+    "markdown",
+    "markdown_inline",
+    "meson",
+    "ninja",
+    "perl",
+    "python",
+    "regex",
+    "ruby",
+    "rust",
+    "scss",
+    "sql",
+    "sxhkdrc",
+    "todotxt",
+    "vim",
+    "yaml",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -27,6 +53,18 @@ configs.setup {
 
   indent = {
     enable = false -- default is disabled anyways
+  },
+
+  autotag = {
+  enable = true,
+  filetypes = {
+      "html",
+      "css",
+      "json",
+      "javascript",
+      "typescript",
+      "xml",
+    },
   },
 
   playground = {
