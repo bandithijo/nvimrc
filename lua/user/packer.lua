@@ -9,7 +9,7 @@ require("packer").startup(function(use)
   }
 
   -- gpg
-  -- use { "jamessan/vim-gnupg" }
+  use { "jamessan/vim-gnupg" }
 
   -- discord
   use {

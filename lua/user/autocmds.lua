@@ -16,4 +16,7 @@ autocmd FocusGained,BufEnter * checktime
 
 " toggle for markdown checkbox with <leader>tt remap to <leader>cc
 autocmd FileType markdown,pango,asc map <silent> <Leader>cc :call checkbox#ToggleCB()<CR>
+
+" encrypted file with gpg
+command -nargs=1 WriteEncrypted w !gpg --default-recipient-self -o <q-args> -e 2>/dev/null
 ]])
