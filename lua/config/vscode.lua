@@ -64,11 +64,11 @@ require("vscode").setup({
     TelescopeSelectionCaret = { fg = "#D4D4D4", bg = "#005F87", bold = 1 },
     TelescopeMultiSelection = { fg = "#D7BA7D" },
     TelescopeBorder = { fg = "#D4D4D4" },
-    TelescopePromptBorder = { fg = "#D4D4D4" },
     TelescopeResultsBorder = { fg = "#D4D4D4" },
     TelescopePreviewBorder = { fg = "#D4D4D4" },
+    TelescopePromptBorder = { fg = "#D4D4D4" },
+    TelescopePromptPrefix = { fg = "#D4D4D4" },
     TelescopeMatching = { fg = "#F24646" },
-    TelescopePromptPrefix = { fg = "#F24646" },
 
     -- plugin: lsp
     DiagnosticVirtualTextError = { fg = "#D16969" },
