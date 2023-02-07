@@ -129,6 +129,12 @@ require("packer").startup(function(use)
     config = require("config.vim-surround")
   }
 
+  -- autoclose parenthesis
+  use {
+    "windwp/nvim-autopairs",
+    config = require("config.nvim-autopairs")
+  }
+
   -- comments
   use {
     "numToStr/Comment.nvim",
@@ -184,12 +190,6 @@ require("packer").startup(function(use)
   use {
     "luukvbaal/stabilize.nvim",
     config = require("config.stabilize")
-  }
-
-  -- autoclose parenthesis
-  use {
-    "cohama/lexima.vim",
-    config = require("config.lexima")
   }
 
   -- tagbar
