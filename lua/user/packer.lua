@@ -129,9 +129,6 @@ require("packer").startup(function(use)
     config = require("config.vim-surround")
   }
 
-  -- end tag completion
-  use { "ervandew/sgmlendtag" }
-
   -- comments
   use {
     "numToStr/Comment.nvim",
