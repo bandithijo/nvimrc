@@ -91,7 +91,7 @@ configs.setup {
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
     extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
     max_file_lines = nil, -- Do not enable for files with more than n lines, int
-    colors = {"#D7BA7D"}, -- table of hex strings (codedark: '#b58900')
+    colors = {"#D79921"}, -- table of hex strings (codedark: '#D7BA7D')
     -- termcolors = {} -- table of colour name strings
   },
 }

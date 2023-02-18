@@ -19,8 +19,12 @@ local components = {
 }
 
 local colors = {
-  bg        = "#005F87", -- 073642
-  fg        = "#D3D3D3", -- 93a1a1
+  -- Codedark
+  -- bg        = "#005F87",
+  -- fg        = "#D3D3D3",
+  -- Gruvbox
+  bg        = "#3C3836",
+  fg        = "#F2E5BC",
 }
 
 local vi_mode_colors = {

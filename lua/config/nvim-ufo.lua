@@ -18,7 +18,7 @@ capabilities.textDocument.foldingRange = {
 }
 
 local language_servers = {
-  "solargraph", "sumneko_lua"
+  "solargraph", "lua_ls"
 }
 for _, ls in ipairs(language_servers) do
   require("lspconfig")[ls].setup({

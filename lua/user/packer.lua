@@ -3,9 +3,13 @@ require("packer").startup(function(use)
   use { "wbthomason/packer.nvim" }
 
   -- colorscheme
+  -- use {
+  --   "Mofiqul/vscode.nvim",
+  --   config = require("config.colorscheme.vscode")
+  -- }
   use {
-    "Mofiqul/vscode.nvim",
-    config = require("config.vscode")
+    "ellisonleao/gruvbox.nvim",
+    config = require("config.colorscheme.gruvbox")
   }
 
   -- gpg
