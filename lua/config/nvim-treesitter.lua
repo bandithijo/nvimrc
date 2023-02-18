@@ -6,11 +6,37 @@ end
 local configs = require("nvim-treesitter.configs")
 configs.setup {
   ensure_installed = {
-    "bash", "c", "cpp", "css", "diff", "dot", "gitignore", "go", "help",
-    "html", "ini", "java", "javascript", "jq", "json", "latex", "make",
-    "markdown", "markdown_inline", "meson", "ninja", "pascal", "perl", "php",
-    "phpdoc", "python", "regex", "ruby", "rust", "scala", "scss", "sql",
-    "sxhkdrc", "todotxt", "typescript", "vim", "yaml"
+    "bash",
+    "c",
+    "cpp",
+    "css",
+    "diff",
+    "dot",
+    "gitignore",
+    "go",
+    "help",
+    "html",
+    "ini",
+    "javascript",
+    "jq",
+    "json",
+    "latex",
+    "make",
+    "markdown",
+    "markdown_inline",
+    "meson",
+    "ninja",
+    "perl",
+    "python",
+    "regex",
+    "ruby",
+    "rust",
+    "scss",
+    "sql",
+    "sxhkdrc",
+    "todotxt",
+    "vim",
+    "yaml",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -27,6 +53,18 @@ configs.setup {
 
   indent = {
     enable = false -- default is disabled anyways
+  },
+
+  autotag = {
+  enable = true,
+  filetypes = {
+      "html",
+      "css",
+      "json",
+      "javascript",
+      "typescript",
+      "xml",
+    },
   },
 
   playground = {
@@ -53,7 +91,7 @@ configs.setup {
     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
     extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
     max_file_lines = nil, -- Do not enable for files with more than n lines, int
-    colors = {"#D7BA7D"}, -- table of hex strings (codedark: '#b58900')
+    colors = {"#D79921"}, -- table of hex strings (codedark: '#D7BA7D')
     -- termcolors = {} -- table of colour name strings
   },
 }

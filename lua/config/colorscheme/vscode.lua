@@ -55,6 +55,7 @@ require("vscode").setup({
     NvimTreeGitMerge = { fg = "#CCB17A", bg = "NONE" },
     NvimTreeGitRenamed = { fg = "#CCB17A", bg = "NONE" },
     NvimTreeGitNew = { fg = "#CCB17A", bg = "NONE" },
+    NvimTreeWindowPicker = { fg = "#D4D4D4", bg = "#005F8F" },
 
     -- plugin: indent-blankline
     IndentBlanklineChar = { fg = "#3C3C3C", nocombine = 1 },
@@ -102,7 +103,7 @@ vim.cmd.sign("define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  lin
 vim.cmd.sign("define DiagnosticSignInfo  text= texthl=DiagnosticSignInfo  linehl= numhl=")
 vim.cmd.sign("define DiagnosticSignHint  text= texthl=DiagnosticSignHint  linehl= numhl=")
 
--- language: markdown
+-- language
 vim.cmd([[
 hi @text.title guifg=#D7BA7D gui=bold
 hi @text.literal guifg=#CE9178

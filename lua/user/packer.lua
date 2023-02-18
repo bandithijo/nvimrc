@@ -3,9 +3,13 @@ require("packer").startup(function(use)
   use { "wbthomason/packer.nvim" }
 
   -- colorscheme
+  -- use {
+  --   "Mofiqul/vscode.nvim",
+  --   config = require("config.colorscheme.vscode")
+  -- }
   use {
-    "Mofiqul/vscode.nvim",
-    config = require("config.vscode")
+    "ellisonleao/gruvbox.nvim",
+    config = require("config.colorscheme.gruvbox")
   }
 
   -- gpg
@@ -129,8 +133,11 @@ require("packer").startup(function(use)
     config = require("config.vim-surround")
   }
 
-  -- end tag completion
-  use { "ervandew/sgmlendtag" }
+  -- autoclose parenthesis
+  use {
+    "windwp/nvim-autopairs",
+    config = require("config.nvim-autopairs")
+  }
 
   -- comments
   use {
@@ -178,7 +185,6 @@ require("packer").startup(function(use)
     "nvim-telescope/telescope.nvim",
     requires = {
       "nvim-lua/plenary.nvim",
-      -- "nvim-telescope/telescope-fzy-native.nvim" -- fzy_native
     },
     config = require("config.telescope")
   }
@@ -188,12 +194,6 @@ require("packer").startup(function(use)
   use {
     "luukvbaal/stabilize.nvim",
     config = require("config.stabilize")
-  }
-
-  -- autoclose parenthesis
-  use {
-    "cohama/lexima.vim",
-    config = require("config.lexima")
   }
 
   -- tagbar
