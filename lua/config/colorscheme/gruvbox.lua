@@ -19,8 +19,8 @@ require("gruvbox").setup({
   overrides = {
     -- general
     SignColumn = { bg = "NONE" },
-    FoldColumn = { bg = "NONE"},
-    Folded = { italic = 0 },
+    FoldColumn = { bg = "NONE" },
+    Folded = { bg = "NONE", italic = 0 },
     Comment = { italic = 0 },
     Operator = { italic = 0 },
     String = { italic = 0 },
@@ -113,9 +113,7 @@ vim.cmd.sign("define DiagnosticSignHint  text= texthl=DiagnosticSignHint  lin
 
 -- language
 vim.cmd([[
-" hi @text.title guifg=#D7BA7D gui=bold
-" hi @text.literal guifg=#CE9178
-" hi @punctuation.special guifg=#569CD6 gui=bold
+hi @text.title guifg=#D79921 gui=bold
 hi @text.todo.checked gui=none
 hi @text.todo.unchecked gui=none
 hi @text.todo guifg=#F2E5BC guibg=#CC241D gui=bold
