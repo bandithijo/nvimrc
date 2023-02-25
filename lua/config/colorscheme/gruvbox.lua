@@ -66,15 +66,15 @@ require("gruvbox").setup({
     IndentBlanklineChar = { fg = "#3C3836", nocombine = 1 },
 
     -- plugin: telescope
-    TelescopeSelection = { fg = "#F2E5BC", bg = "#CC241D", bold = 1 },
-    TelescopeSelectionCaret = { fg = "#F2E5BC", bg = "#CC241D", bold = 1 },
+    TelescopeSelection = { fg = "#F2E5BC", bg = "#3C3836", bold = 1 },
+    TelescopeSelectionCaret = { fg = "#F2E5BC", bg = "#3C3836", bold = 1 },
     TelescopeMultiSelection = { fg = "#CC241D" },
     TelescopeBorder = { fg = "#EBDBB2" },
     TelescopeResultsBorder = { fg = "#EBDBB2" },
     TelescopePreviewBorder = { fg = "#EBDBB2" },
     TelescopePromptBorder = { fg = "#EBDBB2" },
     TelescopePromptPrefix = { fg = "#EBDBB2" },
-    TelescopeMatching = { fg = "#D79921", bold = 1 },
+    TelescopeMatching = { fg = "#CC241D", bold = 1 },
 
     -- plugin: lsp
     DiagnosticVirtualTextError = { fg = "#CC241D" },
