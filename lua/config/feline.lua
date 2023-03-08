@@ -23,8 +23,11 @@ local colors = {
   -- bg        = "#005F87",
   -- fg        = "#D3D3D3",
   -- Gruvbox
-  bg        = "#3C3836",
-  fg        = "#F2E5BC",
+  -- bg        = "#3C3836",
+  -- fg        = "#F2E5BC",
+  -- Gruvbox
+  bg        = "#073642",
+  fg        = "#93A1A1",
 }
 
 local vi_mode_colors = {

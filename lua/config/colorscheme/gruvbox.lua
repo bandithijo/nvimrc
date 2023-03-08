@@ -19,8 +19,8 @@ require("gruvbox").setup({
   overrides = {
     -- general
     SignColumn = { bg = "NONE" },
-    FoldColumn = { bg = "NONE"},
-    Folded = { italic = 0 },
+    FoldColumn = { bg = "NONE" },
+    Folded = { bg = "NONE", italic = 0 },
     Comment = { italic = 0 },
     Operator = { italic = 0 },
     String = { italic = 0 },
@@ -37,7 +37,6 @@ require("gruvbox").setup({
 
     -- language
     htmlLink = { fg = "#458588", underline = 1 },
-
 
     -- diff
     diffRemoved = { fg = '#EBDBB2', bg = '#CC241D' },
@@ -66,15 +65,15 @@ require("gruvbox").setup({
     IndentBlanklineChar = { fg = "#3C3836", nocombine = 1 },
 
     -- plugin: telescope
-    TelescopeSelection = { fg = "#F2E5BC", bg = "#CC241D", bold = 1 },
-    TelescopeSelectionCaret = { fg = "#F2E5BC", bg = "#CC241D", bold = 1 },
+    TelescopeSelection = { fg = "#F2E5BC", bg = "#3C3836", bold = 1 },
+    TelescopeSelectionCaret = { fg = "#F2E5BC", bg = "#3C3836", bold = 1 },
     TelescopeMultiSelection = { fg = "#CC241D" },
     TelescopeBorder = { fg = "#EBDBB2" },
     TelescopeResultsBorder = { fg = "#EBDBB2" },
     TelescopePreviewBorder = { fg = "#EBDBB2" },
     TelescopePromptBorder = { fg = "#EBDBB2" },
     TelescopePromptPrefix = { fg = "#EBDBB2" },
-    TelescopeMatching = { fg = "#D79921", bold = 1 },
+    TelescopeMatching = { fg = "#CC241D", bold = 1 },
 
     -- plugin: lsp
     DiagnosticVirtualTextError = { fg = "#CC241D" },
@@ -113,9 +112,7 @@ vim.cmd.sign("define DiagnosticSignHint  text= texthl=DiagnosticSignHint  lin
 
 -- language
 vim.cmd([[
-" hi @text.title guifg=#D7BA7D gui=bold
-" hi @text.literal guifg=#CE9178
-" hi @punctuation.special guifg=#569CD6 gui=bold
+hi @text.title guifg=#D79921 gui=bold
 hi @text.todo.checked gui=none
 hi @text.todo.unchecked gui=none
 hi @text.todo guifg=#F2E5BC guibg=#CC241D gui=bold
