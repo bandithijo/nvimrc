@@ -38,7 +38,6 @@ require("gruvbox").setup({
     -- language
     htmlLink = { fg = "#458588", underline = 1 },
 
-
     -- diff
     diffRemoved = { fg = '#EBDBB2', bg = '#CC241D' },
     diffAdded = { fg = '#EBDBB2', bg = '#608B4E' },

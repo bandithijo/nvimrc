@@ -7,9 +7,13 @@ require("packer").startup(function(use)
   --   "Mofiqul/vscode.nvim",
   --   config = require("config.colorscheme.vscode")
   -- }
+  -- use {
+  --   "ellisonleao/gruvbox.nvim",
+  --   config = require("config.colorscheme.gruvbox")
+  -- }
   use {
-    "ellisonleao/gruvbox.nvim",
-    config = require("config.colorscheme.gruvbox")
+    "lifepillar/vim-solarized8",
+    config = require("config.colorscheme.solarized")
   }
 
   -- gpg
@@ -106,6 +110,11 @@ require("packer").startup(function(use)
   use {
     "dhruvasagar/vim-table-mode",
     config = require("config.vim-table-mode")
+  }
+
+  -- various vim encoders
+  use {
+    "qtc-de/vve"
   }
 
   -- float terminal
