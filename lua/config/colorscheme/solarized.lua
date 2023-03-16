@@ -12,12 +12,14 @@ vim.cmd([[
   " hi StatusLine guifg=#586E75 guibg=none gui=none
   " hi StatusLineNc guifg=#586E75 guibg=none gui=none
   hi SignColumn guibg=none
-  hi FoldColumn guibg=none
+  hi FoldColumn guifg=#586E75 guibg=none
   hi Folded guibg=none
   hi LineNr guibg=none
   hi CursorLine guibg=none
   hi CursorLineNr guibg=none
   hi ColorColumn guibg=none
+  hi Visual guifg=#B58900
+  hi VisualNOS guifg=#B58900
 
   " plugins: highlight-yank-region
   hi HighlightedyankRegion guifg=#002B36 guibg=#B58900
