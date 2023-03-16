@@ -97,7 +97,7 @@ vim.opt.cursorcolumn = false
 vim.opt.cursorline = true
 vim.opt.errorbells = false
 vim.opt.expandtab = true
-vim.opt.fillchars = { eob = " ", vert = "│" }
+vim.opt.fillchars = { eob = " ", vert = "|" }
 vim.opt.lazyredraw = true
 vim.opt.startofline = false
 vim.opt.visualbell = false
