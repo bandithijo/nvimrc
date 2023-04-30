@@ -46,7 +46,13 @@ require("packer").startup(function(use)
     config = require("config.feline")
   }
 
-  -- gps
+  -- bar
+  -- use {
+  --   'fgheng/winbar.nvim',
+  --   config = require("config.winbar")
+  -- }
+
+  -- gps/navigation
   use {
     "SmiteshP/nvim-navic",
     config = require("config.nvim-navic")
