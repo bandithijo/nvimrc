@@ -25,10 +25,9 @@ nvim_tree.setup {
   view = {
     width = 45,
     side = "left",
-    hide_root_folder = true,
     preserve_window_proportions = false,
-    number = true,
-    relativenumber = true,
+    number = false,
+    relativenumber = false,
     signcolumn = "yes",
     mappings = {
       custom_only = false,
@@ -43,6 +42,7 @@ nvim_tree.setup {
   },
   renderer = {
     root_folder_modifier = ":p:.",
+    root_folder_label = false,
     highlight_git = true,
     highlight_opened_files = "none",
     add_trailing = true,
