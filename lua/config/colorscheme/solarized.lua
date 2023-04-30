@@ -82,6 +82,7 @@ vim.cmd([[
   hi @text.literal guifg=#B58900
   hi @text.todo guifg=#FDF6E3 guibg=#DC322F gui=bold
   hi @text.note guifg=#FDF6E3 guibg=#B58900 gui=bold
+  hi htmlSpecialTagName gui=bold
 ]])
 
 vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")
