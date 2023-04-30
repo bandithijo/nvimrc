@@ -34,6 +34,7 @@ local ftMap = {
   ruby = "treesitter",
   vim = "indent",
   yaml = "",
+  javascript = "",
 }
 
 local ufo = require("ufo")
