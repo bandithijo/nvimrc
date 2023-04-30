@@ -13,7 +13,20 @@ end
 
 -- local tree_cb = nvim_tree_config.nvim_tree_callback
 
+local function on_attach(bufnr)
+  local api = require('nvim-tree.api')
+
+  local function opts(desc)
+    return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+  end
+
+  api.config.mappings.default_on_attach(bufnr)
+
+  vim.keymap.set('n', '<C-e>', '', { buffer = bufnr }) -- disable <C-e> for edit file
+end
+
 nvim_tree.setup {
+  on_attach = on_attach,
   auto_reload_on_write = true,
   disable_netrw = true,
   hijack_netrw = true,
@@ -31,13 +44,6 @@ nvim_tree.setup {
     signcolumn = "yes",
     mappings = {
       custom_only = false,
-      list = {
-        -- user mappings goes here
-        { key = "<C-e>", action = "" }, -- disable <C-e> for edit file
-        -- { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        -- { key = "h", cb = tree_cb "close_node" },
-        -- { key = "v", cb = tree_cb "vsplit" },
-      },
     },
   },
   renderer = {
