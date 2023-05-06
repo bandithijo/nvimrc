@@ -22,7 +22,7 @@ local function on_attach(bufnr)
 
   api.config.mappings.default_on_attach(bufnr)
 
-  vim.keymap.set('n', '<C-e>', '', { buffer = bufnr }) -- disable <C-e> for edit file
+  vim.keymap.set('n', '<C-e>', '<C-e>', { buffer = bufnr }) -- disable <C-e> for edit file
 end
 
 nvim_tree.setup {
