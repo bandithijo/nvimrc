@@ -75,6 +75,7 @@ vim.cmd([[
   " language
   hi @label guifg=#268BD2
   hi @number guifg=#D33682
+  hi @float guifg=#D33682
   hi @parameter guifg=#93A1A1
   hi @function.call guifg=#CB4B16
   hi @type.qualifier guifg=#859900
