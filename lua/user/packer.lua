@@ -211,6 +211,12 @@ require("packer").startup(function(use)
     config = require("config.stabilize")
   }
 
+  -- live-server
+  use {
+    "barrett-ruth/live-server.nvim",
+    config = require("config.live-server")
+  }
+
   -- tagbar
   use {
     "preservim/tagbar",
