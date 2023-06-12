@@ -46,7 +46,13 @@ require("packer").startup(function(use)
     config = require("config.feline")
   }
 
-  -- gps
+  -- bar
+  -- use {
+  --   'fgheng/winbar.nvim',
+  --   config = require("config.winbar")
+  -- }
+
+  -- gps/navigation
   use {
     "SmiteshP/nvim-navic",
     config = require("config.nvim-navic")
@@ -203,6 +209,12 @@ require("packer").startup(function(use)
   use {
     "luukvbaal/stabilize.nvim",
     config = require("config.stabilize")
+  }
+
+  -- live-server
+  use {
+    "barrett-ruth/live-server.nvim",
+    config = require("config.live-server")
   }
 
   -- tagbar
