@@ -58,8 +58,8 @@ configs.setup {
   autotag = {
   enable = true,
   filetypes = {
-      "html",
       "css",
+      "html",
       "json",
       "javascript",
       "typescript",
@@ -98,5 +98,7 @@ configs.setup {
 
 -- parser: html
 require"nvim-treesitter.parsers".get_parser_configs().html.filetype_to_parsername = {
-  "html", "liquid", "eruby"
+  "eruby",
+  "html",
+  "liquid",
 }

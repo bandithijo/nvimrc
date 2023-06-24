@@ -83,15 +83,20 @@ vim.cmd([[
   hi @text.literal guifg=#B58900
   hi @text.todo guifg=#FDF6E3 guibg=#DC322F gui=bold
   hi @text.note guifg=#FDF6E3 guibg=#B58900 gui=bold
+  " language: html
   hi htmlSpecialTagName gui=bold
+  " language: markdown
   hi mkdHeading guifg=#DC322F gui=bold
   hi mkdListItem guifg=#DC322F
   hi mkdItalic guifg=#DC322F
   hi mkdCode guifg=#B58900
   hi mkdLink guifg=#268BD2
   hi mkdUrl guifg=#6C71C4
+  " language: liquid
   hi liquidStatement guifg=#859900
   hi liquidExpression guifg=#859900
+  " language: ejs
+  hi ejsTag guifg=#DC322F
 ]])
 
 vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")

@@ -76,6 +76,9 @@ require("packer").startup(function(use)
     config = require("config.vim-better-whitespace")
   }
 
+  -- ejs
+  use { "nikvdp/ejs-syntax"}
+
   -- ruby
   use { "vim-ruby/vim-ruby" }
 
