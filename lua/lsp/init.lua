@@ -59,6 +59,6 @@ require("lspconfig").cssls.setup({
 require("lspconfig").emmet_ls.setup({
   on_attach = on_attach,
   filetypes = {
-    "css", "eruby", "html", "javascript", "javascriptreact", "less", "liquid", "sass", "scss", "svelte", "pug", "typescriptreact", "vue"
+    "css", "ejs", "eruby", "html", "javascript", "javascriptreact", "less", "liquid", "sass", "scss", "svelte", "pug", "typescriptreact", "vue"
   }
 })
