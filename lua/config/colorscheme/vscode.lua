@@ -103,9 +103,16 @@ vim.cmd.sign("define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  lin
 vim.cmd.sign("define DiagnosticSignInfo  text= texthl=DiagnosticSignInfo  linehl= numhl=")
 vim.cmd.sign("define DiagnosticSignHint  text= texthl=DiagnosticSignHint  linehl= numhl=")
 
+
+vim.cmd([[
+colorscheme vscode
+set termguicolors
+]])
+
 -- language
 vim.cmd([[
 hi @text.title guifg=#D7BA7D gui=bold
 hi @text.literal guifg=#CE9178
 hi @punctuation.special guifg=#569CD6 gui=bold
+hi ejsTag guifg=#D16969
 ]])

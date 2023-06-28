@@ -3,18 +3,18 @@ require("packer").startup(function(use)
   use { "wbthomason/packer.nvim" }
 
   -- colorscheme
-  -- use {
-  --   "Mofiqul/vscode.nvim",
-  --   config = require("config.colorscheme.vscode")
-  -- }
+  use {
+    "Mofiqul/vscode.nvim",
+    config = require("config.colorscheme.vscode")
+  }
   -- use {
   --   "ellisonleao/gruvbox.nvim",
   --   config = require("config.colorscheme.gruvbox")
   -- }
-  use {
-    "lifepillar/vim-solarized8",
-    config = require("config.colorscheme.solarized")
-  }
+  -- use {
+  --   "lifepillar/vim-solarized8",
+  --   config = require("config.colorscheme.solarized")
+  -- }
 
   -- gpg
   use { "jamessan/vim-gnupg" }
