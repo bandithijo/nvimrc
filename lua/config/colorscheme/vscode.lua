@@ -117,4 +117,6 @@ hi @punctuation.special guifg=#569CD6 gui=bold
 hi ejsTag guifg=#D16969
 hi link @keyword.function.ruby Define
 hi @function.ruby guifg=#DCDCAA gui=bold
+hi link mkdHeading @text.title
+hi link htmlH1 @text.title
 ]])
