@@ -51,12 +51,6 @@ vim.api.nvim_set_keymap("n", "g8", ":as<CR>", opts)
 -- excape terminal mode
 vim.api.nvim_set_keymap("t", "<C-\\>", "<C-\\><C-N>", opts)
 
--- load view
-vim.api.nvim_set_keymap("n", "<leader>lv", ":loadview<CR>", opts)
-
--- encrypt with .gpg extension
-vim.api.nvim_set_keymap("n", "<leader>en", ":WriteEncrypted %.gpg<CR> | :e %.gpg", opts)
-
 -- lsp
 local function nkeymap(key, map)
   vim.api.nvim_set_keymap("n", key, map, opts)
@@ -74,6 +68,22 @@ nkeymap("<C-k>",      ":lua vim.lsp.buf.signature_help()<CR>")
 nkeymap("<leader>af", ":lua vim.lsp.buf.code_action()<CR>")
 nkeymap("<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
 
+-- vim-easy-align
+vim.api.nvim_set_keymap("x", "ga", "<Plug>(EasyAlign)", opts)
+vim.api.nvim_set_keymap("n", "ga", "<Plug>(EasyAlign)", opts)
+
+-- telescope
+vim.api.nvim_set_keymap("n", "<C-p>", ":Telescope find_files hidden=true<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-f>", ":Telescope buffers<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-g>", ":Telescope live_grep<CR>", opts)
+vim.api.nvim_set_keymap("n", "<C-h>", ":Telescope oldfiles<CR>", opts)
+
+-- load view
+vim.api.nvim_set_keymap("n", "<leader>lv", ":loadview<CR>", opts)
+
+-- encrypt with .gpg extension
+vim.api.nvim_set_keymap("n", "<leader>en", ":WriteEncrypted %.gpg<CR> | :e %.gpg", opts)
+
 -- vim-floaterm
 vim.g.floaterm_keymap_new    = "<leader>ft"
 vim.g.floaterm_keymap_prev   = "<leader>fn"
@@ -86,10 +96,6 @@ vim.api.nvim_set_keymap("n", "<leader>lg", ":FloatermNew --title=─ --height=1.
 -- tig
 vim.api.nvim_set_keymap("n", "<leader>lt", ":FloatermNew --title=─ --height=1.00 --width=1.00 --position=center tig<CR>", opts)
 
--- vim-easy-align
-vim.api.nvim_set_keymap("x", "ga", "<Plug>(EasyAlign)", opts)
-vim.api.nvim_set_keymap("n", "ga", "<Plug>(EasyAlign)", opts)
-
 -- vim-test
 vim.api.nvim_set_keymap("n", "<leader>t", ":TestNearest<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>T", ":TestFile<CR>", opts)
@@ -97,8 +103,5 @@ vim.api.nvim_set_keymap("n", "<leader>a", ":TestSuite<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>l", ":TestLast<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>g", ":TestVisit<CR>", opts)
 
--- telescope
-vim.api.nvim_set_keymap("n", "<C-p>", ":Telescope find_files hidden=true<CR>", opts)
-vim.api.nvim_set_keymap("n", "<C-f>", ":Telescope buffers<CR>", opts)
-vim.api.nvim_set_keymap("n", "<C-g>", ":Telescope live_grep<CR>", opts)
-vim.api.nvim_set_keymap("n", "<C-h>", ":Telescope oldfiles<CR>", opts)
+-- yank filename & path on active buffer
+vim.api.nvim_set_keymap("n", "<leader>yp", ":let @+=@%<CR>", opts)
