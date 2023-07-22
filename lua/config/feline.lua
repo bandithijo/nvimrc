@@ -20,7 +20,7 @@ local components = {
 
 local colors = {
   -- Codedark
-  bg        = "#005F87",
+  bg        = "#303030",
   fg        = "#D3D3D3",
   -- Gruvbox
   -- bg        = "#3C3836",

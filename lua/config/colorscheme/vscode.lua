@@ -32,9 +32,9 @@ require("vscode").setup({
     ExtraWhitespace = { fg = "#1E1E1E", bg = "#F24646" },
     Folded = { fg = "#D4D4D4" },
 
-    -- StatusLine = { fg = "#262626", bg = "#262626" },
-    -- StatusLineNC = { fg = "#262626", bg = "#262626" },
-    -- VertSplit = { fg = "#262626", bg = "#262626" },
+    StatusLine = { fg = "NONE", bg = "#303030" },
+    StatusLineNC = { fg = "NONE", bg = "#303031" },
+    VertSplit = { fg = "#262626", bg = "NONE" },
 
     -- diff
     diffRemoved = { fg = '#D0D0D0', bg = '#5E0101' },
