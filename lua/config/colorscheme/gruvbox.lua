@@ -7,7 +7,11 @@ require("gruvbox").setup({
   undercurl = true,
   underline = true,
   bold = true,
-  italic = true,
+  italic = {
+     strings = true,
+     operators = true,
+     comments = true,
+  },
   strikethrough = true,
   invert_selection = false,
   invert_signs = false,
@@ -49,16 +53,16 @@ require("gruvbox").setup({
     Blamer = { fg = "#928374", bg = "NONE" },
 
     -- plugin: nvim-tree
-    NvimTreeRootFolder = { fg = "#D79921", bg = "NONE" },
-    NvimTreeFolderIcon = { fg = "#D79921", bg = "NONE" },
-    NvimTreeFolderName = { fg = "#D79921", bg = "NONE" },
-    NvimTreeOpenedFolderName = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeRootFolder = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeFolderIcon = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeFolderName = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeOpenedFolderName = { fg = "#D79921", bg = "NONE" },
     NvimTreeIndentMarker = { fg = "#3C3836", bg = "NONE" },
-    NvimTreeGitDirty = { fg = "#D79921", bg = "NONE" },
-    NvimTreeGitStaged = { fg = "#D79921", bg = "NONE" },
-    NvimTreeGitMerge = { fg = "#D79921", bg = "NONE" },
-    NvimTreeGitRenamed = { fg = "#D79921", bg = "NONE" },
-    NvimTreeGitNew = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeGitDirty = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeGitStaged = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeGitMerge = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeGitRenamed = { fg = "#D79921", bg = "NONE" },
+    -- NvimTreeGitNew = { fg = "#D79921", bg = "NONE" },
     NvimTreeWindowPicker = { fg = "#EBDBB2", bg = "#3C3836" },
 
     -- plugin: indent-blankline
@@ -103,7 +107,11 @@ require("gruvbox").setup({
   dim_inactive = false,
   transparent_mode = false,
 })
-vim.cmd("colorscheme gruvbox")
+
+vim.cmd([[
+colorscheme gruvbox
+set termguicolors
+]])
 
 vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")
 vim.cmd.sign("define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  linehl= numhl=")
@@ -117,4 +125,11 @@ hi @text.todo.checked gui=none
 hi @text.todo.unchecked gui=none
 hi @text.todo guifg=#F2E5BC guibg=#CC241D gui=bold
 hi @text.note guifg=#F2E5BC guibg=#D79921 gui=bold
+
+hi link @keyword.ruby GruvboxRed
+hi link @keyword.function.ruby GruvboxRed
+hi link @function.call.ruby GruvboxFg1
+hi link @label.ruby GruvboxBlue
+hi link @symbol.ruby GruvboxPurple
+hi link @variable.ruby GruvboxBlue
 ]])

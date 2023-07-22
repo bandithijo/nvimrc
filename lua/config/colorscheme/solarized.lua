@@ -18,8 +18,8 @@ vim.cmd([[
   hi CursorLine guibg=none
   hi CursorLineNr guibg=#002B36 gui=none
   hi ColorColumn guifg=none guibg=none
-  hi Visual guifg=#B58900
-  hi VisualNOS guifg=#B58900
+  hi Visual guifg=#B58900 guibg=#002B36 gui=reverse
+  hi VisualNOS guifg=#B58900 guibg=#002B36 gui=reverse
 
   " plugins: highlight-yank-region
   hi HighlightedyankRegion guifg=#002B36 guibg=#B58900
@@ -97,6 +97,12 @@ vim.cmd([[
   hi liquidExpression guifg=#859900
   " language: ejs
   hi ejsTag guifg=#DC322F
+  " language: ruby
+  hi @function.ruby guifg=#CB4B16 gui=bold
+  hi @function.call.ruby guifg=#CB4B16
+  hi @symbol.ruby guifg=#268BD2
+  hi @punctuation.delimiter.ruby guifg=#93A1A1
+  hi link @parameter.ruby @variable.ruby
 ]])
 
 vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")

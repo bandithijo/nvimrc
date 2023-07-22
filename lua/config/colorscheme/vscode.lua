@@ -32,9 +32,9 @@ require("vscode").setup({
     ExtraWhitespace = { fg = "#1E1E1E", bg = "#F24646" },
     Folded = { fg = "#D4D4D4" },
 
-    -- StatusLine = { fg = "#262626", bg = "#262626" },
-    -- StatusLineNC = { fg = "#262626", bg = "#262626" },
-    -- VertSplit = { fg = "#262626", bg = "#262626" },
+    StatusLine = { fg = "NONE", bg = "#303030" },
+    StatusLineNC = { fg = "NONE", bg = "#303031" },
+    VertSplit = { fg = "#262626", bg = "NONE" },
 
     -- diff
     diffRemoved = { fg = '#D0D0D0', bg = '#5E0101' },
@@ -103,9 +103,20 @@ vim.cmd.sign("define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  lin
 vim.cmd.sign("define DiagnosticSignInfo  text= texthl=DiagnosticSignInfo  linehl= numhl=")
 vim.cmd.sign("define DiagnosticSignHint  text= texthl=DiagnosticSignHint  linehl= numhl=")
 
+
+vim.cmd([[
+colorscheme vscode
+set termguicolors
+]])
+
 -- language
 vim.cmd([[
 hi @text.title guifg=#D7BA7D gui=bold
 hi @text.literal guifg=#CE9178
 hi @punctuation.special guifg=#569CD6 gui=bold
+hi ejsTag guifg=#D16969
+hi link @keyword.function.ruby Define
+hi @function.ruby guifg=#DCDCAA gui=bold
+hi link mkdHeading @text.title
+hi link htmlH1 @text.title
 ]])

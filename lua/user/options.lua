@@ -1,5 +1,5 @@
 -- statusline
-vim.opt.laststatus = 3
+vim.opt.laststatus = 2
 
 -- file encoding
 vim.opt.encoding = "utf-8"
@@ -118,6 +118,6 @@ vim.opt.linespace = 0
 vim.opt.scrolloff = 0
 vim.opt.sidescrolloff = 0
 vim.opt.title = true
-vim.opt.titlestring = "nvim"
+vim.opt.titlestring = "neovim"
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
