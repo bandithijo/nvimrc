@@ -1,5 +1,5 @@
 -- statusline
-vim.opt.laststatus = 3
+vim.opt.laststatus = 2
 
 -- file encoding
 vim.opt.encoding = "utf-8"
