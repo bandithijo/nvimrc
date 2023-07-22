@@ -126,12 +126,6 @@ require("packer").startup(function(use)
     "qtc-de/vve"
   }
 
-  -- float terminal
-  use {
-    "voldikss/vim-floaterm",
-    config = require("config.vim-floaterm")
-  }
-
   -- color indicator
   use {
     "RRethy/vim-hexokinase",
