@@ -91,10 +91,10 @@ vim.g.floaterm_keymap_next   = "<leader>fp"
 vim.g.floaterm_keymap_toggle = "<leader>fh"
 
 -- lazygit
-vim.api.nvim_set_keymap("n", "<leader>lg", ":FloatermNew --title=─ --height=1.00 --width=1.00 --position=center lazygit<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>lg", ":FloatermNew --title=─ --height=1.00 --width=1.00 --position=center lazygit<CR>", opts)
 
 -- tig
-vim.api.nvim_set_keymap("n", "<leader>lt", ":FloatermNew --title=─ --height=1.00 --width=1.00 --position=center tig<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<leader>lt", ":FloatermNew --title=─ --height=1.00 --width=1.00 --position=center tig<CR>", opts)
 
 -- vim-test
 vim.api.nvim_set_keymap("n", "<leader>t", ":TestNearest<CR>", opts)
