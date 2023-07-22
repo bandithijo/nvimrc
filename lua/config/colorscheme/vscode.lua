@@ -112,6 +112,7 @@ set termguicolors
 -- language
 vim.cmd([[
 hi clear ModeMsg
+hi clear MoreMsg
 hi @text.title guifg=#D7BA7D gui=bold
 hi @text.literal guifg=#CE9178
 hi @punctuation.special guifg=#569CD6 gui=bold
