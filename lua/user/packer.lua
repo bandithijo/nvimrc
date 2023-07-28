@@ -226,11 +226,15 @@ require("packer").startup(function(use)
   -- language parser
   use {
     "nvim-treesitter/nvim-treesitter",
-    -- commit = "4cccb6f",
     config = require("config.nvim-treesitter")
   }
   use { "nvim-treesitter/playground" }
   use { "p00f/nvim-ts-rainbow" }
+  -- context
+  use {
+    "nvim-treesitter/nvim-treesitter-context",
+    config = require("config.nvim-treesitter-context")
+  }
 
   -- lsp
   use {

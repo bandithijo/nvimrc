@@ -118,6 +118,6 @@ vim.opt.linespace = 0
 vim.opt.scrolloff = 0
 vim.opt.sidescrolloff = 0
 vim.opt.title = true
-vim.opt.titlestring = "neovim"
+vim.opt.titlestring = "nvim"
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
