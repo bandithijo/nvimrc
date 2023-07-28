@@ -24,8 +24,12 @@ require("telescope").setup({
     scroll_strategy      = "cycle",
     selection_strategy   = "reset",
     sorting_strategy     = "descending",
-    layout_strategy      = "vertical",
+    layout_strategy      = "bottom_pane",
     layout_config = {
+      prompt_position = "bottom",
+      bottom_pane = {
+        height = 20,
+      },
       vertical = {
         width = 0.80,
         height = 0.95
@@ -37,12 +41,13 @@ require("telescope").setup({
     },
     results_title        = false,
     preview_title        = false,
+    preview              = false,
     show_line            = true,
     file_ignore_patterns = {},
     file_sorter          = require("telescope.sorters").get_fuzzy_sorter,
     generic_sorter       = require("telescope.sorters").get_generic_fuzzy_sorter,
     winblend             = 0,
-    border               = {},
+    border               = true,
     borderchars          = { "─", "│", "─", "│", "┌", "┐", "┘", "└"},
     color_devicons       = false,
     use_less             = false,
