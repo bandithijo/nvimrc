@@ -128,7 +128,7 @@ nvim_tree.setup {
   filters = {
     dotfiles = false,
     custom = {
-      "node_modules", ".cache"
+      "node_modules", ".cache", ".git"
     },
     exclude = {
       ".env", "doc"
