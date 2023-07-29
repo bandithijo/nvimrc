@@ -87,7 +87,6 @@ vim.g.python3_host_prog = "/usr/bin/python3"
 
 -- buffer options
 vim.opt.autoindent = true
-vim.opt.autoread = true
 vim.opt.binary = true
 vim.opt.bomb = true
 vim.opt.compatible = false
