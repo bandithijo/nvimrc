@@ -112,7 +112,6 @@ vim.opt.ruler = true
 vim.opt.wrap = true
 vim.opt.formatoptions = "cqt"
 vim.opt.infercase = true
-vim.opt.expandtab = true
 vim.opt.linespace = 0
 vim.opt.scrolloff = 0
 vim.opt.sidescrolloff = 0
