@@ -41,7 +41,7 @@ require("telescope").setup({
     },
     results_title        = false,
     preview_title        = false,
-    preview              = false,
+    preview              = true,
     show_line            = true,
     file_ignore_patterns = {},
     file_sorter          = require("telescope.sorters").get_fuzzy_sorter,
@@ -76,9 +76,6 @@ require("telescope").setup({
         ["<C-d>"] = actions.preview_scrolling_down,
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
         ["<Tab>"] = actions.toggle_selection,
-        -- ["<C-s>"] = actions.open_selected_files,
-        -- ["<C-a>"] = actions.cycle_previewers_prev,
-        -- ["<C-w>l"] = actions.preview_switch_window_right,
       },
       n = {
         ["<CR>"]  = actions.select_default + actions.center,
@@ -94,7 +91,6 @@ require("telescope").setup({
         ["<C-d>"] = actions.preview_scrolling_down,
         ["<C-q>"] = actions.send_to_qflist,
         ["<Tab>"] = actions.toggle_selection,
-        -- ["<C-w>l"] = actions.preview_switch_window_right,
       }
     }
   },
