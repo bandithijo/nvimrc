@@ -29,10 +29,10 @@ require("packer").startup(function(use)
   }
 
   -- explorer
-  use {
-    "kyazdani42/nvim-tree.lua",
-    config = require("config.nvim-tree")
-  }
+  -- use {
+  --   "kyazdani42/nvim-tree.lua",
+  --   config = require("config.nvim-tree")
+  -- }
 
   -- statusline
   use {
