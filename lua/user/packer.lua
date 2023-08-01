@@ -36,8 +36,6 @@ require("packer").startup(function(use)
 
   -- statusline
   use {
-    "feline-nvim/feline.nvim",
-    config = require("config.feline")
   }
 
   -- bar
