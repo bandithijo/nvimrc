@@ -7,7 +7,7 @@
 --   command_mode      = 'c'
 
 -- define opts
-local opts = { noremap = true, silent = true }
+local opts = { noremap = true, silent = false }
 
 -- remap space as leader key
 vim.api.nvim_set_keymap("", "<Space>", "<Nop>", opts)
