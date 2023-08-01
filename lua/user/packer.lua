@@ -70,13 +70,7 @@ require("packer").startup(function(use)
     config = require("config.vim-better-whitespace")
   }
 
-  -- ejs
-  use { "nikvdp/ejs-syntax"}
-
-  -- ruby
-  use { "vim-ruby/vim-ruby" }
-
-  -- rspec
+  -- vim-test
   use {
     "vim-test/vim-test",
     config = require("config.vim-test")
@@ -84,6 +78,12 @@ require("packer").startup(function(use)
 
   -- dispatch
   use { "tpope/vim-dispatch" }
+
+  -- ejs
+  use { "nikvdp/ejs-syntax"}
+
+  -- ruby
+  use { "vim-ruby/vim-ruby" }
 
   -- liquid
   use { "tpope/vim-liquid" }
