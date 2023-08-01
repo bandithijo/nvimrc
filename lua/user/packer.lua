@@ -36,6 +36,8 @@ require("packer").startup(function(use)
 
   -- statusline
   use {
+    "nvim-lualine/lualine.nvim",
+    config = require("config.lualine")
   }
 
   -- bar
