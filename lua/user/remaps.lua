@@ -88,5 +88,7 @@ vim.api.nvim_set_keymap("n", "<leader>a", ":TestSuite<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>l", ":TestLast<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>g", ":TestVisit<CR>", opts)
 
--- yank filename & path on active buffer
+-- yank filename on active buffer
 vim.api.nvim_set_keymap("n", "<leader>yp", ":let @+=@%<CR>", opts)
+-- yank path on active buffer
+vim.api.nvim_set_keymap("n", "<leader>yP", ":let @+=expand('%:.')<CR>", opts)
