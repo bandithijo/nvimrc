@@ -18,7 +18,7 @@ vim.g.maplocalleader = " "
 vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", opts)
 
 -- explorer
-vim.api.nvim_set_keymap("n", "<F12>", ":NvimTreeToggle<CR>", opts)
+-- vim.api.nvim_set_keymap("n", "<F12>", ":NvimTreeToggle<CR>", opts)
 
 -- tagbar
 vim.api.nvim_set_keymap("n", "<F11>", ":TagbarToggle<CR>", opts)
@@ -78,23 +78,8 @@ vim.api.nvim_set_keymap("n", "<C-f>", ":Telescope buffers<CR>", opts)
 vim.api.nvim_set_keymap("n", "<C-g>", ":Telescope live_grep<CR>", opts)
 vim.api.nvim_set_keymap("n", "<C-h>", ":Telescope oldfiles<CR>", opts)
 
--- load view
-vim.api.nvim_set_keymap("n", "<leader>lv", ":loadview<CR>", opts)
-
 -- encrypt with .gpg extension
 vim.api.nvim_set_keymap("n", "<leader>en", ":WriteEncrypted %.gpg<CR> | :e %.gpg", opts)
-
--- vim-floaterm
-vim.g.floaterm_keymap_new    = "<leader>ft"
-vim.g.floaterm_keymap_prev   = "<leader>fn"
-vim.g.floaterm_keymap_next   = "<leader>fp"
-vim.g.floaterm_keymap_toggle = "<leader>fh"
-
--- lazygit
--- vim.api.nvim_set_keymap("n", "<leader>lg", ":FloatermNew --title=─ --height=1.00 --width=1.00 --position=center lazygit<CR>", opts)
-
--- tig
--- vim.api.nvim_set_keymap("n", "<leader>lt", ":FloatermNew --title=─ --height=1.00 --width=1.00 --position=center tig<CR>", opts)
 
 -- vim-test
 vim.api.nvim_set_keymap("n", "<leader>t", ":TestNearest<CR>", opts)
