@@ -19,12 +19,6 @@ require("packer").startup(function(use)
   -- gpg
   use { "jamessan/vim-gnupg" }
 
-  -- discord
-  use {
-    "andweeb/presence.nvim",
-    config = require("config.presence")
-  }
-
   -- wakatime
   use { "wakatime/vim-wakatime" }
 
