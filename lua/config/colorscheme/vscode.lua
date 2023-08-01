@@ -121,4 +121,5 @@ hi link @keyword.function.ruby Define
 hi @function.ruby guifg=#DCDCAA gui=bold
 hi link mkdHeading @text.title
 hi link htmlH1 @text.title
+hi link mkdLineBreak Normal
 ]])
