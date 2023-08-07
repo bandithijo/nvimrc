@@ -3,7 +3,7 @@
 --   return
 -- end
 
-vim.cmd([[
+vim.cmd[[
   colorscheme solarized8
   set termguicolors
 
@@ -43,6 +43,7 @@ vim.cmd([[
   hi TelescopePromptPrefix guifg=#93A1A1
   hi TelescopeSelection gui=bold
   hi TelescopeMatching guifg=#B58900
+  hi TelescopeBorder guifg=#264B54
 
   " plugins: lsp
   hi DiagnosticVirtualTextError guifg=#DC322F
@@ -103,7 +104,7 @@ vim.cmd([[
   hi @symbol.ruby guifg=#268BD2
   hi @punctuation.delimiter.ruby guifg=#93A1A1
   hi link @parameter.ruby @variable.ruby
-]])
+]]
 
 vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")
 vim.cmd.sign("define DiagnosticSignWarn  text= texthl=DiagnosticSignWarn  linehl= numhl=")
