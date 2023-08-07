@@ -27,10 +27,10 @@ require("packer").startup(function(use)
   use { "wakatime/vim-wakatime" }
 
   -- icons
-  use {
-    "kyazdani42/nvim-web-devicons",
-    config = require("config.nvim-web-devicons")
-  }
+  -- use {
+  --   "kyazdani42/nvim-web-devicons",
+  --   config = require("config.nvim-web-devicons")
+  -- }
 
   -- explorer
   -- use {
@@ -39,10 +39,10 @@ require("packer").startup(function(use)
   -- }
 
   -- statusline
-  use {
-    "nvim-lualine/lualine.nvim",
-    config = require("config.lualine")
-  }
+  -- use {
+  --   "nvim-lualine/lualine.nvim",
+  --   config = require("config.lualine")
+  -- }
 
   -- bar
   -- use {
@@ -51,13 +51,13 @@ require("packer").startup(function(use)
   -- }
 
   -- gps/navigation
-  use {
-    "SmiteshP/nvim-navic",
-    config = require("config.nvim-navic")
-  }
+  -- use {
+  --   "SmiteshP/nvim-navic",
+  --   config = require("config.nvim-navic")
+  -- }
 
   -- startup time check
-  use { "tweekmonster/startuptime.vim" }
+  -- use { "tweekmonster/startuptime.vim" }
 
   -- indentline
   use {
