@@ -59,7 +59,7 @@ require("lualine").setup({
       {
         "filename",
         path = 0,
-        file_status = false,
+        file_status = true,
         symbols = {
           modified = "[+]",
           readonly = "[-]",
