@@ -1,11 +1,13 @@
 local colors = {
+  -- codedark
   gray     = '#303030',
-  lightred = '#D16969',
-  blue     = '#569CD6',
-  pink     = '#C586C0',
-  black    = '#262626',
   white    = '#D4D4D4',
-  green    = '#608B4E',
+  -- solarized
+  -- gray     = '#264B54',
+  -- white    = '#93A1A1',
+  -- github-theme-dimmed
+  -- gray     = '#292E36',
+  -- white    = '#adbac7',
 }
 
 return {
