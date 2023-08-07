@@ -15,6 +15,10 @@ require("packer").startup(function(use)
   --   "lifepillar/vim-solarized8",
   --   config = require("config.colorscheme.solarized")
   -- }
+  -- use {
+  --   "projekt0n/github-nvim-theme",
+  --   config = require("config.colorscheme.github-theme")
+  -- }
 
   -- gpg
   use { "jamessan/vim-gnupg" }
