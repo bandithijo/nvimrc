@@ -26,39 +26,6 @@ require("packer").startup(function(use)
   -- wakatime
   use { "wakatime/vim-wakatime" }
 
-  -- icons
-  -- use {
-  --   "kyazdani42/nvim-web-devicons",
-  --   config = require("config.nvim-web-devicons")
-  -- }
-
-  -- explorer
-  -- use {
-  --   "kyazdani42/nvim-tree.lua",
-  --   config = require("config.nvim-tree")
-  -- }
-
-  -- statusline
-  -- use {
-  --   "nvim-lualine/lualine.nvim",
-  --   config = require("config.lualine")
-  -- }
-
-  -- bar
-  -- use {
-  --   'fgheng/winbar.nvim',
-  --   config = require("config.winbar")
-  -- }
-
-  -- gps/navigation
-  -- use {
-  --   "SmiteshP/nvim-navic",
-  --   config = require("config.nvim-navic")
-  -- }
-
-  -- startup time check
-  -- use { "tweekmonster/startuptime.vim" }
-
   -- indentline
   use {
     "lukas-reineke/indent-blankline.nvim",
