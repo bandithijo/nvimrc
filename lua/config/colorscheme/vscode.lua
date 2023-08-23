@@ -46,17 +46,6 @@ require("vscode").setup({
     -- plugin: blamer
     Blamer = { fg = "#608B4E", bg = "NONE" },
 
-    -- plugin: nvim-tree
-    NvimTreeRootFolder = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeFolderIcon = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeIndentMarker = { fg = "#3C3C3C", bg = "NONE" },
-    NvimTreeGitDirty = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitStaged = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitMerge = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitRenamed = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitNew = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeWindowPicker = { fg = "#D4D4D4", bg = "#005F8F" },
-
     -- plugin: indent-blankline
     IndentBlanklineChar = { fg = "#3C3C3C", nocombine = 1 },
 

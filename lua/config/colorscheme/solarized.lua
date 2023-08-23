@@ -8,9 +8,9 @@ vim.cmd[[
   set termguicolors
 
   hi Comment gui=none
-  hi VertSplit guifg=#073642 guibg=#002B36 gui=none
-  hi StatusLine guifg=#073642 guibg=#002B36 gui=none
-  hi StatusLineNc guifg=#073642 guibg=#002B36 gui=none
+  hi VertSplit guifg=#264B54 guibg=#002B36 gui=none
+  hi StatusLine guifg=#93A1A1 guibg=#264B54 gui=none
+  hi StatusLineNc guifg=#93A1A1 guibg=#264B54 gui=none
   hi SignColumn guibg=none
   hi FoldColumn guifg=#586E75 guibg=#002B36
   hi Folded guibg=none
@@ -20,28 +20,20 @@ vim.cmd[[
   hi ColorColumn guifg=none guibg=none
   hi Visual guifg=#B58900 guibg=#002B36 gui=reverse
   hi VisualNOS guifg=#B58900 guibg=#002B36 gui=reverse
+  hi MoreMsg guifg=#B58900
+  hi ModeMsg guifg=#B58900
+  hi ErrorMsg guifg=#DC322F guibg=none gui=bold
+  hi netrwTreeBar guifg=#264B54
 
   " plugins: highlight-yank-region
   hi HighlightedyankRegion guifg=#002B36 guibg=#B58900
 
-  " plugins: nvim-tree
-  hi NvimTreeIndentMarker guifg=#073642
-  hi NvimTreeRootFolder guifg=#B58900
-  hi NvimTreeFolderIcon guifg=#B58900
-  hi NvimTreeFolderName guifg=#B58900
-  hi NvimTreeOpenedFolderName guifg=#B58900
-  hi NvimTreeWindowPicker guifg=#002B36 guibg=#93A1A1 gui=bold
-  hi NvimTreeCursorLine guibg=#073642 gui=bold
-  " hi NvimTreeCursorLineNr guibg=#073642
-  " hi NvimTreeSignColumn guibg=#073642
-  " hi NvimTreeGitDirty guibg=#073642
-
   " plugins: indent-blankline
-  hi IndentBlanklineChar guifg=#073642 gui=nocombine
+  hi IndentBlanklineChar guifg=#264B54 gui=nocombine
 
   " plugins: telescope
   hi TelescopePromptPrefix guifg=#93A1A1
-  hi TelescopeSelection gui=bold
+  hi TelescopeSelection guibg=#264B54 gui=bold
   hi TelescopeMatching guifg=#B58900
   hi TelescopeBorder guifg=#264B54
 
@@ -60,10 +52,6 @@ vim.cmd[[
   hi DiagnosticUnderlineWarn guisp=#B58900 gui=underline
   hi DiagnosticUnderlineInfo guisp=#073642 gui=underline
   hi DiagnosticUnderlineHint guisp=#073642 gui=underline
-
-  " plugins: vim-floaterm
-  hi Floaterm guibg=#002B36
-  hi FloatermBorder guifg=#002B36 guibg=#002B36
 
   " plugins: gitsigns
   hi GitSignAdd guifg=#859900 guibg=#002B36
@@ -93,6 +81,7 @@ vim.cmd[[
   hi mkdCode guifg=#B58900
   hi mkdLink guifg=#268BD2
   hi mkdUrl guifg=#6C71C4
+  hi link mkdLineBreak Normal
   " language: liquid
   hi liquidStatement guifg=#859900
   hi liquidExpression guifg=#859900
@@ -101,9 +90,8 @@ vim.cmd[[
   " language: ruby
   hi @function.ruby guifg=#CB4B16 gui=bold
   hi @function.call.ruby guifg=#CB4B16
-  hi @symbol.ruby guifg=#268BD2
   hi @punctuation.delimiter.ruby guifg=#93A1A1
-  hi link @parameter.ruby @variable.ruby
+  hi @type.ruby gui=bold
 ]]
 
 vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")
