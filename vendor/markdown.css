@@ -1,3 +1,15 @@
+[data-theme="dark"] {
+    --foreground-color: #93A1A1;
+    --background-color: #073642;
+    --border-color: #264B54;
+    --secondary-background-color: #002B36;
+    --link-foreground-color: #2AA198;
+}
+
+main {
+  background-color: var(--secondary-background-color);
+}
+
 #page-ctn {
   margin    : 0 auto;
   max-width : 900px;
@@ -34,6 +46,16 @@
   font-weight   : 600;
 }
 
+.footnotes ol.footnotes-list li.footnote-item,
+.footnotes ol.footnotes-list li.footnote-item p.source-line {
+  color: var(--link-foreground-color);
+  font-size: small;
+  margin: 0 auto;
+}
+.footnote-ref {
+  font-size: small;
+}
+
 hr.footer {
   border        : none;
   border-bottom : 1px solid #eee;
@@ -45,6 +67,11 @@ hr.footer {
 }
 #footer-box .alignr {
 	float: right;
+}
+
+.footnotes-sep {
+  color: var(--foreground-color);
+  border-color: var(--border-color);
 }
 
 header#page-header {
@@ -68,14 +95,14 @@ header#page-header {
   /*                         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", */
   /*                         "Segoe UI Symbol"; */
   font-size             : 16px;
-  color                 : #333;
+  color                 : var(--foreground-color);
   line-height           : 1.6;
   word-wrap             : break-word;
   padding               : 45px;
-  background            : #fff;
-  border                : 1px solid #fff;
-  -webkit-border-radius : 0 0 3px 3px;
-  border-radius         : 0 0 3px 3px;
+  background            : var(--background-color);
+  border                : 1px solid var(--border-color);
+  /* -webkit-border-radius : 0 0 3px 3px; */
+  /* border-radius         : 0 0 3px 3px; */
 }
 .markdown-body > *:first-child {
   margin-top: 0 !important;
@@ -114,7 +141,7 @@ header#page-header {
   padding-bottom : 0.3em;
   font-size      : 2.25em;
   line-height    : 1.2;
-  border-bottom  : 1px solid #eee;
+  border-bottom  : 1px solid var(--border-color);
 }
 .markdown-body h2 {
   padding-bottom : 0.3em;
@@ -192,7 +219,7 @@ header#page-header {
   overflow              : auto;
   font-size             : 85%;
   line-height           : 1.45;
-  background-color      : #f7f7f7;
+  background-color      : var(--secondary-background-color);
   -webkit-border-radius : 3px;
   border-radius         : 3px;
 }
@@ -222,7 +249,7 @@ header#page-header {
   padding-bottom        : 0.2em;
   margin                : 0;
   font-size             : 85%;
-  background-color      : rgba(0,0,0,0.04);
+  background-color      : rgba(0,0,0,0.1);
   -webkit-border-radius : 3px;
   border-radius         : 3px;
 }
@@ -232,7 +259,7 @@ header#page-header {
   content        : "\00a0";
 }
 .markdown-body a {
-  color           : #4078c0;
+  color           : var(--link-foreground-color);
   text-decoration : none;
   background      : transparent;
 }
