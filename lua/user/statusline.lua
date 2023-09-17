@@ -5,11 +5,11 @@ Statusline.active = function()
   local filename = "%<%{expand('%:.') != '' ? expand('%:.') : '[No Name]'}"
   local modified = "%w%q%h%r%m%y"
   local align_r = "%="
-  local linecol = "%-5.(%l,%c%V%)"
+  local linecol = "%-1.(%l,%c%V%)"
   local percentage = "%P"
 
   return string.format(
-    "%s%s %s %s %s %s",
+    " %s%s %s %s %s %s ",
     set_color,
     filename,
     modified,
@@ -27,7 +27,7 @@ Statusline.inactive = function()
   local percentage = "%P"
 
   return string.format(
-    "%s%s %s %s %s",
+    " %s%s %s %s %s ",
     set_color,
     filename,
     modified,
