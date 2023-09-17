@@ -1,8 +1,6 @@
-local navic = require("nvim-navic")
-local on_attach = function(client, bufnr)
-  if client.server_capabilities.documentSymbolProvider then
-    navic.attach(client, bufnr)
-  end
+local status_ok, _ = pcall(require, "lspconfig")
+if not status_ok then
+  return
 end
 
 require("lspconfig").lua_ls.setup({
@@ -61,4 +59,8 @@ require("lspconfig").emmet_ls.setup({
   filetypes = {
     "css", "ejs", "eruby", "html", "javascript", "javascriptreact", "less", "liquid", "sass", "scss", "svelte", "pug", "typescriptreact", "vue"
   }
+})
+
+require("lspconfig").texlab.setup({
+  on_attach = on_attach
 })

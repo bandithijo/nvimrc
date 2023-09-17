@@ -5,61 +5,26 @@ require("packer").startup(function(use)
   -- colorscheme
   use {
     "Mofiqul/vscode.nvim",
-    config = require("config.colorscheme.vscode")
+    -- config = require("config.colorscheme.vscode")
   }
   -- use {
   --   "ellisonleao/gruvbox.nvim",
   --   config = require("config.colorscheme.gruvbox")
   -- }
+  use {
+    "lifepillar/vim-solarized8",
+    config = require("config.colorscheme.solarized")
+  }
   -- use {
-  --   "lifepillar/vim-solarized8",
-  --   config = require("config.colorscheme.solarized")
+  --   "projekt0n/github-nvim-theme",
+  --   config = require("config.colorscheme.github-theme")
   -- }
 
   -- gpg
   use { "jamessan/vim-gnupg" }
 
-  -- discord
-  use {
-    "andweeb/presence.nvim",
-    config = require("config.presence")
-  }
-
   -- wakatime
   use { "wakatime/vim-wakatime" }
-
-  -- icons
-  use {
-    "kyazdani42/nvim-web-devicons",
-    config = require("config.nvim-web-devicons")
-  }
-
-  -- explorer
-  use {
-    "kyazdani42/nvim-tree.lua",
-    config = require("config.nvim-tree")
-  }
-
-  -- statusline
-  use {
-    "feline-nvim/feline.nvim",
-    config = require("config.feline")
-  }
-
-  -- bar
-  -- use {
-  --   'fgheng/winbar.nvim',
-  --   config = require("config.winbar")
-  -- }
-
-  -- gps/navigation
-  use {
-    "SmiteshP/nvim-navic",
-    config = require("config.nvim-navic")
-  }
-
-  -- startup time check
-  use { "tweekmonster/startuptime.vim" }
 
   -- indentline
   use {
@@ -76,13 +41,7 @@ require("packer").startup(function(use)
     config = require("config.vim-better-whitespace")
   }
 
-  -- ejs
-  use { "nikvdp/ejs-syntax"}
-
-  -- ruby
-  use { "vim-ruby/vim-ruby" }
-
-  -- rspec
+  -- vim-test
   use {
     "vim-test/vim-test",
     config = require("config.vim-test")
@@ -90,6 +49,18 @@ require("packer").startup(function(use)
 
   -- dispatch
   use { "tpope/vim-dispatch" }
+
+  -- latex
+  use {
+    "lervag/vimtex",
+    config = require("config.vimtex")
+  }
+
+  -- ejs
+  use { "nikvdp/ejs-syntax"}
+
+  -- ruby
+  use { "vim-ruby/vim-ruby" }
 
   -- liquid
   use { "tpope/vim-liquid" }
@@ -119,6 +90,32 @@ require("packer").startup(function(use)
   use {
     "dhruvasagar/vim-table-mode",
     config = require("config.vim-table-mode")
+  }
+
+  -- database
+  use {
+    "tpope/vim-dadbod",
+    -- config = require("config/vim-dadbod")
+  }
+  -- database ui
+  use {
+    "kristijanhusak/vim-dadbod-ui",
+    config = require("config/vim-dadbod-ui")
+  }
+  use {
+    "kristijanhusak/vim-dadbod-completion"
+  }
+
+  -- dotenv
+  use {
+    "tpope/vim-dotenv",
+    -- config = require("config/vim-dotenv")
+  }
+
+  -- zettelkasten
+  use {
+    "Furkanzmc/zettelkasten.nvim",
+    config = require("config.zettelkasten")
   }
 
   -- various vim encoders

@@ -46,17 +46,6 @@ require("vscode").setup({
     -- plugin: blamer
     Blamer = { fg = "#608B4E", bg = "NONE" },
 
-    -- plugin: nvim-tree
-    NvimTreeRootFolder = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeFolderIcon = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeIndentMarker = { fg = "#3C3C3C", bg = "NONE" },
-    NvimTreeGitDirty = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitStaged = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitMerge = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitRenamed = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeGitNew = { fg = "#CCB17A", bg = "NONE" },
-    NvimTreeWindowPicker = { fg = "#D4D4D4", bg = "#005F8F" },
-
     -- plugin: indent-blankline
     IndentBlanklineChar = { fg = "#3C3C3C", nocombine = 1 },
 
@@ -64,10 +53,10 @@ require("vscode").setup({
     TelescopeSelection = { fg = "#D4D4D4", bg = "#005F87", bold = 1 },
     TelescopeSelectionCaret = { fg = "#D4D4D4", bg = "#005F87", bold = 1 },
     TelescopeMultiSelection = { fg = "#D7BA7D" },
-    TelescopeBorder = { fg = "#D4D4D4" },
-    TelescopeResultsBorder = { fg = "#D4D4D4" },
-    TelescopePreviewBorder = { fg = "#D4D4D4" },
-    TelescopePromptBorder = { fg = "#D4D4D4" },
+    TelescopeBorder = { fg = "#3C3C3C" },
+    TelescopeResultsBorder = { fg = "#3C3C3C" },
+    TelescopePreviewBorder = { fg = "#3C3C3C" },
+    TelescopePromptBorder = { fg = "#3C3C3C" },
     TelescopePromptPrefix = { fg = "#D4D4D4" },
     TelescopeMatching = { fg = "#F24646" },
 
@@ -113,6 +102,7 @@ set termguicolors
 vim.cmd([[
 hi clear ModeMsg
 hi clear MoreMsg
+hi clear CursorLine
 hi @text.title guifg=#D7BA7D gui=bold
 hi @text.literal guifg=#CE9178
 hi @punctuation.special guifg=#569CD6 gui=bold
@@ -121,4 +111,6 @@ hi link @keyword.function.ruby Define
 hi @function.ruby guifg=#DCDCAA gui=bold
 hi link mkdHeading @text.title
 hi link htmlH1 @text.title
+hi link mkdLineBreak Normal
+hi netrwTreeBar guifg=#3C3C3C
 ]])

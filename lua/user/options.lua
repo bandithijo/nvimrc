@@ -78,6 +78,7 @@ vim.opt.signcolumn = "yes"
 
 -- color column
 vim.opt.colorcolumn = "80"
+vim.opt.linebreak = true
 
 -- tab line
 vim.opt.showtabline = 0
@@ -87,12 +88,11 @@ vim.g.python3_host_prog = "/usr/bin/python3"
 
 -- buffer options
 vim.opt.autoindent = true
-vim.opt.autoread = true
 vim.opt.binary = true
 vim.opt.bomb = true
 vim.opt.compatible = false
 vim.opt.completeopt = "menu,menuone,noselect"
-vim.opt.conceallevel = 0
+vim.opt.conceallevel = 2
 vim.opt.cursorcolumn = false
 vim.opt.cursorline = true
 vim.opt.errorbells = false
@@ -113,7 +113,6 @@ vim.opt.ruler = true
 vim.opt.wrap = true
 vim.opt.formatoptions = "cqt"
 vim.opt.infercase = true
-vim.opt.expandtab = true
 vim.opt.linespace = 0
 vim.opt.scrolloff = 0
 vim.opt.sidescrolloff = 0
@@ -121,3 +120,7 @@ vim.opt.title = true
 vim.opt.titlestring = "nvim"
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
+
+-- netrw
+vim.g.netrw_banner = 0
+vim.g.netrw_browsex_viewer = "xdg-open"

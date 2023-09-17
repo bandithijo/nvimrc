@@ -24,8 +24,12 @@ require("telescope").setup({
     scroll_strategy      = "cycle",
     selection_strategy   = "reset",
     sorting_strategy     = "descending",
-    layout_strategy      = "vertical",
+    layout_strategy      = "bottom_pane",
     layout_config = {
+      prompt_position = "bottom",
+      bottom_pane = {
+        height = 20,
+      },
       vertical = {
         width = 0.80,
         height = 0.95
@@ -37,12 +41,13 @@ require("telescope").setup({
     },
     results_title        = false,
     preview_title        = false,
+    preview              = true,
     show_line            = true,
-    file_ignore_patterns = {},
+    file_ignore_patterns = { "^.git/", "^node_modules/" },
     file_sorter          = require("telescope.sorters").get_fuzzy_sorter,
     generic_sorter       = require("telescope.sorters").get_generic_fuzzy_sorter,
     winblend             = 0,
-    border               = {},
+    border               = true,
     borderchars          = { "─", "│", "─", "│", "┌", "┐", "┘", "└"},
     color_devicons       = false,
     use_less             = false,
@@ -71,9 +76,6 @@ require("telescope").setup({
         ["<C-d>"] = actions.preview_scrolling_down,
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
         ["<Tab>"] = actions.toggle_selection,
-        -- ["<C-s>"] = actions.open_selected_files,
-        -- ["<C-a>"] = actions.cycle_previewers_prev,
-        -- ["<C-w>l"] = actions.preview_switch_window_right,
       },
       n = {
         ["<CR>"]  = actions.select_default + actions.center,
@@ -89,7 +91,6 @@ require("telescope").setup({
         ["<C-d>"] = actions.preview_scrolling_down,
         ["<C-q>"] = actions.send_to_qflist,
         ["<Tab>"] = actions.toggle_selection,
-        -- ["<C-w>l"] = actions.preview_switch_window_right,
       }
     }
   },

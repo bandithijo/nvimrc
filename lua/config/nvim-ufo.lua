@@ -29,7 +29,7 @@ end
 local ftMap = {
   git = "",
   lua = "treesitter",
-  markdown = "",
+  markdown = "treesitter",
   python = {"treesitter", "indent"},
   ruby = "treesitter",
   vim = "indent",
