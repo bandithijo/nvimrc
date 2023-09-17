@@ -1,9 +1,9 @@
 [data-theme="dark"] {
-    --foreground-color: #93A1A1;
-    --background-color: #073642;
-    --border-color: #264B54;
-    --secondary-background-color: #002B36;
-    --link-foreground-color: #2AA198;
+  --foreground-color: #93A1A1;
+  --background-color: #073642;
+  --border-color: #264B54;
+  --secondary-background-color: #002B36;
+  --link-foreground-color: #2AA198;
 }
 
 main {
@@ -147,7 +147,7 @@ header#page-header {
   padding-bottom : 0.3em;
   font-size      : 1.75em;
   line-height    : 1.225;
-  border-bottom  : 1px solid #eee;
+  border-bottom  : 1px solid var(--border-color);
 }
 .markdown-body h3 {
   font-size   : 1.5em;
@@ -408,4 +408,23 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .hljs-strong {
   font-weight: bold;
+}
+
+/* mermaid.js */
+.mermaid .flowchart-link {
+  stroke: var(--foreground-color) !important;
+}
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path {
+  fill: var(--border-color) !important;
+  stroke: var(--foreground-color) !important;
+  stroke-width: 1px !important;
+}
+
+.mermaid .label text,
+.mermaid span {
+  color: var(--foreground-color) !important;
 }
