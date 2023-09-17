@@ -78,6 +78,7 @@ vim.opt.signcolumn = "yes"
 
 -- color column
 vim.opt.colorcolumn = "80"
+vim.opt.linebreak = true
 
 -- tab line
 vim.opt.showtabline = 0

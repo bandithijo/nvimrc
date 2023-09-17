@@ -5,16 +5,16 @@ require("packer").startup(function(use)
   -- colorscheme
   use {
     "Mofiqul/vscode.nvim",
-    config = require("config.colorscheme.vscode")
+    -- config = require("config.colorscheme.vscode")
   }
   -- use {
   --   "ellisonleao/gruvbox.nvim",
   --   config = require("config.colorscheme.gruvbox")
   -- }
-  -- use {
-  --   "lifepillar/vim-solarized8",
-  --   config = require("config.colorscheme.solarized")
-  -- }
+  use {
+    "lifepillar/vim-solarized8",
+    config = require("config.colorscheme.solarized")
+  }
   -- use {
   --   "projekt0n/github-nvim-theme",
   --   config = require("config.colorscheme.github-theme")
@@ -50,6 +50,12 @@ require("packer").startup(function(use)
   -- dispatch
   use { "tpope/vim-dispatch" }
 
+  -- latex
+  use {
+    "lervag/vimtex",
+    config = require("config.vimtex")
+  }
+
   -- ejs
   use { "nikvdp/ejs-syntax"}
 
@@ -84,6 +90,32 @@ require("packer").startup(function(use)
   use {
     "dhruvasagar/vim-table-mode",
     config = require("config.vim-table-mode")
+  }
+
+  -- database
+  use {
+    "tpope/vim-dadbod",
+    -- config = require("config/vim-dadbod")
+  }
+  -- database ui
+  use {
+    "kristijanhusak/vim-dadbod-ui",
+    config = require("config/vim-dadbod-ui")
+  }
+  use {
+    "kristijanhusak/vim-dadbod-completion"
+  }
+
+  -- dotenv
+  use {
+    "tpope/vim-dotenv",
+    -- config = require("config/vim-dotenv")
+  }
+
+  -- zettelkasten
+  use {
+    "Furkanzmc/zettelkasten.nvim",
+    config = require("config.zettelkasten")
   }
 
   -- various vim encoders

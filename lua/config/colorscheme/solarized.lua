@@ -7,6 +7,7 @@ vim.cmd[[
   colorscheme solarized8
   set termguicolors
 
+  hi clear SpecialKey
   hi Comment gui=none
   hi VertSplit guifg=#264B54 guibg=#002B36 gui=none
   hi StatusLine guifg=#93A1A1 guibg=#264B54 gui=none
@@ -18,11 +19,10 @@ vim.cmd[[
   hi CursorLine guibg=none
   hi CursorLineNr guibg=#002B36 gui=none
   hi ColorColumn guifg=none guibg=none
-  hi Visual guifg=#B58900 guibg=#002B36 gui=reverse
-  hi VisualNOS guifg=#B58900 guibg=#002B36 gui=reverse
-  hi MoreMsg guifg=#B58900
-  hi ModeMsg guifg=#B58900
-  hi ErrorMsg guifg=#DC322F guibg=none gui=bold
+  hi Visual guifg=#002B36 guibg=#B58900 gui=none
+  hi MoreMsg guifg=#B58900 gui=bold
+  hi ModeMsg guifg=#B58900 gui=bold
+  hi ErrorMsg guifg=#DC322F guibg=none gui=none
   hi netrwTreeBar guifg=#264B54
 
   " plugins: highlight-yank-region
@@ -74,24 +74,51 @@ vim.cmd[[
   hi @text.note guifg=#FDF6E3 guibg=#B58900 gui=bold
   " language: html
   hi htmlSpecialTagName gui=bold
+  hi @text.title.html guifg=#B58900 gui=bold
   " language: markdown
-  hi mkdHeading guifg=#DC322F gui=bold
+  hi mkdHeading guifg=#CB4B16 gui=bold
   hi mkdListItem guifg=#DC322F
   hi mkdItalic guifg=#DC322F
   hi mkdCode guifg=#B58900
   hi mkdLink guifg=#268BD2
   hi mkdUrl guifg=#6C71C4
+  hi mkdBlockquote guifg=#2AA198
+  " hi link TableSeparator Normal
   hi link mkdLineBreak Normal
+  hi @text.todo.checked.markdown guifg=#DC322F guibg=none
+  hi @text.todo.unchecked.markdown guifg=#DC322F guibg=none
+  hi link @text.title.1.marker.markdown mkdHeading
+  hi link @text.title.1.markdown mkdHeading
+  hi link @text.title.2.marker.markdown mkdHeading
+  hi link @text.title.2.markdown mkdHeading
+  hi link @text.title.3.marker.markdown mkdHeading
+  hi link @text.title.3.markdown mkdHeading
+  hi link @text.title.4.marker.markdown mkdHeading
+  hi link @text.title.4.markdown mkdHeading
+  hi link @text.title.5.marker.markdown mkdHeading
+  hi link @text.title.5.markdown mkdHeading
+  hi link @punctuation.bracket.markdown_inline @spell
+  hi @lsp.type.enumMember.markdown guifg=#D33682
+  hi link @text.title.markdown mkdHeading
   " language: liquid
   hi liquidStatement guifg=#859900
   hi liquidExpression guifg=#859900
   " language: ejs
   hi ejsTag guifg=#DC322F
+  " language: javascript
+  " hi @punctuation.bracket.javascript guifg=#93A1A1
+  " hi @punctuation.special.javascript guifg=#93A1A1
+  " hi @punctuation.delimiter.javascript guifg=#93A1A1
+  " hi @function.javascript guifg=gui=bold
+  " hi @type.javascript gui=bold
+  " hi @method.call.javascript guifg=#CB4B16
   " language: ruby
   hi @function.ruby guifg=#CB4B16 gui=bold
   hi @function.call.ruby guifg=#CB4B16
   hi @punctuation.delimiter.ruby guifg=#93A1A1
   hi @type.ruby gui=bold
+  " language: latex
+  hi link texOnlyMath @text
 ]]
 
 vim.cmd.sign("define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=")

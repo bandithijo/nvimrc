@@ -43,7 +43,7 @@ require("telescope").setup({
     preview_title        = false,
     preview              = true,
     show_line            = true,
-    file_ignore_patterns = {},
+    file_ignore_patterns = { "^.git/", "^node_modules/" },
     file_sorter          = require("telescope.sorters").get_fuzzy_sorter,
     generic_sorter       = require("telescope.sorters").get_generic_fuzzy_sorter,
     winblend             = 0,

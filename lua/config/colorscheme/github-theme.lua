@@ -54,6 +54,7 @@ require("github-theme").setup({
       StatusLine = { fg = "NONE", bg = "#292E36" },
       StatusLineNC = { fg = "NONE", bg = "#292E37" },
       VertSplit = { fg = "#292E36", bg = "NONE" },
+      ColorColumn = { bg = "NONE" },
 
       -- plugin: indent-blankline
       IndentBlanklineChar = { fg = "#292E36", nocombine = 1 },
@@ -77,10 +78,10 @@ require("github-theme").setup({
 -- setup must be called before loading
 vim.cmd('colorscheme github_dark_dimmed')
 
-vim.cmd[[
+vim.cmd([[
   hi @text.literal guifg=#adbac7 gui=none
   hi @text.uri.comment gui=none
   hi TreesitterContext guibg=#292E36
   hi @text.literal guifg=#c69026
   hi link mkdLineBreak Normal
-]]
+]])

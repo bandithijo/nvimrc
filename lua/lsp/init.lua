@@ -60,3 +60,7 @@ require("lspconfig").emmet_ls.setup({
     "css", "ejs", "eruby", "html", "javascript", "javascriptreact", "less", "liquid", "sass", "scss", "svelte", "pug", "typescriptreact", "vue"
   }
 })
+
+require("lspconfig").texlab.setup({
+  on_attach = on_attach
+})
