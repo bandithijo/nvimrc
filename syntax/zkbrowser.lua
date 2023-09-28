@@ -10,6 +10,6 @@ vim.cmd([[syntax match ZkTag '#\<\k\+\>']])
 vim.api.nvim_set_hl(0, "ZkFileName", { link = "Label", default = true })
 vim.api.nvim_set_hl(0, "ZkNoteId", { link = "Label", default = true })
 vim.api.nvim_set_hl(0, "ZkRefCount", { link = "Identifier", default = true })
-vim.api.nvim_set_hl(0, "ZkTag", { link = "Tag", default = true })
+vim.api.nvim_set_hl(0, "ZkTag", { link = "@lsp.type.enumMember.markdown", default = true })
 
 vim.b.current_syntax = "zkbrowser"
