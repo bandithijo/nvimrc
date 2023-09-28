@@ -120,7 +120,3 @@ vim.opt.title = true
 vim.opt.titlestring = "nvim"
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
-
--- netrw
-vim.g.netrw_banner = 0
-vim.g.netrw_browsex_viewer = "xdg-open"
