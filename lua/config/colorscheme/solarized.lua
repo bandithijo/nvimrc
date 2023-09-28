@@ -23,7 +23,15 @@ vim.cmd[[
   hi MoreMsg guifg=#B58900 gui=bold
   hi ModeMsg guifg=#B58900 gui=bold
   hi ErrorMsg guifg=#DC322F guibg=none gui=none
-  hi netrwTreeBar guifg=#264B54
+
+  " netrw
+  hi link netrwTreeBar Comment
+  hi link netrwList Comment
+  hi link netrwCmdSep Comment
+  hi link netrwCmdNote Comment
+  hi link netrwHelpCmd Comment
+  hi link netrwQuickHelp Comment
+  hi link netrwVersion Comment
 
   " plugins: highlight-yank-region
   hi HighlightedyankRegion guifg=#002B36 guibg=#B58900
@@ -83,6 +91,8 @@ vim.cmd[[
   hi mkdLink guifg=#268BD2
   hi mkdUrl guifg=#6C71C4
   hi mkdBlockquote guifg=#2AA198
+  hi link @text.quote.markdown mkdBlockquote
+  hi link markdownError Normal
   " hi link TableSeparator Normal
   hi link mkdLineBreak Normal
   hi @text.todo.checked.markdown guifg=#DC322F guibg=none
