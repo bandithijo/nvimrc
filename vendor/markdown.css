@@ -411,20 +411,53 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 
 /* mermaid.js */
+.mermaid {
+  margin-bottom: 30px;
+  text-align: center;
+}
 .mermaid .flowchart-link {
   stroke: var(--foreground-color) !important;
+}
+.mermaid .flowchart-link .LS-A,
+.mermaid .flowchart-link .LE-B {
+  fill: var(--foreground-color) !important;
+}
+.mermaid line {
+  stroke: var(--foreground-color) !important;
+  stroke-width: 2px;
+  fill: var(--foreground-color) !important;
+}
+.mermaid line.messageLine0 {
+  fill: var(--foreground-color) !important;
+  stroke: var(--foreground-color) !important;
+  stroke-width: 1 !important;
+}
+.mermaid #arrowhead * {
+  fill: var(--foreground-color) !important;
+  stroke: var(--foreground-color) !important;
+  stroke-width: 1 !important;
 }
 .mermaid .node rect,
 .mermaid .node circle,
 .mermaid .node ellipse,
 .mermaid .node polygon,
-.mermaid .node path {
+.mermaid .node path,
+.mermaid .actor {
   fill: var(--border-color) !important;
   stroke: var(--foreground-color) !important;
   stroke-width: 1px !important;
 }
-
-.mermaid .label text,
-.mermaid span {
+.mermaid .edgeLabel {
+  background-color: var(--background-color) !important;
   color: var(--foreground-color) !important;
+  padding: 3px;
+}
+.mermaid .label text,
+.mermaid span,
+.mermaid marker,
+.mermaid text.actor>tspan,
+.mermaid .messageText {
+  color: var(--foreground-color) !important;
+  fill: var(--foreground-color) !important;
+  stroke: none !important;
 }
