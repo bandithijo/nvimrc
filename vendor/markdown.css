@@ -56,9 +56,14 @@ main {
   font-size: small;
 }
 
+hr {
+  border: none;
+  border-bottom : 1px solid var(--border-color);
+  margin-bottom : 16px;
+}
 hr.footer {
   border        : none;
-  border-bottom : 1px solid #eee;
+  border-bottom : 1px solid var(--border-color);
   margin-bottom : 16px;
 }
 
