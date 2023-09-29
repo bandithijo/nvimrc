@@ -5,21 +5,23 @@ end
 
 -- Please see :help indent_blankline.txtfor more details.
 
-require("ibl").setup {
-  indent_blankline_enabled = true,
-  show_current_context = false,
-  show_current_context_start = false,
+require("ibl").update {
+  enabled = true,
 }
 
 require("ibl").overwrite {
+  debounce = 100,
   scope = { enabled = false },
   indent = {
     char = "│",
     highlight = { "IndentBlanklineChar" },
   },
   exclude = {
-    filetypes = { "help", "mail", "markdown", "git", "tex", "packer", "dbout", "fugitive", "telescope" },
-    buftypes = { "terminal" },
+    filetypes = {
+      "help", "man", "mail", "markdown", "tex", "packer", "dbout", "fugitive", "lspinfo", "packer", "checkhealth",
+      "gitcommit", "git", "TelescopePrompt", "TelescopeResults", ""
+    },
+    buftypes = { "terminal", "nofile", "quickfix", "prompt" },
     buffnames = { "README.md", "__Tagbar__.*" }
   }
 }
