@@ -65,15 +65,6 @@ require("packer").startup(function(use)
   -- liquid
   use { "tpope/vim-liquid" }
 
-  -- markdown
-  use {
-    "preservim/vim-markdown",
-    requires = {
-      "godlygeek/tabular"
-    },
-    config = require("config.vim-markdown")
-  }
-
   -- markdown preview
   use {
     "iamcco/markdown-preview.nvim",
