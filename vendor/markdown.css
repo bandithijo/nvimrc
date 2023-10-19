@@ -314,6 +314,17 @@ header#page-header {
   display: none;
 }
 
+/* table */
+table.source-line th {
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  font-weight: bold;
+}
+table.source-line td {
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+}
+
 
 /*
 
