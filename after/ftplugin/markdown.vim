@@ -13,9 +13,6 @@ if v:lua.require("zettelkasten").contains(expand("%"))
   setlocal completefunc=v:lua.zettelkasten.completefunc
 endif
 
-let g:table_mode_corner_corner='+'
-let g:table_mode_header_fillchar='='
-
 syntax match mkdListItemCheckbox "\[\ \]" conceal cchar=
 syntax match mkdListItemCheckbox "\[x\]" conceal cchar=
 
