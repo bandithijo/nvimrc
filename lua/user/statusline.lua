@@ -22,7 +22,7 @@ end
 Statusline.inactive = function()
   local set_color = "%#StatusLine#"
   local filename = "%<%{expand('%:.') != '' ? expand('%:.') : '[No Name]'}"
-  local modified = "%w%q%h%r%m%y"
+  local modified = "%w%q%h%r%m"
   local align_r = "%="
 
   return string.format(
