@@ -24,22 +24,34 @@ Statusline.inactive = function()
   local filename = "%<%{expand('%:.') != '' ? expand('%:.') : '[No Name]'}"
   local modified = "%w%q%h%r%m%y"
   local align_r = "%="
-  local percentage = "%P"
 
   return string.format(
-    " %s%s %s %s %s ",
+    " %s%s %s %s ",
     set_color,
     filename,
     modified,
-    align_r,
-    percentage
+    align_r
+  )
+end
+
+Statusline.simple = function()
+  local set_color = "%#StatusLine#"
+  local filetype = "%{&filetype}"
+  local align_r = "%="
+
+  return string.format(
+    " %s%s%s ",
+    set_color,
+    filetype,
+    align_r
   )
 end
 
 vim.api.nvim_exec([[
   augroup statusline
   au!
-  au WinEnter,BufEnter * setlocal statusline=%!v:lua.Statusline.active()
-  au WinLeave,BufLeave * setlocal statusline=%!v:lua.Statusline.inactive()
+  au WinEnter,BufEnter * if &filetype !=# 'NvimTree' && &filetype !=# 'tagbar' | setlocal statusline=%!v:lua.Statusline.active() | endif
+  au WinLeave,BufLeave * if &filetype !=# 'NvimTree' && &filetype !=# 'tagbar' | setlocal statusline=%!v:lua.Statusline.inactive() | endif
+  au WinEnter,BufEnter * if &filetype ==# 'NvimTree' || &filetype ==# 'tagbar' | setlocal statusline=%!v:lua.Statusline.simple() | endif
   augroup END
 ]], false)
