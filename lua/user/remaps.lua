@@ -18,7 +18,7 @@ vim.g.maplocalleader = " "
 vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", opts)
 
 -- explorer
--- vim.api.nvim_set_keymap("n", "<F12>", ":NvimTreeToggle<CR>", opts)
+vim.api.nvim_set_keymap("n", "<F12>", ":NvimTreeToggle<CR>", opts)
 
 -- tagbar
 vim.api.nvim_set_keymap("n", "<F11>", ":TagbarToggle<CR>", opts)

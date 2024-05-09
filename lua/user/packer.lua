@@ -14,6 +14,11 @@ require("packer").startup(function(use)
   use {
     "lifepillar/vim-solarized8",
     config = require("config.colorscheme.solarized")
+
+  -- file explorer
+  use {
+    "kyazdani42/nvim-tree.lua",
+    config = require("config.nvim-tree")
   }
   -- use {
   --   "projekt0n/github-nvim-theme",
