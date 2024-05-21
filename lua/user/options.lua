@@ -120,3 +120,4 @@ vim.opt.title = true
 vim.opt.titlestring = "nvim"
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
+vim.opt.equalalways = false
