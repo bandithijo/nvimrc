@@ -5,25 +5,40 @@ require("packer").startup(function(use)
   -- colorscheme
   use {
     "Mofiqul/vscode.nvim",
-    -- config = require("config.colorscheme.vscode")
+    config = require("config.colorscheme.vscode")
   }
   -- use {
   --   "ellisonleao/gruvbox.nvim",
   --   config = require("config.colorscheme.gruvbox")
   -- }
+  -- use {
+  --   "lifepillar/vim-solarized8",
+  --   branch = "neovim",
+  --   config = require("config.colorscheme.solarized")
+  -- }
+  -- use {
+  --   "projekt0n/github-nvim-theme",
+  --   config = require("config.colorscheme.github-theme")
+  -- }
+
+  -- statusline
   use {
-    "lifepillar/vim-solarized8",
-    config = require("config.colorscheme.solarized")
+    "nvim-lualine/lualine.nvim",
+    requires = { "nvim-tree/nvim-web-devicons", opt = true },
+    -- config = require("config.lualine")
+  }
+
+  -- icons
+  use {
+    "kyazdani42/nvim-web-devicons",
+    config = require("config.nvim-web-devicons")
+  }
 
   -- file explorer
   use {
     "kyazdani42/nvim-tree.lua",
     config = require("config.nvim-tree")
   }
-  -- use {
-  --   "projekt0n/github-nvim-theme",
-  --   config = require("config.colorscheme.github-theme")
-  -- }
 
   -- gpg
   use { "jamessan/vim-gnupg" }
@@ -33,8 +48,8 @@ require("packer").startup(function(use)
 
   -- indentline
   use {
-    "lukas-reineke/indent-blankline.nvim",
-    config = require("config.indent-blankline")
+   "lukas-reineke/indent-blankline.nvim",
+   config = require("config.indent-blankline")
   }
 
   -- easy align
@@ -59,6 +74,16 @@ require("packer").startup(function(use)
   use {
     "lervag/vimtex",
     config = require("config.vimtex")
+  }
+
+  -- swagger-preview
+  use {
+      "vinnymeller/swagger-preview.nvim",
+      run = "npm install -g swagger-ui-watcher",
+      requires = {
+        "moon0326/swagger-ui-watcher"
+      },
+      config = require("config.swagger-preview"),
   }
 
   -- ejs
@@ -222,11 +247,23 @@ require("packer").startup(function(use)
     config = require("config.nvim-treesitter")
   }
   use { "nvim-treesitter/playground" }
-  use { "p00f/nvim-ts-rainbow" }
+  -- use { "p00f/nvim-ts-rainbow" }
+  -- use { "HiPhish/nvim-ts-rainbow2" }
   -- context
   use {
     "nvim-treesitter/nvim-treesitter-context",
     config = require("config.nvim-treesitter-context")
+  }
+
+  -- tailwind-sorter
+  use {
+    "laytan/tailwind-sorter.nvim",
+    requires = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-lua/plenary.nvim"
+    },
+    config = require("config.tailwind-sorter"),
+    run = "cd formatter && npm i && npm run build"
   }
 
   -- lsp
@@ -236,6 +273,15 @@ require("packer").startup(function(use)
   }
   use { "williamboman/mason-lspconfig.nvim" }
   use { "neovim/nvim-lspconfig" }
+  use { "nvimtools/none-ls.nvim" }
+  use {
+    "MunifTanjim/prettier.nvim",
+    config = require("config.prettier")
+  }
+  use {
+    "ray-x/lsp_signature.nvim",
+    config = require("config.lsp-signature")
+  }
 
   -- autocomplete
   use { "hrsh7th/cmp-nvim-lsp" }
@@ -267,4 +313,10 @@ require("packer").startup(function(use)
   use { "rcarriga/nvim-dap-ui" }
   use { "theHamsta/nvim-dap-virtual-text" }
   use { "suketa/nvim-dap-ruby" }
+
+  -- data viewer
+  use {
+    "vidocqh/data-viewer.nvim",
+    config = require("config.data-viewer")
+  }
 end)

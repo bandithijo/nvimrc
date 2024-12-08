@@ -75,7 +75,7 @@ nvim_tree.setup {
     icons = {
       web_devicons = {
         file = {
-          enable = true,
+          enable = false,
           color = false,
         },
         folder = {
@@ -152,7 +152,7 @@ nvim_tree.setup {
       "node_modules", ".cache", ".git"
     },
     exclude = {
-      ".env", "doc"
+      ".env", "doc", "service_account.json"
     }
   },
   git = {

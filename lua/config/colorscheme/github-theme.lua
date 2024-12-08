@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 -- setup must be called before loading
-vim.cmd('colorscheme github_dark_dimmed')
+vim.cmd('colorscheme github_light')
 
 -- Default options
 require("github-theme").setup({
@@ -51,37 +51,36 @@ require("github-theme").setup({
   groups = {
     all = {
       CursorLine = { bg = "none" },
-      StatusLine = { fg = "NONE", bg = "#292E36" },
-      StatusLineNC = { fg = "NONE", bg = "#292E37" },
-      VertSplit = { fg = "#292E36", bg = "NONE" },
+      -- StatusLine = { fg = "NONE", bg = "#292E36" },
+      -- StatusLineNC = { fg = "NONE", bg = "#292E37" },
+      -- VertSplit = { fg = "#292E36", bg = "NONE" },
       ColorColumn = { bg = "NONE" },
 
       -- plugin: indent-blankline
-      IndentBlanklineChar = { fg = "#292E36", nocombine = 1 },
+      -- IndentBlanklineChar = { fg = "#292E36", nocombine = 1 },
 
       -- plugin: telescope
-      TelescopeNormal = { fg = "#909DAB", bold = "NONE" },
-      TelescopeSelection = { fg = "#adbac7", bg = "#292E36", bold = 1 },
-      TelescopeSelectionCaret = { fg = "#adbac7", bg = "#292E36", bold = 1 },
-      TelescopeMultiSelection = { fg = "#D7BA7D" },
-      TelescopeBorder = { fg = "#292E36" },
-      TelescopeResultsBorder = { fg = "#292E36" },
-      TelescopePreviewBorder = { fg = "#292E36" },
-      TelescopePromptBorder = { fg = "#292E36" },
-      TelescopePromptPrefix = { fg = "#adbac7" },
-      TelescopePromptNormal = { fg = "#adbac7" },
-      TelescopeMatching = { fg = "#F47067" },
+      -- TelescopeNormal = { fg = "#909DAB", bold = "NONE" },
+      -- TelescopeSelection = { fg = "#adbac7", bg = "#292E36", bold = 1 },
+      -- TelescopeSelectionCaret = { fg = "#adbac7", bg = "#292E36", bold = 1 },
+      -- TelescopeMultiSelection = { fg = "#D7BA7D" },
+      -- TelescopeBorder = { fg = "#292E36" },
+      -- TelescopeResultsBorder = { fg = "#292E36" },
+      -- TelescopePreviewBorder = { fg = "#292E36" },
+      -- TelescopePromptBorder = { fg = "#292E36" },
+      -- TelescopePromptPrefix = { fg = "#adbac7" },
+      -- TelescopePromptNormal = { fg = "#adbac7" },
+      -- TelescopeMatching = { fg = "#F47067" },
     },
   },
 })
 
 -- setup must be called before loading
-vim.cmd('colorscheme github_dark_dimmed')
+vim.cmd('colorscheme github_light')
 
 vim.cmd([[
-  hi @text.literal guifg=#adbac7 gui=none
+  hi @text.literal guifg=#c69026 gui=none
   hi @text.uri.comment gui=none
   hi TreesitterContext guibg=#292E36
-  hi @text.literal guifg=#c69026
   hi link mkdLineBreak Normal
 ]])

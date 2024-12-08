@@ -1,3 +1,8 @@
+-- theme
+vim.o.background = "dark"
+vim.o.termguicolors = true
+vim.cmd("colorscheme breezy")
+
 -- statusline
 vim.opt.laststatus = 2
 
@@ -120,4 +125,4 @@ vim.opt.title = true
 vim.opt.titlestring = "nvim"
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
-vim.opt.equalalways = false
+vim.opt.equalalways = true

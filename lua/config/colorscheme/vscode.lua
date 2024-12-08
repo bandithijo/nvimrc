@@ -29,16 +29,28 @@ require("vscode").setup({
     -- this supports the same val table as vim.api.nvim_set_hl
     -- use colors from this colorscheme by requiring vscode.colors!
     -- Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
+    Normal = { bg = "#1E1E1E" },
     ExtraWhitespace = { fg = "#1E1E1E", bg = "#F24646" },
     Folded = { fg = "#D4D4D4" },
+    ColorColumn = { fg = "NONE", bg = "NONE" },
 
-    StatusLine = { fg = "NONE", bg = "#303030" },
-    StatusLineNC = { fg = "NONE", bg = "#303031" },
+    StatusLine = { fg = "NONE", bg = "#262626" },
+    StatusLineNC = { fg = "NONE", bg = "#262627" },
     VertSplit = { fg = "#262626", bg = "NONE" },
+
+    FloatBorder = { fg = "NONE", bg = "NONE" },
+
+    MoreMsg = { fg = "#5A5A5A" },
 
     -- diff
     diffRemoved = { fg = '#D0D0D0', bg = '#5E0101' },
     diffAdded = { fg = '#D0D0D0', bg = '#015E01' },
+
+    -- plugin: nvim-tree
+    NvimTreeNormal = { bg = "NONE" },
+    NvimTreeFileIcon = { bg = "NONE" },
+    NvimTreeFolderName = { fg = "#9cdcfe" },
+    NvimTreeOpenedFolderName = { fg = "#9cdcfe" },
 
     -- plugin: highlight-yank-region
     HighlightedyankRegion = { fg = "NONE", bg = "#005F8F" },
@@ -101,16 +113,35 @@ set termguicolors
 -- language
 vim.cmd([[
 hi clear ModeMsg
-hi clear MoreMsg
 hi clear CursorLine
 hi @text.title guifg=#D7BA7D gui=bold
 hi @text.literal guifg=#CE9178
 hi @punctuation.special guifg=#569CD6 gui=bold
-hi ejsTag guifg=#D16969
-hi link @keyword.function.ruby Define
-hi @function.ruby guifg=#DCDCAA gui=bold
-hi link mkdHeading @text.title
-hi link htmlH1 @text.title
-hi link mkdLineBreak Normal
 hi netrwTreeBar guifg=#3C3C3C
+hi @comment.todo.comment gui=bold guifg=#1E1E1E guibg=#CCB17A
+hi @comment.note.comment gui=bold guifg=#1E1E1E guibg=#4EC9B0
+
+hi NvimTreeFileIcon guibg=NONE
+
+" language:markdown
+hi link htmlH1 @text.title
+hi link mkdHeading @text.title
+hi link mkdLineBreak Normal
+hi link markdownError Normal
+hi @markup.raw.block.markdown guifg=#D7BA7D
+
+" language:ruby
+hi @function.ruby guifg=#DCDCAA gui=bold
+hi link @keyword.function.ruby Define
+
+" language:javascript
+hi ejsTag guifg=#D16969
+hi link javaScriptCommentTodo @comment.todo.comment
+hi link @keyword.javascript Keyword
+hi link @keyword.coroutine.javascript Statement
+hi link @punctuation.special.javascript Special
+
+" language:diff
+hi link @diff.plus.diff diffAdded
+hi link @diff.minus.diff diffRemoved
 ]])

@@ -5,7 +5,15 @@ vim.g.Hexokinase_highlighters = { "virtual" }
 -- highlighting.
 -- Default value: >
 -- let g:Hexokinase_virtualText = "■"
+-- vim.g.Hexokinase_virtualText = "■ "
 vim.g.Hexokinase_virtualText = " "
+
+-- Hex code to use when calculating alpha for `rgba` and `hsla`
+-- functions.
+--
+-- Default value: >
+--     g:Hexokinase_alpha_bg = ''
+vim.g.Hexokinase_alpha_bg = ''
 
 -- Patterns to match for all filetypes
 -- Can be a comma separated string or a list of strings
@@ -18,10 +26,10 @@ vim.g.Hexokinase_ftEnabled = {
   "eruby",
   "html",
   "javascript",
+  "lua",
   "python",
   "scss",
   "sh",
   "vim",
   "xdefaults",
-  "lua"
 }

@@ -5,12 +5,18 @@ end
 
 require("gitsigns").setup {
   signs = {
-    add          = {hl = "GitSignsAdd"   , text = "│", numhl="GitSignsAddNr"   , linehl="GitSignsAddLn"},
-    change       = {hl = "GitSignsChange", text = "│", numhl="GitSignsChangeNr", linehl="GitSignsChangeLn"},
-    changedelete = {hl = "GitSignsChange", text = "│", numhl="GitSignsChangeNr", linehl="GitSignsChangeLn"},
-    delete       = {hl = "GitSignsDelete", text = "│", numhl="GitSignsDeleteNr", linehl="GitSignsDeleteLn"},
-    topdelete    = {hl = "GitSignsDelete", text = "│", numhl="GitSignsDeleteNr", linehl="GitSignsDeleteLn"},
-    untracked    = {hl = "GitSignsAdd"   , text = "│", numhl="GitSignsAddNr"   , linehl="GitSignsAddLn"},
+    -- add          = {hl = "GitSignsAdd"   , text = "│", numhl="GitSignsAddNr"   , linehl="GitSignsAddLn"},
+    -- change       = {hl = "GitSignsChange", text = "│", numhl="GitSignsChangeNr", linehl="GitSignsChangeLn"},
+    -- changedelete = {hl = "GitSignsChange", text = "│", numhl="GitSignsChangeNr", linehl="GitSignsChangeLn"},
+    -- delete       = {hl = "GitSignsDelete", text = "│", numhl="GitSignsDeleteNr", linehl="GitSignsDeleteLn"},
+    -- topdelete    = {hl = "GitSignsDelete", text = "│", numhl="GitSignsDeleteNr", linehl="GitSignsDeleteLn"},
+    -- untracked    = {hl = "GitSignsAdd"   , text = "│", numhl="GitSignsAddNr"   , linehl="GitSignsAddLn"},
+    add          = { text = "│" },
+    change       = { text = "│" },
+    changedelete = { text = "│" },
+    delete       = { text = "│" },
+    topdelete    = { text = "│" },
+    untracked    = { text = "│" },
   },
   signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
   numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
@@ -41,9 +47,9 @@ require("gitsigns").setup {
     row = 0,
     col = 1
   },
-  yadm = {
-    enable = false
-  },
+  -- yadm = {
+  --   enable = false
+  -- },
   diff_opts = {
     internal = true,   -- If luajit is present
   },

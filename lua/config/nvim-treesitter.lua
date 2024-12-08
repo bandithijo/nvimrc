@@ -86,19 +86,24 @@ configs.setup {
     },
   },
 
-  rainbow = {
-    enable = true,
-    disable = { "html" }, -- list of languages you want to disable the plugin for
-    extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-    max_file_lines = nil, -- Do not enable for files with more than n lines, int
-    colors = { "#93A1A1" }, -- table of hex strings (codedark: '#D7BA7D', gruvbox: '#D79921', solarized: '#93A1A1')
-    -- termcolors = {} -- table of colour name strings
-  },
+  -- rainbow = {
+  --   enable = true,
+  --   disable = { "html" }, -- list of languages you want to disable the plugin for
+  --   extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+  --   max_file_lines = nil, -- Do not enable for files with more than n lines, int
+  --   colors = { "#93A1A1" }, -- table of hex strings (codedark: '#D7BA7D', gruvbox: '#D79921', solarized: '#93A1A1')
+  --   -- Which query to use for finding delimiters
+  --   query = 'rainbow-parens',
+  --   -- termcolors = {} -- table of colour name strings
+  -- },
 }
 
 -- parser: html
-require"nvim-treesitter.parsers".get_parser_configs().html.filetype_to_parsername = {
-  "eruby",
-  "html",
-  "liquid",
-}
+vim.treesitter.language.register(
+  'html',
+  {
+    'eruby',
+    'liquid',
+    'mustache',
+  }
+)

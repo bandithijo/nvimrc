@@ -24,14 +24,15 @@ require("telescope").setup({
     scroll_strategy      = "cycle",
     selection_strategy   = "reset",
     sorting_strategy     = "descending",
-    layout_strategy      = "bottom_pane",
+    layout_strategy      = "vertical",
     layout_config = {
+      preview_cutoff = 20,
       prompt_position = "bottom",
       bottom_pane = {
         height = 20,
       },
       vertical = {
-        width = 0.80,
+        width = 0.90,
         height = 0.95
       },
       horizontal = {

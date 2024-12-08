@@ -1,6 +1,6 @@
 setlocal tabstop=2
 setlocal shiftwidth=2
-setlocal conceallevel=2
+setlocal conceallevel=0
 setlocal concealcursor=nc
 
 " for zettelkasten.nvim

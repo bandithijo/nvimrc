@@ -22,7 +22,7 @@ require("ibl").overwrite {
       "gitcommit", "git", "TelescopePrompt", "TelescopeResults", ""
     },
     buftypes = { "terminal", "nofile", "quickfix", "prompt" },
-    buffnames = { "README.md", "__Tagbar__.*" }
+    -- buffnames = { "README.md", "__Tagbar__.*" }
   }
 }
 

@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 vim.o.foldcolumn = "1"
-vim.o.foldlevel = 99 -- feel free to decrease the value
+vim.o.foldlevel = 999 -- feel free to decrease the value
 vim.o.foldenable = true
 vim.o.foldlevelstart = -1
 vim.o.fillchars = [[eob: ,vert:│,horiz:─,fold: ,foldopen:,foldsep: ,foldclose:]]
@@ -31,16 +31,16 @@ local ftMap = {
   lua = "treesitter",
   markdown = "treesitter",
   python = {"treesitter", "indent"},
-  ruby = "treesitter",
+  ruby = {"treesitter", "indent"},
   vim = "indent",
-  yaml = "",
-  javascript = "",
+  yaml = "treesitter",
+  javascript = "treesitter",
 }
 
 local ufo = require("ufo")
 ufo.setup({
   open_fold_hl_timeout = 150,
-  close_fold_kinds = {"imports", "comment"},
+  -- close_fold_kinds_for_ft = {"imports", "comment"},
   preview = {
     win_config = {
       border = {"", "─", "", "", "", "─", "", ""},
