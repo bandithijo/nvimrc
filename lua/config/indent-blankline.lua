@@ -13,13 +13,16 @@ require("ibl").overwrite {
   debounce = 100,
   scope = { enabled = false },
   indent = {
-    char = "│",
+    -- char = "│",
+    char = "┊",
+    tab_char = "╎",
     highlight = { "IndentBlanklineChar" },
   },
   exclude = {
     filetypes = {
-      "help", "man", "mail", "markdown", "tex", "packer", "dbout", "fugitive", "lspinfo", "packer", "checkhealth",
-      "gitcommit", "git", "TelescopePrompt", "TelescopeResults", ""
+      "help", "man", "mail", "markdown", "tex", "packer", "dbout", "fugitive",
+      "lspinfo", "packer", "checkhealth", "gitcommit", "git",
+      "TelescopePrompt", "TelescopeResults", ""
     },
     buftypes = { "terminal", "nofile", "quickfix", "prompt" },
     -- buffnames = { "README.md", "__Tagbar__.*" }

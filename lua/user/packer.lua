@@ -6,16 +6,17 @@ require("packer").startup(function(use)
   use {
     "Mofiqul/vscode.nvim",
     config = require("config.colorscheme.vscode")
+    -- config = require("config.colorscheme.vscode-light")
   }
   -- use {
   --   "ellisonleao/gruvbox.nvim",
   --   config = require("config.colorscheme.gruvbox")
   -- }
-  -- use {
-  --   "lifepillar/vim-solarized8",
-  --   branch = "neovim",
-  --   config = require("config.colorscheme.solarized")
-  -- }
+  use {
+    "lifepillar/vim-solarized8",
+    -- branch = "neovim",
+    -- config = require("config.colorscheme.solarized")
+  }
   -- use {
   --   "projekt0n/github-nvim-theme",
   --   config = require("config.colorscheme.github-theme")
@@ -305,18 +306,23 @@ require("packer").startup(function(use)
   -- snippet sample
   use { "rafamadriz/friendly-snippets" }
 
-  -- debugger
-  use {
-    "mfussenegger/nvim-dap",
-    config = require("config.nvim-dap")
-  }
-  use { "rcarriga/nvim-dap-ui" }
-  use { "theHamsta/nvim-dap-virtual-text" }
-  use { "suketa/nvim-dap-ruby" }
-
   -- data viewer
   use {
     "vidocqh/data-viewer.nvim",
     config = require("config.data-viewer")
+  }
+
+  -- rest console
+  use {
+    "diepm/vim-rest-console",
+    config = require("config.vim-rest-console")
+  }
+
+  -- plantuml
+  use { "aklt/plantuml-syntax" }
+  use { "tyru/open-browser.vim" }
+  use {
+    "weirongxu/plantuml-previewer.vim",
+    -- config = require("config.plantuml-previewer")
   }
 end)

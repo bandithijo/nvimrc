@@ -1,7 +1,6 @@
 -- theme
-vim.o.background = "dark"
-vim.o.termguicolors = true
-vim.cmd("colorscheme breezy")
+-- vim.o.background = "dark"
+-- vim.o.termguicolors = true
 
 -- statusline
 vim.opt.laststatus = 2
@@ -106,7 +105,7 @@ vim.opt.fillchars = { eob = " ", vert = "|" }
 vim.opt.lazyredraw = true
 vim.opt.startofline = false
 vim.opt.visualbell = false
-vim.opt.shortmess = "aAtToO"
+vim.opt.shortmess = "aAtToOF"
 vim.opt.showcmd = true
 vim.opt.showmatch = true
 vim.opt.showmode = true
@@ -126,3 +125,5 @@ vim.opt.titlestring = "nvim"
 vim.opt.timeoutlen = 500
 vim.opt.winblend = 0
 vim.opt.equalalways = true
+vim.opt.modeline = true
+vim.opt.cmdheight = 1

@@ -1,5 +1,6 @@
 require("user.autocmds")
 require("user.options")
+require("user.diagnostics")
 require("user.remaps")
 require("user.statusline")
 require("user.packer")

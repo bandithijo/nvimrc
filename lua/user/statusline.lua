@@ -50,8 +50,10 @@ end
 vim.api.nvim_exec([[
   augroup statusline
   au!
-  au WinEnter,BufEnter * if &filetype !=# 'NvimTree' && &filetype !=# 'tagbar' | setlocal statusline=%!v:lua.Statusline.active() | endif
-  au WinLeave,BufLeave * if &filetype !=# 'NvimTree' && &filetype !=# 'tagbar' | setlocal statusline=%!v:lua.Statusline.inactive() | endif
-  au WinEnter,BufEnter * if &filetype ==# 'NvimTree' || &filetype ==# 'tagbar' | setlocal statusline=%!v:lua.Statusline.simple() | endif
+  " au WinEnter,BufEnter * if &filetype !=# 'NvimTree' && &filetype !=# 'tagbar' | setlocal statusline=%!v:lua.Statusline.active() | endif
+  " au WinLeave,BufLeave * if &filetype !=# 'NvimTree' && &filetype !=# 'tagbar' | setlocal statusline=%!v:lua.Statusline.inactive() | endif
+  " au WinEnter,BufEnter * if &filetype ==# 'NvimTree' || &filetype ==# 'tagbar' | setlocal statusline=%!v:lua.Statusline.simple() | endif
+  au WinEnter,BufEnter * setlocal statusline=%!v:lua.Statusline.active()
+  au WinLeave,BufLeave * setlocal statusline=%!v:lua.Statusline.inactive()
   augroup END
 ]], false)

@@ -61,8 +61,8 @@ if &background == 'dark'
 
   " plugins: telescope
   hi TelescopePromptPrefix guifg=#93A1A1
-  hi TelescopeSelection guibg=#264B54 gui=bold
-  hi TelescopeMatching guifg=#2AA198
+  hi TelescopeSelection guibg=#2AA198 guifg=#002B36 gui=bold
+  hi TelescopeMatching guifg=#EEE8D5
   hi TelescopeBorder guifg=#264B54
 
   " plugins: lsp
@@ -70,6 +70,11 @@ if &background == 'dark'
   hi DiagnosticVirtualTextWarn guifg=#073642
   hi DiagnosticVirtualTextInfo guifg=#073642
   hi DiagnosticVirtualTextHint guifg=#073642
+
+  hi DiagnosticVirtualLinesError guifg=#DC322F
+  hi DiagnosticVirtualLinesWarn guifg=#073642
+  hi DiagnosticVirtualLinesInfo guifg=#073642
+  hi DiagnosticVirtualLinesHint guifg=#073642
 
   hi DiagnosticSignError guifg=#DC322F guibg=#002B36
   hi DiagnosticSignWarn guifg=#B58900 guibg=#002B36
@@ -158,6 +163,8 @@ if &background == 'dark'
   hi link texOnlyMath @text
   " language: gitdiff
   hi diffRemoved guifg=#DC322F
+  hi link @diff.plus.diff GitSignsAdd
+  hi link @diff.minus.diff GitSignsDelete
 endif
 
 if &background == 'light'
