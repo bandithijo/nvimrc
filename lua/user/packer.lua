@@ -268,11 +268,11 @@ require("packer").startup(function(use)
   }
 
   -- lsp
-  use {
-    "williamboman/mason.nvim",
-    config = require("config.mason")
-  }
-  use { "williamboman/mason-lspconfig.nvim" }
+  -- use {
+  --   "williamboman/mason.nvim",
+  --   config = require("config.mason")
+  -- }
+  -- use { "williamboman/mason-lspconfig.nvim" }
   use { "neovim/nvim-lspconfig" }
   use { "nvimtools/none-ls.nvim" }
   use {
@@ -324,5 +324,22 @@ require("packer").startup(function(use)
   use {
     "weirongxu/plantuml-previewer.vim",
     -- config = require("config.plantuml-previewer")
+  }
+
+  -- platformio
+  use {
+    'anurag3301/nvim-platformio.lua',
+    config = require("config.platformio"),
+    requires = {
+      {'akinsho/nvim-toggleterm.lua'},
+      {'nvim-telescope/telescope.nvim'},
+      {'nvim-lua/plenary.nvim'},
+    }
+  }
+
+  -- activity watcher
+  use {
+    'lowitea/aw-watcher.nvim',
+    config = require("config.aw-watcher")
   }
 end)

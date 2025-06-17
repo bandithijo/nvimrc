@@ -105,5 +105,6 @@ vim.treesitter.language.register(
     'eruby',
     'liquid',
     'mustache',
+    'htmldjango'
   }
 )

@@ -18,3 +18,5 @@ syntax match mkdListItemCheckbox "\[x\]" conceal cchar=
 
 syntax match mkdListItem /^\s*\*\ze\s\+/ conceal cchar=⬤ contains=mkdListItemText
 syntax match mkdListItemText /\*\s\+\zs.\+/ contained
+
+au BufRead,BufNewFile *.md,*.markdown set filetype=markdown

@@ -149,10 +149,10 @@ nvim_tree.setup {
   filters = {
     dotfiles = false,
     custom = {
-      "node_modules", ".cache", ".git"
+      ".cache",
     },
     exclude = {
-      ".env", "doc", "service_account.json"
+      ".env", "service_account.json"
     }
   },
   git = {
@@ -170,7 +170,7 @@ nvim_tree.setup {
     },
     open_file = {
       quit_on_open = false,
-      resize_window = true,
+      resize_window = false,
       window_picker = {
         enable = true,
         chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
