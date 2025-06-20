@@ -149,7 +149,7 @@ nvim_tree.setup {
   filters = {
     dotfiles = false,
     custom = {
-      ".cache",
+      ".cache", "^.git$"
     },
     exclude = {
       ".env", "service_account.json"
