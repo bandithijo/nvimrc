@@ -47,9 +47,26 @@ lspconfig.arduino_language_server.setup({
   capabilities = capabilities,
 })
 
-lspconfig.solargraph.setup({
+-- lspconfig.solargraph.setup({
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- })
+
+lspconfig.ruby_lsp.setup({
+  cmd = { "ruby-lsp" },
   on_attach = on_attach,
   capabilities = capabilities,
+  init_options = {
+    formatter = 'standard',
+    linters = { 'standard' },
+    addonSettings = {
+      -- ["Ruby LSP Rails"] = {
+      --   enablePendingMigrationsPrompt = false,
+      -- },
+      rails = true,
+      rspec = true,
+    },
+  },
 })
 
 lspconfig.clangd.setup({
@@ -139,4 +156,10 @@ lspconfig.sqlls.setup({
 lspconfig.pylsp.setup({
   on_attach = on_attach,
   capabilities = capabilities,
+})
+
+lspconfig.intelephense.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "php", "blade" }
 })

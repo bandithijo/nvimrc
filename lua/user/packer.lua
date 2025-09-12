@@ -96,6 +96,9 @@ require("packer").startup(function(use)
   -- liquid
   use { "tpope/vim-liquid" }
 
+  -- php blade
+  use { "jwalton512/vim-blade" }
+
   -- markdown preview
   use {
     "iamcco/markdown-preview.nvim",
@@ -116,16 +119,8 @@ require("packer").startup(function(use)
 
   -- database
   use {
-    "tpope/vim-dadbod",
-    -- config = require("config/vim-dadbod")
-  }
-  -- database ui
-  use {
-    "kristijanhusak/vim-dadbod-ui",
-    config = require("config/vim-dadbod-ui")
-  }
-  use {
-    "kristijanhusak/vim-dadbod-completion"
+    "xemptuous/sqlua.nvim",
+    config = require("config/sqlua")
   }
 
   -- dotenv
@@ -329,11 +324,12 @@ require("packer").startup(function(use)
   -- platformio
   use {
     'anurag3301/nvim-platformio.lua',
-    config = require("config.platformio"),
+    -- config = require("config.platformio"),
     requires = {
       {'akinsho/nvim-toggleterm.lua'},
       {'nvim-telescope/telescope.nvim'},
       {'nvim-lua/plenary.nvim'},
+      -- {'folke/which-key.nvim'},
     }
   }
 

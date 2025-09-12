@@ -4,18 +4,28 @@ if not status_ok then
 end
 
 local cmp = require("cmp")
+local lspkind = require("lspkind")
+
+cmp.event:on("documentation_opened", function(window)
+  local win = window.win
+  -- set conceallevel untuk floating window docs
+  vim.api.nvim_win_set_option(win, "conceallevel", 2)
+end)
 
 cmp.setup({
+  window = {
+    completion = cmp.config.window.bordered({}), -- kasih border di completion menu
+    documentation = cmp.config.window.bordered({ -- kasih border di docs window
+      max_width = 60,  -- batasi lebar popup
+      max_height = 20, -- batasi tinggi popup
+    }),
+  },
   snippet = {
     -- REQUIRED - you must specify a snippet engine
     expand = function(args)
       vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
     end
   },
-  -- window = {
-  --   completion = cmp.config.window.bordered(),
-  --   documentation = cmp.config.window.bordered(),
-  -- },
   mapping = {
     ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
     ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
@@ -34,42 +44,8 @@ cmp.setup({
     { name = "vsnip" }, -- For vsnip users.
     { name = "buffer" },
     { name = "path" },
-  })
-})
-
--- Set configuration for specific filetype.
--- cmp.setup.filetype("gitcommit", {
---   sources = cmp.config.sources({
---     { name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
---   })
--- })
-
--- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
--- cmp.setup.cmdline("/", {
---   sources = {
---   { name = "buffer" }
---   }
--- })
-
--- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
--- cmp.setup.cmdline(":", {
---   sources = cmp.config.sources({
---   { name = "path" }
---   }, {
---     { name = "cmdline" }
---     })
--- })
-
--- Setup lspconfig.
-local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-require("lspconfig")["lua_ls"].setup {
-  capabilities = capabilities
-}
-
--- luakind.nvim config
-local lspkind = require("lspkind")
-cmp.setup {
+  }),
+  -- luakind.nvim config
   formatting = {
     format = lspkind.cmp_format({
       mode = "symbol_text", -- show only symbol annotations
@@ -105,11 +81,41 @@ cmp.setup {
 
       -- The function below will be called before any actual modifications from lspkind
       -- so that you can provide more controls on popup customization. (See [#30](https://github.com/onsails/lspkind-nvim/pull/30))
-      before = function (entry, vim_item)
-        return vim_item
-      end
+      -- before = function (entry, vim_item)
+      --   return vim_item
+      -- end
     })
   }
+})
+
+-- Set configuration for specific filetype.
+-- cmp.setup.filetype("gitcommit", {
+--   sources = cmp.config.sources({
+--     { name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
+--   })
+-- })
+
+-- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+-- cmp.setup.cmdline("/", {
+--   sources = {
+--   { name = "buffer" }
+--   }
+-- })
+
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+-- cmp.setup.cmdline(":", {
+--   sources = cmp.config.sources({
+--   { name = "path" }
+--   }, {
+--     { name = "cmdline" }
+--     })
+-- })
+
+-- Setup lspconfig.
+local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
+-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+require("lspconfig")["lua_ls"].setup {
+  capabilities = capabilities
 }
 
 vim.cmd([[

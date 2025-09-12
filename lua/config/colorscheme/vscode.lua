@@ -11,7 +11,7 @@ vim.o.background = "dark"
 -- local c = require("vscode.colors")
 require("vscode").setup({
   -- Enable transparent background
-  transparent = false,
+  transparent = true,
 
   -- Enable italic comment
   italic_comments = false,
@@ -29,7 +29,7 @@ require("vscode").setup({
     -- this supports the same val table as vim.api.nvim_set_hl
     -- use colors from this colorscheme by requiring vscode.colors!
     -- Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
-    Normal = { bg = "#1E1E1E" },
+    -- Normal = { bg = "#1E1E1E" },
     ExtraWhitespace = { fg = "#1E1E1E", bg = "#F24646" },
     Folded = { fg = "#D4D4D4" },
     ColorColumn = { fg = "NONE", bg = "NONE" },
@@ -129,6 +129,18 @@ hi link mkdHeading @text.title
 hi link mkdLineBreak Normal
 hi link markdownError Normal
 hi @markup.raw.block.markdown guifg=#D7BA7D
+hi! link @markup.heading.1.markdown @markup.heading
+hi! link @markup.heading.2.markdown @markup.heading
+hi! link @markup.heading.3.markdown @markup.heading
+hi! link @markup.heading.4.markdown @markup.heading
+hi! link @markup.heading.5.markdown @markup.heading
+hi! link @markup.heading.6.markdown @markup.heading
+hi link markdownH1 @markup.heading
+hi link markdownH2 @markup.heading
+hi link markdownH3 @markup.heading
+hi link markdownH4 @markup.heading
+hi link markdownH5 @markup.heading
+hi link markdownH6 @markup.heading
 
 " language:ruby
 hi @function.ruby guifg=#DCDCAA gui=bold

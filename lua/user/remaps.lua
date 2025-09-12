@@ -92,3 +92,8 @@ vim.api.nvim_set_keymap("n", "<leader>g", ":TestVisit<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>yp", ":let @+=@%<CR>", opts)
 -- yank path on active buffer
 vim.api.nvim_set_keymap("n", "<leader>yP", ":let @+=expand('%:.')<CR>", opts)
+
+-- complie gcc99
+-- vim.keymap.set('n', '<F5>', ':w<CR>:!gcc -std=c99 % -o %< && ./%<<CR>', { noremap = true, silent = false })
+-- vim.keymap.set('n', '<F5>', ':w<CR>:!gcc -std=c99 % -o %< && { time ./%<; }<CR>', { noremap = true, silent = false })
+vim.keymap.set('n', '<F5>', ':w<CR>:!st -e bash -c "gcc -std=c99 % -lm -o %<; if [ $? -eq 0 ]; then time ./%<; fi; read" &<CR>', { noremap = true, silent = false })
