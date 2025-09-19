@@ -11,7 +11,7 @@ vim.o.background = "light"
 -- local c = require("vscode.colors")
 require("vscode").setup({
   -- Enable transparent background
-  transparent = false,
+  transparent = true,
 
   -- Enable italic comment
   italic_comments = false,
@@ -32,11 +32,11 @@ require("vscode").setup({
     -- Normal = { bg = "#1E1E1E" },
     -- ExtraWhitespace = { fg = "#1E1E1E", bg = "#F24646" },
     -- Folded = { fg = "#D4D4D4" },
-    -- ColorColumn = { fg = "NONE", bg = "NONE" },
+    ColorColumn = { fg = "NONE", bg = "NONE" },
 
-    -- StatusLine = { fg = "NONE", bg = "#262626" },
-    -- StatusLineNC = { fg = "NONE", bg = "#262627" },
-    -- VertSplit = { fg = "#262626", bg = "NONE" },
+    StatusLine = { fg = "NONE", bg = "#c4c4c4" },
+    StatusLineNC = { fg = "NONE", bg = "#c4c4c5" },
+    VertSplit = { fg = "#D4D4D4", bg = "NONE" },
 
     -- FloatBorder = { fg = "NONE", bg = "NONE" },
 
@@ -59,7 +59,7 @@ require("vscode").setup({
     Blamer = { fg = "#608B4E", bg = "NONE" },
 
     -- plugin: indent-blankline
-    -- IndentBlanklineChar = { fg = "#3C3C3C", nocombine = 1 },
+    IndentBlanklineChar = { fg = "#3C3C3C", nocombine = 1 },
 
     -- plugin: telescope
     -- TelescopeSelection = { fg = "#D4D4D4", bg = "#005F87", bold = 1 },
@@ -122,6 +122,7 @@ hi @comment.todo.comment gui=bold guifg=#1E1E1E guibg=#CCB17A
 hi @comment.note.comment gui=bold guifg=#1E1E1E guibg=#4EC9B0
 
 hi NvimTreeFileIcon guibg=NONE
+hi! link NormalFloat CmpDocNormal
 
 " language:markdown
 hi link htmlH1 @text.title
@@ -131,7 +132,7 @@ hi link markdownError Normal
 hi @markup.raw.block.markdown guifg=#D7BA7D
 
 " language:ruby
-hi @function.ruby guifg=#DCDCAA gui=bold
+hi @function.ruby guifg=#895503 gui=bold
 hi link @keyword.function.ruby Define
 
 " language:javascript

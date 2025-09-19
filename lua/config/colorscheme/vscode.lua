@@ -38,7 +38,7 @@ require("vscode").setup({
     StatusLineNC = { fg = "NONE", bg = "#262627" },
     VertSplit = { fg = "#262626", bg = "NONE" },
 
-    FloatBorder = { fg = "NONE", bg = "NONE" },
+    -- FloatBorder = { fg = "NONE", bg = "NONE" },
 
     MoreMsg = { fg = "#5A5A5A" },
 
@@ -89,8 +89,8 @@ require("vscode").setup({
     DiagnosticUnderlineHint = { undercurl = true, sp = "#3C3C3C" },
 
     -- plugin: vim-floaterm
-    Floaterm = { bg = "#1E1E1E" },
-    FloatermBorder = { fg = "#1E1E1E", bg = "#1E1E1E" },
+    -- Floaterm = { bg = "#1E1E1E" },
+    -- FloatermBorder = { fg = "#1E1E1E", bg = "#1E1E1E" },
 
     -- plugin: gitsigns
     GitSignsAdd = { fg = "#569CD6", bg = "NONE" },
@@ -122,6 +122,7 @@ hi @comment.todo.comment gui=bold guifg=#1E1E1E guibg=#CCB17A
 hi @comment.note.comment gui=bold guifg=#1E1E1E guibg=#4EC9B0
 
 hi NvimTreeFileIcon guibg=NONE
+hi! link NormalFloat CmpDocNormal
 
 " language:markdown
 hi link htmlH1 @text.title

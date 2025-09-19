@@ -71,6 +71,7 @@ vim.opt.foldmethod = "manual"
 -- pump window
 vim.opt.pumblend = 0
 vim.opt.pumheight = 10
+vim.opt.winborder = 'rounded'
 
 -- line number
 vim.opt.number = true

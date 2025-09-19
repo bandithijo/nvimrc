@@ -14,11 +14,16 @@ end)
 
 cmp.setup({
   window = {
-    completion = cmp.config.window.bordered({}), -- kasih border di completion menu
-    documentation = cmp.config.window.bordered({ -- kasih border di docs window
-      max_width = 60,  -- batasi lebar popup
-      max_height = 20, -- batasi tinggi popup
-    }),
+    completion = {
+      winhighlight = "Normal:CmpNormal,FloatBorder:CmpBorder,CursorLine:Visual,Search:None",
+      border = "rounded",
+    },
+    documentation = {
+      winhighlight = "Normal:CmpDocNormal,FloatBorder:CmpDocBorder",
+      border = "rounded",
+      max_width = 60,
+      max_height = 20,
+    },
   },
   snippet = {
     -- REQUIRED - you must specify a snippet engine

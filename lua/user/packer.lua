@@ -5,8 +5,8 @@ require("packer").startup(function(use)
   -- colorscheme
   use {
     "Mofiqul/vscode.nvim",
-    config = require("config.colorscheme.vscode")
-    -- config = require("config.colorscheme.vscode-light")
+    -- config = require("config.colorscheme.vscode")
+    config = require("config.colorscheme.vscode-light")
   }
   -- use {
   --   "ellisonleao/gruvbox.nvim",
@@ -263,11 +263,6 @@ require("packer").startup(function(use)
   }
 
   -- lsp
-  -- use {
-  --   "williamboman/mason.nvim",
-  --   config = require("config.mason")
-  -- }
-  -- use { "williamboman/mason-lspconfig.nvim" }
   use { "neovim/nvim-lspconfig" }
   use { "nvimtools/none-ls.nvim" }
   use {
