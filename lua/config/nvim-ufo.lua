@@ -17,14 +17,14 @@ capabilities.textDocument.foldingRange = {
   lineFoldingOnly = true
 }
 
-local language_servers = {
-  "lua_ls"
-}
-for _, ls in ipairs(language_servers) do
-  require("lspconfig")[ls].setup({
-    capabilities = capabilities,
-  })
-end
+-- local language_servers = {
+--   "lua_ls"
+-- }
+-- for _, ls in ipairs(language_servers) do
+--   require("lspconfig")[ls].setup({
+--     capabilities = capabilities,
+--   })
+-- end
 
 local ftMap = {
   git = "",
