@@ -14,7 +14,6 @@ configs.setup {
     "dot",
     "gitignore",
     "go",
-    "help",
     "html",
     "ini",
     "javascript",
