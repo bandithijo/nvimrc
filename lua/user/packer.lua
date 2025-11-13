@@ -56,6 +56,9 @@ require("packer").startup(function(use)
   -- easy align
   use { "junegunn/vim-easy-align" }
 
+  -- increment numeric
+  use { "tpope/vim-speeddating" }
+
   -- whitespace detector
   use {
     "ntpeters/vim-better-whitespace",
