@@ -89,7 +89,7 @@ vim.opt.linebreak = true
 vim.opt.showtabline = 0
 
 -- python host path
-vim.g.python3_host_prog = "/usr/bin/python3"
+vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
 
 -- buffer options
 vim.opt.autoindent = true
