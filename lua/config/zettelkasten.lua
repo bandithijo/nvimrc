@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local project_root = "~/zet"
+local project_root = "~/Zettelkasten"
 
 require("zettelkasten").setup({
   notes_path = vim.fn.expand(project_root) .. "/notes",
