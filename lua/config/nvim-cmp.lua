@@ -52,10 +52,16 @@ cmp.setup({
   }),
   -- luakind.nvim config
   formatting = {
+    fields = { "kind", "abbr", "menu" },
     format = lspkind.cmp_format({
       mode = "symbol_text", -- show only symbol annotations
       maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
-
+      menu = {
+        buffer = "[Buf]",
+        nvim_lsp = "[LSP]",
+        path = "[Path]",
+        vsnip = "[Snip]",
+      },
       symbol_map = {
         Text = " ",
         Method = " ",
