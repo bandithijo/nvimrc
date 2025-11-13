@@ -3,9 +3,6 @@ if not status_ok then
   return
 end
 
--- setup must be called before loading
-vim.cmd('colorscheme github_light')
-
 -- Default options
 require("github-theme").setup({
   options = {
@@ -13,7 +10,7 @@ require("github-theme").setup({
     compile_path = vim.fn.stdpath("cache") .. "/github-theme",
     compile_file_suffix = "_compiled", -- Compiled file suffix
     hide_end_of_buffer = true, -- Hide the '~' character at the end of the buffer for a cleaner look
-    hide_nc_statusline = true, -- Override the underline style for non-active statuslines
+    hide_nc_statusline = false, -- Override the underline style for non-active statuslines
     transparent = false,       -- Disable setting background
     terminal_colors = true,    -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
     dim_inactive = false,      -- Non focused panes set to alternative background
@@ -50,37 +47,62 @@ require("github-theme").setup({
   specs = {},
   groups = {
     all = {
-      CursorLine = { bg = "none" },
-      -- StatusLine = { fg = "NONE", bg = "#292E36" },
-      -- StatusLineNC = { fg = "NONE", bg = "#292E37" },
-      -- VertSplit = { fg = "#292E36", bg = "NONE" },
+      Normal = { bg = "NONE" }, -- #F6F8FA
+      NormalNC = { bg = "NONE" }, -- #F6F8FA
+      NormalFloat = { bg = "NONE" }, -- #F6F8FA
+      CursorLine = { bg = "NONE" },
+      StatusLine = { fg = "#F6F8FA", bg = "#4377B8" },
+      StatusLineNC = { fg = "#F6F8FA", bg = "#4377B9" },
+      VertSplit = { fg = "#D4D4D4", bg = "NONE" },
       ColorColumn = { bg = "NONE" },
 
+      -- Comment = { fg = "#6E7781" },
+
       -- plugin: indent-blankline
-      -- IndentBlanklineChar = { fg = "#292E36", nocombine = 1 },
+      IndentBlanklineChar = { fg = "#444C56", nocombine = true },
 
       -- plugin: telescope
       -- TelescopeNormal = { fg = "#909DAB", bold = "NONE" },
-      -- TelescopeSelection = { fg = "#adbac7", bg = "#292E36", bold = 1 },
-      -- TelescopeSelectionCaret = { fg = "#adbac7", bg = "#292E36", bold = 1 },
-      -- TelescopeMultiSelection = { fg = "#D7BA7D" },
+      TelescopeSelection = { fg = "#444C56", bg = "#D7BA7D", bold = true },
+      TelescopeSelectionCaret = { fg = "#444C56", bg = "#D7BA7D", bold = true },
+      TelescopeMultiSelection = { fg = "#F47067" },
       -- TelescopeBorder = { fg = "#292E36" },
       -- TelescopeResultsBorder = { fg = "#292E36" },
       -- TelescopePreviewBorder = { fg = "#292E36" },
       -- TelescopePromptBorder = { fg = "#292E36" },
-      -- TelescopePromptPrefix = { fg = "#adbac7" },
-      -- TelescopePromptNormal = { fg = "#adbac7" },
-      -- TelescopeMatching = { fg = "#F47067" },
+      -- TelescopePromptPrefix = { fg = "#ADBAC7" },
+      -- TelescopePromptNormal = { fg = "#ADBAC7" },
+      TelescopeMatching = { fg = "#F47067" },
+
+      -- plugin: nvim-tree
+      NvimTreeNormal = { bg = "NONE" },
+      NvimTreeFileIcon = { bg = "NONE" },
+      NvimTreeCursorLine = { bg = "#292E36"},
+      NvimTreeIndentMarker = { fg = "#444C56" },
+      NvimTreeFolderIcon = { fg = "#58B9ED" },
+      NvimTreeWindowPicker = { fg = "#F6F8FA", bg = "#4377B8" },
+
+      -- plugin: treesitter
+      -- TreesitterContext = { bg = "#292E36" },
+
+      -- language: markdown
     },
   },
 })
 
 -- setup must be called before loading
-vim.cmd('colorscheme github_light')
+vim.cmd('colorscheme github_dark_dimmed')
 
 vim.cmd([[
-  hi @text.literal guifg=#c69026 gui=none
-  hi @text.uri.comment gui=none
-  hi TreesitterContext guibg=#292E36
-  hi link mkdLineBreak Normal
+" general
+" hi @text.literal guifg=#c69026 gui=none
+" hi @text.uri.comment gui=none
+
+" language:markdown
+" hi link mkdLineBreak Normal
+hi @markup.raw gui=none
+hi link markdownError @spell
+
+" language:ruby
+hi rubyTodo guifg=#22272e guibg=#539bf5
 ]])
