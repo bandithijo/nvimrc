@@ -20,4 +20,5 @@ require("treesitter-context").setup({
 
 vim.cmd([[
   hi TreesitterContext guibg=none
+  hi TreesitterContextSeparator guibg=none guifg=#444C56
 ]])
