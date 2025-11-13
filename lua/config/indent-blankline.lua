@@ -13,9 +13,9 @@ require("ibl").overwrite {
   debounce = 100,
   scope = { enabled = false },
   indent = {
-    -- char = "│",
-    char = "┊",
-    tab_char = "╎",
+    char = "│",
+    tab_char = "┊",
+    -- tab_char = "╎",
     highlight = { "IndentBlanklineChar" },
   },
   exclude = {
