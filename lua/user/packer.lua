@@ -6,7 +6,7 @@ require("packer").startup(function(use)
   use {
     "Mofiqul/vscode.nvim",
     -- config = require("config.colorscheme.vscode")
-    config = require("config.colorscheme.vscode-light")
+    -- config = require("config.colorscheme.vscode-light")
   }
   -- use {
   --   "ellisonleao/gruvbox.nvim",
@@ -17,10 +17,10 @@ require("packer").startup(function(use)
     -- branch = "neovim",
     -- config = require("config.colorscheme.solarized")
   }
-  -- use {
-  --   "projekt0n/github-nvim-theme",
-  --   config = require("config.colorscheme.github-theme")
-  -- }
+  use {
+    "projekt0n/github-nvim-theme",
+    config = require("config.colorscheme.github-theme")
+  }
 
   -- statusline
   use {
@@ -49,8 +49,8 @@ require("packer").startup(function(use)
 
   -- indentline
   use {
-   "lukas-reineke/indent-blankline.nvim",
-   config = require("config.indent-blankline")
+    "lukas-reineke/indent-blankline.nvim",
+    config = require("config.indent-blankline")
   }
 
   -- easy align
