@@ -81,17 +81,18 @@ require("github-theme").setup({
       NvimTreeIndentMarker = { fg = "#444C56" },
       NvimTreeFolderIcon = { fg = "#58B9ED" },
       NvimTreeWindowPicker = { fg = "#F6F8FA", bg = "#4377B8" },
+      NvimTreeImageFile = { fg = "#ADBAC7" },
 
       -- plugin: treesitter
       -- TreesitterContext = { bg = "#292E36" },
 
       -- language: markdown
+
+      -- language: ruby
+      rubyTodo = { fg = "#23272E", bg = "#D7BA7D" },
     },
   },
 })
-
--- setup must be called before loading
-vim.cmd('colorscheme github_dark_dimmed')
 
 vim.cmd([[
 " general
@@ -100,9 +101,15 @@ vim.cmd([[
 
 " language:markdown
 " hi link mkdLineBreak Normal
-hi @markup.raw gui=none
+" hi @markup.raw gui=none
+hi @markup.raw.block.markdown guifg=#539BF5
+hi @markup.raw.markdown_inline guifg=#539BF5
+hi @markup.link.markdown_inline guifg=#539BF5
+hi @markup.link.url.markdown_inline guifg=#539BF5
 hi link markdownError @spell
 
 " language:ruby
-hi rubyTodo guifg=#22272e guibg=#539bf5
 ]])
+
+-- setup must be called before loading
+vim.cmd('colorscheme github_dark_dimmed')
