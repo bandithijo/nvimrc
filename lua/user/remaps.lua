@@ -23,6 +23,9 @@ vim.api.nvim_set_keymap("n", "<F12>", ":NvimTreeToggle<CR>", opts)
 -- tagbar
 vim.api.nvim_set_keymap("n", "<F11>", ":TagbarToggle<CR>", opts)
 
+-- copilot chat
+vim.api.nvim_set_keymap("n", "<F10>", ":CopilotChatToggle<CR>", opts)
+
 -- move text on row up and down
 vim.api.nvim_set_keymap("v", "<A-j>", ":m \'>+1<CR>gv=gv", opts)
 vim.api.nvim_set_keymap("v", "<A-k>", ":m \'<-2<CR>gv=gv", opts)

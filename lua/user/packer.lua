@@ -334,6 +334,15 @@ require("packer").startup(function(use)
     }
   }
 
+  -- github copilot
   use {
+    'CopilotC-Nvim/CopilotChat.nvim',
+    config = require("config.CopilotChat"),
+    requires = {
+      { "github/copilot.vim" },
+      { "nvim-lua/plenary.nvim" },
+      { "nvim-telescope/telescope.nvim" },
+    },
+    run = "make tiktoken",
   }
 end)
