@@ -5,7 +5,7 @@ require("packer").startup(function(use)
   -- colorscheme
   use {
     "Mofiqul/vscode.nvim",
-    -- config = require("config.colorscheme.vscode")
+    config = require("config.colorscheme.vscode")
     -- config = require("config.colorscheme.vscode-light")
   }
   -- use {
@@ -19,7 +19,10 @@ require("packer").startup(function(use)
   }
   use {
     "projekt0n/github-nvim-theme",
-    config = require("config.colorscheme.github-theme")
+    -- config = require("config.colorscheme.github-theme")
+  }
+  use {
+    "maxmx03/solarized.nvim",
   }
 
   -- statusline
