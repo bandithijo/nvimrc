@@ -331,9 +331,6 @@ require("packer").startup(function(use)
     }
   }
 
-  -- activity watcher
   use {
-    'lowitea/aw-watcher.nvim',
-    config = require("config.aw-watcher")
   }
 end)
