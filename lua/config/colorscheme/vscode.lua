@@ -51,6 +51,7 @@ require("vscode").setup({
     NvimTreeFileIcon = { bg = "NONE" },
     NvimTreeFolderName = { fg = "#9cdcfe" },
     NvimTreeOpenedFolderName = { fg = "#9cdcfe" },
+    NvimTreeIndentMarker = { fg = "#3C3C3C" },
 
     -- plugin: highlight-yank-region
     HighlightedyankRegion = { fg = "NONE", bg = "#005F8F" },
