@@ -77,12 +77,6 @@ require("packer").startup(function(use)
   -- dispatch
   use { "tpope/vim-dispatch" }
 
-  -- latex
-  use {
-    "lervag/vimtex",
-    config = require("config.vimtex")
-  }
-
   -- swagger-preview
   use {
       "vinnymeller/swagger-preview.nvim",
@@ -91,6 +85,12 @@ require("packer").startup(function(use)
         "moon0326/swagger-ui-watcher"
       },
       config = require("config.swagger-preview"),
+  }
+
+  -- latex
+  use {
+    "lervag/vimtex",
+    config = require("config.vimtex")
   }
 
   -- ejs
