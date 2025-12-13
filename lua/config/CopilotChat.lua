@@ -98,3 +98,8 @@ vim.api.nvim_create_autocmd('BufEnter', {
 -- In your colorscheme or init.lua
 vim.api.nvim_set_hl(0, 'CopilotChatHeader', { fg = '#D16969', bold = true })
 vim.api.nvim_set_hl(0, 'CopilotChatSeparator', { fg = '#D16969' })
+
+-- Some plugins (e.g. copilot.vim) may also map common keys like <Tab> in insert mode.
+-- To avoid conflicts, disable Copilot's default <Tab> mapping with:
+vim.g.copilot_no_tab_map = true
+vim.keymap.set('i', '<S-Tab>', 'copilot#Accept("\\<S-Tab>")', { expr = true, replace_keycodes = false })
