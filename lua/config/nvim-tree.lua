@@ -75,7 +75,7 @@ nvim_tree.setup {
     icons = {
       web_devicons = {
         file = {
-          enable = false,
+          enable = true,
           color = false,
         },
         folder = {
@@ -186,4 +186,3 @@ nvim_tree.setup {
     require_confirm = true,
   }
 }
-	

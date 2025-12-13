@@ -60,12 +60,12 @@ require("nvim-web-devicons").setup({
       name = "JSON"
     };
     md = {
-      icon = "",
+      icon = "",
       color = "#D4D4D4",
       name = "Md"
     };
     markdown = {
-      icon = "",
+      icon = "",
       color = "#D4D4D4",
       name = "Markdown"
     };
@@ -240,14 +240,29 @@ require("nvim-web-devicons").setup({
       name = "Vim"
     };
     [".gitignore"] = {
-      icon = "",
+      icon = "",
       color = "#D4D4D4",
       name = "GitIgnore"
     };
     [".gitattributes"] = {
-      icon = "",
+      icon = "",
       color = "#D4D4D4",
       name = "GitAttributes"
+    };
+    ["Capfile"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Gemspec",
+    };
+    [".rspec"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Gemspec",
+    };
+    [".ruby-version"] = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Gemspec",
     };
     ["gemspec"] = {
       icon = "",
