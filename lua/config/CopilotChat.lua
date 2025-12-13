@@ -6,6 +6,13 @@ end
 require("CopilotChat").setup({
   model = 'gpt-5-mini', -- Default model to use, see ':CopilotChatModels' for available models (can be specified manually in prompt via $).
   language = 'Indonesian', -- Default language to use for answers
+  show_help = true, -- Shows help message as virtual lines when waiting for user input
+  show_folds = true, -- Shows folds for sections in chat
+  auto_fold = false, -- Automatically non-assistant messages in chat (requires 'show_folds' to be true)
+  highlight_selection = true, -- Highlight selection
+  highlight_headers = true, -- Highlight headers in chat
+  auto_follow_cursor = true, -- Auto-follow cursor in chat
+  insert_at_end = true, -- Move cursor to end of buffer when inserting text
   window = {
     layout = 'vertical', -- 'vertical', 'horizontal', 'float', 'replace', or a function that returns the layout
     relative = 'editor',
@@ -19,13 +26,50 @@ require("CopilotChat").setup({
     assistant = ' Copilot', -- Header to use for AI answers
     tool = ' Tool', -- Header to use for tool calls
   },
-  show_help = true, -- Shows help message as virtual lines when waiting for user input
-  show_folds = true, -- Shows folds for sections in chat
-  auto_fold = false, -- Automatically non-assistant messages in chat (requires 'show_folds' to be true)
-  highlight_selection = true, -- Highlight selection
-  highlight_headers = true, -- Highlight headers in chat
-  auto_follow_cursor = true, -- Auto-follow cursor in chat
-  insert_at_end = true, -- Move cursor to end of buffer when inserting text
+  mappings = {
+    accept_diff = {
+      insert = "<C-S-y>",
+      normal = "<C-S-y>"
+    },
+    close = {
+      insert = "<C-c>",
+      normal = "q"
+    },
+    complete = {
+      insert = "<Tab>"
+    },
+    jump_to_diff = {
+      normal = "gj"
+    },
+    quickfix_answers = {
+      normal = "gqa"
+    },
+    quickfix_diffs = {
+      normal = "gqd"
+    },
+    reset = {
+      insert = "<C-l>",
+      normal = "<C-l>"
+    },
+    show_diff = {
+      normal = "gd"
+    },
+    show_help = {
+      normal = "gh"
+    },
+    show_info = {
+      normal = "gc"
+    },
+    submit_prompt = {
+      insert = "<C-s>",
+      normal = "<CR>"
+    },
+    yank_diff = {
+      normal = "gy",
+      register = '"'
+    },
+    disable_default_keymaps = false,
+  },
 
   -- default providers
   providers = require('CopilotChat.config.providers'),
@@ -37,7 +81,7 @@ require("CopilotChat").setup({
   prompts = require('CopilotChat.config.prompts'),
 
   -- default mappings
-  mappings = require('CopilotChat.config.mappings'),
+  -- mappings = require('CopilotChat.config.mappings'),
 })
 
 -- Auto-command to customize chat buffer behavior
