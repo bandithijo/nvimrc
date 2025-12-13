@@ -95,11 +95,33 @@ local servers = {
 
   jsonls = {},
 
-  html = {},
+  html = {
+    filetypes = { "html" },
+    -- root_dir = root_pattern("index.html", ".html", ".git"),
+  },
 
   cssls = {},
 
-  tailwindcss = {},
+  tailwindcss = {
+    filetypes = {
+      "html",
+      "css",
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "svelte",
+      "vue",
+    },
+    -- root_dir = root_pattern(
+    --   "tailwind.config.js",
+    --   "tailwind.config.cjs",
+    --   "tailwind.config.ts",
+    --   "postcss.config.js",
+    --   "package.json",
+    --   ".git"
+    -- ),
+  },
 
   emmet_ls = {
     cmd = { "emmet-language-server", "--stdio" },
@@ -154,7 +176,7 @@ local filetype_to_servers = {
   bash = { "bashls" },
   -- markdown = { "marksman" },
   json = { "jsonls" },
-  html = { "html", "emmet_ls" },
+  html = { "html", "emmet_ls", "tailwindcss" },
   css = { "cssls", "emmet_ls", "tailwindcss" },
   tex = { "texlab" },
   sql = { "sqlls" },
