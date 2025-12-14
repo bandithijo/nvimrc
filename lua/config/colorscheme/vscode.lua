@@ -143,6 +143,8 @@ hi link markdownH3 @markup.heading
 hi link markdownH4 @markup.heading
 hi link markdownH5 @markup.heading
 hi link markdownH6 @markup.heading
+hi markdownUrl gui=none
+hi! link @markup.link.markdown_inline markdownUrl
 
 " language:ruby
 hi @function.ruby guifg=#DCDCAA gui=bold
