@@ -79,6 +79,16 @@ require("nvim-web-devicons").setup({
       color = "#D4D4D4",
       name = "Erb"
     };
+    toml = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Toml"
+    };
+    yaml = {
+      icon = "",
+      color = "#D4D4D4",
+      name = "Yml"
+    };
     yml = {
       icon = "",
       color = "#D4D4D4",
