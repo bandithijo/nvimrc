@@ -33,7 +33,7 @@ nvim_tree.setup {
   view = {
     centralize_selection = false,
     cursorline = true,
-    width = 40,
+    width = 38,
     side = "left",
     preserve_window_proportions = true,
     number = false,
