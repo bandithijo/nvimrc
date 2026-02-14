@@ -334,6 +334,13 @@ require("packer").startup(function(use)
     }
   }
 
+  -- discord nvim
+  use {
+    'vyfor/cord.nvim',
+    run = ':Cord update',
+    config = require("config.cord")
+  }
+
   -- github copilot
   use {
     'CopilotC-Nvim/CopilotChat.nvim',
