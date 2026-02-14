@@ -5,13 +5,13 @@ require("packer").startup(function(use)
   -- colorscheme
   use {
     "Mofiqul/vscode.nvim",
-    config = require("config.colorscheme.vscode")
+    -- config = require("config.colorscheme.vscode")
     -- config = require("config.colorscheme.vscode-light")
   }
-  -- use {
-  --   "ellisonleao/gruvbox.nvim",
-  --   config = require("config.colorscheme.gruvbox")
-  -- }
+  use {
+    "ellisonleao/gruvbox.nvim",
+    -- config = require("config.colorscheme.gruvbox")
+  }
   use {
     "lifepillar/vim-solarized8",
     -- branch = "neovim",
@@ -23,6 +23,20 @@ require("packer").startup(function(use)
   }
   use {
     "maxmx03/solarized.nvim",
+  }
+  use {
+    "lalitmee/cobalt2.nvim",
+    requires = "tjdevries/colorbuddy.nvim",
+    -- config = require("config.colorscheme.cobalt2")
+  }
+  use {
+    "V4N1LLA-1CE/xcodedark.nvim",
+    -- config = require("config.colorscheme.xcodedark")
+  }
+  use {
+    "lunacookies/vim-colors-xcode",
+    -- config = require("config.colorscheme.vim-colors-xcode-light")
+    config = require("config.colorscheme.vim-colors-xcode-dark")
   }
 
   -- statusline
@@ -104,6 +118,12 @@ require("packer").startup(function(use)
 
   -- php blade
   use { "jwalton512/vim-blade" }
+
+  -- markdown
+  use {
+    "tadmccorkle/markdown.nvim",
+    config = require("config.markdown")
+  }
 
   -- markdown preview
   use {

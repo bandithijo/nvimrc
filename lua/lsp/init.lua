@@ -28,11 +28,20 @@ end
 local function root_pattern(...)
   local patterns = {...}
   return function(fname)
+    if type(fname) == "number" then
+      fname = vim.api.nvim_buf_get_name(fname)
+    end
+
+    if fname == "" then
+      return nil
+    end
+
     for _, pattern in ipairs(patterns) do
       local found = vim.fs.find(pattern, {
         upward = true,
         path = vim.fs.dirname(fname),
       })[1]
+
       if found then
         return vim.fs.dirname(found)
       end
@@ -112,6 +121,7 @@ local servers = {
       "typescriptreact",
       "svelte",
       "vue",
+      "liquid",
     },
     -- root_dir = root_pattern(
     --   "tailwind.config.js",
@@ -195,7 +205,7 @@ vim.api.nvim_create_autocmd("FileType", {
     local servers_for_ft = filetype_to_servers[args.match]
     if servers_for_ft then
       for _, server in ipairs(servers_for_ft) do
-        vim.lsp.enable(server)
+        vim.lsp.enable(server, { bufnr = args.buf })
       end
     end
   end,

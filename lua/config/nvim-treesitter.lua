@@ -19,7 +19,7 @@ configs.setup {
     "javascript",
     "jq",
     "json",
-    "latex",
+    -- "latex",
     "make",
     "markdown",
     "markdown_inline",
@@ -55,8 +55,8 @@ configs.setup {
   },
 
   autotag = {
-  enable = true,
-  filetypes = {
+    enable = true,
+    filetypes = {
       "css",
       "html",
       "json",
