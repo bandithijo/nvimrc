@@ -3,8 +3,6 @@ if not status_ok then
   return
 end
 
--- For dark theme (neovim's default)
--- vim.o.background = "dark"
 -- For light theme
 vim.o.background = "light"
 
@@ -59,7 +57,7 @@ require("vscode").setup({
     Blamer = { fg = "#608B4E", bg = "NONE" },
 
     -- plugin: indent-blankline
-    IndentBlanklineChar = { fg = "#3C3C3C", nocombine = 1 },
+    IndentBlanklineChar = { fg = "#cecece", nocombine = 1 },
 
     -- plugin: telescope
     -- TelescopeSelection = { fg = "#D4D4D4", bg = "#005F87", bold = 1 },
@@ -121,6 +119,10 @@ hi netrwTreeBar guifg=#3C3C3C
 hi @comment.todo.comment gui=bold guifg=#1E1E1E guibg=#CCB17A
 hi @comment.note.comment gui=bold guifg=#1E1E1E guibg=#4EC9B0
 
+" treesitter-context
+hi TreesitterContextSeparator guibg=none guifg=#cecece " #444C56
+
+" nvim-tree
 hi NvimTreeFileIcon guibg=NONE
 hi! link NormalFloat CmpDocNormal
 
